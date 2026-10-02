@@ -1,0 +1,176 @@
+<div class="container page">
+  <div class="stack stack-xl">
+    <section class="page-head">
+      <!-- Đề luyện tập thuộc về một bài, nên "quay lại" của nó là bài mẹ — đúng cấp mà
+           breadcrumb đang chỉ. -->
+      <a class="back-link small" [routerLink]="backLink()">
+        @if (parentId()) {
+          {{ t('unit.backToParent') }}
+        } @else {
+          {{ t('common.backToList') }}
+        }
+      </a>
+
+      @if (loading()) {
+        <div class="skeleton sk-title"></div>
+        <div class="skeleton sk-text"></div>
+      } @else if (unit(); as data) {
+        <h1>{{ data.name }}</h1>
+        @if (data.description) {
+          <p>{{ data.description }}</p>
+        }
+      }
+    </section>
+
+    @if (loading()) {
+      <!-- Khung chờ đúng hình trang thật: khối thiết lập luyện tập, rồi các mẫu ngữ pháp.
+           Dữ liệu về thì điền vào đúng chỗ các khối xám, trang không bị đẩy xuống. -->
+      <div class="detail-skeleton" role="status" [attr.aria-label]="t('common.loading')">
+        <div class="skeleton sk-panel"></div>
+        <div class="skeleton sk-block"></div>
+      </div>
+    }
+
+    @if (notFound()) {
+      <div class="empty-state">
+        <span class="empty-state-icon" aria-hidden="true">🚧</span>
+        <p class="empty-state-title">{{ t('unit.notFound') }}</p>
+        <p class="empty-state-text"><app-t key="error.unitNotFound" block /></p>
+        <a class="btn btn-sm" [routerLink]="['/', course.id, module().path]">{{ t('common.backToList') }}</a>
+      </div>
+    }
+
+    @if (unit(); as data) {
+      <!-- Bài của phần này có thể là ĐỀ chứ không phải lý thuyết ("Đề thi thật ôn tập
+           N4"): khi đó cả trang chỉ có khung bắt đầu làm đề. -->
+      @if (data.kind === 'test') {
+        <app-test-start [unit]="data" />
+      } @else if (points().length > 0) {
+        <!-- Tóm tắt đứng TRƯỚC khung luyện tập: nắm cả bài trong một màn hình rồi mới
+             chọn luyện hay đọc chi tiết, giống slide tổng hợp cuối bài giảng. -->
+        @if (showOverview()) {
+          <section class="card overview" [attr.aria-label]="t('grammar.overview')">
+            <div class="card-body stack stack-sm">
+              <h2>{{ t('grammar.overview') }}</h2>
+              <ol class="overview-list">
+                @for (point of points(); track point.id; let i = $index) {
+                  <li class="overview-item">
+                    <button type="button" class="overview-title" (click)="scrollToPoint(point.id)">
+                      <span class="overview-index tnum">{{ i + 1 }}</span>
+                      <span class="jp">{{ point.title }}</span>
+                    </button>
+                    <div class="overview-cell">
+                      <span class="overview-label">{{ t('grammar.meaning') }}</span>
+                      <span>{{ point.summary }}</span>
+                    </div>
+                    <div class="overview-cell">
+                      <span class="overview-label">{{ t('grammar.structure') }}</span>
+                      @for (structure of point.structures; track structure) {
+                        <span class="jp overview-formula">{{ structure }}</span>
+                      }
+                    </div>
+                  </li>
+                }
+              </ol>
+            </div>
+          </section>
+        }
+
+        <!-- Đề luyện tập đứng ngay sau bảng tóm tắt, như khối BTVN của trang kanji: mở
+             bài ra là thấy việc phải làm, không phải cuộn hết phần lý thuyết. -->
+        @if (exercises().length > 0) {
+          <section class="card" [attr.aria-label]="t('grammar.exercises')">
+            <div class="card-body stack stack-sm">
+              <h2>{{ t('grammar.exercises') }}</h2>
+              <div class="exercise-row">
+                @for (item of exercises(); track item.id) {
+                  <a class="btn btn-sm exercise-link" [routerLink]="['/', course.id, module().path, item.id]">
+                    {{ item.name }}
+                    <span class="badge">{{ t('test.questionCount', { count: item.itemCount }) }}</span>
+                  </a>
+                }
+              </div>
+            </div>
+          </section>
+        }
+
+        <app-practice-setup [unit]="data" />
+
+        @for (point of points(); track point.id) {
+          <article class="card point-card" [id]="'point-' + point.id">
+            <div class="card-body stack stack-lg">
+              <header class="stack stack-sm">
+                <h2 class="jp">{{ point.title }}</h2>
+                @if (point.summary) {
+                  <p class="muted">{{ point.summary }}</p>
+                }
+              </header>
+
+              @if (point.structures.length > 0) {
+                <div class="field">
+                  <span class="label">{{ t('grammar.structure') }}</span>
+                  <ul class="structure-list">
+                    @for (structure of point.structures; track structure) {
+                      <li class="jp">{{ structure }}</li>
+                    }
+                  </ul>
+                </div>
+              }
+
+              @if (point.explanation.length > 0) {
+                <div class="stack stack-sm">
+                  @for (line of point.explanation; track line) {
+                    <p>{{ line }}</p>
+                  }
+                </div>
+              }
+
+              @for (usage of point.usages; track usage.id) {
+                <section class="usage">
+                  <h3>{{ usage.title }}</h3>
+                  @if (usage.detail) {
+                    <p class="muted small">{{ usage.detail }}</p>
+                  }
+
+                  <ul class="example-list">
+                    @for (example of usage.examples; track example.id) {
+                      <li>
+                        <p class="jp example-jp">{{ example.japanese }}</p>
+                        @if (example.reading) {
+                          <p class="jp muted small">{{ example.reading }}</p>
+                        }
+                        <p class="muted">{{ example.vietnamese }}</p>
+                        @if (example.note) {
+                          <p class="faint small">{{ example.note }}</p>
+                        }
+                      </li>
+                    }
+                  </ul>
+                </section>
+              }
+
+              @if (point.notes.length > 0) {
+                <div class="notice notice-warning">
+                  <div class="stack stack-sm">
+                    <strong>{{ t('grammar.notes') }}</strong>
+                    @for (note of point.notes; track note) {
+                      <span>{{ note }}</span>
+                    }
+                  </div>
+                </div>
+              }
+            </div>
+          </article>
+        }
+      } @else if (!loading()) {
+        <div class="empty-state">
+          <span class="empty-state-icon" aria-hidden="true">📄</span>
+          <p class="empty-state-title">{{ t('unit.empty.title') }}</p>
+          <p class="empty-state-text">
+            <app-t key="unit.empty.text" [params]="{ folder: module().folder }" block />
+          </p>
+        </div>
+      }
+    }
+  </div>
+</div>

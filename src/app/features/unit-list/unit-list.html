@@ -1,0 +1,151 @@
+<div class="container page">
+  <div class="stack stack-xl">
+    <section class="page-head">
+      <a class="back-link small" [routerLink]="courseHome">{{ t('common.backHome') }}</a>
+      <h1>
+        <span class="head-icon jp" aria-hidden="true">{{ module().icon }}</span>
+        <app-t [key]="module().labelKey" />
+      </h1>
+      <p><app-t [key]="module().descKey" block /></p>
+    </section>
+
+    @if (status() === 'loading') {
+      <div class="card-grid" role="status" [attr.aria-label]="t('common.loading')">
+        @for (i of skeletons; track i) {
+          <div class="skeleton skeleton-card"></div>
+        }
+      </div>
+    }
+
+    @if (errorKey(); as key) {
+      <div class="notice notice-error">
+        <div class="stack" style="gap: 10px">
+          <strong>{{ t(key) }}</strong>
+          <div>
+            <button type="button" class="btn btn-sm" (click)="reload()">
+              {{ t('common.retry') }}
+            </button>
+          </div>
+        </div>
+      </div>
+    }
+
+    @if (allUnits().length > 0) {
+      <div class="toolbar">
+        <div class="search">
+          <span class="search-icon" aria-hidden="true">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="9" cy="9" r="6" />
+              <path d="M13.5 13.5 17 17" stroke-linecap="round" />
+            </svg>
+          </span>
+          <input
+            type="search"
+            class="input"
+            [placeholder]="t('unit.search')"
+            [attr.aria-label]="t('unit.search.aria')"
+            [value]="search()"
+            (input)="onSearch($event)"
+          />
+          @if (search()) {
+            <button
+              type="button"
+              class="search-clear"
+              (click)="clearSearch()"
+              [title]="t('unit.search.clear')"
+              [attr.aria-label]="t('unit.search.clear')"
+            >
+              <span aria-hidden="true">✕</span>
+            </button>
+          }
+        </div>
+
+        <div class="row toolbar-counts">
+          <span class="badge">{{ t('unit.count', { count: units().length }) }}</span>
+          <span class="badge">{{ t('unit.itemCount', { count: totalItems() }) }}</span>
+          @if (pendingCount() > 0) {
+            <span class="badge badge-warning">
+              {{ t('unit.pendingCount', { count: pendingCount() }) }}
+            </span>
+          }
+        </div>
+      </div>
+
+      @if (noMatch()) {
+        <div class="empty-state">
+          <span class="empty-state-icon" aria-hidden="true">🔍</span>
+          <p class="empty-state-title">{{ t('unit.noMatch.title', { term: search() }) }}</p>
+          <p class="empty-state-text"><app-t key="unit.noMatch.text" block /></p>
+          <button type="button" class="btn btn-sm" (click)="clearSearch()">
+            {{ t('unit.noMatch.reset') }}
+          </button>
+        </div>
+      } @else {
+        <div class="card-grid">
+          @for (unit of units(); track unit.id) {
+            <!-- Bài chưa có nội dung vẫn hiện, chỉ mờ đi và không bấm được: người học
+                 phải thấy phần này gồm những bài gì ngay từ đầu, kể cả bài chưa soạn.
+                 Ẩn đi thì lộ trình trông như bị thiếu quãng. -->
+            @let percent = bestPercent(unit.id);
+            @let pending = unit.itemCount === 0;
+
+            <a
+              class="card link-card unit-card"
+              [class.is-empty]="pending"
+              [attr.aria-disabled]="pending ? 'true' : null"
+              [attr.tabindex]="pending ? -1 : null"
+              [routerLink]="['/', course.id, module().path, unit.id]"
+            >
+              <div class="unit-head">
+                <!-- Vòng tiến độ: cung tròn vẽ bằng conic-gradient theo --p. Bài chưa
+                     luyện lần nào vẫn hiện vòng 0% chứ không để trống, để cả cột thẳng
+                     hàng và nhìn một cái là biết đã đi tới đâu trong danh sách. -->
+                <span
+                  class="progress-ring"
+                  [class.is-done]="(percent ?? 0) >= 80"
+                  [style.--p]="percent ?? 0"
+                  [title]="t('unit.progress', { percent: percent ?? 0 })"
+                >
+                  <span class="progress-ring-label tnum">{{ percent ?? 0 }}%</span>
+                </span>
+
+                <span class="card-title unit-name">{{ unit.name }}</span>
+              </div>
+
+              @if (unit.description) {
+                <p class="muted small clamp-2">{{ unit.description }}</p>
+              }
+
+              <div class="card-foot">
+                @if (pending) {
+                  <span class="badge">{{ t('unit.pending') }}</span>
+                } @else {
+                  <span class="badge">{{ itemLabel(unit) }}</span>
+                  <!-- Số lần luyện cạnh số mục: nhìn cả lưới là thấy bài nào luyện nhiều,
+                       bài nào chưa đụng tới — vòng % chỉ nói kết quả tốt nhất, không nói
+                       đã luyện bao nhiêu lần. -->
+                  @let attempts = attemptsOf(unit.id);
+                  @if (attempts > 0) {
+                    <span class="badge badge-success">{{ t('progress.attempts', { count: attempts }) }}</span>
+                  } @else {
+                    <span class="badge">{{ t('progress.never') }}</span>
+                  }
+                  <span class="spacer"></span>
+                  <span class="card-go" aria-hidden="true">→</span>
+                }
+              </div>
+            </a>
+          }
+        </div>
+      }
+    } @else if (status() === 'ready') {
+      <div class="empty-state">
+        <span class="empty-state-icon" aria-hidden="true">📄</span>
+        <p class="empty-state-title">{{ t('unit.empty.title') }}</p>
+        <p class="empty-state-text">
+          <app-t key="unit.empty.text" [params]="{ folder: module().folder }" block />
+        </p>
+      </div>
+    }
+  </div>
+</div>

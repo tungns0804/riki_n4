@@ -1,0 +1,156 @@
+.back-link {
+  color: var(--text-muted);
+  width: fit-content;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+/* --- Tóm tắt ngữ pháp -----------------------------------------------------
+   Mỗi mẫu một hàng ba cột: tên mẫu, Ý nghĩa, Cấu trúc — như thẻ trên slide tổng
+   hợp của bài giảng, gom lại để liếc một lần là nắm cả bài.
+
+   KHÔNG dính theo khi cuộn như mục lục trước đây: có thêm cột cấu trúc thì năm mẫu
+   cao gần nửa màn hình, dính lại sẽ che mất phần đang đọc. */
+
+.overview-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.overview-item {
+  display: grid;
+  /* 17rem: vừa một tên gộp ba dạng như "～ような／ように／ようだ" trên một dòng. */
+  grid-template-columns: minmax(11rem, 17rem) minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--sp-1) var(--sp-5);
+  align-items: start;
+  padding-block: var(--sp-3);
+  border-top: 1px solid var(--border);
+}
+
+.overview-item:first-child {
+  border-top: none;
+}
+
+/* Cả tên mẫu là nút cuộn tới thẻ chi tiết của mẫu đó. */
+.overview-title {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-2);
+  justify-self: start;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--accent);
+  font-size: var(--fs-md);
+  font-weight: 650;
+  text-align: left;
+}
+
+.overview-title:hover {
+  text-decoration: underline;
+}
+
+.overview-index {
+  color: var(--text-faint);
+  font-size: var(--fs-sm);
+}
+
+.overview-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.overview-label {
+  font-size: var(--fs-2xs);
+  font-weight: 620;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.overview-formula {
+  font-weight: 600;
+}
+
+/* Hẹp thì ba cột xếp dọc: tên mẫu, rồi ý nghĩa, rồi cấu trúc. */
+@media (max-width: 760px) {
+  .overview-item {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* --- Một mẫu ngữ pháp ----------------------------------------------------- */
+
+/* Neo cuộn chừa chỗ cho header dính, nếu không bấm tên mẫu trong bảng tóm tắt xong
+   thì tiêu đề mẫu nằm khuất sau header. */
+.point-card {
+  scroll-margin-top: calc(var(--header-h) + var(--sp-4));
+}
+
+.structure-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.structure-list li {
+  padding: 8px 12px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+
+.usage h3 {
+  margin-bottom: 4px;
+}
+
+.example-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  margin: var(--sp-3) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Vạch dọc bên trái gom ba dòng của một ví dụ (câu Nhật, cách đọc, nghĩa) thành
+   một khối, thay cho việc phải thụt lề hay kẻ khung cho từng ví dụ. */
+.example-list li {
+  padding-left: var(--sp-3);
+  border-left: 2px solid var(--border);
+}
+
+/* Ví dụ hội thoại xuống dòng bằng 
+, mỗi người nói một dòng như PDF in; ba dòng
+   (câu Nhật, cách đọc, nghĩa) xuống dòng ở cùng chỗ để đọc song song được. */
+.example-list li p {
+  white-space: pre-line;
+}
+
+.example-jp {
+  font-size: var(--fs-lg);
+  font-weight: 550;
+}
+
+/* --- Đề luyện tập đi kèm bài — chép khối BTVN của trang kanji ------------- */
+
+.exercise-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.exercise-link {
+  gap: var(--sp-2);
+}

@@ -1,0 +1,450 @@
+/**
+ * Hình dạng dữ liệu học, dùng chung cho mọi học phần.
+ *
+ * Mỗi interface ở đây trùng đúng cấu trúc file JSON trong `public/content/`, do
+ * `scripts/generate-content.mjs` sinh ra từ `data-source/`. Sửa một trường ở đây
+ * thì phải sửa cả ở script sinh và ở phần "sanitize" của ContentStore — ba chỗ đó
+ * mô tả cùng một thứ, lệch nhau là dữ liệu bị âm thầm bỏ qua.
+ *
+ * Quy ước chung:
+ *  - `id` luôn ổn định, sinh từ nội dung. Nó là khoá của tiến độ và của mục yêu
+ *    thích, nên đổi id nghĩa là mất dấu vết học tập của mục đó.
+ *  - Chuỗi rỗng nghĩa là "chưa có", KHÔNG dùng null/undefined: giao diện chỉ cần
+ *    kiểm tra một kiểu vắng mặt duy nhất.
+ */
+
+/** Bảy phần học của khoá, theo đúng thứ tự hiển thị ngoài trang chủ. */
+export const MODULE_IDS = [
+  'entrance-test',
+  'vocabulary',
+  'kanji',
+  'grammar',
+  'reading',
+  'listening',
+  'mimikara',
+] as const;
+
+export type ModuleId = (typeof MODULE_IDS)[number];
+
+export function isModuleId(value: unknown): value is ModuleId {
+  return MODULE_IDS.includes(value as ModuleId);
+}
+
+/**
+ * Hình dạng nội dung của một bài.
+ *
+ * KHÔNG trùng với ModuleId: phần "Ngữ pháp" và phần "Ngữ pháp MIMIKARA OBOERU" là
+ * hai module khác nhau trên giao diện nhưng cùng một hình dạng dữ liệu, nên dùng
+ * chung `kind: 'grammar'` và dùng chung luôn màn hình chi tiết.
+ */
+export type UnitKind = 'test' | 'vocabulary' | 'kanji' | 'grammar' | 'reading' | 'listening';
+
+/** Kỹ năng mà một câu hỏi đo. Bài kiểm tra nhập môn chấm điểm theo năm nhóm này. */
+export const SKILL_IDS = ['vocabulary', 'kanji', 'grammar', 'reading', 'listening'] as const;
+
+export type SkillId = (typeof SKILL_IDS)[number];
+
+export function isSkillId(value: unknown): value is SkillId {
+  return SKILL_IDS.includes(value as SkillId);
+}
+
+// ── Từ vựng ────────────────────────────────────────────────────────────────
+
+/** Một câu ví dụ của từ. */
+export interface VocabExample {
+  id: string;
+  japanese: string;
+  /** Bản dịch tiếng Việt. Rỗng nghĩa là chưa dịch — giáo trình gốc cũng thường để trống. */
+  vietnamese: string;
+  /**
+   * Cách đọc CẢ CÂU bằng kana, ví dụ "りそうのだんせいとけっこんする。".
+   *
+   * Cả câu chứ không chỉ furigana của chữ khó: người học đọc trôi được cả câu mới là
+   * đọc được, mà bản in của giáo trình chỉ chú âm vài chữ. Viết y như `GrammarExample.
+   * reading` của phần Ngữ pháp để hai chỗ dùng chung một kiểu dữ liệu. Rỗng = chưa có.
+   */
+  reading: string;
+  /**
+   * Một dòng chỉ ra mẫu ngữ pháp dùng trong câu, ví dụ "～てから = sau khi ~".
+   *
+   * Tài liệu 文字語彙 chỉ dạy từ, không dạy ngữ pháp, nên câu ví dụ hay có mẫu mà người
+   * học chưa gặp (～た方がいい, ～そうだ, ～ておく). Biết nghĩa từng từ mà không biết mẫu
+   * thì vẫn không hiểu câu. Rỗng = câu không có mẫu nào đáng chú.
+   */
+  grammar: string;
+  /**
+   * Dạng của từ đang học xuất hiện trong câu — chữ in đỏ gạch chân của giáo trình.
+   * Mỗi phần tử luôn nằm nguyên vẹn trong `japanese`.
+   *
+   * Cần trường riêng vì động từ trong câu gần như không bao giờ đứng ở dạng từ điển:
+   * mục 渇く nhưng câu viết のどが渇いた。— tìm "渇く" trong câu thì không ra.
+   *
+   * Thường đúng một phần tử. Nhiều phần tử khi sách tô nhiều chỗ (やる気が起きない・
+   * 起こらない): tô được hết, nhưng câu đó không khoét làm câu hỏi được. Rỗng nghĩa là
+   * không tìm được chỗ nào — câu vẫn hiện để đọc, chỉ không tô và không khoét.
+   */
+  targets: string[];
+}
+
+/**
+ * Một dòng ghi chú đi kèm từ, giữ nguyên nhãn của giáo trình:
+ *
+ *   合 từ ghép · 対 trái nghĩa · 関 từ liên quan · 連 cách nói đi kèm · 類 từ đồng nghĩa
+ *   使い方 / 使い分け cách dùng và phân biệt
+ *
+ * Nhãn để dạng chuỗi tự do chứ không phải union đóng: giáo trình dùng thêm nhãn mới
+ * thì chỉ cần gõ vào file nguồn, không phải sửa mã và build lại.
+ */
+export interface VocabNote {
+  label: string;
+  text: string;
+}
+
+export interface VocabWord {
+  id: string;
+  /**
+   * Số thứ tự trong giáo trình gốc (1–120 của N3 JUNBI). 0 nghĩa là không đánh số.
+   *
+   * Giữ lại để đối chiếu được với bản PDF khi học: người học nhớ "từ số 107" chứ
+   * không nhớ vị trí của nó trong bài.
+   */
+  number: number;
+  /**
+   * Cụm mà từ này thuộc về, ví dụ "01–10". Rỗng nghĩa là bài không chia cụm.
+   *
+   * Cụm là cách giáo trình chia buổi học: mỗi buổi 10 từ, và bài tập cũng ra theo
+   * đúng cụm đó. Nhờ vậy người học lọc và luyện đúng 10 từ của buổi hôm nay thay
+   * vì cả 120 từ một lúc.
+   */
+  group: string;
+  /**
+   * Trợ từ sách in trước mặt chữ, ví dụ "が" của (が)倒れる. Rỗng nghĩa là không có.
+   *
+   * Tách khỏi `japanese` vì nó không thuộc về mặt chữ: sách dùng nó để phân biệt tự
+   * động từ với tha động từ (倒れる / 倒す), nhưng người học gõ "倒れる" là đã nhớ đúng.
+   */
+  particle: string;
+  /** Từ tiếng Nhật, ví dụ "締め切り". Nhiều mặt chữ cho một mục ngăn bằng /: "起きる/起こる". */
+  japanese: string;
+  /** Cách đọc bằng kana, ví dụ "しめきり". Rỗng nếu từ vốn đã là kana. */
+  reading: string;
+  /**
+   * Âm Hán Việt, ví dụ "ĐẾ THIẾT". Rỗng với từ katakana và trạng từ thuần kana —
+   * cột này chỉ hiện khi bài có ít nhất một từ khai báo âm Hán Việt.
+   */
+  hanViet: string;
+  /** Nghĩa tiếng Việt. Nhiều nghĩa ngăn nhau bằng dấu /. */
+  vietnamese: string;
+  /**
+   * Các câu ví dụ. Là MẢNG chứ không phải một câu: giáo trình cho tới năm sáu câu
+   * cho một từ (底, 太陽), và mỗi câu minh hoạ một cách dùng khác nhau — giữ lại một
+   * câu thì mất đúng phần dạy cách dùng.
+   */
+  examples: VocabExample[];
+  notes: VocabNote[];
+}
+
+/**
+ * Một cụm của bài từ vựng: nhãn khoảng số và chủ đề của buổi học đó.
+ *
+ * Chủ đề nằm ở cấp bài chứ không lặp trên từng từ: cả tám từ của một cụm chung một
+ * chủ đề, và bảng "Tóm tắt bài" đầu trang cần đọc nó trước khi duyệt tới từ nào.
+ */
+export interface VocabGroup {
+  /** Nhãn cụm, trùng `VocabWord.group`, ví dụ "266–273". */
+  label: string;
+  /** Chủ đề, ví dụ "Bài 14.2 · Cảm giác, cảm xúc và tính cách". Rỗng nghĩa là chưa viết. */
+  title: string;
+}
+
+// ── Kanji ──────────────────────────────────────────────────────────────────
+
+/** Một từ ghép minh hoạ cho chữ Hán. */
+export interface KanjiWord {
+  id: string;
+  japanese: string;
+  reading: string;
+  vietnamese: string;
+}
+
+export interface KanjiEntry {
+  id: string;
+  /** Đúng một chữ Hán, ví dụ "険". */
+  character: string;
+  hanViet: string;
+  /** Nghĩa tiếng Việt của chữ, ví dụ "hiểm/ nguy hiểm". */
+  meaning: string;
+  /** Âm On, viết katakana theo quy ước từ điển: ["ケン"]. */
+  onyomi: string[];
+  /** Âm Kun, viết hiragana: ["けわ.しい"]. */
+  kunyomi: string[];
+  /** Số nét. 0 nghĩa là chưa khai báo. */
+  strokes: number;
+  words: KanjiWord[];
+}
+
+// ── Ngữ pháp (dùng chung cho phần Ngữ pháp và phần Mimikara Oboeru) ─────────
+
+export interface GrammarExample {
+  id: string;
+  japanese: string;
+  /** Cách đọc / furigana của cả câu. Rỗng nghĩa là chưa có. */
+  reading: string;
+  vietnamese: string;
+  note: string;
+}
+
+/**
+ * Một cách dùng của mẫu ngữ pháp.
+ *
+ * Mẫu N3 hầu như luôn có nhiều hơn một nghĩa (～わけだ có tới bốn), và ví dụ chỉ
+ * có ích khi gắn với đúng cách dùng nó minh hoạ — nên ví dụ nằm trong usage chứ
+ * không nằm phẳng ở cấp mẫu.
+ */
+export interface GrammarUsage {
+  id: string;
+  title: string;
+  detail: string;
+  examples: GrammarExample[];
+}
+
+export interface GrammarPoint {
+  id: string;
+  /** Tên mẫu, ví dụ "～きり". */
+  title: string;
+  /** Ý nghĩa gói trong một dòng, hiện ở bảng tóm tắt đầu bài. */
+  summary: string;
+  /** Công thức nối, mỗi phần tử một dòng: ["V thể ta ＋ きり"]. */
+  structures: string[];
+  explanation: string[];
+  notes: string[];
+  usages: GrammarUsage[];
+}
+
+// ── Câu hỏi trắc nghiệm (đọc, nghe, kiểm tra nhập môn) ──────────────────────
+
+export interface QuizChoice {
+  id: string;
+  text: string;
+  /**
+   * Nghĩa tiếng Việt của lựa chọn. Rỗng nghĩa là không có.
+   *
+   * Viết cho cả bốn lựa chọn, kể cả ở phần chọn cách đọc và chọn chữ Hán — ba mồi
+   * nhiễu ở đó không phải là từ nên ghi "không có từ này", kèm nghĩa chữ Hán khi
+   * đáng học. Bỏ trống ba chỗ mới là thứ chỉ thẳng vào đáp án.
+   */
+  translation: string;
+  /**
+   * Vì sao lựa chọn này ĐÚNG hoặc SAI. Rỗng nghĩa là chưa viết.
+   *
+   * Hiện ở màn hình kết quả sau khi đã chấm, không hiện lúc đang làm bài. Biết mình
+   * chọn sai chưa phải là học được gì: ba mồi nhiễu của một câu 文字語彙 bao giờ
+   * cũng là ba từ dễ lẫn với đáp án, mà chỗ lẫn nằm ở đâu thì phải nói ra mới thấy.
+   */
+  note: string;
+}
+
+export interface QuizQuestion {
+  id: string;
+  skill: SkillId;
+  /** Câu dẫn bằng tiếng Việt, ví dụ "Theo bài đọc, vì sao tác giả…". */
+  prompt: string;
+  /** Phần tiếng Nhật của câu hỏi (câu có chỗ trống, câu cần chọn cách đọc…). */
+  promptJapanese: string;
+  /**
+   * Cách đọc CẢ CÂU hỏi bằng kana, giữ nguyên chỗ trống （　　　）. Rỗng nghĩa là
+   * chưa có.
+   *
+   * Cùng kiểu dữ liệu với `VocabExample.reading`. Nằm sau nút hiện/ẩn cùng chỗ với
+   * bản dịch: đọc được câu mới là hiểu được câu, nhưng ở phần chọn cách đọc thì dòng
+   * này gần như là đáp án, nên mở lúc nào là do người học chọn.
+   */
+  promptReading: string;
+  /** Nghĩa tiếng Việt của `promptJapanese`. Rỗng nghĩa là không có. */
+  promptTranslation: string;
+  choices: QuizChoice[];
+  /** Id của lựa chọn đúng. Luôn nằm trong `choices`. */
+  answerId: string;
+  explanation: string;
+  /**
+   * Bài đọc của RIÊNG câu này, tách theo đoạn. Chỉ đề kiểm tra dùng tới.
+   *
+   * Phần đọc hiểu của đề không có chỗ nào khác để đặt bài đọc: đề cố tình không có
+   * màn hình chi tiết (xem trước thì bài kiểm tra đầu vào không còn đo được gì), mà
+   * màn hình làm bài hiện MỖI CÂU MỘT THẺ nên không xem lại được thẻ trước. Vì vậy
+   * bài đọc đi theo từng câu, và mấy câu hỏi cùng một bài đọc thì lặp lại cùng đoạn văn.
+   *
+   * Rỗng ở mọi chỗ khác: bài đọc hiểu và bài nghe hiểu đã có bài đọc / lời thoại
+   * riêng trên màn hình chi tiết của chúng.
+   */
+  passage: string[];
+  /** Bản dịch của `passage`, cùng số đoạn nếu có. Rỗng nghĩa là không có. */
+  passageTranslation: string[];
+}
+
+// ── Đọc hiểu ───────────────────────────────────────────────────────────────
+
+export interface ReadingPassage {
+  id: string;
+  title: string;
+  /** Bài đọc tách theo đoạn để giữ được xuống dòng của bản gốc. */
+  paragraphs: string[];
+  /** Bản dịch tiếng Việt, cùng số đoạn với `paragraphs` nếu có. */
+  translation: string[];
+  vocabulary: VocabWord[];
+  questions: QuizQuestion[];
+}
+
+// ── Nghe hiểu ──────────────────────────────────────────────────────────────
+
+export interface ScriptLine {
+  id: string;
+  /** Tên người nói, ví dụ "男の人". Rỗng với bài độc thoại. */
+  speaker: string;
+  japanese: string;
+  vietnamese: string;
+}
+
+export interface ListeningTrack {
+  id: string;
+  title: string;
+  /** Đường dẫn file âm thanh, tính từ thư mục public/. Rỗng nghĩa là chưa thu. */
+  audio: string;
+  script: ScriptLine[];
+  questions: QuizQuestion[];
+}
+
+// ── Bài kiểm tra nhập môn ──────────────────────────────────────────────────
+
+export interface TestSection {
+  id: string;
+  title: string;
+  /**
+   * Câu lệnh của 問題 bằng tiếng Nhật, chép nguyên trong đề ("（　）に なにを
+   * いれますか。…"). Màn hình làm đề hiện nó trong khung nét đứt trên đầu phần, đúng
+   * như đề in: câu lệnh cho biết phần này hỏi cái gì (chọn cách đọc, chọn chữ Hán,
+   * chọn câu đồng nghĩa…) mà từng câu hỏi không nhắc lại.
+   *
+   * Rỗng thì không hiện khung nào.
+   */
+  instructions: string;
+  skill: SkillId;
+  questions: QuizQuestion[];
+}
+
+// ── Bài học và danh mục ────────────────────────────────────────────────────
+
+/**
+ * Một dòng trong `content/<học phần>/index.json`: đủ để vẽ danh sách bài mà chưa phải tải
+ * nội dung của bài. Trang danh sách của một phần có thể có tới vài chục bài, tải
+ * hết nội dung ngay từ đầu là tải thừa gần như toàn bộ.
+ */
+export interface UnitIndexEntry {
+  id: string;
+  moduleId: ModuleId;
+  name: string;
+  description: string;
+  kind: UnitKind;
+  /**
+   * Id của bài mà bài này thuộc về, ví dụ BTVN 1–10 thuộc bài "Danh từ". Rỗng = bài
+   * đứng độc lập.
+   *
+   * Bài con KHÔNG hiện ở danh sách bài của phần học: một buổi học một bài tập, để
+   * hết ngang hàng với "Danh từ", "Động từ" thì danh sách Từ vựng sẽ dài ra bằng số
+   * buổi học chứ không phải số loại từ. Chúng hiện ở đúng cụm của mình trên trang
+   * bài mẹ, và breadcrumb đi qua bài mẹ.
+   */
+  parent: string;
+  /**
+   * Cụm của bài mẹ mà bài này ra đề, ví dụ "01–10" (trùng `VocabWord.group`). Rỗng
+   * nghĩa là không gắn với cụm nào.
+   */
+  group: string;
+  /** Số mục của bài: số từ, số chữ Hán, số mẫu ngữ pháp, số câu hỏi… */
+  itemCount: number;
+  /**
+   * Các cụm của bài từ vựng (nhãn và chủ đề), theo thứ tự trong bài. Rỗng nếu bài không
+   * chia cụm. Có trong danh mục để trang thống kê liệt kê được cả cụm chưa luyện mà
+   * không phải tải nội dung từng bài.
+   */
+  groups: VocabGroup[];
+  /** Thứ tự hiển thị. Số nhỏ lên trước. */
+  order: number;
+  /** Đường dẫn file nội dung, tính từ `content/`. */
+  file: string;
+}
+
+/**
+ * Nội dung đầy đủ của một bài.
+ *
+ * Năm mảng nội dung nằm cạnh nhau chứ không dùng union: `kind` cho biết mảng nào
+ * có dữ liệu, các mảng còn lại rỗng. Đổi lại việc phải nhớ quy ước đó, template
+ * không phải ép kiểu ở mọi chỗ truy cập.
+ */
+export interface Unit extends Omit<UnitIndexEntry, 'file'> {
+  words: VocabWord[];
+  /** Các cụm của bài từ vựng theo thứ tự xuất hiện, kèm chủ đề. Rỗng nếu không chia cụm. */
+  groups: VocabGroup[];
+  kanji: KanjiEntry[];
+  points: GrammarPoint[];
+  passages: ReadingPassage[];
+  tracks: ListeningTrack[];
+  sections: TestSection[];
+}
+
+/** Đếm số mục của một bài theo đúng loại của nó. */
+export function countItems(unit: Pick<Unit, 'kind' | 'words' | 'kanji' | 'points' | 'passages' | 'tracks' | 'sections'>): number {
+  switch (unit.kind) {
+    case 'vocabulary':
+      return unit.words.length;
+    case 'kanji':
+      return unit.kanji.length;
+    case 'grammar':
+      return unit.points.length;
+    case 'reading':
+      return unit.passages.length;
+    case 'listening':
+      return unit.tracks.length;
+    case 'test':
+      // Đề kiểm tra đếm theo CÂU chứ không theo phần: "40 câu" là thứ người làm
+      // bài hình dung được, còn "5 phần" thì không nói lên bài dài bao nhiêu.
+      return unit.sections.reduce((sum, section) => sum + section.questions.length, 0);
+  }
+}
+
+/** Bài rỗng, dùng làm điểm khởi đầu khi dựng dữ liệu. */
+export function emptyUnit(entry: Omit<UnitIndexEntry, 'file'>): Unit {
+  return {
+    ...entry,
+    words: [],
+    groups: [],
+    kanji: [],
+    points: [],
+    passages: [],
+    tracks: [],
+    sections: [],
+  };
+}
+
+/**
+ * Danh sách cụm của một bài từ vựng, theo đúng thứ tự xuất hiện trong nguồn.
+ *
+ * Theo thứ tự XUẤT HIỆN chứ không sắp xếp lại: "01–10, 11–20, …, 101–110" mà đem
+ * sắp theo chữ cái thì "101–110" nhảy lên đứng ngay sau "01–10".
+ */
+export function groupsOf(words: readonly VocabWord[]): string[] {
+  const seen: string[] = [];
+  for (const word of words) {
+    if (word.group && !seen.includes(word.group)) seen.push(word.group);
+  }
+  return seen;
+}
+
+/** Toàn bộ câu hỏi của một bài, gom từ mọi nguồn có trong bài. */
+export function questionsOf(unit: Unit): QuizQuestion[] {
+  return [
+    ...unit.sections.flatMap((section) => section.questions),
+    ...unit.passages.flatMap((passage) => passage.questions),
+    ...unit.tracks.flatMap((track) => track.questions),
+  ];
+}

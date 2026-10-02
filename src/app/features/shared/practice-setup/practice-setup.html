@@ -1,0 +1,124 @@
+<section class="card">
+  <!-- `.setup` (styles.css): nhãn cột trái, nút co theo nội dung — cùng bố cục với
+       khung thiết lập của minano_nihongo. -->
+  <div class="card-body stack setup">
+    <h2>{{ t('practice.setup') }}</h2>
+
+    <div class="field">
+      <span class="label">{{ t('practice.mode') }}</span>
+      <div class="options">
+        <button
+          type="button"
+          class="option"
+          [class.is-active]="answerMode() === 'choice'"
+          [attr.aria-pressed]="answerMode() === 'choice'"
+          (click)="setMode('choice')"
+        >
+          <app-t key="practice.mode.choice" />
+        </button>
+        <button
+          type="button"
+          class="option"
+          [class.is-active]="answerMode() === 'typing'"
+          [attr.aria-pressed]="answerMode() === 'typing'"
+          (click)="setMode('typing')"
+        >
+          <app-t key="practice.mode.typing" />
+        </button>
+      </div>
+    </div>
+
+    @if (directions().length > 1) {
+      <div class="field">
+        <span class="label">{{ t('practice.direction') }}</span>
+        <div class="options">
+          @for (info of directions(); track info.id) {
+            <button
+              type="button"
+              class="option"
+              [class.is-active]="direction() === info.id"
+              [attr.aria-pressed]="direction() === info.id"
+              (click)="setDirection(info.id)"
+            >
+              <app-t [key]="info.labelKey" />
+            </button>
+          }
+        </div>
+        <!-- Ghi chú nằm TRONG nhóm chiều hỏi, ngay dưới hàng nút, vì nó nói về chiều
+             đang chọn. Luôn có nhóm này để nằm vào: câu ví dụ đi kèm chỉ khi bài có
+             chiều "Điền từ vào câu" VÀ đang chọn chiều khác, tức ít nhất hai chiều. -->
+        @if (pairsWithExample()) {
+          <p class="hint">{{ t('practice.withExample') }}</p>
+        }
+      </div>
+    }
+
+    @if (groups().length > 1) {
+      <!-- Mỗi cụm là một buổi học 10 từ của giáo trình. Chọn cụm nào thì danh sách
+           từ bên dưới cũng lọc theo cụm đó. -->
+      <div class="field">
+        <span class="label">{{ t('practice.group') }}</span>
+        <div class="chips">
+          <button
+            type="button"
+            class="chip"
+            [class.is-active]="group() === null"
+            [attr.aria-pressed]="group() === null"
+            (click)="setGroup(null)"
+          >
+            {{ t('common.all') }}
+          </button>
+          @for (name of groups(); track name) {
+            <button
+              type="button"
+              class="chip tnum"
+              [class.is-active]="group() === name"
+              [attr.aria-pressed]="group() === name"
+              (click)="setGroup(name)"
+            >
+              {{ name }}
+            </button>
+          }
+        </div>
+      </div>
+    }
+
+    <div class="field">
+      <span class="label">{{ t('practice.count') }}</span>
+      <div class="options">
+        @for (value of limits; track value) {
+          <button
+            type="button"
+            class="option tnum"
+            [class.is-active]="limit() === value"
+            [attr.aria-pressed]="limit() === value"
+            [disabled]="value !== null && value > available()"
+            (click)="setLimit(value)"
+          >
+            @if (value === null) {
+              {{ t('common.all') }}
+            } @else {
+              {{ value }}
+            }
+          </button>
+        }
+      </div>
+    </div>
+
+    <div class="row">
+      <button
+        type="button"
+        class="btn btn-primary btn-lg"
+        [disabled]="available() === 0"
+        (click)="start()"
+      >
+        {{ t('practice.start') }}
+      </button>
+      <span class="badge">{{ t('test.questionCount', { count: available() }) }}</span>
+    </div>
+
+    @if (available() === 0) {
+      <p class="notice notice-warning">{{ t('practice.noQuestion') }}</p>
+    }
+  </div>
+</section>

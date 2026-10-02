@@ -1,0 +1,600 @@
+import {
+  GrammarPoint,
+  KanjiEntry,
+  QuizQuestion,
+  SkillId,
+  Unit,
+  VocabExample,
+  VocabWord,
+} from '../models/content.model';
+import {
+  CHOICE_COUNT,
+  PracticeConfig,
+  PracticeDirection,
+  PracticeExample,
+  PracticeQuestion,
+} from '../models/practice.model';
+import { splitAlternatives } from '../utils/answer-check';
+import { pickRandom, shuffle } from '../utils/random';
+import { readingOfForm } from '../utils/text';
+
+/**
+ * Dựng danh sách câu hỏi cho một phiên luyện tập.
+ *
+ * Hai nguồn câu hỏi, khác nhau về bản chất:
+ *
+ *  - Từ vựng / Kanji / Ngữ pháp: câu hỏi được SINH RA từ bảng dữ liệu. Đáp án là
+ *    một ô trong bảng, còn ba lựa chọn nhiễu lấy từ các mục khác cùng bài — nhiễu
+ *    lấy trong bài chứ không lấy toàn khoá là có chủ ý: nhiễu quá xa thì loại trừ
+ *    được mà không cần nhớ từ.
+ *
+ *  - Đọc / Nghe / Kiểm tra nhập môn: câu hỏi đã VIẾT SẴN trong nội dung, kèm bốn
+ *    lựa chọn của đề. Ở đây chỉ chuyển sang cùng một kiểu dữ liệu để hai màn hình
+ *    luyện tập và kết quả dùng chung được.
+ */
+
+/** Lấy tối đa `CHOICE_COUNT - 1` mồi nhiễu khác đáp án, rồi trộn cùng đáp án. */
+function buildChoices(answer: string, pool: readonly string[]): string[] {
+  const others = [...new Set(pool.filter((value) => value && value !== answer))];
+  return shuffle([answer, ...pickRandom(others, CHOICE_COUNT - 1)]);
+}
+
+// ── Từ vựng ────────────────────────────────────────────────────────────────
+
+/** Ô nào làm câu hỏi, ô nào làm đáp án, theo chiều đang chọn. */
+function vocabFields(direction: PracticeDirection): {
+  prompt: keyof VocabWord;
+  answer: keyof VocabWord;
+} {
+  switch (direction) {
+    case 'vi-jp':
+      return { prompt: 'vietnamese', answer: 'japanese' };
+    case 'jp-han':
+      return { prompt: 'japanese', answer: 'hanViet' };
+    case 'han-jp':
+      return { prompt: 'hanViet', answer: 'japanese' };
+    case 'jp-reading':
+      return { prompt: 'japanese', answer: 'reading' };
+    case 'jp-vi':
+    default:
+      return { prompt: 'japanese', answer: 'vietnamese' };
+  }
+}
+
+/**
+ * Mặt chữ kèm trợ từ, đúng như sách in: "(が)倒れる".
+ *
+ * Chỉ dùng khi từ đứng ở vị trí CÂU HỎI — trợ từ cho biết tự hay tha động từ, là một
+ * phần của cách sách dạy từ đó. Ở vị trí đáp án thì không: gõ "倒れる" là đã nhớ đúng
+ * từ, bắt gõ thêm "(が)" là đang chấm cách trình bày.
+ */
+function withParticle(word: VocabWord): string {
+  return word.particle ? `(${word.particle})${word.japanese}` : word.japanese;
+}
+
+/** Ô này viết bằng chữ Nhật (font tiếng Nhật, chấm giữ nguyên dấu) hay tiếng Việt. */
+function isJapaneseField(field: keyof VocabWord): boolean {
+  return field !== 'vietnamese' && field !== 'hanViet';
+}
+
+/**
+ * Dòng gợi ý dưới câu dẫn, tuỳ chiều hỏi.
+ *
+ *  - Nhật → Việt: âm Hán Việt, như trước.
+ *  - Hán Việt → Nhật: NGHĨA. Một âm Hán Việt ứng với nhiều chữ — ĐẢO là cả 倒れる lẫn
+ *    倒す, TỰ là 寺 mà cũng là 飼う — nên chỉ có âm thì câu hỏi có nhiều đáp án đúng.
+ *    Nghĩa chỉ ra đúng từ nào, còn việc nhớ mặt chữ thì vẫn nguyên.
+ *  - Các chiều còn lại: không gợi ý. Âm Hán Việt là câu hỏi hay đáp án thì không đưa
+ *    nó ra làm gợi ý; Nhật → Hán Việt mà kèm nghĩa thì đoán âm từ nghĩa được.
+ */
+function vocabHint(word: VocabWord, direction: PracticeDirection): string {
+  if (direction === 'jp-vi') return word.hanViet;
+  if (direction === 'han-jp') return word.vietnamese;
+  return '';
+}
+
+/** Câu ví dụ của một từ, kèm đúng những chữ cần tô trong TỪNG câu. */
+function vocabExamples(word: VocabWord): PracticeExample[] {
+  return word.examples.map((example) => ({
+    id: example.id,
+    japanese: example.japanese,
+    vietnamese: example.vietnamese,
+    reading: example.reading,
+    grammar: example.grammar,
+    highlights: example.targets,
+  }));
+}
+
+/**
+ * Hỏi về từ, kèm NGAY TRÊN CÙNG THẺ một câu ví dụ của chính từ đó.
+ *
+ * Vì sao phải có câu ví dụ: chọn đúng "倒れる = Đổ" chưa có nghĩa là dùng được nó. Câu
+ * ví dụ bắt người học đưa từ vừa nhớ vào ngữ cảnh — với động từ còn phải chia cho hợp
+ * câu — mà đề 文字語彙 của kỳ thi hỏi đúng theo kiểu đó. Áp dụng cho mọi chiều hỏi về
+ * từ: Nhật ↔ Việt, Nhật ↔ Hán Việt lẫn Nhật → Cách đọc.
+ *
+ * Câu ví dụ nằm TRONG câu hỏi về từ (`followUp`) chứ không đứng thành câu kế tiếp: màn
+ * luyện tập hiện nó ngay dưới phần vừa chấm, không phải bấm "Câu tiếp theo" giữa chừng.
+ * Chọn ngẫu nhiên mỗi phiên, để lần luyện sau gặp một ngữ cảnh khác. Từ không có câu
+ * nào khoét được (vài danh từ sách không cho ví dụ) thì chỉ hỏi về từ.
+ */
+function fromVocabulary(
+  words: readonly VocabWord[],
+  direction: PracticeDirection,
+  withChoices: boolean,
+): PracticeQuestion[] {
+  const { prompt, answer } = vocabFields(direction);
+  // Từ thiếu đúng ô đang hỏi thì bỏ qua, không hỏi một câu có đáp án rỗng.
+  const usable = words.filter((word) => word[prompt] && word[answer]);
+  // Mồi nhiễu bỏ những từ có CÙNG câu dẫn với từ đang hỏi: hỏi ĐẢO mà lựa chọn có cả
+  // 倒れる lẫn 倒す thì bấm cái nào cũng đúng, chỉ một cái được chấm đúng.
+  const poolFor = (word: VocabWord) =>
+    usable
+      .filter((other) => String(other[prompt]) !== String(word[prompt]))
+      .map((other) => String(other[answer]));
+  // Lấy trong đúng các từ đang luyện (đã lọc theo cụm), để mồi nhiễu của câu ví dụ
+  // cũng nằm trong cụm như mồi nhiễu của câu hỏi về từ.
+  const sentences = sentenceItems(words);
+
+  return usable.map((word) => {
+    const correct = String(word[answer]);
+    const [follow] = pickRandom(
+      sentences.filter((item) => item.word.id === word.id),
+      1,
+    );
+
+    return {
+      id: `${word.id}:${direction}`,
+      skill: 'vocabulary' as SkillId,
+      prompt: prompt === 'japanese' ? withParticle(word) : String(word[prompt]),
+      promptIsJapanese: isJapaneseField(prompt),
+      hint: vocabHint(word, direction),
+      answer: correct,
+      answerIsJapanese: isJapaneseField(answer),
+      // Gõ "sự cố" khớp "SỰ CỐ", còn "su co" thì không.
+      answerIsHanViet: answer === 'hanViet',
+      acceptedAnswers: [correct],
+      choices: withChoices ? buildChoices(correct, poolFor(word)) : [],
+      choiceNotes: [],
+      explanation: '',
+      passage: [],
+      examples: vocabExamples(word),
+      // Cách đọc là đáp án rồi thì không lặp lại nó thành một dòng "Cách đọc" nữa.
+      reading: answer === 'reading' ? '' : word.reading,
+      notes: word.notes,
+      followUp: follow ? sentenceQuestion(follow, sentences, withChoices, true) : null,
+    };
+  });
+}
+
+// ── Từ vựng: điền từ vào câu ví dụ ─────────────────────────────────────────
+
+/** Chỗ trống thay cho từ bị khoét khỏi câu. Ngoặc toàn chiều như đề thi thật. */
+const BLANK = '（　　）';
+
+/** Một câu ví dụ khoét được, kèm từ của nó và chữ sẽ bị khoét. */
+interface SentenceItem {
+  word: VocabWord;
+  example: VocabExample;
+  blank: string;
+}
+
+/**
+ * Chữ sẽ khoét khỏi câu. Rỗng nghĩa là câu này không khoét được.
+ *
+ * Chỉ nhận câu có đúng MỘT chỗ đánh dấu. Câu tô hai chỗ (やる気が起きない・起こらない)
+ * mà khoét một thì chỗ kia đọc lộ đáp án, khoét cả hai thì thành câu hỏi hai đáp án.
+ * Câu không có chỗ nào (viết khác dạng từ điển: "引越し" cho từ "引っ越し") mà khoét
+ * theo kiểu đoán thì ra câu hỏi mà đáp án đúng cũng không khớp chỗ trống.
+ */
+function blankOf(example: VocabExample): string {
+  return example.targets.length === 1 ? example.targets[0] : '';
+}
+
+/** Mọi câu ví dụ khoét được của các từ đang luyện. */
+function sentenceItems(words: readonly VocabWord[]): SentenceItem[] {
+  return words.flatMap((word) =>
+    word.examples
+      .map((example) => ({ word, example, blank: blankOf(example) }))
+      .filter((item) => item.blank.length > 0),
+  );
+}
+
+/**
+ * Đoán dạng chia qua đuôi chữ: て, た, たり, ない, たい, ý chí, từ điển, rồi ba đuôi của
+ * tính từ: な, に, い. Chuỗi rỗng là không thuộc dạng nào — danh từ rơi hết vào đó, và
+ * vẫn làm nhiễu cho nhau như cũ.
+ *
+ * Đuôi tính từ cần tách vì cùng lý do với động từ: chỗ trống trước 暮らす chỉ nhận đuôi
+ * に, nên mồi nhiễu 健康な・悔しい loại được ngay mà không cần biết nghĩa. Ba đuôi này xét
+ * SAU ない/たい, nếu không 積極的ではない rơi nhầm vào nhóm đuôi い.
+ *
+ * Chỉ dùng để XẾP mồi nhiễu nên đoán theo đuôi là đủ. Đoán trượt thì câu hỏi dễ đi
+ * một chút chứ không sai, nên không đáng dựng cả bộ chia động từ theo nhóm.
+ */
+function inflectionOf(form: string): string {
+  if (/[ただ]り$/.test(form)) return 'tari';
+  if (/[てで]$/.test(form)) return 'te';
+  if (/[ただ]$/.test(form)) return 'ta';
+  if (/ない$/.test(form)) return 'nai';
+  if (/たい$/.test(form)) return 'tai';
+  if (/[おこごそぞとどのぼぽもよろ]う$/.test(form)) return 'volitional';
+  if (/[うくぐすつぬぶむる]$/.test(form)) return 'dictionary';
+  if (/な$/.test(form)) return 'na';
+  if (/に$/.test(form)) return 'ni';
+  if (/い$/.test(form)) return 'i';
+  return '';
+}
+
+/**
+ * Lựa chọn cho câu điền từ: ưu tiên mồi nhiễu CÙNG DẠNG CHIA với đáp án.
+ *
+ * Chỗ trống trước しまった chỉ nhận thể て. Nếu ba mồi nhiễu là 抱く・起きた・渇いた thì
+ * biết ngữ pháp là loại được hết mà không cần nhớ từ nào nghĩa là gì. Mồi nhiễu cùng
+ * đuôi て (殴って・倒して・起こして) thì chỉ còn cách hiểu nghĩa — đúng thứ đang luyện.
+ * Không đủ mồi cùng dạng thì lấy thêm từ phần còn lại, chứ không hỏi ít lựa chọn hơn.
+ */
+function buildBlankChoices(answer: string, pool: readonly string[]): string[] {
+  const others = [...new Set(pool.filter((value) => value && value !== answer))];
+  const form = inflectionOf(answer);
+  const sameForm = others.filter((value) => inflectionOf(value) === form);
+  const otherForms = others.filter((value) => inflectionOf(value) !== form);
+
+  const picked = pickRandom(sameForm, CHOICE_COUNT - 1);
+  const filler = pickRandom(otherForms, CHOICE_COUNT - 1 - picked.length);
+  return shuffle([answer, ...picked, ...filler]);
+}
+
+/**
+ * Cách đọc của chữ bị khoét, để gõ kana thay cho kanji vẫn tính đúng. Thử lần lượt
+ * từng mặt chữ của từ: mục 起きる/起こる có hai, và câu mang dạng của một trong hai.
+ */
+function readingOfBlank(blank: string, word: VocabWord): string {
+  const readings = splitAlternatives(word.reading);
+  for (const [index, spelling] of splitAlternatives(word.japanese).entries()) {
+    const reading = readingOfForm(blank, spelling, readings[index] ?? '');
+    if (reading) return reading;
+  }
+  return '';
+}
+
+/**
+ * Câu hỏi trên CÂU VÍ DỤ: khoét từ cần học ra khỏi câu rồi bắt điền lại.
+ *
+ * Chữ bị khoét là DẠNG của từ trong câu chứ không phải dạng từ điển: với động từ,
+ * đáp án của のどが（　　）。là 渇いた — đề 文字語彙 của kỳ thi cũng in lựa chọn ở
+ * đúng dạng chia hợp với câu. Với danh từ, hai thứ đó trùng nhau.
+ *
+ * `asFollowUp` = câu này đi kèm câu hỏi về chính từ đó, trên cùng thẻ. Khi đó nó không
+ * mang danh sách câu ví dụ: thẻ hiện danh sách đúng một lần, lúc chấm xong cả hai phần.
+ */
+function sentenceQuestion(
+  item: SentenceItem,
+  all: readonly SentenceItem[],
+  withChoices: boolean,
+  asFollowUp: boolean,
+): PracticeQuestion {
+  const { word, example, blank } = item;
+  // Mồi nhiễu lấy từ câu của TỪ KHÁC. Dạng khác của chính từ này (倒れた làm nhiễu
+  // cho 倒れて) thì câu hỏi thành bài chia động từ, không còn là bài từ vựng.
+  const pool = all.filter((other) => other.word.id !== word.id).map((other) => other.blank);
+  const reading = readingOfBlank(blank, word);
+
+  return {
+    // Có cả id của từ: hai từ dùng chung một câu ví dụ (成功 và 失敗 cùng câu
+    // 失敗は成功の元) thì vẫn là hai câu hỏi khác nhau.
+    id: `${word.id}:${example.id}:blank`,
+    skill: 'vocabulary',
+    prompt: example.japanese.split(blank).join(BLANK),
+    promptIsJapanese: true,
+    // Gợi ý là NGHĨA của từ cần điền: không có nó thì nhiều câu điền từ nào cũng
+    // xuôi, nhất là khi bốn lựa chọn đều cùng loại từ.
+    hint: word.vietnamese,
+    answer: blank,
+    answerIsJapanese: true,
+    answerIsHanViet: false,
+    // Gõ cách đọc cũng tính đúng: người học nhớ từ mà chưa gõ được kanji thì vẫn là
+    // nhớ từ.
+    acceptedAnswers: reading ? [blank, reading] : [blank],
+    choices: withChoices ? buildBlankChoices(blank, pool) : [],
+    choiceNotes: [],
+    explanation: '',
+    passage: [],
+    examples: asFollowUp ? [] : vocabExamples(word),
+    // Cách đọc của ĐÚNG DẠNG trong câu (渇いた → かわいた), không phải của dạng từ điển:
+    // đây là chỗ duy nhất cho biết từ vừa điền đọc thế nào khi đã chia.
+    reading,
+    // Đi kèm câu hỏi về từ thì phần trên đã in ghi chú rồi, không in lại lần hai.
+    notes: asFollowUp ? [] : word.notes,
+    followUp: null,
+  };
+}
+
+/**
+ * Chiều "Điền từ vào câu": chỉ có câu ví dụ, mỗi câu một thẻ riêng.
+ *
+ * Một từ có mấy câu thì ra mấy câu hỏi: cùng một từ nhưng mỗi câu một ngữ cảnh, đó
+ * chính là thứ cần luyện.
+ */
+function fromVocabularySentences(
+  words: readonly VocabWord[],
+  withChoices: boolean,
+): PracticeQuestion[] {
+  const items = sentenceItems(words);
+  return items.map((item) => sentenceQuestion(item, items, withChoices, false));
+}
+
+// ── Kanji ──────────────────────────────────────────────────────────────────
+
+/** Mọi cách đọc của một chữ, gộp On và Kun. */
+function readingsOf(entry: KanjiEntry): string[] {
+  return [...entry.onyomi, ...entry.kunyomi].filter((value) => value.length > 0);
+}
+
+/**
+ * Phần "tiếng Việt" của một chữ ở hai chiều Nhật ↔ Việt: nghĩa, hoặc âm Hán Việt khi
+ * nguồn không ghi nghĩa.
+ *
+ * Thẻ kanji của BTVN chỉ có âm Hán Việt (任 = NHIỆM) chứ không có nghĩa riêng của chữ.
+ * Chỉ nhận `meaning` thì hai chiều đó vẫn hiện trong khung thiết lập mà bấm vào ra 0 câu.
+ * Với người Việt, nhớ 任 là NHIỆM cũng chính là nhớ nghĩa của chữ.
+ */
+function meaningOf(entry: KanjiEntry): string {
+  return entry.meaning || entry.hanViet;
+}
+
+function fromKanji(
+  entries: readonly KanjiEntry[],
+  direction: PracticeDirection,
+  withChoices: boolean,
+): PracticeQuestion[] {
+  const usable = entries.filter((entry) => {
+    if (direction === 'jp-reading') return readingsOf(entry).length > 0;
+    return meaningOf(entry).length > 0;
+  });
+
+  const pool = usable.map((entry) =>
+    direction === 'jp-reading' ? readingsOf(entry)[0] : meaningOf(entry),
+  );
+
+  return usable.map((entry) => {
+    const readings = readingsOf(entry);
+    const isReadingQuestion = direction === 'jp-reading';
+    const askForCharacter = direction === 'vi-jp';
+    const correct = isReadingQuestion ? readings[0] : askForCharacter ? entry.character : meaningOf(entry);
+    // Đáp án đã là âm Hán Việt thì không được đưa chính nó ra làm gợi ý.
+    const hanVietIsAnswer = !entry.meaning && !isReadingQuestion;
+
+    return {
+      id: `${entry.id}:${direction}`,
+      skill: 'kanji' as SkillId,
+      prompt: askForCharacter ? meaningOf(entry) : entry.character,
+      promptIsJapanese: !askForCharacter,
+      hint: askForCharacter || hanVietIsAnswer ? '' : entry.hanViet,
+      answer: correct,
+      answerIsJapanese: isReadingQuestion || askForCharacter,
+      // Thẻ kanji không ghi nghĩa thì đáp án Nhật → Việt chính là âm Hán Việt (任 =
+      // NHIỆM), nên cũng phải gõ đúng dấu như chiều Nhật → Hán Việt của từ vựng.
+      answerIsHanViet: hanVietIsAnswer && !askForCharacter,
+      // Chữ có nhiều âm On/Kun thì gõ đúng MỘT âm là đủ.
+      acceptedAnswers: isReadingQuestion ? readings : [correct],
+      choices: withChoices
+        ? buildChoices(
+            correct,
+            askForCharacter ? usable.map((item) => item.character) : pool,
+          )
+        : [],
+      choiceNotes: [],
+      explanation: '',
+      passage: [],
+      examples: entry.words.map((word) => ({
+        id: word.id,
+        japanese: word.reading ? `${word.japanese}（${word.reading}）` : word.japanese,
+        vietnamese: word.vietnamese,
+        // Từ ghép của thẻ kanji đã in kèm cách đọc ngay trong `japanese`, và không có
+        // ngữ pháp nào để chú: đây là từ đứng một mình chứ không phải câu.
+        reading: '',
+        grammar: '',
+        highlights: [entry.character],
+      })),
+      // Phần Kanji chưa dùng hai dòng này: cách đọc On/Kun là một chiều hỏi riêng,
+      // còn ghi chú thì thẻ kanji không có.
+      reading: '',
+      notes: [],
+      followUp: null,
+    };
+  });
+}
+
+// ── Ngữ pháp (và Mimikara Oboeru) ──────────────────────────────────────────
+
+/**
+ * Hỏi trên CÂU VÍ DỤ chứ không trên tên mẫu.
+ *
+ * Nhớ được "～きり nghĩa là chỉ, duy nhất" mà không đặt được câu thì vào phòng thi
+ * vẫn không chọn được đáp án. Câu ví dụ bắt người học đọc cả ngữ cảnh, còn tên mẫu
+ * thì hiện làm gợi ý để biết câu này đang luyện mẫu nào.
+ */
+function fromGrammar(
+  points: readonly GrammarPoint[],
+  direction: PracticeDirection,
+  withChoices: boolean,
+): PracticeQuestion[] {
+  const pairs = points.flatMap((point) =>
+    point.usages.flatMap((usage) =>
+      usage.examples
+        .filter((example) => example.japanese && example.vietnamese)
+        .map((example) => ({ point, example })),
+    ),
+  );
+
+  const askForJapanese = direction === 'vi-jp';
+  const pool = pairs.map(({ example }) => (askForJapanese ? example.japanese : example.vietnamese));
+
+  return pairs.map(({ point, example }) => {
+    const correct = askForJapanese ? example.japanese : example.vietnamese;
+    return {
+      id: `${example.id}:${direction}`,
+      skill: 'grammar' as SkillId,
+      prompt: askForJapanese ? example.vietnamese : example.japanese,
+      promptIsJapanese: !askForJapanese,
+      hint: point.title,
+      answer: correct,
+      answerIsJapanese: askForJapanese,
+      answerIsHanViet: false,
+      acceptedAnswers: [correct],
+      choices: withChoices ? buildChoices(correct, pool) : [],
+      choiceNotes: [],
+      explanation: example.note,
+      passage: [],
+      examples: example.reading
+        ? [
+            {
+              id: `${example.id}:r`,
+              japanese: example.reading,
+              vietnamese: '',
+              // Dòng này CHÍNH LÀ cách đọc cả câu của phần Ngữ pháp, nên không lồng
+              // thêm một cách đọc nữa vào trong nó.
+              reading: '',
+              grammar: '',
+              highlights: [point.title.replace(/[～〜]/g, '')],
+            },
+          ]
+        : [],
+      // Ngữ pháp đã có chỗ riêng cho cả hai: cách đọc cả câu đi trong `examples` ở
+      // trên, còn phần giải thích thì nằm ở `explanation`.
+      reading: '',
+      notes: [],
+      followUp: null,
+    };
+  });
+}
+
+// ── Câu hỏi viết sẵn trong đề ──────────────────────────────────────────────
+
+/**
+ * Đề đã có đủ bốn lựa chọn nên KHÔNG dựng lựa chọn mới, kể cả khi người học chọn
+ * chế độ gõ đáp án: mồi nhiễu của đề là một phần của việc ra đề, thay bằng mồi tự
+ * sinh thì câu hỏi không còn là câu hỏi đó nữa.
+ */
+export function fromQuizQuestions(questions: readonly QuizQuestion[]): PracticeQuestion[] {
+  return questions.flatMap((question): PracticeQuestion[] => {
+    const answer = question.choices.find((choice) => choice.id === question.answerId);
+    if (!answer) return [];
+
+    return [
+      {
+        id: question.id,
+        skill: question.skill,
+        prompt: question.promptJapanese || question.prompt,
+        promptIsJapanese: question.promptJapanese.length > 0,
+        hint: question.promptJapanese ? question.prompt : '',
+        answer: answer.text,
+        answerIsJapanese: true,
+        answerIsHanViet: false,
+        acceptedAnswers: [answer.text],
+        choices: question.choices.map((choice) => choice.text),
+        choiceNotes: question.choices.map((choice) => choice.note),
+        explanation: question.explanation,
+        // Bài đọc của phần đọc hiểu trong đề: đi theo từng câu vì mỗi câu một thẻ.
+        passage: question.passage,
+        examples: [],
+        // Đề chỉ có đúng những gì người ra đề viết: không tự thêm cách đọc hay ghi chú
+        // vào một câu hỏi của đề thi.
+        reading: '',
+        notes: [],
+        followUp: null,
+      },
+    ];
+  });
+}
+
+// ── Cửa vào chung ──────────────────────────────────────────────────────────
+
+/**
+ * Cấu hình phiên của một bài dạng ĐỀ.
+ *
+ * Đề không đi qua khung thiết lập luyện tập vì không có gì để đặt: làm cả bài, giữ
+ * nguyên thứ tự đề, và trả lời bằng chính bốn lựa chọn của đề. Viết một lần ở đây
+ * để danh sách đề kiểm tra và trang một bài đề trong phần Ngữ pháp mở bài theo cùng
+ * một cách.
+ */
+export function testConfig(unit: Unit): PracticeConfig {
+  return {
+    moduleId: unit.moduleId,
+    unitId: unit.id,
+    unitName: unit.name,
+    answerMode: 'choice',
+    direction: 'jp-vi',
+    questionLimit: null,
+    group: null,
+  };
+}
+
+/** Phần này có luyện được theo chiều đó không (bài thiếu cách đọc thì không). */
+export function directionIsUsable(unit: Unit, direction: PracticeDirection): boolean {
+  if (direction === 'jp-sentence') {
+    // Chỉ bài từ vựng mới khoét câu được, và chỉ khi có câu khoét được (xem blankOf).
+    return (
+      unit.kind === 'vocabulary' &&
+      unit.words.some((word) => word.examples.some((example) => blankOf(example).length > 0))
+    );
+  }
+
+  if (direction === 'jp-han' || direction === 'han-jp') {
+    // Chỉ bài từ vựng: thẻ kanji đã hỏi âm Hán Việt ở chiều Nhật ↔ Việt khi không ghi
+    // nghĩa (xem meaningOf), còn ngữ pháp thì không có âm Hán Việt. Bài toàn từ katakana
+    // thì chiều này tự ẩn.
+    return unit.kind === 'vocabulary' && unit.words.some((word) => word.hanViet.length > 0);
+  }
+
+  if (direction !== 'jp-reading') {
+    return unit.kind !== 'kanji' || unit.kanji.some((entry) => meaningOf(entry).length > 0);
+  }
+  if (unit.kind === 'vocabulary') return unit.words.some((word) => word.reading.length > 0);
+  if (unit.kind === 'kanji') return unit.kanji.some((entry) => readingsOf(entry).length > 0);
+  // Ngữ pháp không có "cách đọc" để hỏi riêng.
+  return false;
+}
+
+/**
+ * Dựng câu hỏi cho cả phiên: chọn nguồn theo loại bài, trộn, rồi cắt theo số câu
+ * đã đặt. Trộn TRƯỚC khi cắt, nếu không thì "10 câu" luôn là đúng mười mục đầu bài.
+ *
+ * Số câu đếm theo THẺ: câu hỏi về từ cùng câu ví dụ đi kèm của nó là MỘT câu, nên
+ * "10 câu" là 10 từ, và cắt số câu không bao giờ tách câu ví dụ khỏi từ của nó.
+ */
+export function buildQuestions(unit: Unit, config: PracticeConfig): PracticeQuestion[] {
+  const withChoices = config.answerMode === 'choice';
+
+  // Lọc theo cụm TRƯỚC khi dựng câu hỏi: mồi nhiễu cũng phải lấy trong cụm đang
+  // luyện, nếu không thì ba lựa chọn sai đến từ những từ chưa học bao giờ và chọn
+  // đúng chỉ nhờ loại trừ.
+  const words = config.group
+    ? unit.words.filter((word) => word.group === config.group)
+    : unit.words;
+
+  const all = (() => {
+    switch (unit.kind) {
+      case 'vocabulary':
+        return config.direction === 'jp-sentence'
+          ? fromVocabularySentences(words, withChoices)
+          : fromVocabulary(words, config.direction, withChoices);
+      case 'kanji':
+        return fromKanji(unit.kanji, config.direction, withChoices);
+      case 'grammar':
+        return fromGrammar(unit.points, config.direction, withChoices);
+      case 'reading':
+        return fromQuizQuestions(unit.passages.flatMap((passage) => passage.questions));
+      case 'listening':
+        return fromQuizQuestions(unit.tracks.flatMap((track) => track.questions));
+      case 'test':
+        return fromQuizQuestions(unit.sections.flatMap((section) => section.questions));
+    }
+  })();
+
+  // Đề kiểm tra giữ nguyên thứ tự: các phần đi từ từ vựng tới nghe hiểu, trộn lên
+  // thì người làm phải nhảy qua nhảy lại giữa năm kiểu câu hỏi suốt cả bài.
+  const ordered = unit.kind === 'test' ? all : shuffle(all);
+  return config.questionLimit === null ? ordered : ordered.slice(0, config.questionLimit);
+}

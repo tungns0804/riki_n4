@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Riki N4</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Riki N4 — kiểm tra nhập môn, từ vựng, kanji, ngữ pháp, đọc hiểu, nghe hiểu và ngữ pháp Mimikara Oboeru trình độ N4.">
+  <!-- Nền thanh trên cùng của đèn đêm (tông mặc định), xem THEME_COLOR trong ThemeStore. -->
+  <meta name="theme-color" content="#fbf3e3">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Montserrat (chữ thường) + Quicksand (tiêu đề), cùng cặp font với minano_nihongo
+       và ByeTOEIC. Cả hai có bộ ký tự tiếng Việt. Không tải được (mạng chặn) thì
+       --font-ui trong styles.css rơi về Segoe UI, trang vẫn đọc bình thường. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..700&family=Quicksand:wght@500..700&display=swap">
+  <script>
+    // Áp dụng tông màu đã lưu NGAY trước khi Angular khởi động, nếu không trang sẽ
+    // chớp màu hệ thống một nhịp rồi mới đổi. Giữ đoạn này đồng bộ với ThemeStore —
+    // kể cả tông mặc định: chưa lưu gì (hoặc lưu giá trị lạ) thì là đèn đêm.
+    try {
+      var saved = JSON.parse(localStorage.getItem('riki-n4:theme') || '"night"');
+      if (saved !== 'system') {
+        document.documentElement.setAttribute(
+          'data-theme',
+          saved === 'light' || saved === 'dark' ? saved : 'night'
+        );
+      }
+      var lang = JSON.parse(localStorage.getItem('riki-n4:language') || '""');
+      if (lang === 'vi' || lang === 'ja') document.documentElement.lang = lang;
+    } catch (e) {
+      // localStorage bị chặn thì ThemeStore cũng rơi về tông mặc định.
+      document.documentElement.setAttribute('data-theme', 'night');
+    }
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

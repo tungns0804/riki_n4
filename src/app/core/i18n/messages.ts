@@ -1,0 +1,388 @@
+/**
+ * Toàn bộ chữ hiển thị của ứng dụng, hai ngôn ngữ đặt cạnh nhau để dễ soát.
+ *
+ * Quy ước:
+ *  - Khoá đặt theo màn hình: `home.*`, `unit.*`, `practice.*`, `result.*`, `test.*`.
+ *  - Khoá của bảy phần học đặt theo id module: `module.vocabulary.label`, …
+ *    (xem `core/course/course.config.ts`).
+ *  - Chỗ cần chèn giá trị dùng `{ten}`, ví dụ `Câu {current}/{total}`. Tên tham số
+ *    phải GIỐNG NHAU ở cả hai ngôn ngữ — scripts/verify-i18n.mjs kiểm tra điều đó.
+ *  - Vài khoá có vi và ja giống hệt nhau (N4…) là cố ý: đó là tên riêng,
+ *    giữ nguyên ở cả hai ngôn ngữ.
+ *
+ * KHÔNG dịch nội dung bài học (nghĩa tiếng Việt của từ vựng) — đó là dữ liệu học,
+ * không phải giao diện.
+ */
+
+export const LANGUAGES = ['vi', 'ja'] as const;
+export type Language = (typeof LANGUAGES)[number];
+
+export const LANGUAGE_NAME: Record<Language, string> = {
+  vi: 'Tiếng Việt',
+  ja: '日本語',
+};
+
+/** Nhãn ngắn hiện trên nút chuyển ngôn ngữ. */
+export const LANGUAGE_SHORT: Record<Language, string> = {
+  vi: 'VI',
+  ja: '日本',
+};
+
+type Entry = { vi: string; ja: string };
+
+export const MESSAGES = {
+  // ── Chung ──────────────────────────────────────────────────────────────
+  'common.retry': { vi: 'Thử lại', ja: '再試行' },
+  // Dẫn về trang của học phần (/n4), không phải trang gốc chọn học phần.
+  'common.backHome': { vi: '← Về trang học phần', ja: '← コースのトップへ' },
+  'common.backToList': { vi: '← Về danh sách', ja: '← 一覧へ' },
+  'common.all': { vi: 'Tất cả', ja: 'すべて' },
+  'common.loading': { vi: 'Đang tải…', ja: '読み込み中…' },
+
+  // ── Vỏ ứng dụng ────────────────────────────────────────────────────────
+  'app.name': { vi: 'Riki N4', ja: 'Riki N4' },
+  // Không kèm tên học phần: tiêu đề tab là "<trang> · <app.title>", mà trang có thể
+  // thuộc bất kỳ học phần nào.
+  'app.title': { vi: 'Riki N4', ja: 'Riki N4' },
+  'app.nav': { vi: 'Điều hướng chính', ja: 'メインナビゲーション' },
+  'app.breadcrumb': { vi: 'Bạn đang ở', ja: '現在の場所' },
+  'app.language.switch': { vi: 'Chuyển sang {name}', ja: '{name}に切り替える' },
+  'app.skipToContent': { vi: 'Tới nội dung chính', ja: 'メインコンテンツへ' },
+  'app.backToTop': { vi: 'Lên đầu trang', ja: 'ページの先頭へ' },
+  'app.navigating': { vi: 'Đang mở trang…', ja: 'ページを読み込み中…' },
+
+  // ── Giao diện: sáng / tối / đèn đêm ────────────────────────────────────
+  'theme.system': { vi: 'Tự động', ja: '自動' },
+  'theme.light': { vi: 'Sáng', ja: 'ライト' },
+  'theme.dark': { vi: 'Tối', ja: 'ダーク' },
+  'theme.night': { vi: 'Đèn đêm', ja: 'ナイトライト' },
+  'theme.title': {
+    vi: 'Giao diện: {current} — bấm để chuyển sang {next}',
+    ja: 'テーマ: {current} — クリックで{next}に切り替え',
+  },
+
+  // ── Khoá học ───────────────────────────────────────────────────────────
+  'course.label': { vi: 'Học phần', ja: 'コース' },
+  'course.switch': { vi: 'Chọn học phần', ja: 'コースを選ぶ' },
+  'course.current': { vi: 'Đang học', ja: '受講中' },
+  'course.soon': { vi: 'Sắp có', ja: '準備中' },
+  // Nhãn trên thẻ ở trang gốc. Không dùng "Đang học": có hai học phần mở thì cả hai thẻ
+  // cùng ghi "Đang học", đọc như đang học hai khoá một lúc.
+  'course.open': { vi: 'Đã mở', ja: '公開中' },
+  // Tên học phần là tên riêng của Riki nên giữ nguyên ở cả hai ngôn ngữ.
+  'course.n4.name': { vi: 'N4', ja: 'N4' },
+  'course.n4.desc': {
+    vi: 'Khoá N4: kiểm tra nhập môn, từ vựng, kanji, ngữ pháp, đọc hiểu, nghe hiểu và ngữ pháp Mimikara Oboeru.',
+    ja: 'N4コース：入門テスト、語彙、漢字、文法、読解、聴解、耳から覚える文法。',
+  },
+  'course.soon.desc': { vi: 'Nội dung đang được chuẩn bị.', ja: '教材を準備中です。' },
+  'course.list.title': { vi: 'Các học phần của Riki N4', ja: 'Riki N4 のコース' },
+  'course.list.subtitle': {
+    vi: 'Chọn học phần để bắt đầu. Hiện đã có học phần N4, các học phần khác sẽ được bổ sung sau.',
+    ja: 'コースを選んで始めましょう。現在は N4 コースを公開中で、ほかのコースは順次追加します。',
+  },
+  'course.list.all': { vi: 'Tất cả học phần', ja: 'すべてのコース' },
+  'course.list.back': { vi: '← Tất cả học phần', ja: '← すべてのコース' },
+
+  // ── Bảy phần học ───────────────────────────────────────────────────────
+  'module.entrance-test.label': { vi: 'Bài kiểm tra nhập môn N4', ja: 'N4入門テスト' },
+  'module.entrance-test.short': { vi: 'Kiểm tra', ja: 'テスト' },
+  'module.entrance-test.desc': {
+    vi: 'Đo trình độ trước khi vào khoá: từ vựng, kanji, ngữ pháp, đọc và nghe.',
+    ja: '受講前の実力診断：語彙・漢字・文法・読解・聴解。',
+  },
+  'module.entrance-test.unit': { vi: '{count} đề', ja: '{count}回分' },
+
+  'module.vocabulary.label': { vi: 'Từ vựng', ja: '語彙' },
+  'module.vocabulary.short': { vi: 'Từ vựng', ja: '語彙' },
+  'module.vocabulary.desc': {
+    vi: 'Từ vựng N4 chia theo loại từ, kèm cách đọc, nghĩa, câu ví dụ và ghi chú cách dùng.',
+    ja: 'N4語彙を品詞別に。読み方・意味・例文・使い方つき。',
+  },
+  // Đơn vị của phần này là NHÓM TỪ (danh từ, động từ…) chứ không phải bài học:
+  // một nhóm gom hết từ cùng loại của cả khoá.
+  'module.vocabulary.unit': { vi: '{count} nhóm từ', ja: '{count}グループ' },
+
+  'module.kanji.label': { vi: 'KANJI', ja: '漢字' },
+  'module.kanji.short': { vi: 'Kanji', ja: '漢字' },
+  'module.kanji.desc': {
+    vi: 'Chữ Hán N4: âm On, âm Kun, âm Hán Việt, số nét và từ ghép thường gặp.',
+    ja: 'N4漢字：音読み・訓読み・漢越音・画数・よく出る熟語。',
+  },
+  'module.kanji.unit': { vi: '{count} bài', ja: '{count}課' },
+
+  'module.grammar.label': { vi: 'Ngữ pháp', ja: '文法' },
+  'module.grammar.short': { vi: 'Ngữ pháp', ja: '文法' },
+  'module.grammar.desc': {
+    vi: 'Mẫu ngữ pháp N4: công thức, cách dùng và ví dụ cho từng cách dùng.',
+    ja: 'N4文法：接続の形・用法・用法ごとの例文。',
+  },
+  'module.grammar.unit': { vi: '{count} bài', ja: '{count}課' },
+
+  'module.reading.label': { vi: 'Đọc hiểu', ja: '読解' },
+  'module.reading.short': { vi: 'Đọc hiểu', ja: '読解' },
+  'module.reading.desc': {
+    vi: 'Bài đọc theo độ dài tăng dần, kèm câu hỏi và từ vựng của bài.',
+    ja: '短文から長文へ。設問と本文語彙つき。',
+  },
+  'module.reading.unit': { vi: '{count} bài đọc', ja: '{count}本' },
+
+  'module.listening.label': { vi: 'Nghe hiểu', ja: '聴解' },
+  'module.listening.short': { vi: 'Nghe hiểu', ja: '聴解' },
+  'module.listening.desc': {
+    vi: 'Bài nghe kèm câu hỏi, lời thoại hiện ra sau khi đã trả lời.',
+    ja: '設問つきの聴解。スクリプトは解答後に表示。',
+  },
+  'module.listening.unit': { vi: '{count} bài nghe', ja: '{count}本' },
+
+  'module.mimikara.label': { vi: 'Ngữ pháp MIMIKARA OBOERU', ja: '文法 みみから覚える' },
+  'module.mimikara.short': { vi: 'Mimikara', ja: 'みみから' },
+  'module.mimikara.desc': {
+    vi: 'Ngữ pháp theo giáo trình 耳から覚える, học qua mẫu câu và âm thanh.',
+    ja: '『耳から覚える』に沿った文法。例文と音声で覚える。',
+  },
+  'module.mimikara.unit': { vi: '{count} bài', ja: '{count}課' },
+
+  // ── Trang chủ ──────────────────────────────────────────────────────────
+  'home.title': { vi: 'Khoá {name}', ja: '{name} コース' },
+  'home.subtitle': {
+    vi: 'Chọn một phần để bắt đầu. Mỗi phần có danh sách bài riêng và chế độ luyện tập riêng.',
+    ja: 'パートを選んで始めましょう。各パートに独自のレッスン一覧と練習モードがあります。',
+  },
+  'home.moduleCount': { vi: '{count} phần học', ja: '{count}パート' },
+  'home.unitCount': { vi: '{count} bài', ja: '{count}課' },
+  'home.studiedCount': { vi: 'Đã luyện {count} bài', ja: '{count}課 練習済み' },
+  'home.pending': { vi: 'Chưa nạp nội dung', ja: '教材未登録' },
+  'home.empty.title': { vi: 'Khoá học chưa có nội dung', ja: 'まだ教材がありません' },
+  'home.empty.text': {
+    vi: 'Cấu trúc đã dựng xong. Đặt bài học vào thư mục data-source/ rồi chạy npm run generate để nạp nội dung vào trang.',
+    ja: '構成は完成しています。data-source/ に教材を置き、npm run generate を実行してください。',
+  },
+
+  // ── Danh sách bài của một phần ─────────────────────────────────────────
+  'unit.count': { vi: '{count} bài', ja: '{count}課' },
+  'unit.itemCount': { vi: '{count} mục', ja: '{count}項目' },
+  'unit.search': { vi: 'Tìm bài…', ja: 'レッスンを検索…' },
+  'unit.search.aria': { vi: 'Tìm bài trong phần này', ja: 'このパート内でレッスンを検索' },
+  'unit.search.clear': { vi: 'Xoá từ khoá', ja: 'キーワードを消す' },
+  'unit.noMatch.title': {
+    vi: 'Không có bài nào khớp {term}',
+    ja: '{term} に一致するレッスンはありません',
+  },
+  'unit.noMatch.text': {
+    vi: 'Thử một từ khoá ngắn hơn, hoặc xoá từ khoá để xem lại toàn bộ.',
+    ja: 'キーワードを短くするか、消して全件を表示してください。',
+  },
+  'unit.noMatch.reset': { vi: 'Xoá bộ lọc', ja: 'フィルターを消す' },
+  'unit.empty.title': { vi: 'Phần này chưa có bài nào', ja: 'このパートにはまだレッスンがありません' },
+  'unit.empty.text': {
+    vi: 'Thêm thư mục bài vào data-source/{folder}/ rồi chạy npm run generate.',
+    ja: 'data-source/{folder}/ にレッスンを追加して npm run generate を実行してください。',
+  },
+  'unit.notFound': { vi: 'Không tìm thấy bài học', ja: 'レッスンが見つかりません' },
+  'unit.pending': { vi: 'Chưa có nội dung', ja: '教材未登録' },
+  'unit.pendingCount': { vi: '{count} bài đang chờ nội dung', ja: '{count}課は教材待ち' },
+  'progress.attempts': { vi: 'Luyện {count} lần', ja: '{count}回練習' },
+  'progress.never': { vi: 'Chưa luyện', ja: '未練習' },
+  'stats.title': { vi: 'Thống kê luyện tập', ja: '練習の記録' },
+  'stats.subtitle': {
+    vi: 'Mỗi bài, mỗi cụm từ và mỗi BTVN đã luyện bao nhiêu lần — để biết chỗ nào luyện nhiều, chỗ nào chưa luyện. Số liệu lưu trong trình duyệt này.',
+    ja: '各課・各グループ・各宿題の練習回数。よく練習した所とまだの所がわかります。記録はこのブラウザに保存されます。',
+  },
+  'stats.open': { vi: 'Thống kê luyện tập', ja: '練習の記録' },
+  'stats.done': { vi: 'Đã luyện {done}/{total}', ja: '練習済み {done}/{total}' },
+  'stats.never': { vi: '{count} chưa luyện', ja: '未練習 {count}' },
+  'stats.totalAttempts': { vi: 'Tổng {count} lượt luyện', ja: '合計{count}回' },
+  'stats.filter': { vi: 'Lọc', ja: '絞り込み' },
+  'stats.filter.all': { vi: 'Tất cả', ja: 'すべて' },
+  'stats.filter.never': { vi: 'Chưa luyện', ja: '未練習' },
+  'stats.filter.done': { vi: 'Đã luyện', ja: '練習済み' },
+  'stats.sort': { vi: 'Sắp xếp', ja: '並べ替え' },
+  'stats.sort.order': { vi: 'Theo thứ tự bài', ja: '課の順' },
+  'stats.sort.most': { vi: 'Luyện nhiều nhất', ja: '多い順' },
+  'stats.sort.least': { vi: 'Luyện ít nhất', ja: '少ない順' },
+  'stats.col.unit': { vi: 'Bài', ja: '課' },
+  'stats.col.attempts': { vi: 'Số lần', ja: '回数' },
+  'stats.col.best': { vi: 'Tốt nhất', ja: '最高' },
+  'stats.col.last': { vi: 'Lần gần nhất', ja: '最終練習日' },
+  'stats.empty': { vi: 'Không có mục nào khớp bộ lọc.', ja: '該当する項目はありません。' },
+  'route.stats': { vi: 'Thống kê luyện tập', ja: '練習の記録' },
+  'unit.progress': { vi: 'Kết quả tốt nhất: {percent}%', ja: '最高スコア：{percent}%' },
+  // BTVN là bài CON của một bài (một cụm từ vựng, một bài kanji), nên nút quay lại của
+  // nó là bài mẹ chứ không phải danh sách bài.
+  'unit.backToParent': { vi: '← Về bài học', ja: '← 課に戻る' },
+  'unit.homework': { vi: 'Bài tập về nhà', ja: '宿題' },
+
+  // ── Danh sách từ trong một bài ─────────────────────────────────────────
+  'vocab.search': { vi: 'Tìm từ, cách đọc hoặc nghĩa…', ja: '単語・読み方・意味で検索…' },
+  'vocab.search.aria': { vi: 'Tìm từ trong bài này', ja: 'この課の単語を検索' },
+  'vocab.shown': { vi: 'Hiện {shown}/{total} từ', ja: '{total}語中{shown}語' },
+  'vocab.group': { vi: 'Cụm {name}', ja: 'グループ {name}' },
+  // Cùng tên với bảng "Tóm tắt ngữ pháp" của Mimikara: hai bảng làm cùng một việc.
+  'vocab.overview': { vi: 'Tóm tắt bài', ja: '課のまとめ' },
+  'vocab.overview.hint': {
+    vi: 'Bấm một cụm để xem và luyện riêng các từ của cụm đó.',
+    ja: 'グループを押すと、その単語だけを表示・練習できます。',
+  },
+  'vocab.noMatch': {
+    vi: 'Không có từ nào khớp {term}',
+    ja: '{term} に一致する単語はありません',
+  },
+  // Đang gõ tìm thì kết quả lấy trên CẢ BÀI chứ không trong cụm đang xem — nói rõ ra.
+  'vocab.searchAll': { vi: 'Tìm trong cả bài: {shown} từ', ja: '課全体から {shown}語' },
+  'vocab.group.pick': { vi: 'Cụm đang xem', ja: '表示中のグループ' },
+  'vocab.group.prev': { vi: 'Cụm trước', ja: '前のグループ' },
+  'vocab.group.next': { vi: 'Cụm sau', ja: '次のグループ' },
+  'vocab.group.continue': { vi: 'Học tiếp cụm {name}', ja: '次のグループ {name} へ' },
+  'vocab.col.number': { vi: 'Số thứ tự', ja: '番号' },
+  'vocab.col.hanViet': { vi: 'Hán Việt', ja: '漢越音' },
+  'vocab.col.japanese': { vi: 'Từ', ja: '語' },
+  'vocab.col.reading': { vi: 'Cách đọc', ja: '読み方' },
+  'vocab.col.meaning': { vi: 'Nghĩa', ja: '意味' },
+  'vocab.col.example': { vi: 'Ví dụ', ja: '例文' },
+
+  // ── Kanji ──────────────────────────────────────────────────────────────
+  'kanji.onyomi': { vi: 'Âm On', ja: '音読み' },
+  'kanji.kunyomi': { vi: 'Âm Kun', ja: '訓読み' },
+  'kanji.strokes': { vi: '{count} nét', ja: '{count}画' },
+  'kanji.words': { vi: 'Từ ghép', ja: '熟語' },
+
+  // ── Ngữ pháp (dùng chung cho cả Mimikara) ──────────────────────────────
+  // "Ý nghĩa" / "Cấu trúc": đúng hai nhãn trên slide bài giảng của Riki.
+  'grammar.structure': { vi: 'Cấu trúc', ja: '接続' },
+  'grammar.meaning': { vi: 'Ý nghĩa', ja: '意味' },
+  'grammar.notes': { vi: 'Lưu ý', ja: '注意' },
+  // Đề con của bài: các 問題 "Luyện tập" in trong PDF và BTVN dán từ web Riki.
+  'grammar.exercises': { vi: 'Bài tập của bài', ja: '練習問題・宿題' },
+  'grammar.overview': { vi: 'Tóm tắt ngữ pháp', ja: '文法のまとめ' },
+
+  // ── Đọc hiểu ───────────────────────────────────────────────────────────
+  'reading.passage': { vi: 'Bài đọc', ja: '本文' },
+  'reading.questions': { vi: 'Câu hỏi', ja: '設問' },
+  'reading.vocabulary': { vi: 'Từ vựng trong bài', ja: '本文語彙' },
+  'reading.showTranslation': { vi: 'Hiện bản dịch', ja: '翻訳を表示' },
+  'reading.hideTranslation': { vi: 'Ẩn bản dịch', ja: '翻訳を隠す' },
+
+  // ── Nghe hiểu ──────────────────────────────────────────────────────────
+  'listening.script': { vi: 'Lời thoại', ja: 'スクリプト' },
+  'listening.showScript': { vi: 'Hiện lời thoại', ja: 'スクリプトを表示' },
+  'listening.hideScript': { vi: 'Ẩn lời thoại', ja: 'スクリプトを隠す' },
+  'listening.noAudio': {
+    vi: 'Bài này chưa có file âm thanh.',
+    ja: 'この課には音声ファイルがまだありません。',
+  },
+
+  // ── Bài kiểm tra nhập môn ──────────────────────────────────────────────
+  'test.subtitle': {
+    vi: 'Làm một lượt để biết mình đang ở đâu trước khi vào khoá. Kết quả chấm theo từng kỹ năng.',
+    ja: '受講前に一度解いて現在地を確認しましょう。技能別に採点されます。',
+  },
+  'test.questionCount': { vi: '{count} câu', ja: '{count}問' },
+  'test.start': { vi: 'Bắt đầu làm bài', ja: 'テストを始める' },
+  // Bài dạng đề nằm trong phần lý thuyết: khung bắt đầu thay cho khung thiết lập luyện tập.
+  'test.run': { vi: 'Làm đề', ja: '問題を解く' },
+  'test.unitHint': {
+    vi: 'Làm hết cả đề rồi nộp một lượt, không chấm từng câu. Mỗi câu có bản dịch ẩn và ô tự viết không tính điểm.',
+    ja: '最後まで解いてから提出します（1問ずつは採点しません）。各問に非表示の訳と、採点なしの記入欄があります。',
+  },
+  'test.empty.title': { vi: 'Chưa có đề kiểm tra', ja: 'テストがまだありません' },
+  'test.empty.text': {
+    vi: 'Đặt đề vào data-source/<học phần>/entrance-test/ rồi chạy npm run generate.',
+    ja: 'data-source/<コース>/entrance-test/ に問題を置き、npm run generate を実行してください。',
+  },
+  'test.submit': { vi: 'NỘP BÀI', ja: '提出する' },
+  'test.sectionProgress': { vi: 'Hoàn thành: {done}/{total}', ja: '完了：{done}/{total}' },
+  'test.wholeProgress': { vi: 'Cả đề: {done}/{total}', ja: '全体：{done}/{total}' },
+  'test.status.doing': { vi: 'Đang làm', ja: '解答中' },
+  'test.status.done': { vi: 'Đã làm', ja: '解答済み' },
+  'test.expand': { vi: 'Mở rộng ({count} câu hỏi)', ja: '{count}問を開く' },
+  'test.collapse': { vi: 'Thu gọn', ja: '閉じる' },
+  'test.fullscreen': { vi: 'Toàn màn hình', ja: '全画面' },
+  'test.exitFullscreen': { vi: 'Thoát toàn màn hình', ja: '全画面を終了' },
+  'test.unanswered': {
+    vi: 'Còn {count} câu chưa trả lời.',
+    ja: '未解答が{count}問あります。',
+  },
+  'test.submitAnyway': { vi: 'Nộp luôn', ja: 'このまま提出' },
+  'test.keepGoing': { vi: 'Làm tiếp', ja: '続ける' },
+  // Học thêm trên màn hình làm đề: bản dịch, và ô tự viết ở từng câu.
+  'test.showAllTranslations': { vi: 'Hiện tất cả bản dịch', ja: 'すべての訳を表示' },
+  'test.hideAllTranslations': { vi: 'Ẩn tất cả bản dịch', ja: 'すべての訳を隠す' },
+  'test.writeLabel': { vi: 'Tự viết (không tính điểm)', ja: '自分で書く（採点なし）' },
+  'test.writePlaceholder': {
+    vi: 'Gõ lại câu tiếng Nhật để luyện chữ Hán, hoặc tự dịch sang tiếng Việt',
+    ja: '日本語で書き写すか、ベトナム語に訳してみましょう',
+  },
+  'test.compare': { vi: 'So với bản gốc', ja: '原文と比べる' },
+  'test.compareAgain': { vi: 'Sửa lại', ja: '書き直す' },
+  'test.matched': { vi: 'Khớp với bản gốc', ja: '原文と一致' },
+  'test.notMatched': {
+    vi: 'Chưa khớp — chỗ tô đậm là chữ còn thiếu hoặc viết khác.',
+    ja: '不一致 — 印の文字が不足または相違しています。',
+  },
+  'test.original': { vi: 'Bản gốc', ja: '原文' },
+  'test.referenceTranslation': { vi: 'Bản dịch tham khảo', ja: '参考訳' },
+
+  // ── Luyện tập ──────────────────────────────────────────────────────────
+  'practice.setup': { vi: 'Thiết lập luyện tập', ja: '練習の設定' },
+  'practice.mode': { vi: 'Kiểu trả lời', ja: '解答方式' },
+  'practice.mode.choice': { vi: 'Trắc nghiệm', ja: '選択式' },
+  'practice.mode.typing': { vi: 'Gõ đáp án', ja: '入力式' },
+  'practice.direction': { vi: 'Chiều hỏi', ja: '出題の向き' },
+  'practice.direction.jpToVi': { vi: 'Nhật → Việt', ja: '日本語 → ベトナム語' },
+  'practice.direction.viToJp': { vi: 'Việt → Nhật', ja: 'ベトナム語 → 日本語' },
+  'practice.direction.jpToHanViet': { vi: 'Nhật → Hán Việt', ja: '日本語 → 漢越音' },
+  'practice.direction.hanVietToJp': { vi: 'Hán Việt → Nhật', ja: '漢越音 → 日本語' },
+  'practice.direction.jpToReading': { vi: 'Nhật → Cách đọc', ja: '日本語 → 読み方' },
+  'practice.direction.sentence': { vi: 'Điền từ vào câu', ja: '例文の穴埋め' },
+  'practice.withExample': {
+    vi: 'Mỗi câu có hai phần trên cùng một thẻ: trả lời từ, rồi điền luôn từ đó vào một câu ví dụ.',
+    ja: '1問は同じカードで2つ：単語に答えたら、そのまま例文の穴埋めに進みます。',
+  },
+  'practice.exampleStep': { vi: 'Điền từ vừa trả lời vào câu ví dụ', ja: '今の単語を例文に入れる' },
+  'practice.group': { vi: 'Cụm từ', ja: 'グループ' },
+  'practice.count': { vi: 'Số câu', ja: '問題数' },
+  'practice.start': { vi: 'Bắt đầu luyện', ja: '練習を始める' },
+  'practice.progress': { vi: 'Câu {current}/{total}', ja: '{current}/{total}問' },
+  'practice.check': { vi: 'Kiểm tra', ja: '答え合わせ' },
+  'practice.next': { vi: 'Câu tiếp theo', ja: '次の問題' },
+  'practice.finish': { vi: 'Xem kết quả', ja: '結果を見る' },
+  'practice.correct': { vi: 'Chính xác', ja: '正解' },
+  'practice.wrong': { vi: 'Chưa đúng', ja: '不正解' },
+  'practice.answerWas': { vi: 'Đáp án: {answer}', ja: '正解：{answer}' },
+  'practice.typeHere': { vi: 'Gõ đáp án rồi nhấn Enter', ja: '答えを入力して Enter' },
+  'practice.examples': { vi: 'Câu ví dụ', ja: '例文' },
+  'practice.quit': { vi: 'Dừng luyện', ja: '練習をやめる' },
+  'practice.noQuestion': {
+    vi: 'Không dựng được câu hỏi nào từ bài này.',
+    ja: 'この課からは問題を作れませんでした。',
+  },
+
+  // ── Kết quả ────────────────────────────────────────────────────────────
+  'result.percent': { vi: '{percent}%', ja: '{percent}%' },
+  'result.score': { vi: '{correct}/{total} câu đúng', ja: '{total}問中{correct}問正解' },
+  'result.again': { vi: 'Luyện lại', ja: 'もう一度' },
+  'result.review': { vi: 'Xem lại từng câu', ja: '問題を振り返る' },
+  'result.yourAnswer': { vi: 'Bạn trả lời: {answer}', ja: 'あなたの解答：{answer}' },
+  'result.skipped': { vi: 'Bỏ qua', ja: '未解答' },
+  'result.bySkill': { vi: 'Theo kỹ năng', ja: '技能別' },
+
+  // ── Lỗi ────────────────────────────────────────────────────────────────
+  'error.contentIndex': {
+    vi: 'Không tải được danh mục nội dung. Kiểm tra kết nối rồi thử lại.',
+    ja: '教材の目次を読み込めませんでした。接続を確認して再試行してください。',
+  },
+  'error.unitNotFound': {
+    vi: 'Bài học không tồn tại hoặc đã bị đổi tên.',
+    ja: 'レッスンが存在しないか、名前が変更されています。',
+  },
+
+  // ── Tiêu đề tab trình duyệt ────────────────────────────────────────────
+  'route.test': { vi: 'Kiểm tra nhập môn', ja: '入門テスト' },
+  'route.unit': { vi: 'Bài học', ja: 'レッスン' },
+  'route.practice': { vi: 'Luyện tập', ja: '練習' },
+  'route.testRun': { vi: 'Làm bài', ja: '解答' },
+  'route.result': { vi: 'Kết quả', ja: '結果' },
+} as const satisfies Record<string, Entry>;
+
+export type MessageKey = keyof typeof MESSAGES;

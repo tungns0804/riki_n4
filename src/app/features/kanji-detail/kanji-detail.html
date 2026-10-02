@@ -1,0 +1,131 @@
+<div class="container page">
+  <div class="stack stack-xl">
+    <section class="page-head">
+      <!-- BTVN thuộc về một bài kanji, nên "quay lại" của nó là bài mẹ chứ không phải
+           danh sách bài — đúng cấp mà breadcrumb đang chỉ. -->
+      <a class="back-link small" [routerLink]="backLink()">
+        @if (parentId()) {
+          {{ t('unit.backToParent') }}
+        } @else {
+          {{ t('common.backToList') }}
+        }
+      </a>
+
+      @if (loading()) {
+        <div class="skeleton sk-title"></div>
+        <div class="skeleton sk-text"></div>
+      } @else if (unit(); as data) {
+        <h1>{{ data.name }}</h1>
+        @if (data.description) {
+          <p>{{ data.description }}</p>
+        }
+      }
+    </section>
+
+    @if (loading()) {
+      <!-- Khung chờ đúng hình trang thật: khối thiết lập luyện tập, rồi lưới chữ Hán. Dữ
+           liệu về thì điền vào đúng chỗ các khối xám, trang không bị đẩy xuống một nhịp. -->
+      <div class="detail-skeleton" role="status" [attr.aria-label]="t('common.loading')">
+        <div class="skeleton sk-panel"></div>
+        <div class="skeleton sk-block"></div>
+      </div>
+    }
+
+    @if (notFound()) {
+      <div class="empty-state">
+        <span class="empty-state-icon" aria-hidden="true">🚧</span>
+        <p class="empty-state-title">{{ t('unit.notFound') }}</p>
+        <p class="empty-state-text"><app-t key="error.unitNotFound" block /></p>
+        <a class="btn btn-sm" [routerLink]="['/', course.id, module().path]">{{ t('common.backToList') }}</a>
+      </div>
+    }
+
+    @if (unit(); as data) {
+      <!-- Bài của phần này có thể là ĐỀ chứ không phải bảng chữ: BTVN của một bài. Khi
+           đó cả trang chỉ có khung bắt đầu làm bài, như BTVN bên phần Từ vựng. -->
+      @if (data.kind === 'test') {
+        <app-test-start [unit]="data" />
+      } @else if (entries().length > 0) {
+        <!-- BTVN đứng TRƯỚC khung luyện tập: bài tập ra theo buổi học, mở bài ra là
+             thấy ngay việc phải làm, không phải cuộn hết lưới chữ mới tìm ra. -->
+        @if (homework().length > 0) {
+          <section class="card" [attr.aria-label]="t('unit.homework')">
+            <div class="card-body stack stack-sm">
+              <h2>{{ t('unit.homework') }}</h2>
+              <div class="homework-row">
+                @for (item of homework(); track item.id) {
+                  <a
+                    class="btn btn-sm homework-link"
+                    [routerLink]="['/', course.id, module().path, item.id]"
+                  >
+                    {{ item.name }}
+                    <span class="badge">{{ t('test.questionCount', { count: item.itemCount }) }}</span>
+                  </a>
+                }
+              </div>
+            </div>
+          </section>
+        }
+
+        <app-practice-setup [unit]="data" />
+
+        <div class="kanji-grid">
+          @for (entry of entries(); track entry.id) {
+            <article class="card kanji-card">
+              <div class="kanji-head">
+                <span class="kanji-char jp">{{ entry.character }}</span>
+                <div class="kanji-id">
+                  @if (entry.hanViet) {
+                    <span class="kanji-han">{{ entry.hanViet }}</span>
+                  }
+                  @if (entry.meaning) {
+                    <span class="muted small">{{ entry.meaning }}</span>
+                  }
+                  @if (entry.strokes > 0) {
+                    <span class="badge">{{ t('kanji.strokes', { count: entry.strokes }) }}</span>
+                  }
+                </div>
+              </div>
+
+              <dl class="kanji-readings">
+                @if (entry.onyomi.length > 0) {
+                  <dt><app-t key="kanji.onyomi" /></dt>
+                  <dd class="jp">{{ entry.onyomi.join('、') }}</dd>
+                }
+                @if (entry.kunyomi.length > 0) {
+                  <dt><app-t key="kanji.kunyomi" /></dt>
+                  <dd class="jp">{{ entry.kunyomi.join('、') }}</dd>
+                }
+              </dl>
+
+              @if (entry.words.length > 0) {
+                <div class="kanji-words">
+                  <span class="label"><app-t key="kanji.words" /></span>
+                  <ul>
+                    @for (word of entry.words; track word.id) {
+                      <li>
+                        <span class="jp word-jp">{{ word.japanese }}</span>
+                        @if (word.reading) {
+                          <span class="jp muted small">（{{ word.reading }}）</span>
+                        }
+                        <span class="muted small">{{ word.vietnamese }}</span>
+                      </li>
+                    }
+                  </ul>
+                </div>
+              }
+            </article>
+          }
+        </div>
+      } @else if (!loading()) {
+        <div class="empty-state">
+          <span class="empty-state-icon" aria-hidden="true">📄</span>
+          <p class="empty-state-title">{{ t('unit.empty.title') }}</p>
+          <p class="empty-state-text">
+            <app-t key="unit.empty.text" [params]="{ folder: module().folder }" block />
+          </p>
+        </div>
+      }
+    }
+  </div>
+</div>

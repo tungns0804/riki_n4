@@ -1,0 +1,89 @@
+{
+  "id": "00-bai-mau",
+  "name": "Bài mẫu · Kanji N4",
+  "description": "Bài mẫu để kiểm tra đường ống nội dung. Xoá thư mục này khi đã có bài thật.",
+  "kind": "kanji",
+  "parent": "",
+  "group": "",
+  "kanji": [
+    {
+      "id": "e48d716bb03312f6",
+      "character": "家",
+      "hanViet": "GIA",
+      "meaning": "nhà",
+      "onyomi": [
+        "カ",
+        "ケ"
+      ],
+      "kunyomi": [
+        "いえ",
+        "や"
+      ],
+      "strokes": 10,
+      "words": [
+        {
+          "id": "4bc84971d14deac3",
+          "japanese": "家族",
+          "reading": "かぞく",
+          "vietnamese": "gia đình"
+        },
+        {
+          "id": "9625cc17613def28",
+          "japanese": "家内",
+          "reading": "かない",
+          "vietnamese": "vợ (tôi)"
+        }
+      ]
+    },
+    {
+      "id": "dfcc5712454ea668",
+      "character": "族",
+      "hanViet": "TỘC",
+      "meaning": "dòng họ",
+      "onyomi": [
+        "ゾク"
+      ],
+      "kunyomi": [],
+      "strokes": 11,
+      "words": [
+        {
+          "id": "4bc84971d14deac3",
+          "japanese": "家族",
+          "reading": "かぞく",
+          "vietnamese": "gia đình"
+        },
+        {
+          "id": "e5a4d24fc6b5db57",
+          "japanese": "民族",
+          "reading": "みんぞく",
+          "vietnamese": "dân tộc"
+        }
+      ]
+    },
+    {
+      "id": "8e6cc0da23a35dad",
+      "character": "題",
+      "hanViet": "ĐỀ",
+      "meaning": "đề mục",
+      "onyomi": [
+        "ダイ"
+      ],
+      "kunyomi": [],
+      "strokes": 18,
+      "words": [
+        {
+          "id": "2dc1e4f91b4ff8c7",
+          "japanese": "宿題",
+          "reading": "しゅくだい",
+          "vietnamese": "bài tập về nhà"
+        },
+        {
+          "id": "8f1e25c337bd4823",
+          "japanese": "問題",
+          "reading": "もんだい",
+          "vietnamese": "vấn đề, câu hỏi"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+/* Điểm bên trái, phần chi tiết bên phải. Ở khổ hẹp thì xuống thành hai hàng. */
+.score-body {
+  display: flex;
+  gap: var(--sp-6);
+  flex-wrap: wrap;
+  padding: var(--sp-6);
+}
+
+.score-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 180px;
+  padding: var(--sp-5);
+  border: 2px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+/* Ba mức màu, đọc được ngay từ xa: khá / trung bình / cần làm lại. */
+.score-main.is-good {
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.score-main.is-weak {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.score-percent {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.score-side {
+  flex: 1 1 280px;
+  justify-content: center;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Ba cột: tên kỹ năng, thanh tỉ lệ, con số. Tên rộng cố định để các thanh thẳng cột. */
+.skill-list li {
+  display: grid;
+  grid-template-columns: 7em 1fr auto;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.skill-name {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+.skill-track {
+  display: block;
+}
+
+.result-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Câu sai có vạch đỏ bên trái: lướt danh sách là thấy ngay cần xem lại những câu
+   nào, không phải đọc hết từng thẻ. */
+.result-item {
+  border-left: 3px solid var(--success);
+}
+
+.result-item.is-wrong {
+  border-left-color: var(--danger);
+}
+
+.result-prompt {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+}
+
+/* --- Vì sao từng lựa chọn đúng / sai ---------------------------------------
+   Bốn lựa chọn xếp dọc, mỗi dòng một dấu ✔ / ✘ rồi tới lời giải thích. Xếp dọc chứ
+   không hai cột như lúc làm bài: ở đây phần đáng đọc là chữ giải thích, mà chữ thì
+   cần cả bề ngang. */
+
+.result-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: var(--sp-2) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.result-choice {
+  display: grid;
+  grid-template-columns: 1.4em minmax(0, 1fr);
+  gap: var(--sp-2);
+  padding: var(--sp-2);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+}
+
+.result-choice.is-answer {
+  background: var(--success-soft);
+  color: var(--text);
+}
+
+/* Lựa chọn người học đã chọn: viền để tự soi lại mình đã chọn cái nào, kể cả khi đúng. */
+.result-choice.is-picked {
+  outline: 1px solid var(--border-strong);
+  outline-offset: -1px;
+}
+
+.result-mark {
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.result-choice.is-answer .result-mark {
+  color: var(--success);
+}
+
+.result-choice:not(.is-answer) .result-mark {
+  color: var(--danger);
+}
+
+.result-choice-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.result-choice-text {
+  font-weight: 600;
+}
+
+.result-choice-note {
+  font-size: var(--fs-sm);
+  line-height: 1.7;
+}
+
+/* Ý chính của cả câu, đứng sau danh sách lựa chọn như dòng chốt lại của giáo viên. */
+.result-explanation {
+  margin-top: var(--sp-2);
+  padding-left: var(--sp-3);
+  border-left: 2px solid var(--accent);
+  font-size: var(--fs-sm);
+  line-height: 1.7;
+}
+
+/* Câu ví dụ đi kèm trong thẻ kết quả: sau một vạch đứt, y như trên màn luyện tập, để
+   nhận ra ngay đây là phần thứ hai của cùng một câu chứ không phải một câu khác. */
+.result-follow {
+  margin-top: var(--sp-2);
+  padding-top: var(--sp-3);
+  border-top: 1px dashed var(--border-strong);
+}
+
+@media (max-width: 640px) {
+  .score-main {
+    width: 100%;
+  }
+
+  .skill-list li {
+    grid-template-columns: 5.5em 1fr auto;
+  }
+}

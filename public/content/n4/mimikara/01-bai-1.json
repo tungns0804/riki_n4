@@ -1,0 +1,9 @@
+{
+  "id": "01-bai-1",
+  "name": "Bài 1",
+  "description": "Bài giữ chỗ. Đặt grammar.json vào thư mục này khi có nội dung.",
+  "kind": "grammar",
+  "parent": "",
+  "group": "",
+  "points": []
+}

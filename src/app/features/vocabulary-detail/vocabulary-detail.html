@@ -1,0 +1,294 @@
+<div class="container page">
+  <div class="stack stack-xl">
+    <section class="page-head">
+      <!-- BTVN thuộc về một bài từ vựng, nên "quay lại" của nó là bài mẹ chứ không phải
+           danh sách bài — đúng cấp mà breadcrumb đang chỉ. -->
+      <a class="back-link small" [routerLink]="backLink()">
+        @if (parentId()) {
+          {{ t('unit.backToParent') }}
+        } @else {
+          {{ t('common.backToList') }}
+        }
+      </a>
+
+      @if (loading()) {
+        <div class="skeleton sk-title"></div>
+        <div class="skeleton sk-text"></div>
+      } @else if (unit(); as data) {
+        <h1>{{ data.name }}</h1>
+        @if (data.description) {
+          <p>{{ data.description }}</p>
+        }
+      }
+    </section>
+
+    @if (loading()) {
+      <!-- Khung chờ đúng hình trang thật: khối thiết lập luyện tập, rồi bảng từ. Dữ liệu
+           về thì điền vào đúng chỗ các khối xám, trang không bị đẩy xuống một nhịp. -->
+      <div class="detail-skeleton" role="status" [attr.aria-label]="t('common.loading')">
+        <div class="skeleton sk-panel"></div>
+        <div class="skeleton sk-block"></div>
+      </div>
+    }
+
+    @if (notFound()) {
+      <div class="empty-state">
+        <span class="empty-state-icon" aria-hidden="true">🚧</span>
+        <p class="empty-state-title">{{ t('unit.notFound') }}</p>
+        <p class="empty-state-text"><app-t key="error.unitNotFound" block /></p>
+        <a class="btn btn-sm" [routerLink]="['/', course.id, module().path]">{{ t('common.backToList') }}</a>
+      </div>
+    }
+
+    @if (unit(); as data) {
+      <!-- Bài của phần này có thể là ĐỀ chứ không phải bảng từ: BTVN của một cụm. Khi đó
+           cả trang chỉ có khung bắt đầu làm bài, như bài đề bên phần Ngữ pháp. -->
+      @if (data.kind === 'test') {
+        <app-test-start [unit]="data" />
+      } @else if (allWords().length > 0) {
+        <!-- Tóm tắt đứng TRƯỚC khung luyện tập như trang Mimikara: biết bài học về gì
+             rồi mới chọn cụm để luyện. Cả dòng là nút chọn cụm. -->
+        @if (overview().length > 0) {
+          <section class="card" [attr.aria-label]="t('vocab.overview')">
+            <div class="card-body stack stack-sm">
+              <h2>{{ t('vocab.overview') }}</h2>
+              <p class="hint">{{ t('vocab.overview.hint') }}</p>
+              <ol class="overview-list">
+                @for (item of overview(); track item.label) {
+                  <li class="overview-item">
+                    <button
+                      type="button"
+                      class="overview-row"
+                      [class.is-active]="group() === item.label"
+                      [attr.aria-pressed]="group() === item.label"
+                      (click)="selectGroup(item.label)"
+                    >
+                      <span class="chip tnum overview-group" [class.is-active]="group() === item.label">
+                        {{ item.label }}
+                      </span>
+                      <span class="overview-title">{{ item.title }}</span>
+                      <span class="jp overview-words">{{ item.preview }}</span>
+                      <!-- Số lần luyện của RIÊNG cụm này (luyện cả bài không tính vào đây). -->
+                      @if (item.attempts > 0) {
+                        <span class="badge badge-success overview-attempts">
+                          {{ t('progress.attempts', { count: item.attempts }) }}
+                        </span>
+                      } @else {
+                        <span class="badge overview-attempts">{{ t('progress.never') }}</span>
+                      }
+                    </button>
+
+                    <!-- Bài tập về nhà của ĐÚNG cụm đó, ngay trên dòng của cụm: BTVN ra theo
+                         buổi học, nên chỗ của nó là cạnh buổi học chứ không phải một mục
+                         riêng ở cuối trang. Cụm chưa có BTVN thì không hiện gì. -->
+                    @if (homeworkByGroup().get(item.label); as homework) {
+                      <a
+                        class="btn btn-sm overview-homework"
+                        [routerLink]="['/', course.id, module().path, homework.id]"
+                      >
+                        {{ homework.name }}
+                        <span class="badge">{{ t('test.questionCount', { count: homework.itemCount }) }}</span>
+                        @if (attemptsOf(homework.id); as done) {
+                          <span class="badge badge-success">{{ t('progress.attempts', { count: done }) }}</span>
+                        }
+                      </a>
+                    }
+                  </li>
+                }
+              </ol>
+            </div>
+          </section>
+        }
+
+        <app-practice-setup [unit]="data" [(group)]="group" />
+
+        <!-- Thanh dính: ô tìm, ô chọn cụm và số từ đang hiện. Đổi cụm được ở đây vì đây là
+             thứ duy nhất còn thấy khi đã cuộn xuống giữa bảng. -->
+        <div class="toolbar">
+          <div class="search">
+            <span class="search-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="9" cy="9" r="6" />
+                <path d="M13.5 13.5 17 17" stroke-linecap="round" />
+              </svg>
+            </span>
+            <input
+              type="search"
+              class="input"
+              [placeholder]="t('vocab.search')"
+              [attr.aria-label]="t('vocab.search.aria')"
+              [value]="search()"
+              (input)="onSearch($event)"
+            />
+            @if (search()) {
+              <button
+                type="button"
+                class="search-clear"
+                (click)="clearSearch()"
+                [title]="t('unit.search.clear')"
+                [attr.aria-label]="t('unit.search.clear')"
+              >
+                <span aria-hidden="true">✕</span>
+              </button>
+            }
+          </div>
+
+          <!-- Đang gõ tìm thì bảng là kết quả trên cả bài, nên ô chọn cụm tạm khoá lại cho
+               khỏi hiểu nhầm là đang tìm trong cụm. -->
+          @if (groups().length > 1) {
+            <div class="group-pager" role="group" [attr.aria-label]="t('vocab.group.pick')">
+              <button
+                type="button"
+                class="btn btn-sm pager-btn"
+                [disabled]="!prevGroup() || !!search()"
+                (click)="selectGroup(prevGroup())"
+                [title]="t('vocab.group.prev')"
+                [attr.aria-label]="t('vocab.group.prev')"
+              >
+                <span aria-hidden="true">‹</span>
+              </button>
+              <select
+                class="group-select tnum"
+                [attr.aria-label]="t('vocab.group.pick')"
+                [disabled]="!!search()"
+                (change)="onPickGroup($event)"
+              >
+                <option value="" [selected]="group() === null">{{ t('common.all') }}</option>
+                @for (option of groupOptions(); track option.label) {
+                  <option [value]="option.label" [selected]="group() === option.label">
+                    {{ option.text }}
+                  </option>
+                }
+              </select>
+              <button
+                type="button"
+                class="btn btn-sm pager-btn"
+                [disabled]="!nextGroup() || !!search()"
+                (click)="selectGroup(nextGroup())"
+                [title]="t('vocab.group.next')"
+                [attr.aria-label]="t('vocab.group.next')"
+              >
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
+          }
+
+          <span class="badge">
+            @if (search()) {
+              {{ t('vocab.searchAll', { shown: words().length }) }}
+            } @else {
+              {{ t('vocab.shown', { shown: words().length, total: allWords().length }) }}
+            }
+          </span>
+        </div>
+
+        @if (noMatch()) {
+          <p class="muted">{{ t('vocab.noMatch', { term: search() }) }}</p>
+        } @else {
+          <div class="scroll-x list-anchor" #listTop>
+            <table class="word-table">
+              <thead>
+                <tr>
+                  <th class="col-num"><span class="sr-only">{{ t('vocab.col.number') }}</span>#</th>
+                  @if (hasHanViet()) {
+                    <th class="col-han">{{ t('vocab.col.hanViet') }}</th>
+                  }
+                  <th class="col-jp">{{ t('vocab.col.japanese') }}</th>
+                  @if (hasReadings()) {
+                    <th class="col-reading">{{ t('vocab.col.reading') }}</th>
+                  }
+                  <th class="col-meaning">{{ t('vocab.col.meaning') }}</th>
+                  <th class="col-example">{{ t('vocab.col.example') }}</th>
+                </tr>
+              </thead>
+
+              <!-- Một <tbody> mỗi cụm: hàng tiêu đề cụm thuộc về đúng nhóm hàng của nó, và cả
+                   bảng vẫn chung một hàng tiêu đề cột nên các cột thẳng hàng qua mọi cụm. -->
+              @for (section of sections(); track section.label) {
+                <tbody>
+                  @if (section.label) {
+                    <tr class="group-row">
+                      <th [attr.colspan]="columnCount()" scope="rowgroup">
+                        {{ t('vocab.group', { name: section.label }) }}
+                        @if (section.title) {
+                          <span class="group-title">· {{ section.title }}</span>
+                        }
+                        <span class="badge">{{ t('unit.itemCount', { count: section.words.length }) }}</span>
+                      </th>
+                    </tr>
+                  }
+
+                  @for (word of section.words; track word.id) {
+                    <tr>
+                      <td class="col-num">
+                        @if (word.number > 0) {
+                          <span class="word-number tnum">{{ word.number }}</span>
+                        }
+                      </td>
+                      @if (hasHanViet()) {
+                        <td class="col-han">{{ word.hanViet }}</td>
+                      }
+                      <!-- prettier-ignore -->
+                      <td class="col-jp jp">@if (word.particle) {<span class="word-particle">({{ word.particle }})</span>}{{ word.japanese }}</td>
+                      @if (hasReadings()) {
+                        <td class="col-reading jp">{{ word.reading }}</td>
+                      }
+                      <td class="col-meaning">{{ word.vietnamese }}</td>
+                      <td class="col-example">
+                        @for (example of word.examples; track example.id) {
+                          <p class="example">
+                            <!-- Viết dồn một dòng là CỐ Ý: xuống dòng giữa các mảnh thì thành dấu
+                                 cách lọt vào giữa câu tiếng Nhật (xem practice.html). -->
+                            <!-- prettier-ignore -->
+                            <span class="jp">@for (part of parts(example); track $index) {@if (part.hit) {<mark>{{ part.text }}</mark>} @else {<span>{{ part.text }}</span>}}</span>
+                            @if (example.reading) {
+                              <span class="jp small example-reading">{{ example.reading }}</span>
+                            }
+                            @if (example.vietnamese) {
+                              <span class="muted small example-vi">{{ example.vietnamese }}</span>
+                            }
+                            @if (example.grammar) {
+                              <span class="small example-grammar">{{ example.grammar }}</span>
+                            }
+                          </p>
+                        }
+
+                        @for (note of word.notes; track $index) {
+                          <p class="note">
+                            <span class="jp note-label">{{ note.label }}</span>
+                            <span class="jp note-text">{{ note.text }}</span>
+                          </p>
+                        }
+                      </td>
+                    </tr>
+                  }
+                </tbody>
+              }
+            </table>
+          </div>
+
+          <!-- Học hết một cụm ở cuối bảng thì bước tiếp theo là cụm sau — đưa nút tới đúng chỗ
+               mắt đang nhìn, khỏi phải cuộn ngược lên thanh chọn cụm. -->
+          @if (nextGroup(); as next) {
+            @if (!search()) {
+              <div class="list-foot">
+                <button type="button" class="btn" (click)="selectGroup(next, true)">
+                  {{ t('vocab.group.continue', { name: next }) }}
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            }
+          }
+        }
+      } @else if (!loading()) {
+        <div class="empty-state">
+          <span class="empty-state-icon" aria-hidden="true">📄</span>
+          <p class="empty-state-title">{{ t('unit.empty.title') }}</p>
+          <p class="empty-state-text">
+            <app-t key="unit.empty.text" [params]="{ folder: module().folder }" block />
+          </p>
+        </div>
+      }
+    }
+  </div>
+</div>
