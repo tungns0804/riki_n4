@@ -1,0 +1,156 @@
+# N4 — Bài 26 : Cách hình thành và sử dụng んです · TỪ VỰNG CẢI THIỆN (01–29)
+# nguồn: bai-26-phan-1.pdf
+# Định dạng: xem data-source/n4/vocabulary/README.md
+#
+# Ba cụm theo ba mục của bản PDF: A Động từ, B Danh từ, C Phó từ. Mặt chữ, nghĩa và câu
+# ví dụ chép theo PDF; động từ giữ thể ます như sách in. Âm Hán Việt, dòng 読 và 文法 là
+# phần bổ sung để luyện.
+
+# nguồn: bai-26-phan-1.pdf · A Động từ
+## 01–08 = Động từ
+
+01. 診ます (みます) = CHẨN ; Khám
+・おなかが痛いですから、医者に[診て]もらいました。| Vì đau bụng nên tôi đã đi khám bác sĩ.
+読: おなかがいたいですから、いしゃにみてもらいました。
+文法: Vてもらいます = được (ai đó) làm cho ~; ～から = vì ~
+
+02. 探します (さがします) = THÁM ; Tìm/ Tìm kiếm
+・この近くでいいマンションを[探して]います。| Tôi đang tìm một căn hộ tốt gần đây.
+読: このちかくでいいマンションをさがしています。
+文法: Vています = đang ~ (hành động đang diễn ra)
+
+03. 遅れます (おくれます) = TRÌ ; Chậm/ Trễ
+・会議の時間に[遅れました]。| Tôi đã trễ cuộc họp.
+読: かいぎのじかんにおくれました。
+文法: (giờ, cuộc hẹn)に遅れます = trễ ~ — đi với trợ từ に
+
+04. 間に合います (まにあいます) = GIAN HỢP ; Kịp giờ
+・6時59分です。時間に[間に合います]ね。| Bây giờ là 6:59p. Cậu đến kịp giờ đấy nhỉ.
+読: ろくじごじゅうきゅうふんです。じかんにまにあいますね。
+文法: (giờ)に間に合います = kịp ~ — đi với trợ từ に, như 遅れます
+
+05. やります = Làm
+・A：スポーツを[やって]いますか。| A: Bạn có chơi thể thao không?
+文法: Vています = thói quen, việc làm thường xuyên
+・B：ジムだけ[やって]います。| B: Tôi chỉ tập gym thôi.
+文法: ～だけ = chỉ ~
+
+06. 拾います (ひろいます) = THẬP ; Nhặt/ Lượm
+・お金を[拾います]。| Nhặt tiền
+読: おかねをひろいます。
+
+07. 連絡します (れんらくします) = LIÊN LẠC ; Liên lạc
+・部長に[連絡しましょう]か。| Liên lạc với trưởng phòng xem sao?
+読: ぶちょうにれんらくしましょうか。
+文法: Vましょうか = (tôi/chúng ta) ~ nhé? — đề nghị
+
+08. 燃えます (もえます) = NHIÊN ; Cháy/ Có thể cháy được
+・あのうちは[燃えて]いるよ。| Ngôi nhà đó đang cháy đấy.
+読: あのうちはもえているよ。
+文法: Vている = đang ~ (thể thông thường của Vています); ～よ = ~ đấy (báo cho người nghe)
+
+# nguồn: bai-26-phan-1.pdf · B Danh từ
+## 09–19 = Danh từ
+
+09. 気分 (きぶん) = KHÍ PHÂN ; Tâm trạng
+・昨日のテストが良くなかったから。気分が悪いですね。| Vì bài kiểm tra hôm qua tôi đã làm không tốt. Nên tâm trạng tớ không thoải mái.
+読: きのうのテストがよくなかったから。きぶんがわるいですね。
+文法: 良くなかった = quá khứ phủ định của いい (よい → よくなかった)
+
+10. 運動会 (うんどうかい) = VẬN ĐỘNG HỘI ; Đại hội thể thao
+・明日、学校で運動会がありますよ。| Ngày mai, ở trường có đại hội thể thao đấy.
+読: あした、がっこうでうんどうかいがありますよ。
+文法: (nơi)で(sự kiện)があります = có (sự kiện) diễn ra ở ~ — sự kiện đi với で, không phải に
+
+11. フリーマーケット = Chợ đồ cũ
+・Hà Linhさんはフリーマーケットでたくさん物を買ったね。| Hà Linh mua được nhiều đồ ở chợ đồ cũ nhỉ.
+読: Hà Linhさんはフリーマーケットでたくさんものをかったね。
+文法: 買った = thể た (quá khứ, thể thông thường) của 買います
+
+12. 財布 (さいふ) = TÀI BỐ ; Ví
+・可愛い財布ですね。| Cái ví dễ thương thật đấy nhỉ.
+読: かわいいさいふですね。
+
+13. ボランティア = Tình nguyện viên
+# PDF in 誰が; câu mời "có ai … không?" phải là 誰か nên chép lại thành 誰か.
+・誰かボランティアになりませんか。| Có ai muốn trở thành tình nguyện viên không?
+読: だれかボランティアになりませんか。
+文法: 誰か = ai đó; Vませんか = ~ không? (mời, rủ); Nになります = trở thành N
+
+14. ゴミ = Rác
+・すみません、ゴミを出したいですが、どうしたらいいですか。| Xin lỗi, tôi muốn đổ rác, thì phải làm như thế nào?
+読: すみません、ゴミをだしたいですが、どうしたらいいですか。
+文法: ゴミを出します = đổ rác; どうしたらいいですか = phải làm thế nào thì được? (xin lời khuyên)
+
+15. 平日 (へいじつ) = BÌNH NHẬT ; Ngày thường
+・平日、私はいつも忙しいですから。| Ngày thường thì tôi lúc nào cũng bận cả.
+読: へいじつ、わたしはいつもいそがしいですから。
+文法: câu kết thúc bằng ～から = nêu lý do, vế kết quả được lược đi
+
+16. 場所 (ばしょ) = TRƯỜNG SỞ ; Địa điểm
+・きれいな場所を紹介してくれませんか。| Cậu có thể giới thiệu cho tôi các địa điểm đẹp có được không?
+読: きれいなばしょをしょうかいしてくれませんか。
+文法: Vてくれませんか = (bạn) ~ giúp tôi được không? — nhờ vả
+
+17. ～べん = Phương ngữ/ Tiếng địa phương
+・大阪[べん]ですよ。| Tiếng vùng Osaka đó.
+読: おおさかべんですよ。
+使い方: (tên vùng)＋べん = tiếng địa phương của vùng đó: 大阪べん, 東北べん
+
+18. 横 (よこ) = HOÀNH ; Bên cạnh
+・コップの横にありますよ。| Nó nằm ở bên cạnh cái cốc đó.
+読: コップのよこにありますよ。
+文法: Nの横 = bên cạnh N
+
+19. 売り場 (うりば) = MẠI TRƯỜNG ; Nơi bán/ Quầy bán
+・ワイン売り場はどこですか。| Quầy bán rượu ở đâu nhỉ?
+読: ワインうりばはどこですか。
+
+# nguồn: bai-26-phan-1.pdf · C Phó từ
+## 20–29 = Phó từ
+
+20. 今度 (こんど) = KIM ĐỘ ; Lần tới
+・また今度お願いします。| Vậy thì hẹn cậu lần tới nhé.
+読: またこんどおねがいします。
+文法: また今度 = để lần sau — cách từ chối khéo một lời mời
+
+21. ずいぶん = Khá/ Tương đối
+・今日、ずいぶん忙しかった。| Hôm nay, tôi đã có một ngày khá bận rộn.
+読: きょう、ずいぶんいそがしかった。
+文法: 忙しかった = quá khứ của tính từ い (い → かった)
+
+22. 直接 (ちょくせつ) = TRỰC TIẾP ; Trực tiếp
+・直接会いましょう。| Trực tiếp gặp nhau nhé.
+読: ちょくせつあいましょう。
+文法: Vましょう = cùng ~ nhé (rủ rê)
+
+23. いつでも = Lúc nào cũng
+・いつでもどこでも食べますか。| Sao lúc nào ở đâu cậu cũng ăn vậy?
+読: いつでもどこでもたべますか。
+文法: từ để hỏi＋でも = bất cứ ~ cũng: いつでも・どこでも・だれでも・なんでも
+
+24. どこでも = Ở đâu cũng
+・どこでもいいです。| Ở đâu cũng được.
+文法: ～でもいいです = ~ cũng được
+
+25. だれでも = Ai cũng
+・だれでもできますよ。| Ai cũng có thể làm được.
+文法: できます = có thể làm được
+
+26. なんでも = Cái gì cũng
+・このショップの服は[何でも]きれいですね。| Quần áo của cửa hàng này, cái gì cũng đẹp nhỉ.
+読: このショップのふくはなんでもきれいですね。
+
+27. こんな～ = Như thế này
+・[こんな]大きいかばんです。| Đó là cái cặp to như thế này này.
+読: こんなおおきいかばんです。
+文法: こんな・そんな・あんな＋N = N như thế này/ đó/ kia — luôn đứng trước danh từ, như この・その・あの
+
+28. そんな～ = Như thế đó
+・[そんな]ことはない。| Làm gì có chuyện như thế.
+文法: そんなことはない = làm gì có chuyện đó — phủ nhận điều người kia vừa nói
+
+29. あんな～ = Như thế kia
+・[あんな]高いマンションがある？| Tòa chung cư cao như thế kia.
+読: あんなたかいマンションがある？
+文法: ～がある？ = câu hỏi thể thông thường, lên giọng ở cuối câu

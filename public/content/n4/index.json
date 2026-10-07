@@ -4,7 +4,7 @@
     "name": "N4",
     "level": "N4"
   },
-  "generatedAt": "2026-10-02T10:08:30.738Z",
+  "generatedAt": "2026-10-07T14:39:39.822Z",
   "modules": [
     {
       "id": "entrance-test",
@@ -26,19 +26,27 @@
       "id": "vocabulary",
       "units": [
         {
-          "id": "00-bai-mau",
-          "name": "Bài mẫu · Từ vựng N4",
-          "description": "Bài mẫu để kiểm tra đường ống nội dung. Xoá thư mục này khi đã có bài thật.",
+          "id": "26-bai-26",
+          "name": "Bài 26 : Cách hình thành và sử dụng んです",
+          "description": "Từ vựng cải thiện · 29 từ: động từ (01–08), danh từ (09–19), phó từ (20–29).",
           "kind": "vocabulary",
           "parent": "",
           "group": "",
-          "itemCount": 3,
-          "order": 0,
-          "file": "vocabulary/00-bai-mau.json",
+          "itemCount": 29,
+          "order": 26,
+          "file": "vocabulary/26-bai-26.json",
           "groups": [
             {
-              "label": "01–03",
-              "title": "Bài mẫu · Gia đình và trường học"
+              "label": "01–08",
+              "title": "Động từ"
+            },
+            {
+              "label": "09–19",
+              "title": "Danh từ"
+            },
+            {
+              "label": "20–29",
+              "title": "Phó từ"
             }
           ]
         }

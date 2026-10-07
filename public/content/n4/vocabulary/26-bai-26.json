@@ -1,0 +1,706 @@
+{
+  "id": "26-bai-26",
+  "name": "Bài 26 : Cách hình thành và sử dụng んです",
+  "description": "Từ vựng cải thiện · 29 từ: động từ (01–08), danh từ (09–19), phó từ (20–29).",
+  "kind": "vocabulary",
+  "parent": "",
+  "group": "",
+  "groups": [
+    {
+      "label": "01–08",
+      "title": "Động từ"
+    },
+    {
+      "label": "09–19",
+      "title": "Danh từ"
+    },
+    {
+      "label": "20–29",
+      "title": "Phó từ"
+    }
+  ],
+  "words": [
+    {
+      "id": "1203c63238868b88",
+      "number": 1,
+      "group": "01–08",
+      "particle": "",
+      "japanese": "診ます",
+      "reading": "みます",
+      "hanViet": "CHẨN",
+      "vietnamese": "Khám",
+      "examples": [
+        {
+          "id": "30e5d2e99b0f731d",
+          "japanese": "おなかが痛いですから、医者に診てもらいました。",
+          "vietnamese": "Vì đau bụng nên tôi đã đi khám bác sĩ.",
+          "reading": "おなかがいたいですから、いしゃにみてもらいました。",
+          "grammar": "Vてもらいます = được (ai đó) làm cho ~; ～から = vì ~",
+          "targets": [
+            "診て"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "fd8d51a8fff1399d",
+      "number": 2,
+      "group": "01–08",
+      "particle": "",
+      "japanese": "探します",
+      "reading": "さがします",
+      "hanViet": "THÁM",
+      "vietnamese": "Tìm/ Tìm kiếm",
+      "examples": [
+        {
+          "id": "42d3675a32c7c87c",
+          "japanese": "この近くでいいマンションを探しています。",
+          "vietnamese": "Tôi đang tìm một căn hộ tốt gần đây.",
+          "reading": "このちかくでいいマンションをさがしています。",
+          "grammar": "Vています = đang ~ (hành động đang diễn ra)",
+          "targets": [
+            "探して"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "ed306c0cb53c8979",
+      "number": 3,
+      "group": "01–08",
+      "particle": "",
+      "japanese": "遅れます",
+      "reading": "おくれます",
+      "hanViet": "TRÌ",
+      "vietnamese": "Chậm/ Trễ",
+      "examples": [
+        {
+          "id": "7ebf149b87435c37",
+          "japanese": "会議の時間に遅れました。",
+          "vietnamese": "Tôi đã trễ cuộc họp.",
+          "reading": "かいぎのじかんにおくれました。",
+          "grammar": "(giờ, cuộc hẹn)に遅れます = trễ ~ — đi với trợ từ に",
+          "targets": [
+            "遅れました"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "e7bb6954a4f532a7",
+      "number": 4,
+      "group": "01–08",
+      "particle": "",
+      "japanese": "間に合います",
+      "reading": "まにあいます",
+      "hanViet": "GIAN HỢP",
+      "vietnamese": "Kịp giờ",
+      "examples": [
+        {
+          "id": "3fcb046a4fa75c17",
+          "japanese": "6時59分です。時間に間に合いますね。",
+          "vietnamese": "Bây giờ là 6:59p. Cậu đến kịp giờ đấy nhỉ.",
+          "reading": "ろくじごじゅうきゅうふんです。じかんにまにあいますね。",
+          "grammar": "(giờ)に間に合います = kịp ~ — đi với trợ từ に, như 遅れます",
+          "targets": [
+            "間に合います"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "802c370df7aaf158",
+      "number": 5,
+      "group": "01–08",
+      "particle": "",
+      "japanese": "やります",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Làm",
+      "examples": [
+        {
+          "id": "70caf95d498636c5",
+          "japanese": "A：スポーツをやっていますか。",
+          "vietnamese": "A: Bạn có chơi thể thao không?",
+          "reading": "",
+          "grammar": "Vています = thói quen, việc làm thường xuyên",
+          "targets": [
+            "やって"
+          ]
+        },
+        {
+          "id": "930a5beac0df8861",
+          "japanese": "B：ジムだけやっています。",
+          "vietnamese": "B: Tôi chỉ tập gym thôi.",
+          "reading": "",
+          "grammar": "～だけ = chỉ ~",
+          "targets": [
+            "やって"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "67aafecab8aabc97",
+      "number": 6,
+      "group": "01–08",
+      "particle": "",
+      "japanese": "拾います",
+      "reading": "ひろいます",
+      "hanViet": "THẬP",
+      "vietnamese": "Nhặt/ Lượm",
+      "examples": [
+        {
+          "id": "9f9d91e487581cc7",
+          "japanese": "お金を拾います。",
+          "vietnamese": "Nhặt tiền",
+          "reading": "おかねをひろいます。",
+          "grammar": "",
+          "targets": [
+            "拾います"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "665ea16b3dafabc5",
+      "number": 7,
+      "group": "01–08",
+      "particle": "",
+      "japanese": "連絡します",
+      "reading": "れんらくします",
+      "hanViet": "LIÊN LẠC",
+      "vietnamese": "Liên lạc",
+      "examples": [
+        {
+          "id": "a6ac203157ce2dfc",
+          "japanese": "部長に連絡しましょうか。",
+          "vietnamese": "Liên lạc với trưởng phòng xem sao?",
+          "reading": "ぶちょうにれんらくしましょうか。",
+          "grammar": "Vましょうか = (tôi/chúng ta) ~ nhé? — đề nghị",
+          "targets": [
+            "連絡しましょう"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "9bad8d578119a8c7",
+      "number": 8,
+      "group": "01–08",
+      "particle": "",
+      "japanese": "燃えます",
+      "reading": "もえます",
+      "hanViet": "NHIÊN",
+      "vietnamese": "Cháy/ Có thể cháy được",
+      "examples": [
+        {
+          "id": "9808bdbb3d7c4bad",
+          "japanese": "あのうちは燃えているよ。",
+          "vietnamese": "Ngôi nhà đó đang cháy đấy.",
+          "reading": "あのうちはもえているよ。",
+          "grammar": "Vている = đang ~ (thể thông thường của Vています); ～よ = ~ đấy (báo cho người nghe)",
+          "targets": [
+            "燃えて"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "978c93bdd604c08d",
+      "number": 9,
+      "group": "09–19",
+      "particle": "",
+      "japanese": "気分",
+      "reading": "きぶん",
+      "hanViet": "KHÍ PHÂN",
+      "vietnamese": "Tâm trạng",
+      "examples": [
+        {
+          "id": "c5268c594579072e",
+          "japanese": "昨日のテストが良くなかったから。気分が悪いですね。",
+          "vietnamese": "Vì bài kiểm tra hôm qua tôi đã làm không tốt. Nên tâm trạng tớ không thoải mái.",
+          "reading": "きのうのテストがよくなかったから。きぶんがわるいですね。",
+          "grammar": "良くなかった = quá khứ phủ định của いい (よい → よくなかった)",
+          "targets": [
+            "気分"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "3a6c8dfab927dab4",
+      "number": 10,
+      "group": "09–19",
+      "particle": "",
+      "japanese": "運動会",
+      "reading": "うんどうかい",
+      "hanViet": "VẬN ĐỘNG HỘI",
+      "vietnamese": "Đại hội thể thao",
+      "examples": [
+        {
+          "id": "419109fea71bd76a",
+          "japanese": "明日、学校で運動会がありますよ。",
+          "vietnamese": "Ngày mai, ở trường có đại hội thể thao đấy.",
+          "reading": "あした、がっこうでうんどうかいがありますよ。",
+          "grammar": "(nơi)で(sự kiện)があります = có (sự kiện) diễn ra ở ~ — sự kiện đi với で, không phải に",
+          "targets": [
+            "運動会"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "f96633b338eb593c",
+      "number": 11,
+      "group": "09–19",
+      "particle": "",
+      "japanese": "フリーマーケット",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Chợ đồ cũ",
+      "examples": [
+        {
+          "id": "c7972a4a04e3ab92",
+          "japanese": "Hà Linhさんはフリーマーケットでたくさん物を買ったね。",
+          "vietnamese": "Hà Linh mua được nhiều đồ ở chợ đồ cũ nhỉ.",
+          "reading": "Hà Linhさんはフリーマーケットでたくさんものをかったね。",
+          "grammar": "買った = thể た (quá khứ, thể thông thường) của 買います",
+          "targets": [
+            "フリーマーケット"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "8870f46a54975012",
+      "number": 12,
+      "group": "09–19",
+      "particle": "",
+      "japanese": "財布",
+      "reading": "さいふ",
+      "hanViet": "TÀI BỐ",
+      "vietnamese": "Ví",
+      "examples": [
+        {
+          "id": "2799549219425dea",
+          "japanese": "可愛い財布ですね。",
+          "vietnamese": "Cái ví dễ thương thật đấy nhỉ.",
+          "reading": "かわいいさいふですね。",
+          "grammar": "",
+          "targets": [
+            "財布"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "c25a04de0ce1adbf",
+      "number": 13,
+      "group": "09–19",
+      "particle": "",
+      "japanese": "ボランティア",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Tình nguyện viên",
+      "examples": [
+        {
+          "id": "e85ac595f3c7ca00",
+          "japanese": "誰かボランティアになりませんか。",
+          "vietnamese": "Có ai muốn trở thành tình nguyện viên không?",
+          "reading": "だれかボランティアになりませんか。",
+          "grammar": "誰か = ai đó; Vませんか = ~ không? (mời, rủ); Nになります = trở thành N",
+          "targets": [
+            "ボランティア"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "db195221076dbb40",
+      "number": 14,
+      "group": "09–19",
+      "particle": "",
+      "japanese": "ゴミ",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Rác",
+      "examples": [
+        {
+          "id": "34c1041435b5a827",
+          "japanese": "すみません、ゴミを出したいですが、どうしたらいいですか。",
+          "vietnamese": "Xin lỗi, tôi muốn đổ rác, thì phải làm như thế nào?",
+          "reading": "すみません、ゴミをだしたいですが、どうしたらいいですか。",
+          "grammar": "ゴミを出します = đổ rác; どうしたらいいですか = phải làm thế nào thì được? (xin lời khuyên)",
+          "targets": [
+            "ゴミ"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "49265681657e2ca2",
+      "number": 15,
+      "group": "09–19",
+      "particle": "",
+      "japanese": "平日",
+      "reading": "へいじつ",
+      "hanViet": "BÌNH NHẬT",
+      "vietnamese": "Ngày thường",
+      "examples": [
+        {
+          "id": "a0026966ffc9e672",
+          "japanese": "平日、私はいつも忙しいですから。",
+          "vietnamese": "Ngày thường thì tôi lúc nào cũng bận cả.",
+          "reading": "へいじつ、わたしはいつもいそがしいですから。",
+          "grammar": "câu kết thúc bằng ～から = nêu lý do, vế kết quả được lược đi",
+          "targets": [
+            "平日"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "283e6de3303c661d",
+      "number": 16,
+      "group": "09–19",
+      "particle": "",
+      "japanese": "場所",
+      "reading": "ばしょ",
+      "hanViet": "TRƯỜNG SỞ",
+      "vietnamese": "Địa điểm",
+      "examples": [
+        {
+          "id": "e0ff32f0ca63a19e",
+          "japanese": "きれいな場所を紹介してくれませんか。",
+          "vietnamese": "Cậu có thể giới thiệu cho tôi các địa điểm đẹp có được không?",
+          "reading": "きれいなばしょをしょうかいしてくれませんか。",
+          "grammar": "Vてくれませんか = (bạn) ~ giúp tôi được không? — nhờ vả",
+          "targets": [
+            "場所"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "c72043c2b52603fd",
+      "number": 17,
+      "group": "09–19",
+      "particle": "",
+      "japanese": "～べん",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Phương ngữ/ Tiếng địa phương",
+      "examples": [
+        {
+          "id": "10d5f55b4d539bcd",
+          "japanese": "大阪べんですよ。",
+          "vietnamese": "Tiếng vùng Osaka đó.",
+          "reading": "おおさかべんですよ。",
+          "grammar": "",
+          "targets": [
+            "べん"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "(tên vùng)＋べん = tiếng địa phương của vùng đó: 大阪べん, 東北べん"
+        }
+      ]
+    },
+    {
+      "id": "2114f22597279b2f",
+      "number": 18,
+      "group": "09–19",
+      "particle": "",
+      "japanese": "横",
+      "reading": "よこ",
+      "hanViet": "HOÀNH",
+      "vietnamese": "Bên cạnh",
+      "examples": [
+        {
+          "id": "d92193ab9dfcfdac",
+          "japanese": "コップの横にありますよ。",
+          "vietnamese": "Nó nằm ở bên cạnh cái cốc đó.",
+          "reading": "コップのよこにありますよ。",
+          "grammar": "Nの横 = bên cạnh N",
+          "targets": [
+            "横"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "8e787f7009fd1bc9",
+      "number": 19,
+      "group": "09–19",
+      "particle": "",
+      "japanese": "売り場",
+      "reading": "うりば",
+      "hanViet": "MẠI TRƯỜNG",
+      "vietnamese": "Nơi bán/ Quầy bán",
+      "examples": [
+        {
+          "id": "c4d4d45438d03240",
+          "japanese": "ワイン売り場はどこですか。",
+          "vietnamese": "Quầy bán rượu ở đâu nhỉ?",
+          "reading": "ワインうりばはどこですか。",
+          "grammar": "",
+          "targets": [
+            "売り場"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "490f80815bd3d977",
+      "number": 20,
+      "group": "20–29",
+      "particle": "",
+      "japanese": "今度",
+      "reading": "こんど",
+      "hanViet": "KIM ĐỘ",
+      "vietnamese": "Lần tới",
+      "examples": [
+        {
+          "id": "6af8604eb5133a79",
+          "japanese": "また今度お願いします。",
+          "vietnamese": "Vậy thì hẹn cậu lần tới nhé.",
+          "reading": "またこんどおねがいします。",
+          "grammar": "また今度 = để lần sau — cách từ chối khéo một lời mời",
+          "targets": [
+            "今度"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "d70cca47ef4ea953",
+      "number": 21,
+      "group": "20–29",
+      "particle": "",
+      "japanese": "ずいぶん",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Khá/ Tương đối",
+      "examples": [
+        {
+          "id": "a17a5f7ca3639f99",
+          "japanese": "今日、ずいぶん忙しかった。",
+          "vietnamese": "Hôm nay, tôi đã có một ngày khá bận rộn.",
+          "reading": "きょう、ずいぶんいそがしかった。",
+          "grammar": "忙しかった = quá khứ của tính từ い (い → かった)",
+          "targets": [
+            "ずいぶん"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "118f8427b44f05f3",
+      "number": 22,
+      "group": "20–29",
+      "particle": "",
+      "japanese": "直接",
+      "reading": "ちょくせつ",
+      "hanViet": "TRỰC TIẾP",
+      "vietnamese": "Trực tiếp",
+      "examples": [
+        {
+          "id": "1486ffaa1cb3a2c7",
+          "japanese": "直接会いましょう。",
+          "vietnamese": "Trực tiếp gặp nhau nhé.",
+          "reading": "ちょくせつあいましょう。",
+          "grammar": "Vましょう = cùng ~ nhé (rủ rê)",
+          "targets": [
+            "直接"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "a30be8833b44d544",
+      "number": 23,
+      "group": "20–29",
+      "particle": "",
+      "japanese": "いつでも",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Lúc nào cũng",
+      "examples": [
+        {
+          "id": "19f2307de332533f",
+          "japanese": "いつでもどこでも食べますか。",
+          "vietnamese": "Sao lúc nào ở đâu cậu cũng ăn vậy?",
+          "reading": "いつでもどこでもたべますか。",
+          "grammar": "từ để hỏi＋でも = bất cứ ~ cũng: いつでも・どこでも・だれでも・なんでも",
+          "targets": [
+            "いつでも"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "183e50b3635a2079",
+      "number": 24,
+      "group": "20–29",
+      "particle": "",
+      "japanese": "どこでも",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Ở đâu cũng",
+      "examples": [
+        {
+          "id": "318fabd880e93a9e",
+          "japanese": "どこでもいいです。",
+          "vietnamese": "Ở đâu cũng được.",
+          "reading": "",
+          "grammar": "～でもいいです = ~ cũng được",
+          "targets": [
+            "どこでも"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "aa3b5ca44daf60f7",
+      "number": 25,
+      "group": "20–29",
+      "particle": "",
+      "japanese": "だれでも",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Ai cũng",
+      "examples": [
+        {
+          "id": "7cecdb67241c69c2",
+          "japanese": "だれでもできますよ。",
+          "vietnamese": "Ai cũng có thể làm được.",
+          "reading": "",
+          "grammar": "できます = có thể làm được",
+          "targets": [
+            "だれでも"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "f9c12122c8e504d0",
+      "number": 26,
+      "group": "20–29",
+      "particle": "",
+      "japanese": "なんでも",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Cái gì cũng",
+      "examples": [
+        {
+          "id": "5788dc44b7e7ee83",
+          "japanese": "このショップの服は何でもきれいですね。",
+          "vietnamese": "Quần áo của cửa hàng này, cái gì cũng đẹp nhỉ.",
+          "reading": "このショップのふくはなんでもきれいですね。",
+          "grammar": "",
+          "targets": [
+            "何でも"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "131ae3412ec836d8",
+      "number": 27,
+      "group": "20–29",
+      "particle": "",
+      "japanese": "こんな～",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Như thế này",
+      "examples": [
+        {
+          "id": "b04285864c46162d",
+          "japanese": "こんな大きいかばんです。",
+          "vietnamese": "Đó là cái cặp to như thế này này.",
+          "reading": "こんなおおきいかばんです。",
+          "grammar": "こんな・そんな・あんな＋N = N như thế này/ đó/ kia — luôn đứng trước danh từ, như この・その・あの",
+          "targets": [
+            "こんな"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "11678ab2e4ab60b2",
+      "number": 28,
+      "group": "20–29",
+      "particle": "",
+      "japanese": "そんな～",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Như thế đó",
+      "examples": [
+        {
+          "id": "3a9f346bb5f95132",
+          "japanese": "そんなことはない。",
+          "vietnamese": "Làm gì có chuyện như thế.",
+          "reading": "",
+          "grammar": "そんなことはない = làm gì có chuyện đó — phủ nhận điều người kia vừa nói",
+          "targets": [
+            "そんな"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "a419bc029d4bcece",
+      "number": 29,
+      "group": "20–29",
+      "particle": "",
+      "japanese": "あんな～",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Như thế kia",
+      "examples": [
+        {
+          "id": "f37e16972f1c82a4",
+          "japanese": "あんな高いマンションがある？",
+          "vietnamese": "Tòa chung cư cao như thế kia.",
+          "reading": "あんなたかいマンションがある？",
+          "grammar": "～がある？ = câu hỏi thể thông thường, lên giọng ở cuối câu",
+          "targets": [
+            "あんな"
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

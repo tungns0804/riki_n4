@@ -16,8 +16,9 @@ Học phần **N4** (`/n4`) — bảy phần:
 | Nghe hiểu                     | `/n4/listening`   | Trình phát + câu hỏi + lời thoại ẩn                     |
 | Ngữ pháp MIMIKARA OBOERU      | `/n4/mimikara`    | Như phần Ngữ pháp, theo giáo trình 耳から覚える          |
 
-Hiện mới có **bộ khung**: mỗi phần một bài mẫu `00-bai-mau` (hoặc một bài giữ chỗ) để
-kiểm tra đường ống nội dung. Xoá bài mẫu khi đã có bài thật.
+Bài thật đầu tiên: **Bài 26 : Cách hình thành và sử dụng んです** — mục Từ vựng cải thiện
+(29 từ) trong phần Từ vựng. Các phần khác vẫn là bài mẫu `00-bai-mau` (hoặc một bài giữ
+chỗ) để kiểm tra đường ống nội dung. Xoá bài mẫu của phần nào khi phần đó đã có bài thật.
 
 Trang chạy hoàn toàn trong trình duyệt: không có máy chủ, không có tài khoản. Tiến độ học
 lưu trong `localStorage` của chính máy đang dùng, khoá có tiền tố `riki-n4:` để không đụng

@@ -149,20 +149,19 @@ Tính từ cũng đánh dấu `[ ]` trong câu như động từ — tính từ 
 
 ## Các bài của phần Từ vựng
 
-Danh sách bài chép đúng danh sách trên web Riki: mỗi bài là MỘT LOẠI TỪ và không tự
-tách một bài của Riki thành nhiều phần đánh số. Riki mở bài mới khi giáo trình quay lại
-một loại từ đã học, nên phần này có cả "Danh từ" (01–120) lẫn "Danh từ 2" (311–318) —
-đó là hai bài của Riki chứ không phải một bài bị cắt đôi.
+Khoá N4 trên web Riki chia theo BÀI HỌC (Bài 26, Bài 27…), mỗi bài có các mục Từ vựng
+cải thiện, Kanji, Ngữ pháp, Đọc hiểu, Nghe hiểu… Mục "Từ vựng cải thiện" của một bài là
+MỘT bài ở phần này:
 
-| Thư mục        | Tên hiển thị | Trạng thái |
-| -------------- | ------------ | ---------- |
-| `01-danh-tu`   | Danh từ      | 120 từ · 第1課–第6課 (01–120), chia 12 cụm 10 từ, có chủ đề |
-| `02-dong-tu`   | Động từ      | 20 từ · 第7課 (121–140), chia 2 cụm 10 từ |
-| `03-tinh-tu`   | Tính từ      | 34 từ · 第14課 (259–280) chia 3 cụm 259–265 (bài 14.1), 266–273 (bài 14.2), 274–280 (bài 14.3); thêm cụm 299–310 (sáu cặp tự/tha động từ sinh ra từ tính từ), có chủ đề |
-| `04-katakana`  | Katakana     | chờ nội dung |
-| `05-pho-tu`    | Phó từ       | chờ nội dung |
-| `06-danh-tu-2` | Danh từ 2    | 28 từ · 311–318 (cụm "Chăm sóc, biết ơn và phép xã giao") và 第19課 (351–370) chia 2 cụm 351–359 (bài 19.1), 360–370 (bài 19.2), có chủ đề |
+- thư mục `<số bài>-bai-<số bài>` (`26-bai-26`), `order` là số bài;
+- `name` chép đúng tiêu đề bài trên web Riki (`Bài 26 : Cách hình thành và sử dụng んです`),
+  để các mục Kanji / Ngữ pháp… của cùng bài sau này mang cùng một tên;
+- cụm `##` theo các mục A, B, C… của bản PDF (Động từ, Danh từ, Phó từ), chủ đề là tên mục;
+- động từ giữ thể ます như PDF in.
 
-Thêm nội dung cho một bài = đặt file `vocabulary.txt` vào đúng thư mục của bài đó rồi
-chạy `npm run generate`. Động từ mới của 第8課 trở đi thì viết nối vào cuối
-`02-dong-tu/vocabulary.txt`, kèm mốc cụm `##` mới. Không phải sửa gì trong mã nguồn.
+| Thư mục     | Tên hiển thị                              | Trạng thái |
+| ----------- | ----------------------------------------- | ---------- |
+| `26-bai-26` | Bài 26 : Cách hình thành và sử dụng んです | 29 từ · 3 cụm: Động từ (01–08), Danh từ (09–19), Phó từ (20–29) |
+
+Thêm bài mới = tạo thư mục bài, đặt `meta.json` và `vocabulary.txt` rồi chạy
+`npm run generate`. Không phải sửa gì trong mã nguồn.
