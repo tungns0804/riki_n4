@@ -149,19 +149,20 @@ Tính từ cũng đánh dấu `[ ]` trong câu như động từ — tính từ 
 
 ## Các bài của phần Từ vựng
 
-Khoá N4 trên web Riki chia theo BÀI HỌC (Bài 26, Bài 27…), mỗi bài có các mục Từ vựng
-cải thiện, Kanji, Ngữ pháp, Đọc hiểu, Nghe hiểu… Mục "Từ vựng cải thiện" của một bài là
-MỘT bài ở phần này:
+Định dạng ở trên dùng chung cho mọi học phần. Bài học của Riki (Bài 26, Bài 27…) KHÔNG
+nằm ở đây: mỗi bài là một học phần riêng, từ vựng của bài nằm ở
+`data-source/bai-<số bài>/vocabulary/` (xem [data-source/README.md](../../README.md)).
 
-- thư mục `<số bài>-bai-<số bài>` (`26-bai-26`), `order` là số bài;
-- `name` chép đúng tiêu đề bài trên web Riki (`Bài 26 : Cách hình thành và sử dụng んです`),
-  để các mục Kanji / Ngữ pháp… của cùng bài sau này mang cùng một tên;
+Mục "Từ Vựng Cải Thiện" của một bài học:
+
+- mỗi bản PDF là một bài: `bai-26-phan-1.pdf` → thư mục `01-phan-1`, tên "Phần 1";
 - cụm `##` theo các mục A, B, C… của bản PDF (Động từ, Danh từ, Phó từ), chủ đề là tên mục;
 - động từ giữ thể ます như PDF in.
 
-| Thư mục     | Tên hiển thị                              | Trạng thái |
-| ----------- | ----------------------------------------- | ---------- |
-| `26-bai-26` | Bài 26 : Cách hình thành và sử dụng んです | 29 từ · 3 cụm: Động từ (01–08), Danh từ (09–19), Phó từ (20–29) |
+| Thư mục                              | Trạng thái |
+| ------------------------------------ | ---------- |
+| `bai-26/vocabulary/01-phan-1`        | 29 từ · 3 cụm: Động từ (01–08), Danh từ (09–19), Phó từ (20–29) |
+| `n4/vocabulary/00-bai-mau`           | bài mẫu của học phần N4 |
 
 Thêm bài mới = tạo thư mục bài, đặt `meta.json` và `vocabulary.txt` rồi chạy
 `npm run generate`. Không phải sửa gì trong mã nguồn.

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 
-import { COURSE, moduleOf } from '../../core/course/course.config';
+import { COURSE, moduleIn } from '../../core/course/course.config';
 import { LanguageStore } from '../../core/i18n/language-store';
 import { T } from '../../core/i18n/t';
 import type { ModuleId, UnitIndexEntry } from '../../core/models/content.model';
@@ -42,7 +42,7 @@ export class EntranceTest {
 
   readonly moduleId = input.required<ModuleId>();
 
-  protected readonly module = computed(() => moduleOf(this.moduleId()));
+  protected readonly module = computed(() => moduleIn(this.course, this.moduleId()));
   protected readonly status = this.content.status;
   protected readonly errorKey = this.content.errorKey;
 

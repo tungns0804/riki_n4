@@ -4,15 +4,22 @@ Ba cấp thư mục: **học phần** → **phần học** → **bài**.
 
 ```
 data-source/
-└── n4/                           N4 — bảy phần học
-    ├── entrance-test/
-    │   └── de-1/                 bài giữ chỗ, chờ test.json
-    ├── vocabulary/
-    │   ├── README.md             định dạng file từ vựng
-    │   └── 00-bai-mau/           một bài
-    ├── kanji/ grammar/ reading/ listening/
-    └── mimikara/
+├── n4/                           N4 — bảy phần học
+│   ├── entrance-test/
+│   │   └── de-1/                 bài giữ chỗ, chờ test.json
+│   ├── vocabulary/
+│   │   ├── README.md             định dạng file từ vựng
+│   │   └── 00-bai-mau/           một bài
+│   ├── kanji/ grammar/ reading/ listening/
+│   └── mimikara/
+└── bai-26/                       Bài 26 : Cách hình thành và sử dụng んです
+    └── vocabulary/               mục "Từ Vựng Cải Thiện"
+        └── 01-phan-1/            bai-26-phan-1.pdf
 ```
+
+Mỗi bài học của Riki là một học phần riêng (`bai-26`, `bai-27`…): các mục của bài
+(Từ Vựng Cải Thiện, Kanji, Ngữ Pháp Cải Thiện, Đọc Hiểu, Nghe Hiểu) là các phần học
+`vocabulary`, `kanji`, `grammar`, `reading`, `listening` của nó.
 
 Tên thư mục học phần là `id` trong `COURSES` (`src/app/core/course/course.config.ts`),
 và cũng là đoạn đầu địa chỉ trang: `data-source/n4/vocabulary/01-danh-tu/` hiện ở

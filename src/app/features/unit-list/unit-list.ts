@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-import { COURSE, moduleOf } from '../../core/course/course.config';
+import { COURSE, moduleIn } from '../../core/course/course.config';
 import { LanguageStore } from '../../core/i18n/language-store';
 import { T } from '../../core/i18n/t';
 import type { ModuleId, UnitIndexEntry } from '../../core/models/content.model';
@@ -42,7 +42,7 @@ export class UnitList {
   protected readonly errorKey = this.content.errorKey;
   protected readonly skeletons = [0, 1, 2, 3, 4, 5];
 
-  protected readonly module = computed(() => moduleOf(this.moduleId()));
+  protected readonly module = computed(() => moduleIn(this.course, this.moduleId()));
 
   /**
    * Từ khoá tìm bài. KHÔNG nhớ sang lần mở sau: mở lại mà danh sách đã bị cắt sẵn

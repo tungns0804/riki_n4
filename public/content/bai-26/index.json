@@ -1,0 +1,56 @@
+{
+  "course": {
+    "id": "bai-26",
+    "name": "Bài 26 : Cách hình thành và sử dụng んです",
+    "level": "N4"
+  },
+  "generatedAt": "2026-10-07T14:50:15.230Z",
+  "modules": [
+    {
+      "id": "vocabulary",
+      "units": [
+        {
+          "id": "01-phan-1",
+          "name": "Phần 1",
+          "description": "29 từ: động từ (01–08), danh từ (09–19), phó từ (20–29).",
+          "kind": "vocabulary",
+          "parent": "",
+          "group": "",
+          "itemCount": 29,
+          "order": 1,
+          "file": "vocabulary/01-phan-1.json",
+          "groups": [
+            {
+              "label": "01–08",
+              "title": "Động từ"
+            },
+            {
+              "label": "09–19",
+              "title": "Danh từ"
+            },
+            {
+              "label": "20–29",
+              "title": "Phó từ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kanji",
+      "units": []
+    },
+    {
+      "id": "grammar",
+      "units": []
+    },
+    {
+      "id": "reading",
+      "units": []
+    },
+    {
+      "id": "listening",
+      "units": []
+    }
+  ]
+}

@@ -18,7 +18,7 @@
       <span class="brand-name"><app-t key="app.name" /></span>
       <!-- Trang gốc đứng trên cấp học phần nên không ghi học phần nào. -->
       @if (course(); as current) {
-        <span class="brand-sub"><app-t [key]="current.nameKey" /></span>
+        <span class="brand-sub"><app-t [key]="current.shortKey" /></span>
       }
     </span>
   </a>

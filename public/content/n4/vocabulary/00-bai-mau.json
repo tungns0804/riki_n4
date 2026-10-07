@@ -1,0 +1,85 @@
+{
+  "id": "00-bai-mau",
+  "name": "Bài mẫu · Từ vựng N4",
+  "description": "Bài mẫu để kiểm tra đường ống nội dung. Xoá thư mục này khi đã có bài thật.",
+  "kind": "vocabulary",
+  "parent": "",
+  "group": "",
+  "groups": [
+    {
+      "label": "01–03",
+      "title": "Bài mẫu · Gia đình và trường học"
+    }
+  ],
+  "words": [
+    {
+      "id": "83862577542196c2",
+      "number": 1,
+      "group": "01–03",
+      "particle": "",
+      "japanese": "家族",
+      "reading": "かぞく",
+      "hanViet": "GIA TỘC",
+      "vietnamese": "Gia đình",
+      "examples": [
+        {
+          "id": "4d6aaf9f80182754",
+          "japanese": "家族と旅行に行きます。",
+          "vietnamese": "Đi du lịch cùng gia đình.",
+          "reading": "かぞくとりょこうにいきます。",
+          "grammar": "",
+          "targets": [
+            "家族"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "26bdbbe8b4705a84",
+      "number": 2,
+      "group": "01–03",
+      "particle": "",
+      "japanese": "教室",
+      "reading": "きょうしつ",
+      "hanViet": "GIÁO THẤT",
+      "vietnamese": "Phòng học",
+      "examples": [
+        {
+          "id": "39ee7c99c6989f43",
+          "japanese": "教室で日本語を勉強します。",
+          "vietnamese": "Học tiếng Nhật trong phòng học.",
+          "reading": "きょうしつでにほんごをべんきょうします。",
+          "grammar": "",
+          "targets": [
+            "教室"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "31e907d3ef3f8713",
+      "number": 3,
+      "group": "01–03",
+      "particle": "",
+      "japanese": "宿題",
+      "reading": "しゅくだい",
+      "hanViet": "TÚC ĐỀ",
+      "vietnamese": "Bài tập về nhà",
+      "examples": [
+        {
+          "id": "c013d83c76bf7539",
+          "japanese": "宿題を忘れてしまいました。",
+          "vietnamese": "Lỡ quên mất bài tập về nhà.",
+          "reading": "しゅくだいをわすれてしまいました。",
+          "grammar": "～てしまう = lỡ ~, ~ mất rồi",
+          "targets": [
+            "宿題"
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

@@ -8,7 +8,7 @@
   [title]="t('course.switch')"
   (click)="toggle()"
 >
-  <app-t [key]="current().nameKey" />
+  <app-t [key]="current().shortKey" />
   <app-icon name="chevron" />
 </button>
 
@@ -25,7 +25,7 @@
         [attr.aria-disabled]="course.status === 'soon' ? 'true' : null"
         (click)="choose(course)"
       >
-        <app-t [key]="course.nameKey" />
+        <app-t [key]="course.shortKey" />
         @if (course.id === current().id) {
           <span class="badge badge-accent">{{ t('course.current') }}</span>
         } @else if (course.status === 'soon') {

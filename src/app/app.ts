@@ -14,7 +14,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router, RouterLink, RouterOutlet } from '@angular/router';
 import { filter, map } from 'rxjs';
 
-import { COURSES, courseById, moduleByPath, modulesOf } from './core/course/course.config';
+import { COURSES, courseById, modulesOf } from './core/course/course.config';
 import { LanguageStore } from './core/i18n/language-store';
 import type { MessageKey } from './core/i18n/messages';
 import { T } from './core/i18n/t';
@@ -121,7 +121,7 @@ export class App {
         link: ['/', item.id],
         icon: item.icon,
         labelKey: item.nameKey,
-        shortKey: item.nameKey,
+        shortKey: item.shortKey,
         active: false,
       }));
     }
@@ -151,8 +151,10 @@ export class App {
     const [, path = '', unitId, action] = this.segments();
     // Trang thống kê không thuộc phần học nào: một cấp duy nhất ngay sau học phần.
     if (course && path === 'stats') return [{ label: this.t('route.stats'), link: null }];
-    const module = moduleByPath(path);
-    if (!course || !module || !course.modules.includes(module.id)) return [];
+    // Tra trong các phần của CHÍNH học phần này: tên phần học mỗi học phần một khác
+    // (xem `moduleLabels`), và phần học không thuộc học phần thì không có breadcrumb.
+    const module = course ? modulesOf(course).find((item) => item.path === path) : undefined;
+    if (!course || !module) return [];
 
     const moduleLink = ['/', course.id, module.path];
     const trail: Crumb[] = [{ label: this.t(module.labelKey), link: moduleLink }];

@@ -19,9 +19,19 @@ export interface CourseDef {
    * (`data-source/n4/`, `public/content/n4/`).
    */
   id: string;
-  /** Một chữ Hán làm biểu tượng trên thẻ, cùng kiểu với thẻ phần học. */
+  /**
+   * Biểu tượng trên thẻ, cùng kiểu với thẻ phần học: một chữ Hán, hoặc số bài với học
+   * phần là một bài học của Riki (`26`) — mười mấy bài cùng một chữ 課 thì không phân
+   * biệt được bài nào với bài nào.
+   */
   icon: string;
+  /** Tên đầy đủ: thẻ ở trang gốc, tiêu đề trang của học phần, tiêu đề tab. */
   nameKey: MessageKey;
+  /**
+   * Tên ngắn cho chỗ chỉ đủ một dòng: thanh bên, nút chọn học phần trên breadcrumb.
+   * Tên bài của Riki ("Bài 26 : Cách hình thành và sử dụng んです") không vừa mấy chỗ đó.
+   */
+  shortKey: MessageKey;
   descKey: MessageKey;
   /** 'active' = đang học được; 'soon' = đã có trong lộ trình của Riki nhưng chưa làm. */
   status: 'active' | 'soon';
@@ -33,10 +43,36 @@ export interface CourseDef {
    * tưởng học phần đang soạn dở.
    */
   modules: readonly ModuleId[];
+  /**
+   * Tên riêng của phần học trong học phần này, đè lên `labelKey` chung của MODULES.
+   *
+   * Bài học của Riki gọi phần học theo tên mục trên web ("Từ Vựng Cải Thiện",
+   * "Kanji - Hiền sensei"), còn học phần N4 gọi "Từ vựng", "KANJI". Chỉ đè tên đầy đủ:
+   * thanh bên vẫn dùng tên ngắn chung, tên đầy đủ hiện khi rê chuột.
+   */
+  moduleLabels?: Partial<Record<ModuleId, MessageKey>>;
 }
 
 /**
- * Năm học phần của website Riki Nihongo, đúng thứ tự Riki liệt kê.
+ * Các mục của một bài học trên web Riki, đúng thứ tự trong bài, và tên Riki đặt cho
+ * từng mục. Mọi bài (Bài 26, Bài 27…) dùng chung.
+ *
+ * Riki còn hai mục "Luyện Tập" và "Kaiwa - Giáo Viên Nhật": chưa có loại phần học nào
+ * chứa được, thêm khi có nội dung đầu tiên của chúng.
+ */
+const LESSON_MODULES: readonly ModuleId[] = ['vocabulary', 'kanji', 'grammar', 'reading', 'listening'];
+
+const LESSON_MODULE_LABELS: Partial<Record<ModuleId, MessageKey>> = {
+  vocabulary: 'lesson.vocabulary.label',
+  kanji: 'lesson.kanji.label',
+  grammar: 'lesson.grammar.label',
+  reading: 'lesson.reading.label',
+  listening: 'lesson.listening.label',
+};
+
+/**
+ * Các học phần, đúng thứ tự Riki liệt kê: khoá N4, rồi từng bài học của khoá (Bài 26…)
+ * — mỗi bài một học phần, các mục của bài là các phần học của nó.
  *
  * Học phần chưa làm VẪN hiện trong bộ chọn, mờ đi kèm nhãn "Sắp có": người học phải
  * thấy trang gồm những học phần nào ngay từ đầu, ẩn đi thì trang trông như chỉ có
@@ -47,9 +83,20 @@ export const COURSES: readonly CourseDef[] = [
     id: 'n4',
     icon: '四',
     nameKey: 'course.n4.name',
+    shortKey: 'course.n4.short',
     descKey: 'course.n4.desc',
     status: 'active',
     modules: MODULE_IDS,
+  },
+  {
+    id: 'bai-26',
+    icon: '26',
+    nameKey: 'course.bai-26.name',
+    shortKey: 'course.bai-26.short',
+    descKey: 'course.bai-26.desc',
+    status: 'active',
+    modules: LESSON_MODULES,
+    moduleLabels: LESSON_MODULE_LABELS,
   },
 ];
 
@@ -183,7 +230,6 @@ export const MODULES: readonly ModuleDef[] = [
 ];
 
 const BY_ID = new Map<ModuleId, ModuleDef>(MODULES.map((module) => [module.id, module]));
-const BY_PATH = new Map<string, ModuleDef>(MODULES.map((module) => [module.path, module]));
 
 export function moduleOf(id: ModuleId): ModuleDef {
   const found = BY_ID.get(id);
@@ -193,13 +239,20 @@ export function moduleOf(id: ModuleId): ModuleDef {
   return found;
 }
 
-export function moduleByPath(path: string): ModuleDef | null {
-  return BY_PATH.get(path) ?? null;
+/**
+ * Một phần học như học phần này gọi nó: tên riêng trong `moduleLabels` (nếu có) đè lên
+ * tên chung. Màn hình nào hiện tên phần học thì lấy phần học qua đây, không qua
+ * `moduleOf`.
+ */
+export function moduleIn(course: CourseDef, id: ModuleId): ModuleDef {
+  const module = moduleOf(id);
+  const labelKey = course.moduleLabels?.[id];
+  return labelKey ? { ...module, labelKey } : module;
 }
 
 /** Các phần học của một học phần, đúng thứ tự khai trong `modules`. */
 export function modulesOf(course: CourseDef): ModuleDef[] {
-  return course.modules.map(moduleOf);
+  return course.modules.map((id) => moduleIn(course, id));
 }
 
 /** Kiểm tra lúc khởi động: mọi id khai trong model đều phải có định nghĩa ở đây. */

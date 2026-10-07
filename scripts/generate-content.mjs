@@ -56,6 +56,12 @@ const COURSES = [
     level: 'N4',
     modules: ['entrance-test', 'vocabulary', 'kanji', 'grammar', 'reading', 'listening', 'mimikara'],
   },
+  {
+    id: 'bai-26',
+    name: 'Bài 26 : Cách hình thành và sử dụng んです',
+    level: 'N4',
+    modules: ['vocabulary', 'kanji', 'grammar', 'reading', 'listening'],
+  },
 ];
 
 /**

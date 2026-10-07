@@ -16,9 +16,22 @@ Học phần **N4** (`/n4`) — bảy phần:
 | Nghe hiểu                     | `/n4/listening`   | Trình phát + câu hỏi + lời thoại ẩn                     |
 | Ngữ pháp MIMIKARA OBOERU      | `/n4/mimikara`    | Như phần Ngữ pháp, theo giáo trình 耳から覚える          |
 
-Bài thật đầu tiên: **Bài 26 : Cách hình thành và sử dụng んです** — mục Từ vựng cải thiện
-(29 từ) trong phần Từ vựng. Các phần khác vẫn là bài mẫu `00-bai-mau` (hoặc một bài giữ
-chỗ) để kiểm tra đường ống nội dung. Xoá bài mẫu của phần nào khi phần đó đã có bài thật.
+Học phần N4 hiện mới có **bộ khung**: mỗi phần một bài mẫu `00-bai-mau` (hoặc một bài giữ
+chỗ) để kiểm tra đường ống nội dung. Xoá bài mẫu khi đã có bài thật.
+
+Mỗi **bài học** của Riki (Bài 26, Bài 27…) là một học phần riêng (`/bai-26`), các mục của
+bài là các phần học của nó, mang đúng tên mục trên web Riki:
+
+| Mục trên Riki                     | Đường dẫn             | Trạng thái |
+| --------------------------------- | --------------------- | ---------- |
+| Từ Vựng Cải Thiện                 | `/bai-26/vocabulary`  | Phần 1: 29 từ |
+| Kanji - Hiền sensei               | `/bai-26/kanji`       | chờ nội dung |
+| Ngữ Pháp Cải Thiện - Tuyển Sensei | `/bai-26/grammar`     | chờ nội dung |
+| Đọc Hiểu - Mon sensei             | `/bai-26/reading`     | chờ nội dung |
+| Nghe Hiểu - Lệ sensei             | `/bai-26/listening`   | chờ nội dung |
+
+Hai mục "Luyện Tập" và "Kaiwa - Giáo Viên Nhật" chưa có loại phần học tương ứng, sẽ thêm
+khi có nội dung.
 
 Trang chạy hoàn toàn trong trình duyệt: không có máy chủ, không có tài khoản. Tiến độ học
 lưu trong `localStorage` của chính máy đang dùng, khoá có tiền tố `riki-n4:` để không đụng
@@ -96,10 +109,12 @@ scripts/
 └── verify-i18n.mjs                 kiểm tra khoá vi/ja khớp nhau
 ```
 
-**Thêm một học phần** (ví dụ BTVN của N4) = thêm một mục vào `COURSES` trong
+**Thêm một học phần** (ví dụ Bài 27) = thêm một mục vào `COURSES` trong
 `core/course/course.config.ts` VÀ trong `scripts/generate-content.mjs` (cùng `id` và
-`modules`), thêm khoá `course.<id>.name` / `course.<id>.desc` vào `core/i18n/messages.ts`,
-rồi đặt nội dung vào `data-source/<id>/`. Route tự có.
+`modules`), thêm khoá `course.<id>.name` / `course.<id>.short` / `course.<id>.desc` vào
+`core/i18n/messages.ts`, rồi đặt nội dung vào `data-source/<id>/`. Route tự có. Bài học
+của Riki thì chép mục `bai-26`: `modules: LESSON_MODULES` và
+`moduleLabels: LESSON_MODULE_LABELS` cho các phần học mang tên mục của Riki.
 
 ## Deploy
 
