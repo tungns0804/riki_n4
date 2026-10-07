@@ -4,7 +4,7 @@
     "name": "Bài 26 : Cách hình thành và sử dụng んです",
     "level": "N4"
   },
-  "generatedAt": "2026-10-07T14:50:15.230Z",
+  "generatedAt": "2026-10-07T15:32:22.124Z",
   "modules": [
     {
       "id": "vocabulary",
@@ -38,7 +38,19 @@
     },
     {
       "id": "kanji",
-      "units": []
+      "units": [
+        {
+          "id": "01-phan-1",
+          "name": "Kanji mới · Phần 1",
+          "description": "8 chữ về gia đình: 家族・兄弟・姉妹, cùng 私 (tôi) và 育 (nuôi dạy, lớn lên).",
+          "kind": "kanji",
+          "parent": "",
+          "group": "",
+          "itemCount": 8,
+          "order": 1,
+          "file": "kanji/01-phan-1.json"
+        }
+      ]
     },
     {
       "id": "grammar",

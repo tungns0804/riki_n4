@@ -1,0 +1,15 @@
+# Bài 26 : Cách hình thành và sử dụng んです · KANJI - Hiền sensei · Kanji mới · Phần 1
+# nguồn: kanji-moi-bai-26-1.pdf (Buổi 26 · Kiến thức, chữ 01–08)
+# Định dạng: xem data-source/n4/kanji/README.md
+#
+# PDF chỉ có âm Hán Việt, 音, 訓 và từ ví dụ: cột nghĩa và số nét để trống — chiều luyện
+# Nhật → Việt hỏi âm Hán Việt thay cho nghĩa. 訓 của 育 in thành "そだ ― る" nên chép
+# theo hai từ ví dụ 育つ / 育てる. Từ 弟 in nghĩa "Em", ghi rõ "Em trai" cho khỏi lẫn 妹.
+家,GIA,,カ,や・いえ,|家族 (かぞく)=Gia đình;家庭 (かてい)=Gia đình;家事 (かじ)=Việc nhà;大家 (おおや)=Chủ nhà;家 (いえ)=Nhà
+族,TỘC,,ゾク,,|家族 (かぞく)=Gia đình;親族 (しんぞく)=Họ hàng
+兄,HUYNH,,キョウ・ケイ,あに,|兄弟 (きょうだい)=Anh em;父兄 (ふけい)=Phụ huynh;兄 (あに)=Anh
+弟,ĐỆ,,ダイ・デ,おとうと,|兄弟 (きょうだい)=Anh em;弟子 (でし)=Đệ tử;弟 (おとうと)=Em trai
+姉,TỈ,,シ,あね,|姉妹 (しまい)=Chị em gái;姉 (あね)=Chị (chị mình);お姉さん (おねえさん)=Chị (cách gọi chị)
+妹,MUỘI,,マイ,いもうと,|姉妹 (しまい)=Chị em gái;妹 (いもうと)=Em gái
+私,TƯ,,シ,わたくし・わたし,|私立大学 (しりつだいがく)=Đại học tư lập;私 (わたくし/わたし)=Tôi
+育,DỤC,,イク,そだ.つ・そだ.てる,|教育 (きょういく)=Giáo dục;体育 (たいいく)=Thể dục;育つ (そだつ)=Lớn lên, phát triển;子供が育つ (こどもがそだつ)=Con lớn lên;花を育てる (はなをそだてる)=Chăm sóc hoa

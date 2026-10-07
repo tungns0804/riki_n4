@@ -29,9 +29,15 @@ và từ ghép nằm sau nút "Tham khảo" — mở thẻ chi tiết để ché
 
 ## Các bài
 
-| Thư mục          | Tên        | Nội dung                                          |
-| ---------------- | ---------- | ------------------------------------------------- |
-| `00-bai-mau`     | Bài mẫu    | 3 chữ để kiểm tra đường ống — xoá khi có bài thật |
+Bài học của Riki (Bài 26…) là học phần riêng, kanji của bài nằm ở
+`data-source/bai-<số bài>/kanji/` — mục "Kanji - Hiền sensei" trên web Riki. Nguồn là bản
+PDF "Kanji mới" của buổi (`kanji-moi-bai-26-1.pdf` → thư mục `01-phan-1`, tên "Kanji mới ·
+Phần 1"). PDF không in nghĩa riêng của chữ và số nét nên hai cột đó để trống.
+
+| Thư mục                       | Tên                | Nội dung                                          |
+| ----------------------------- | ------------------ | ------------------------------------------------- |
+| `n4/kanji/00-bai-mau`         | Bài mẫu            | 3 chữ để kiểm tra đường ống — xoá khi có bài thật |
+| `bai-26/kanji/01-phan-1`      | Kanji mới · Phần 1 | 8 chữ: 家 族 兄 弟 姉 妹 私 育                      |
 
 `meta.json` của mỗi bài ghi `description` là một dòng **tóm tắt bài học gì** — trang bài
 hiện nó ngay dưới tên bài, nên đọc một dòng đó là biết bài gồm những chữ nào và chúng

@@ -1,0 +1,283 @@
+{
+  "id": "01-phan-1",
+  "name": "Kanji mới · Phần 1",
+  "description": "8 chữ về gia đình: 家族・兄弟・姉妹, cùng 私 (tôi) và 育 (nuôi dạy, lớn lên).",
+  "kind": "kanji",
+  "parent": "",
+  "group": "",
+  "kanji": [
+    {
+      "id": "e48d716bb03312f6",
+      "character": "家",
+      "hanViet": "GIA",
+      "meaning": "",
+      "onyomi": [
+        "カ"
+      ],
+      "kunyomi": [
+        "や",
+        "いえ"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "4bc84971d14deac3",
+          "japanese": "家族",
+          "reading": "かぞく",
+          "vietnamese": "Gia đình"
+        },
+        {
+          "id": "d1013c17dc439c37",
+          "japanese": "家庭",
+          "reading": "かてい",
+          "vietnamese": "Gia đình"
+        },
+        {
+          "id": "70a8846f58287ba0",
+          "japanese": "家事",
+          "reading": "かじ",
+          "vietnamese": "Việc nhà"
+        },
+        {
+          "id": "f916fb24d3badd87",
+          "japanese": "大家",
+          "reading": "おおや",
+          "vietnamese": "Chủ nhà"
+        },
+        {
+          "id": "e569aed3643d33e1",
+          "japanese": "家",
+          "reading": "いえ",
+          "vietnamese": "Nhà"
+        }
+      ]
+    },
+    {
+      "id": "dfcc5712454ea668",
+      "character": "族",
+      "hanViet": "TỘC",
+      "meaning": "",
+      "onyomi": [
+        "ゾク"
+      ],
+      "kunyomi": [],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "4bc84971d14deac3",
+          "japanese": "家族",
+          "reading": "かぞく",
+          "vietnamese": "Gia đình"
+        },
+        {
+          "id": "ee35cda3eec76521",
+          "japanese": "親族",
+          "reading": "しんぞく",
+          "vietnamese": "Họ hàng"
+        }
+      ]
+    },
+    {
+      "id": "4fb6dc1ebf1fb1f7",
+      "character": "兄",
+      "hanViet": "HUYNH",
+      "meaning": "",
+      "onyomi": [
+        "キョウ",
+        "ケイ"
+      ],
+      "kunyomi": [
+        "あに"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "a783774ae2ca4de3",
+          "japanese": "兄弟",
+          "reading": "きょうだい",
+          "vietnamese": "Anh em"
+        },
+        {
+          "id": "659e0a0d55db40df",
+          "japanese": "父兄",
+          "reading": "ふけい",
+          "vietnamese": "Phụ huynh"
+        },
+        {
+          "id": "8c7ac489d86f295a",
+          "japanese": "兄",
+          "reading": "あに",
+          "vietnamese": "Anh"
+        }
+      ]
+    },
+    {
+      "id": "82432829ef76af92",
+      "character": "弟",
+      "hanViet": "ĐỆ",
+      "meaning": "",
+      "onyomi": [
+        "ダイ",
+        "デ"
+      ],
+      "kunyomi": [
+        "おとうと"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "a783774ae2ca4de3",
+          "japanese": "兄弟",
+          "reading": "きょうだい",
+          "vietnamese": "Anh em"
+        },
+        {
+          "id": "0dfaff8dc629f49e",
+          "japanese": "弟子",
+          "reading": "でし",
+          "vietnamese": "Đệ tử"
+        },
+        {
+          "id": "f9f289d8f95aed3b",
+          "japanese": "弟",
+          "reading": "おとうと",
+          "vietnamese": "Em trai"
+        }
+      ]
+    },
+    {
+      "id": "f68991097268949b",
+      "character": "姉",
+      "hanViet": "TỈ",
+      "meaning": "",
+      "onyomi": [
+        "シ"
+      ],
+      "kunyomi": [
+        "あね"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "c5cc157009d863b3",
+          "japanese": "姉妹",
+          "reading": "しまい",
+          "vietnamese": "Chị em gái"
+        },
+        {
+          "id": "63e76a614f7950e8",
+          "japanese": "姉",
+          "reading": "あね",
+          "vietnamese": "Chị (chị mình)"
+        },
+        {
+          "id": "6ae68fe4bd06ba4c",
+          "japanese": "お姉さん",
+          "reading": "おねえさん",
+          "vietnamese": "Chị (cách gọi chị)"
+        }
+      ]
+    },
+    {
+      "id": "7d83c5810c234227",
+      "character": "妹",
+      "hanViet": "MUỘI",
+      "meaning": "",
+      "onyomi": [
+        "マイ"
+      ],
+      "kunyomi": [
+        "いもうと"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "c5cc157009d863b3",
+          "japanese": "姉妹",
+          "reading": "しまい",
+          "vietnamese": "Chị em gái"
+        },
+        {
+          "id": "0dea1160f2c2f52c",
+          "japanese": "妹",
+          "reading": "いもうと",
+          "vietnamese": "Em gái"
+        }
+      ]
+    },
+    {
+      "id": "8eca6d3270959ab1",
+      "character": "私",
+      "hanViet": "TƯ",
+      "meaning": "",
+      "onyomi": [
+        "シ"
+      ],
+      "kunyomi": [
+        "わたくし",
+        "わたし"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "696123916e042572",
+          "japanese": "私立大学",
+          "reading": "しりつだいがく",
+          "vietnamese": "Đại học tư lập"
+        },
+        {
+          "id": "cda17a08438b34be",
+          "japanese": "私",
+          "reading": "わたくし/わたし",
+          "vietnamese": "Tôi"
+        }
+      ]
+    },
+    {
+      "id": "5690d8bd45f2949d",
+      "character": "育",
+      "hanViet": "DỤC",
+      "meaning": "",
+      "onyomi": [
+        "イク"
+      ],
+      "kunyomi": [
+        "そだ.つ",
+        "そだ.てる"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "a380ecbb17539bb4",
+          "japanese": "教育",
+          "reading": "きょういく",
+          "vietnamese": "Giáo dục"
+        },
+        {
+          "id": "6e5f2c040f720e6b",
+          "japanese": "体育",
+          "reading": "たいいく",
+          "vietnamese": "Thể dục"
+        },
+        {
+          "id": "38c8a24da636146b",
+          "japanese": "育つ",
+          "reading": "そだつ",
+          "vietnamese": "Lớn lên, phát triển"
+        },
+        {
+          "id": "f48844cde93b11ca",
+          "japanese": "子供が育つ",
+          "reading": "こどもがそだつ",
+          "vietnamese": "Con lớn lên"
+        },
+        {
+          "id": "28d0fa05904ee89f",
+          "japanese": "花を育てる",
+          "reading": "はなをそだてる",
+          "vietnamese": "Chăm sóc hoa"
+        }
+      ]
+    }
+  ]
+}
