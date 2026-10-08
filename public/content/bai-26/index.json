@@ -4,7 +4,7 @@
     "name": "Bài 26 : Cách hình thành và sử dụng んです",
     "level": "N4"
   },
-  "generatedAt": "2026-10-07T15:32:22.124Z",
+  "generatedAt": "2026-10-08T12:56:08.146Z",
   "modules": [
     {
       "id": "vocabulary",
@@ -54,7 +54,19 @@
     },
     {
       "id": "grammar",
-      "units": []
+      "units": [
+        {
+          "id": "02-phan-2",
+          "name": "Phần 2 · Nên học tiếng Nhật ở đâu nhỉ?",
+          "description": "Buổi 26 — Vていただけませんか · Từ để hỏi＋Vたらいいですか · ～んですが、～んですか、～んです",
+          "kind": "grammar",
+          "parent": "",
+          "group": "",
+          "itemCount": 3,
+          "order": 2,
+          "file": "grammar/02-phan-2.json"
+        }
+      ]
     },
     {
       "id": "reading",

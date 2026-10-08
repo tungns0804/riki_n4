@@ -1,0 +1,287 @@
+{
+  "id": "02-phan-2",
+  "name": "Phần 2 · Nên học tiếng Nhật ở đâu nhỉ?",
+  "description": "Buổi 26 — Vていただけませんか · Từ để hỏi＋Vたらいいですか · ～んですが、～んですか、～んです",
+  "kind": "grammar",
+  "parent": "",
+  "group": "",
+  "points": [
+    {
+      "id": "2a5b96a48fb7adba",
+      "title": "Vていただけませんか",
+      "summary": "Anh/chị có thể làm V giúp em được không ạ? (nhờ vả lịch sự)",
+      "structures": [
+        "Vて ＋ いただけませんか"
+      ],
+      "explanation": [
+        "Người thực hiện hành động là người nghe.",
+        "Mức độ lịch sự cao hơn Vてください。",
+        "Mở rộng — Vていただけませんか: dùng cho giám đốc, người công ty khác, người gặp lần đầu.",
+        "Mở rộng — Vてもらえませんか: dùng cho cấp trên trong công ty.",
+        "Ôn tập: 教えます → 教えていただけませんか · 手伝います → 手伝っていただけませんか.",
+        "貸します → 貸していただけませんか · チェックします → チェックしていただけませんか."
+      ],
+      "notes": [],
+      "usages": [
+        {
+          "id": "u1",
+          "title": "Vていただけませんか",
+          "detail": "",
+          "examples": [
+            {
+              "id": "fe72deccbf0ed958",
+              "japanese": "写真を撮っていただけませんか。",
+              "reading": "しゃしんをとっていただけませんか。",
+              "vietnamese": "Anh/Chị chụp ảnh giúp em có được không ạ?",
+              "note": ""
+            },
+            {
+              "id": "c4f10eedd81b9c79",
+              "japanese": "この漢字の意味を教えていただけませんか。",
+              "reading": "このかんじのいみをおしえていただけませんか。",
+              "vietnamese": "Anh/Chị có thể chỉ giúp em nghĩa của chữ Hán này được không ạ?",
+              "note": ""
+            },
+            {
+              "id": "0479b5e5344f113c",
+              "japanese": "A：わかりましたか？\nB：すみません、もう一度言っていただけませんか。",
+              "reading": "A：わかりましたか？\nB：すみません、もういちどいっていただけませんか。",
+              "vietnamese": "A: Em hiểu chưa?\nB: Xin lỗi, anh/chị có thể nói lại một lần nữa giúp em được không ạ?",
+              "note": ""
+            },
+            {
+              "id": "6738b3fcd19b52c3",
+              "japanese": "あのう、1000円だけ貸していただけませんか。",
+              "reading": "あのう、せんえんだけかしていただけませんか。",
+              "vietnamese": "À… anh/chị có thể cho em mượn 1000 yên thôi được không ạ?",
+              "note": ""
+            },
+            {
+              "id": "b07c097f201703fd",
+              "japanese": "すみません。ちょっと待っていただけませんか？",
+              "reading": "すみません。ちょっとまっていただけませんか？",
+              "vietnamese": "Xin lỗi, anh/chị có thể đợi em một chút được không ạ?",
+              "note": "PDF để trống động từ; 待って là một cách điền hợp lý."
+            },
+            {
+              "id": "f124542a3defee6c",
+              "japanese": "すみません、イオンモールに行きたいですから、道を教えていただけませんか？",
+              "reading": "すみません、イオンモールにいきたいですから、みちをおしえていただけませんか？",
+              "vietnamese": "Xin lỗi, em muốn đến AEON Mall, anh/chị có thể chỉ đường giúp em được không ạ?",
+              "note": "PDF để trống chỗ này; 道を教えて là một cách điền hợp lý. Học xong mẫu 3 thì nói tự nhiên hơn là 行きたいんですが、…"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d1f5458030c20f35",
+      "title": "Từ để hỏi ＋ Vたらいいですか",
+      "summary": "Nên V (ở đâu / với ai / khi nào…) nhỉ? — hỏi lời khuyên, hướng dẫn",
+      "structures": [
+        "Q: Từ để hỏi ＋ Vたらいいですか。",
+        "A: Vたらいいと思います。",
+        "A: Vたらいいですよ。"
+      ],
+      "explanation": [
+        "Từ để hỏi: どこで、いつ、誰と、なにで、どうする、どうやって…",
+        "Q: Nên + V (ở đâu / với ai / khi nào…) nhỉ? — A: Tôi nghĩ nên V… / Nên V… nhé.",
+        "Mẫu câu sử dụng để hỏi lời khuyên, hướng dẫn.",
+        "Ôn tập: 行きます → 行ったら · いつ／行きます → いつ行ったらいいですか.",
+        "どこ／行きます → どこに行ったらいいですか · だれ／行きます → だれと行ったらいいですか."
+      ],
+      "notes": [],
+      "usages": [
+        {
+          "id": "u1",
+          "title": "Từ để hỏi ＋ Vたらいいですか",
+          "detail": "",
+          "examples": [
+            {
+              "id": "ffe754d92d157087",
+              "japanese": "どこで日本語を勉強したらいいですか。",
+              "reading": "どこでにほんごをべんきょうしたらいいですか。",
+              "vietnamese": "Mình nên học tiếng Nhật ở đâu nhỉ?",
+              "note": ""
+            },
+            {
+              "id": "bd45d42c752c37c2",
+              "japanese": "どうやって銀行に行ったらいいですか。",
+              "reading": "どうやってぎんこうにいったらいいですか。",
+              "vietnamese": "Nên đi đến ngân hàng bằng cách nào nhỉ?",
+              "note": "PDF chỉ cho 銀行／行きます, không ghi từ để hỏi; どうやって là một cách điền hợp lý."
+            },
+            {
+              "id": "14d6db9e16fedfc6",
+              "japanese": "A：私は富士山へ行きたいですから、いつ行ったらいいですか？\nB：8月に行ったらいいと思います。",
+              "reading": "A：わたしはふじさんへいきたいですから、いついったらいいですか？\nB：はちがつにいったらいいとおもいます。",
+              "vietnamese": "A: Tôi muốn đi núi Phú Sĩ, nên đi vào khi nào nhỉ?\nB: Tôi nghĩ nên đi vào tháng 8.",
+              "note": ""
+            },
+            {
+              "id": "e6b7b5041f06b04b",
+              "japanese": "A：どこで彼氏を探したらいいですか。\nB：サークルで探したらいいですよ。",
+              "reading": "A：どこでかれしをさがしたらいいですか。\nB：サークルでさがしたらいいですよ。",
+              "vietnamese": "A: Nên tìm bạn trai ở đâu nhỉ?\nB: Tìm ở câu lạc bộ là được đấy.",
+              "note": "PDF để trống câu trả lời của B; đây là một cách trả lời."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ac8dceb3dfa9fc31",
+      "title": "～んですが、～んですか、～んです",
+      "summary": "Mào đầu nhờ vả · Hỏi xác nhận, hỏi lý do · Giải thích lý do, tình trạng",
+      "structures": [
+        "V普通形 ＋ んです",
+        "Aい ＋ んです",
+        "Aな／N ＋ な ＋ んです"
+      ],
+      "explanation": [
+        "V普通形 gồm Vる、Vない、Vた、Vなかった.",
+        "Aい giữ nguyên rồi thêm んです; Aな và N bỏ だ, thay bằng な rồi thêm んです.",
+        "Ôn tập: 行きます → 行くんです · 行きません → 行かないんです · 食べました → 食べたんです · 食べませんでした → 食べなかったんです.",
+        "連絡します → 連絡するんです · 連絡しました → 連絡したんです · 痛いです → 痛いんです · 痛くなかったです → 痛くなかったんです · 好きです → 好きなんです."
+      ],
+      "notes": [
+        "Không sử dụng 〜んです hay 〜んですか cho sự thật hiển nhiên. ❌ Sự thật ＋ 〜んですか・〜んです。"
+      ],
+      "usages": [
+        {
+          "id": "u1",
+          "title": "〜んですが — mào đầu nhờ vả, xin lời khuyên",
+          "detail": "Khi bản thân cần giúp đỡ và thể hiện sự e dè, khiêm tốn: 〜んですが ＋ Vていただけませんか。／ Từ để hỏi ＋ Vたらいいですか。 Mở rộng: 〜んですが dùng để mào đầu câu xin phép / nhờ vả.",
+          "examples": [
+            {
+              "id": "b4e9fc6b4212246e",
+              "japanese": "使い方が分からないんですが、教えていただけませんか。",
+              "reading": "つかいかたがわからないんですが、おしえていただけませんか。",
+              "vietnamese": "Em không biết cách dùng, anh/chị có thể chỉ giúp em được không ạ?",
+              "note": ""
+            },
+            {
+              "id": "95136f41b9ffa535",
+              "japanese": "お金をなくしたんですが、どうしたらいいですか。",
+              "reading": "おかねをなくしたんですが、どうしたらいいですか。",
+              "vietnamese": "Em bị mất tiền, em nên làm thế nào ạ?",
+              "note": ""
+            },
+            {
+              "id": "1513be343085e483",
+              "japanese": "A：重い荷物なんですが、手伝っていただけませんか。\nB：いいですよ。",
+              "reading": "A：おもいにもつなんですが、てつだっていただけませんか。\nB：いいですよ。",
+              "vietnamese": "A: Hành lý nặng quá, anh/chị có thể giúp em được không ạ?\nB: Được chứ.",
+              "note": "PDF in 「（手伝う=>＿）手伝っていただけませんか」 — chữ 手伝って bị lặp, ở đây chép gọn."
+            },
+            {
+              "id": "78101321dcb60cdc",
+              "japanese": "A：友達を作りたいんですが、どこに行ったらいいですか。\nB：居酒屋に行ったらいいですよ。",
+              "reading": "A：ともだちをつくりたいんですが、どこにいったらいいですか。\nB：いざかやにいったらいいですよ。",
+              "vietnamese": "A: Em muốn kết bạn, nên đi đâu thì được nhỉ?\nB: Đi quán nhậu là được đấy.",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "〜んですか — xác nhận thông tin, hỏi thêm",
+          "detail": "Xác nhận thông tin / yêu cầu người nghe giải thích và cung cấp thêm thông tin: 〜んですか。／ Từ để hỏi ＋ んですか。 Không sử dụng 〜んです để trả lời trong trường hợp này.",
+          "examples": [
+            {
+              "id": "a14e102707d2ff4d",
+              "japanese": "A：日本語を勉強しているんですか。\nB：はい、そうです。",
+              "reading": "A：にほんごをべんきょうしているんですか。\nB：はい、そうです。",
+              "vietnamese": "A: Bạn đang học tiếng Nhật à?\nB: Vâng, đúng vậy.",
+              "note": ""
+            },
+            {
+              "id": "07317e744577773b",
+              "japanese": "A：どこで勉強しているんですか。\nB：Riki Nihongoで勉強しています。",
+              "reading": "A：どこでべんきょうしているんですか。\nB：Riki Nihongoでべんきょうしています。",
+              "vietnamese": "A: Bạn học ở đâu vậy?\nB: Tôi học ở Riki Nihongo.",
+              "note": ""
+            },
+            {
+              "id": "3b7b7df60f2320e0",
+              "japanese": "A：旅行に行くんですか。\nB：はい、行きます。",
+              "reading": "A：りょこうにいくんですか。\nB：はい、いきます。",
+              "vietnamese": "A: Bạn đi du lịch à?\nB: Vâng, tôi đi.",
+              "note": ""
+            },
+            {
+              "id": "76fc7d48d561daf8",
+              "japanese": "A：どこに行くんですか。\nB：京都に行きます。",
+              "reading": "A：どこにいくんですか。\nB：きょうとにいきます。",
+              "vietnamese": "A: Bạn đi đâu vậy?\nB: Tôi đi Kyoto.",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "title": "〜んですか — hỏi tình trạng, nguyên nhân, lý do",
+          "detail": "Hỏi về tình trạng / trạng thái / nguyên nhân / lý do: どうしたんですか。／ どうして・なぜ・なんで ＋ 〜んですか。 Có thể sử dụng 〜んです để trả lời trong trường hợp này.",
+          "examples": [
+            {
+              "id": "249bed3f4b920492",
+              "japanese": "A：どうしたんですか。\nB：この問題がわからないです。",
+              "reading": "A：どうしたんですか。\nB：このもんだいがわからないです。",
+              "vietnamese": "A: Bạn sao thế?\nB: Tôi không hiểu bài này.",
+              "note": ""
+            },
+            {
+              "id": "bdfa2b8e087f1499",
+              "japanese": "先生：どうして授業に遅れたんですか。\n学生：バスが来なかったですから。",
+              "reading": "せんせい：どうしてじゅぎょうにおくれたんですか。\nがくせい：バスがこなかったですから。",
+              "vietnamese": "Thầy: Sao em lại đến lớp muộn?\nHọc sinh: Vì xe buýt không đến ạ.",
+              "note": ""
+            },
+            {
+              "id": "e1be3d5ed1b3609d",
+              "japanese": "A：なぜ会社を休んだんですか。\nB：病気でしたから。",
+              "reading": "A：なぜかいしゃをやすんだんですか。\nB：びょうきでしたから。",
+              "vietnamese": "A: Sao anh lại nghỉ làm?\nB: Vì tôi bị ốm.",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "title": "〜んです — giải thích nguyên nhân, lý do, tình trạng",
+          "detail": "Nguyên nhân, lý do, tình hình, trạng thái ＋ 〜んです。 Trả lời cho câu hỏi どうして và câu hỏi どうしたんですか. Không dùng 〜んですから. Mở rộng: cung cấp thêm nguyên nhân, lý do về những gì mình đã trình bày trước đó.",
+          "examples": [
+            {
+              "id": "4ea5e6c341d300d3",
+              "japanese": "A：今日パーティーに行きませんか？\nB：すみません、今日はおなかが痛いんです。",
+              "reading": "A：きょうパーティーにいきませんか？\nB：すみません、きょうはおなかがいたいんです。",
+              "vietnamese": "A: Hôm nay đi dự tiệc không?\nB: Xin lỗi, hôm nay tôi bị đau bụng.",
+              "note": ""
+            },
+            {
+              "id": "7aa9f810a3b94460",
+              "japanese": "A：どうしたんですか。\nB：この問題がわからないんです。",
+              "reading": "A：どうしたんですか。\nB：このもんだいがわからないんです。",
+              "vietnamese": "A: Bạn sao thế?\nB: Là vì tôi không hiểu bài này.",
+              "note": ""
+            },
+            {
+              "id": "69807f9761519d4a",
+              "japanese": "先生：どうして授業に遅れたんですか。\n学生：バスが来なかったんです。",
+              "reading": "せんせい：どうしてじゅぎょうにおくれたんですか。\nがくせい：バスがこなかったんです。",
+              "vietnamese": "Thầy: Sao em lại đến lớp muộn?\nHọc sinh: Là do xe buýt không đến ạ.",
+              "note": "来なかったですから → 来なかったんです: trả lời bằng 〜んです thì bỏ から."
+            },
+            {
+              "id": "1391190c38f08004",
+              "japanese": "A：なんで会社を休んだんですか。\nB：病気だったんです。",
+              "reading": "A：なんでかいしゃをやすんだんですか。\nB：びょうきだったんです。",
+              "vietnamese": "A: Sao anh lại nghỉ làm?\nB: Là vì tôi bị ốm.",
+              "note": "病気でした → 病気だった (thể thường) ＋ んです."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

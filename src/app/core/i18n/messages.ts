@@ -60,6 +60,8 @@ export const MESSAGES = {
     vi: 'Giao diện: {current} — bấm để chuyển sang {next}',
     ja: 'テーマ: {current} — クリックで{next}に切り替え',
   },
+  'sound.turnOff': { vi: 'Tắt tiếng báo đúng/sai', ja: '正誤音をオフにする' },
+  'sound.turnOn': { vi: 'Bật tiếng báo đúng/sai', ja: '正誤音をオンにする' },
 
   // ── Khoá học ───────────────────────────────────────────────────────────
   'course.label': { vi: 'Học phần', ja: 'コース' },

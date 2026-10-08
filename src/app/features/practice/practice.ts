@@ -17,6 +17,7 @@ import { COURSE, moduleOf } from '../../core/course/course.config';
 import { LanguageStore } from '../../core/i18n/language-store';
 import { T } from '../../core/i18n/t';
 import { PracticeExample, PracticeQuestion } from '../../core/models/practice.model';
+import { FeedbackSound } from '../../core/services/feedback-sound';
 import { PracticeSessionStore } from '../../core/services/practice-session-store';
 import { ProgressStore } from '../../core/services/progress-store';
 import { splitAround } from '../../core/utils/text';
@@ -44,6 +45,7 @@ import { splitAround } from '../../core/utils/text';
 })
 export class Practice {
   private readonly session = inject(PracticeSessionStore);
+  private readonly sound = inject(FeedbackSound);
   private readonly progress = inject(ProgressStore);
   private readonly router = inject(Router);
   private readonly lang = inject(LanguageStore);
@@ -104,7 +106,9 @@ export class Practice {
 
   protected check(): void {
     if (this.checked() || !this.given().trim()) return;
-    this.wasCorrect.set(this.session.answer(this.given()));
+    const correct = this.session.answer(this.given());
+    this.sound.verdict(correct);
+    this.wasCorrect.set(correct);
     this.checked.set(true);
     // Có câu ví dụ thì đưa con trỏ xuống ô của nó luôn: gõ từ, Enter, gõ tiếp vào câu
     // mà không phải với tay ra chuột. Không có thì đưa tới nút sang câu sau.
@@ -119,7 +123,9 @@ export class Practice {
 
   protected checkFollowUp(): void {
     if (!this.checked() || this.followChecked() || !this.followGiven().trim()) return;
-    this.followCorrect.set(this.session.answerFollowUp(this.followGiven()));
+    const correct = this.session.answerFollowUp(this.followGiven());
+    this.sound.verdict(correct);
+    this.followCorrect.set(correct);
     this.followChecked.set(true);
     this.focusAfterRender(this.nextButton);
   }

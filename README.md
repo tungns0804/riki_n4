@@ -26,7 +26,7 @@ bài là các phần học của nó, mang đúng tên mục trên web Riki:
 | --------------------------------- | --------------------- | ---------- |
 | Từ Vựng Cải Thiện                 | `/bai-26/vocabulary`  | Phần 1: 29 từ |
 | Kanji - Hiền sensei               | `/bai-26/kanji`       | Kanji mới · Phần 1: 8 chữ |
-| Ngữ Pháp Cải Thiện - Tuyển Sensei | `/bai-26/grammar`     | chờ nội dung |
+| Ngữ Pháp Cải Thiện - Tuyển Sensei | `/bai-26/grammar`     | Phần 2: 3 mẫu |
 | Đọc Hiểu - Mon sensei             | `/bai-26/reading`     | chờ nội dung |
 | Nghe Hiểu - Lệ sensei             | `/bai-26/listening`   | chờ nội dung |
 
@@ -36,6 +36,9 @@ khi có nội dung.
 Trang chạy hoàn toàn trong trình duyệt: không có máy chủ, không có tài khoản. Tiến độ học
 lưu trong `localStorage` của chính máy đang dùng, khoá có tiền tố `riki-n4:` để không đụng
 tiến độ của riki_nihongo (hai trang cùng nằm trên `tungns0804.github.io`).
+
+Chấm một câu (luyện tập, câu hỏi của bài đọc / bài nghe) là có tiếng báo đúng / sai, tổng hợp
+bằng Web Audio như minano_nihongo; nút loa trên thanh trên cùng bật / tắt nó.
 
 ## Bắt đầu
 

@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component, computed, inject, input, signal } f
 import { LanguageStore } from '../../../core/i18n/language-store';
 import { T } from '../../../core/i18n/t';
 import type { QuizQuestion } from '../../../core/models/content.model';
+import { FeedbackSound } from '../../../core/services/feedback-sound';
 
 /**
  * Khối câu hỏi trả lời tại chỗ, dùng cho bài đọc và bài nghe.
@@ -21,6 +22,7 @@ import type { QuizQuestion } from '../../../core/models/content.model';
 })
 export class QuizBlock {
   private readonly lang = inject(LanguageStore);
+  private readonly sound = inject(FeedbackSound);
 
   protected readonly t = this.lang.t.bind(this.lang);
 
@@ -44,6 +46,7 @@ export class QuizBlock {
     // "đúng mấy câu" không còn nghĩa gì.
     if (this.isAnswered(question.id)) return;
     this.picked.update((current) => ({ ...current, [question.id]: choiceId }));
+    this.sound.verdict(choiceId === question.answerId);
   }
 
   /** Lớp CSS của một lựa chọn sau khi đã chấm. */

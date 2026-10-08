@@ -15,8 +15,10 @@ data-source/
 └── bai-26/                       Bài 26 : Cách hình thành và sử dụng んです
     ├── vocabulary/               mục "Từ Vựng Cải Thiện"
     │   └── 01-phan-1/            bai-26-phan-1.pdf
-    └── kanji/                    mục "Kanji - Hiền sensei"
-        └── 01-phan-1/            kanji-moi-bai-26-1.pdf
+    ├── kanji/                    mục "Kanji - Hiền sensei"
+    │   └── 01-phan-1/            kanji-moi-bai-26-1.pdf
+    └── grammar/                  mục "Ngữ Pháp Cải Thiện - Tuyển Sensei"
+        └── 02-phan-2/            bai-26-phan-2-…-nen-hoc-tieng-nhat-o-au-nhi.pdf
 ```
 
 Mỗi bài học của Riki là một học phần riêng (`bai-26`, `bai-27`…): các mục của bài
