@@ -51,10 +51,10 @@ const CHECK_ONLY = args.has('--check');
  */
 const COURSES = [
   {
-    id: 'n4',
-    name: 'N4',
+    id: 'kiem-tra-nhap-mon',
+    name: 'Bài kiểm tra nhập môn N4',
     level: 'N4',
-    modules: ['entrance-test', 'vocabulary', 'kanji', 'grammar', 'reading', 'listening', 'mimikara'],
+    modules: ['entrance-test'],
   },
   {
     id: 'bai-26',

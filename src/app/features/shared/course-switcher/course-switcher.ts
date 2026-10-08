@@ -9,7 +9,7 @@ import {
 } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 
-import { COURSES, CourseDef } from '../../../core/course/course.config';
+import { COURSES, CourseDef, courseEntryLink } from '../../../core/course/course.config';
 import { LanguageStore } from '../../../core/i18n/language-store';
 import { T } from '../../../core/i18n/t';
 import { Icon } from '../icon/icon';
@@ -66,10 +66,10 @@ export class CourseSwitcher {
     if (!this.host.nativeElement.contains(event.target as Node)) this.close();
   }
 
-  /** Học phần đang học thì vào trang của nó (`/n4`); "Sắp có" thì không làm gì. */
+  /** Học phần đang học thì vào trang của nó (`/bai-26`, xem courseEntryLink); "Sắp có" thì không làm gì. */
   protected choose(course: CourseDef): void {
     if (course.status !== 'active') return;
     this.close();
-    void this.router.navigate(['/', course.id]);
+    void this.router.navigate(courseEntryLink(course));
   }
 }

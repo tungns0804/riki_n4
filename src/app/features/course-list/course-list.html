@@ -8,7 +8,7 @@
     <div class="card-grid">
       @for (course of courses; track course.id) {
         @if (course.status === 'active') {
-          <a class="card link-card" [routerLink]="['/', course.id]">
+          <a class="card link-card" [routerLink]="linkOf(course)">
             <span class="card-title">
               <span class="card-icon jp" aria-hidden="true">{{ course.icon }}</span>
               <app-t [key]="course.nameKey" />

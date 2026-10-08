@@ -4,31 +4,32 @@ Ba cấp thư mục: **học phần** → **phần học** → **bài**.
 
 ```
 data-source/
-├── n4/                           N4 — bảy phần học
-│   ├── entrance-test/
-│   │   └── de-1/                 bài giữ chỗ, chờ test.json
-│   ├── vocabulary/
-│   │   ├── README.md             định dạng file từ vựng
-│   │   └── 00-bai-mau/           một bài
-│   ├── kanji/ grammar/ reading/ listening/
-│   └── mimikara/
+├── kiem-tra-nhap-mon/            Bài kiểm tra nhập môn N4 — chỉ một phần học
+│   └── entrance-test/
+│       ├── README.md             định dạng đề (test.json)
+│       └── de-1/                 bài giữ chỗ, chờ test.json
 └── bai-26/                       Bài 26 : Cách hình thành và sử dụng んです
     ├── vocabulary/               mục "Từ Vựng Cải Thiện"
+    │   ├── README.md             định dạng file từ vựng
     │   └── 01-phan-1/            bai-26-phan-1.pdf
     ├── kanji/                    mục "Kanji - Hiền sensei"
     │   └── 01-phan-1/            kanji-moi-bai-26-1.pdf
-    └── grammar/                  mục "Ngữ Pháp Cải Thiện - Tuyển Sensei"
-        └── 02-phan-2/            bai-26-phan-2-…-nen-hoc-tieng-nhat-o-au-nhi.pdf
+    ├── grammar/                  mục "Ngữ Pháp Cải Thiện - Tuyển Sensei"
+    │   └── 02-phan-2/            bai-26-phan-2-…-nen-hoc-tieng-nhat-o-au-nhi.pdf
+    └── reading/ listening/       chưa có bài, mới có README định dạng
 ```
+
+Bài kiểm tra nhập môn là một học phần riêng, ngang hàng với các bài học ở trang gốc.
+Học phần "Khoá N4" cũ (`n4/`, bảy phần học toàn bài mẫu) đã bỏ.
 
 Mỗi bài học của Riki là một học phần riêng (`bai-26`, `bai-27`…): các mục của bài
 (Từ Vựng Cải Thiện, Kanji, Ngữ Pháp Cải Thiện, Đọc Hiểu, Nghe Hiểu) là các phần học
 `vocabulary`, `kanji`, `grammar`, `reading`, `listening` của nó.
 
 Tên thư mục học phần là `id` trong `COURSES` (`src/app/core/course/course.config.ts`),
-và cũng là đoạn đầu địa chỉ trang: `data-source/n4/vocabulary/01-danh-tu/` hiện ở
-`/n4/vocabulary/01-danh-tu`. Thêm học phần khác thì các học phần được phép có bài trùng
-id; danh mục, tiến độ và phiên luyện của mỗi học phần tách riêng.
+và cũng là đoạn đầu địa chỉ trang: `data-source/bai-26/vocabulary/01-phan-1/` hiện ở
+`/bai-26/vocabulary/01-phan-1`. Các học phần được phép có bài trùng id; danh mục, tiến
+độ và phiên luyện của mỗi học phần tách riêng.
 
 Học phần có những phần học nào thì khai ở `modules` của học phần đó, ở CẢ HAI chỗ:
 `COURSES` trong `course.config.ts` và `COURSES` trong `scripts/generate-content.mjs`.
@@ -48,15 +49,18 @@ Thư mục phần học dùng tên cố định:
 | `listening`     | Nghe hiểu                     | `listening.json` (hoặc `nghe-hieu.json`) |
 | `mimikara`      | Ngữ pháp MIMIKARA OBOERU      | `grammar.json`                        |
 
-Định dạng chi tiết của từng loại nằm trong `README.md` của thư mục phần học
-(`n4/vocabulary/README.md`…).
+Định dạng chi tiết của từng loại nằm trong `README.md` của thư mục phần học, đặt ở
+học phần đầu tiên có phần học đó: `bai-26/vocabulary/README.md`, `bai-26/kanji/`,
+`bai-26/grammar/`, `bai-26/reading/`, `bai-26/listening/`, và
+`kiem-tra-nhap-mon/entrance-test/README.md`. Phần `mimikara` dùng đúng định dạng của
+`grammar`.
 
 ## Bài
 
 Trong mỗi phần, mỗi thư mục con là MỘT bài:
 
 ```
-data-source/n4/vocabulary/01-danh-tu/
+data-source/bai-26/vocabulary/01-phan-1/
 ├── meta.json        (tuỳ chọn) tên hiển thị, mô tả, thứ tự
 └── vocabulary.txt   nội dung bài
 ```
@@ -86,7 +90,7 @@ thư mục (`01-bai-1` → 1). Đặt tên thư mục có số ở đầu là đ
 ### Bài dạng ĐỀ trong phần lý thuyết
 
 Thêm `"kind": "test"` vào `meta.json` thì bài đó là một **đề** chứ không phải bài lý
-thuyết: file dữ liệu là `test.json` ([định dạng](n4/entrance-test/README.md)),
+thuyết: file dữ liệu là `test.json` ([định dạng](kiem-tra-nhap-mon/entrance-test/README.md)),
 trang bài chỉ có nút bắt đầu, và bấm vào là sang màn hình làm đề — làm cả bài rồi nộp.
 
 ```json
@@ -119,11 +123,8 @@ Thư mục bài **chỉ có `meta.json`**, chưa có file dữ liệu, là một
 vẫn xuất hiện trong danh sách với nhãn "Chưa có nội dung" và không bấm vào được.
 
 Dùng cách này để đặt sẵn lộ trình của cả phần học rồi đổ nội dung vào sau — người
-học nhìn thấy sắp học những mục nào ngay từ đầu. Bài `entrance-test/de-1` đang ở trạng thái đó.
+học nhìn thấy sắp học những mục nào ngay từ đầu. Bài `kiem-tra-nhap-mon/entrance-test/de-1` đang ở trạng thái đó.
 
 Lưu ý: chỉ thư mục KHÔNG có file dữ liệu nào mới được coi là giữ chỗ. Có file mà đặt
 sai tên (`tuvung.text`, `grammar.txt`…) thì script báo lỗi — gõ nhầm tên file mà bị
 hiểu thành "chưa có nội dung" thì cả bài biến mất trong im lặng.
-
-Các bài `00-bai-mau` là bài mẫu để kiểm tra đường ống nội dung — xoá đi khi đã có
-nội dung thật.

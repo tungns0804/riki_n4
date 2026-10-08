@@ -14,7 +14,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router, RouterLink, RouterOutlet } from '@angular/router';
 import { filter, map } from 'rxjs';
 
-import { COURSES, courseById, modulesOf } from './core/course/course.config';
+import { COURSES, courseById, courseEntryLink, modulesOf } from './core/course/course.config';
 import { LanguageStore } from './core/i18n/language-store';
 import type { MessageKey } from './core/i18n/messages';
 import { T } from './core/i18n/t';
@@ -37,7 +37,7 @@ const ACTION_KEY: Readonly<Record<string, MessageKey>> = {
 
 /**
  * Các đoạn của đường dẫn, bỏ query và fragment:
- * `/n4/vocabulary/02-dong-tu/practice` → học phần, phần học, bài, luyện tập.
+ * `/bai-26/vocabulary/01-phan-1/practice` → học phần, phần học, bài, luyện tập.
  */
 function segmentsOf(url: string): string[] {
   return url.split(/[?#;]/)[0].split('/').filter(Boolean);
@@ -120,7 +120,7 @@ export class App {
     if (!course) {
       return COURSES.filter((item) => item.status === 'active').map((item) => ({
         id: item.id,
-        link: ['/', item.id],
+        link: courseEntryLink(item),
         icon: item.icon,
         labelKey: item.nameKey,
         shortKey: item.shortKey,
@@ -257,7 +257,7 @@ export class App {
 
   /**
    * Trên điện thoại menu là một dải cuộn ngang, và mục đang mở có thể nằm khuất
-   * ngoài mép — mở thẳng /n4/mimikara là mục thứ bảy. Kéo nó vào giữa dải, không
+   * ngoài mép — mở thẳng /bai-26/listening là mục cuối. Kéo nó vào giữa dải, không
    * thì người dùng không thấy mình đang ở mục nào.
    */
   private revealActiveTab(): void {

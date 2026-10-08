@@ -36,7 +36,7 @@ function belongsTo(config: PracticeConfig | null | undefined, route: ActivatedRo
  * giữa chừng, bấm back sau khi đã xong) sẽ rơi vào một màn hình không có câu hỏi nào.
  *
  * Đưa về TRANG CỦA BÀI chứ không về trang chủ: địa chỉ đã nói rõ đang luyện bài nào
- * (/n4/vocabulary/02-dong-tu/practice), và trang bài có sẵn khung thiết lập để bắt
+ * (/bai-26/vocabulary/01-phan-1/practice), và trang bài có sẵn khung thiết lập để bắt
  * đầu lại ngay. Phiên đang có mà là của bài KHÁC thì cũng về trang bài, chứ không hiện
  * câu hỏi của bài kia dưới địa chỉ của bài này.
  */

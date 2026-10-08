@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-import { COURSES } from '../../core/course/course.config';
+import { COURSES, courseEntryLink } from '../../core/course/course.config';
 import { LanguageStore } from '../../core/i18n/language-store';
 import { T } from '../../core/i18n/t';
 
@@ -27,4 +27,6 @@ export class CourseList {
   protected readonly t = this.lang.t.bind(this.lang);
 
   protected readonly courses = COURSES;
+
+  protected readonly linkOf = courseEntryLink;
 }

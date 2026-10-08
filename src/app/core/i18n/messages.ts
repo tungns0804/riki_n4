@@ -33,7 +33,7 @@ type Entry = { vi: string; ja: string };
 export const MESSAGES = {
   // ── Chung ──────────────────────────────────────────────────────────────
   'common.retry': { vi: 'Thử lại', ja: '再試行' },
-  // Dẫn về trang của học phần (/n4), không phải trang gốc chọn học phần.
+  // Dẫn về trang của học phần (/bai-26), không phải trang gốc chọn học phần.
   'common.backHome': { vi: '← Về trang học phần', ja: '← コースのトップへ' },
   'common.backToList': { vi: '← Về danh sách', ja: '← 一覧へ' },
   'common.all': { vi: 'Tất cả', ja: 'すべて' },
@@ -71,13 +71,12 @@ export const MESSAGES = {
   // Nhãn trên thẻ ở trang gốc. Không dùng "Đang học": có hai học phần mở thì cả hai thẻ
   // cùng ghi "Đang học", đọc như đang học hai khoá một lúc.
   'course.open': { vi: 'Đã mở', ja: '公開中' },
-  // Tên đầy đủ cũng là tiêu đề trang của học phần, nên mang luôn chữ "Khoá". Tên ngắn
-  // là tên riêng của Riki, giữ nguyên ở cả hai ngôn ngữ.
-  'course.n4.name': { vi: 'Khoá N4', ja: 'N4コース' },
-  'course.n4.short': { vi: 'N4', ja: 'N4' },
-  'course.n4.desc': {
-    vi: 'Khoá N4: kiểm tra nhập môn, từ vựng, kanji, ngữ pháp, đọc hiểu, nghe hiểu và ngữ pháp Mimikara Oboeru.',
-    ja: 'N4コース：入門テスト、語彙、漢字、文法、読解、聴解、耳から覚える文法。',
+  // Bài kiểm tra nhập môn là một học phần riêng, ngang hàng với các bài học.
+  'course.kiem-tra-nhap-mon.name': { vi: 'Bài kiểm tra nhập môn N4', ja: 'N4入門テスト' },
+  'course.kiem-tra-nhap-mon.short': { vi: 'Kiểm tra nhập môn', ja: '入門テスト' },
+  'course.kiem-tra-nhap-mon.desc': {
+    vi: 'Đo trình độ trước khi vào học: từ vựng, kanji, ngữ pháp, đọc và nghe. Kết quả chấm theo từng kỹ năng.',
+    ja: '受講前の実力診断：語彙・漢字・文法・読解・聴解。技能別に採点されます。',
   },
   // Một bài học của Riki là một học phần: tên chép đúng tiêu đề bài trên web Riki.
   'course.bai-26.name': {
@@ -92,8 +91,8 @@ export const MESSAGES = {
   'course.soon.desc': { vi: 'Nội dung đang được chuẩn bị.', ja: '教材を準備中です。' },
   'course.list.title': { vi: 'Các học phần của Riki N4', ja: 'Riki N4 のコース' },
   'course.list.subtitle': {
-    vi: 'Chọn học phần để bắt đầu: khoá N4 và từng bài học của khoá. Các bài khác sẽ được bổ sung sau.',
-    ja: 'コースを選んで始めましょう：N4コースと各課。ほかの課は順次追加します。',
+    vi: 'Chọn học phần để bắt đầu: bài kiểm tra nhập môn N4 và từng bài học. Các bài khác sẽ được bổ sung sau.',
+    ja: 'コースを選んで始めましょう：N4入門テストと各課。ほかの課は順次追加します。',
   },
   'course.list.all': { vi: 'Tất cả học phần', ja: 'すべてのコース' },
   'course.list.back': { vi: '← Tất cả học phần', ja: '← すべてのコース' },

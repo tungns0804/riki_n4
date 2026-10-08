@@ -33,7 +33,7 @@ export class UnitList {
 
   protected readonly course = inject(COURSE);
 
-  /** Trang của học phần (`/n4`): "Về trang học phần" dẫn về đây, không về trang gốc chọn học phần. */
+  /** Trang của học phần (`/bai-26`): "Về trang học phần" dẫn về đây, không về trang gốc chọn học phần. */
   protected readonly courseHome = ['/', this.course.id];
 
   readonly moduleId = input.required<ModuleId>();

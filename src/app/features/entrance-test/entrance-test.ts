@@ -11,7 +11,7 @@ import { PracticeSessionStore } from '../../core/services/practice-session-store
 import { ProgressStore } from '../../core/services/progress-store';
 
 /**
- * Bài kiểm tra nhập môn N3.
+ * Bài kiểm tra nhập môn N4.
  *
  * Khác mọi phần còn lại ở chỗ nó KHÔNG có màn hình chi tiết: xem trước đề thì bài
  * kiểm tra đầu vào không còn đo được gì. Bấm bắt đầu là vào thẳng màn hình làm bài,
@@ -37,7 +37,7 @@ export class EntranceTest {
 
   protected readonly t = this.lang.t.bind(this.lang);
 
-  /** Trang của học phần (`/n4`): "Về trang học phần" dẫn về đây, không về trang gốc chọn học phần. */
+  /** Trang của học phần (`/kiem-tra-nhap-mon`): "Về trang học phần" dẫn về đây, không về trang gốc chọn học phần. */
   protected readonly courseHome = ['/', this.course.id];
 
   readonly moduleId = input.required<ModuleId>();
@@ -72,7 +72,7 @@ export class EntranceTest {
       if (questions.length === 0) return;
 
       this.session.start(config, questions);
-      // Địa chỉ nói rõ đang làm đề nào (/n4/test/de-1/test-run), cùng kiểu với các bài khác.
+      // Địa chỉ nói rõ đang làm đề nào (/kiem-tra-nhap-mon/test/de-1/test-run), cùng kiểu với các bài khác.
       await this.router.navigate(['/', this.course.id, this.module().path, unit.id, 'test-run']);
     } finally {
       this.starting.set(null);

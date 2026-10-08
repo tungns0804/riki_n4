@@ -4,20 +4,16 @@ Trang học tiếng Nhật cá nhân cho khoá **N4** của Riki Nihongo. Dựng
 [riki_nihongo](https://github.com/tungns0804/riki_nihongo) (N3): cùng màn hình, cùng định
 dạng nội dung, chỉ khác học phần.
 
-Học phần **N4** (`/n4`) — bảy phần:
+Trang gốc liệt kê các học phần, ngang hàng nhau:
 
-| Phần                          | Đường dẫn         | Nội dung                                              |
-| ----------------------------- | ----------------- | ----------------------------------------------------- |
-| Bài kiểm tra nhập môn N4      | `/n4/test`        | Đề đầu vào: làm cả bài rồi nộp, chấm theo từng kỹ năng |
-| Từ vựng                       | `/n4/vocabulary`  | Bảng từ + luyện tập sáu chiều                          |
-| KANJI                         | `/n4/kanji`       | Thẻ chữ Hán: âm On/Kun, âm Hán Việt, số nét, từ ghép    |
-| Ngữ pháp                      | `/n4/grammar`     | Trang lý thuyết: công thức, cách dùng, ví dụ — và đề    |
-| Đọc hiểu                      | `/n4/reading`     | Bài đọc + câu hỏi trả lời tại chỗ + bản dịch ẩn         |
-| Nghe hiểu                     | `/n4/listening`   | Trình phát + câu hỏi + lời thoại ẩn                     |
-| Ngữ pháp MIMIKARA OBOERU      | `/n4/mimikara`    | Như phần Ngữ pháp, theo giáo trình 耳から覚える          |
+| Học phần                  | Đường dẫn                 | Nội dung                                               |
+| ------------------------- | ------------------------- | ------------------------------------------------------ |
+| Bài kiểm tra nhập môn N4  | `/kiem-tra-nhap-mon/test` | Đề đầu vào: làm cả bài rồi nộp, chấm theo từng kỹ năng — hiện là bài giữ chỗ `de-1`, chờ đề |
+| Bài 26 : Cách hình thành và sử dụng んです | `/bai-26` | Các mục của Bài 26, xem bảng dưới |
 
-Học phần N4 hiện mới có **bộ khung**: mỗi phần một bài mẫu `00-bai-mau` (hoặc một bài giữ
-chỗ) để kiểm tra đường ống nội dung. Xoá bài mẫu khi đã có bài thật.
+Bài kiểm tra nhập môn là học phần chỉ có một phần học, nên thẻ ở trang gốc dẫn thẳng vào
+danh sách đề (`courseEntryLink` trong `course.config.ts`). Học phần "Khoá N4" cũ (bảy phần,
+toàn bài mẫu) đã bỏ.
 
 Mỗi **bài học** của Riki (Bài 26, Bài 27…) là một học phần riêng (`/bai-26`), các mục của
 bài là các phần học của nó, mang đúng tên mục trên web Riki:
@@ -62,7 +58,7 @@ Mọi nội dung nằm trong [`data-source/`](data-source/README.md) — mỗi h
 mục, trong đó mỗi phần học một thư mục, mỗi bài một thư mục con:
 
 ```
-data-source/n4/vocabulary/01-danh-tu/
+data-source/bai-26/vocabulary/01-phan-1/
 ├── meta.json        tên hiển thị, mô tả, thứ tự (tuỳ chọn)
 └── vocabulary.txt   nội dung bài
 ```
@@ -70,12 +66,12 @@ data-source/n4/vocabulary/01-danh-tu/
 Chạy `npm run generate` là bài mới xuất hiện trên trang. Định dạng chi tiết của từng
 loại nằm trong `README.md` của thư mục phần học:
 
-- [Từ vựng](data-source/n4/vocabulary/README.md) — file `.txt`, mỗi từ một khối
-- [Kanji](data-source/n4/kanji/README.md) — file `.txt`, mỗi dòng một chữ
-- [Ngữ pháp](data-source/n4/grammar/README.md) và [Mimikara](data-source/n4/mimikara/README.md) — file `.json`
-- [Đọc hiểu](data-source/n4/reading/README.md) — file `.json`
-- [Nghe hiểu](data-source/n4/listening/README.md) — file `.json`, âm thanh đặt trong `public/audio/`
-- [Đề kiểm tra](data-source/n4/entrance-test/README.md) — file `.json`, dùng cho cả bài
+- [Từ vựng](data-source/bai-26/vocabulary/README.md) — file `.txt`, mỗi từ một khối
+- [Kanji](data-source/bai-26/kanji/README.md) — file `.txt`, mỗi dòng một chữ
+- [Ngữ pháp](data-source/bai-26/grammar/README.md) — file `.json`
+- [Đọc hiểu](data-source/bai-26/reading/README.md) — file `.json`
+- [Nghe hiểu](data-source/bai-26/listening/README.md) — file `.json`, âm thanh đặt trong `public/audio/`
+- [Đề kiểm tra](data-source/kiem-tra-nhap-mon/entrance-test/README.md) — file `.json`, dùng cho cả bài
   dạng đề nằm trong phần Ngữ pháp / Từ vựng / Kanji (`"kind": "test"` trong `meta.json`)
 
 Bài tập về nhà của một cụm từ vựng là **bài con**: `meta.json` khai `"parent"` (id bài mẹ)

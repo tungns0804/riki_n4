@@ -1,7 +1,7 @@
 {
   "id": "de-1",
   "name": "Kiểm tra nhập môn N4",
-  "description": "Đề đầu vào của khoá N4. Đặt test.json vào thư mục này khi có đề.",
+  "description": "Đề đầu vào N4. Đặt test.json vào thư mục này khi có đề.",
   "kind": "test",
   "parent": "",
   "group": "",

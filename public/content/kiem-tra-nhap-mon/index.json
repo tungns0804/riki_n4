@@ -1,0 +1,26 @@
+{
+  "course": {
+    "id": "kiem-tra-nhap-mon",
+    "name": "Bài kiểm tra nhập môn N4",
+    "level": "N4"
+  },
+  "generatedAt": "2026-10-08T13:14:34.489Z",
+  "modules": [
+    {
+      "id": "entrance-test",
+      "units": [
+        {
+          "id": "de-1",
+          "name": "Kiểm tra nhập môn N4",
+          "description": "Đề đầu vào N4. Đặt test.json vào thư mục này khi có đề.",
+          "kind": "test",
+          "parent": "",
+          "group": "",
+          "itemCount": 0,
+          "order": 1,
+          "file": "entrance-test/de-1.json"
+        }
+      ]
+    }
+  ]
+}

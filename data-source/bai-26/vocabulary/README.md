@@ -149,9 +149,10 @@ Tính từ cũng đánh dấu `[ ]` trong câu như động từ — tính từ 
 
 ## Các bài của phần Từ vựng
 
-Định dạng ở trên dùng chung cho mọi học phần. Bài học của Riki (Bài 26, Bài 27…) KHÔNG
-nằm ở đây: mỗi bài là một học phần riêng, từ vựng của bài nằm ở
-`data-source/bai-<số bài>/vocabulary/` (xem [data-source/README.md](../../README.md)).
+Định dạng ở trên dùng chung cho mọi bài học. Mỗi bài học của Riki (Bài 26, Bài 27…) là
+một học phần riêng, từ vựng của bài nằm ở `data-source/bai-<số bài>/vocabulary/` (xem
+[data-source/README.md](../../README.md)). File hướng dẫn này chỉ đặt ở Bài 26, bài sau
+dùng chung chứ không chép lại.
 
 Mục "Từ Vựng Cải Thiện" của một bài học:
 
@@ -162,7 +163,6 @@ Mục "Từ Vựng Cải Thiện" của một bài học:
 | Thư mục                              | Trạng thái |
 | ------------------------------------ | ---------- |
 | `bai-26/vocabulary/01-phan-1`        | 29 từ · 3 cụm: Động từ (01–08), Danh từ (09–19), Phó từ (20–29) |
-| `n4/vocabulary/00-bai-mau`           | bài mẫu của học phần N4 |
 
 Thêm bài mới = tạo thư mục bài, đặt `meta.json` và `vocabulary.txt` rồi chạy
 `npm run generate`. Không phải sửa gì trong mã nguồn.

@@ -1,6 +1,6 @@
 # Định dạng bài ngữ pháp
 
-File `grammar.json` — dùng chung cho phần `grammar` và phần `mimikara`.
+File `grammar.json` — dùng chung cho phần `grammar` và phần `mimikara` của mọi học phần.
 
 ```json
 {
@@ -52,8 +52,8 @@ N4 · Nhiệm vụ 2" (`02-de-thi-that-n4-nhiem-vu-2/`). Bài như vậy viết 
 ```
 
 Định dạng `test.json` nằm ở [README của phần Kiểm tra nhập
-môn](../entrance-test/README.md) — cùng một định dạng, kể cả `promptVietnamese` và
-`choicesVietnamese` (viết cho MỌI câu).
+môn](../../kiem-tra-nhap-mon/entrance-test/README.md) — cùng một định dạng, kể cả
+`promptVietnamese` và `choicesVietnamese` (viết cho MỌI câu).
 
 Vài điểm riêng của đề ngữ pháp:
 

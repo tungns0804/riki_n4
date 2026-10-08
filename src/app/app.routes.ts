@@ -16,7 +16,7 @@ import { ProgressStore } from './core/services/progress-store';
 /**
  * Địa chỉ trang có dạng `/<học phần>/<phần học>/<bài>`:
  *
- *   /n4/vocabulary/01-danh-tu
+ *   /bai-26/vocabulary/01-phan-1
  *
  * Route KHÔNG viết tay mà dựng từ COURSES × MODULES: các học phần có cùng bộ màn hình,
  * viết tay thì mỗi học phần mới là chép thêm vài chục dòng, và chép sót một route là
@@ -85,7 +85,7 @@ function moduleRoutes(module: ModuleDef): Routes {
   return [
     ...pages,
     // Luyện tập, làm đề và kết quả nằm DƯỚI địa chỉ của bài đang học
-    // (/n4/vocabulary/02-dong-tu/practice), để thanh địa chỉ nói rõ đang học
+    // (/bai-26/vocabulary/01-phan-1/practice), để thanh địa chỉ nói rõ đang học
     // phần nào, bài nào, và mục menu của phần đó vẫn sáng — menu sáng theo đoạn phần học
     // của địa chỉ (xem `section` trong app.ts).
     //

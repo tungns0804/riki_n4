@@ -33,7 +33,7 @@ export class Result {
 
   protected readonly t = this.lang.t.bind(this.lang);
 
-  /** Trang của học phần (`/n4`): "Về trang học phần" dẫn về đây, không về trang gốc chọn học phần. */
+  /** Trang của học phần (`/bai-26`): "Về trang học phần" dẫn về đây, không về trang gốc chọn học phần. */
   private readonly course = inject(COURSE);
   protected readonly courseHome = ['/', this.course.id];
 

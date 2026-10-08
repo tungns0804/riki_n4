@@ -36,7 +36,6 @@ Phần 1"). PDF không in nghĩa riêng của chữ và số nét nên hai cột
 
 | Thư mục                       | Tên                | Nội dung                                          |
 | ----------------------------- | ------------------ | ------------------------------------------------- |
-| `n4/kanji/00-bai-mau`         | Bài mẫu            | 3 chữ để kiểm tra đường ống — xoá khi có bài thật |
 | `bai-26/kanji/01-phan-1`      | Kanji mới · Phần 1 | 8 chữ: 家 族 兄 弟 姉 妹 私 育                      |
 
 `meta.json` của mỗi bài ghi `description` là một dòng **tóm tắt bài học gì** — trang bài

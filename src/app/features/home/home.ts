@@ -8,7 +8,7 @@ import { ContentStore } from '../../core/services/content-store';
 import { ProgressStore } from '../../core/services/progress-store';
 
 /**
- * Trang của một học phần (`/n4`, `/btvn-co-ban`) — các phần học của học phần đó.
+ * Trang của một học phần (`/bai-26`, `/kiem-tra-nhap-mon`) — các phần học của học phần đó.
  * Năm học phần nằm ở trang gốc (xem CourseList).
  *
  * Thẻ của phần chưa có bài nào vẫn hiện, chỉ mờ đi và không bấm được: người học

@@ -15,8 +15,8 @@ import { MODULE_IDS, ModuleId, UnitKind } from '../models/content.model';
 
 export interface CourseDef {
   /**
-   * Cũng là đoạn đầu của địa chỉ (`/n4/vocabulary`) và tên thư mục nội dung
-   * (`data-source/n4/`, `public/content/n4/`).
+   * Cũng là đoạn đầu của địa chỉ (`/bai-26/vocabulary`) và tên thư mục nội dung
+   * (`data-source/bai-26/`, `public/content/bai-26/`).
    */
   id: string;
   /**
@@ -47,7 +47,7 @@ export interface CourseDef {
    * Tên riêng của phần học trong học phần này, đè lên `labelKey` chung của MODULES.
    *
    * Bài học của Riki gọi phần học theo tên mục trên web ("Từ Vựng Cải Thiện",
-   * "Kanji - Hiền sensei"), còn học phần N4 gọi "Từ vựng", "KANJI". Chỉ đè tên đầy đủ:
+   * "Kanji - Hiền sensei"), còn tên chung là "Từ vựng", "KANJI". Chỉ đè tên đầy đủ:
    * thanh bên vẫn dùng tên ngắn chung, tên đầy đủ hiện khi rê chuột.
    */
   moduleLabels?: Partial<Record<ModuleId, MessageKey>>;
@@ -71,8 +71,12 @@ const LESSON_MODULE_LABELS: Partial<Record<ModuleId, MessageKey>> = {
 };
 
 /**
- * Các học phần, đúng thứ tự Riki liệt kê: khoá N4, rồi từng bài học của khoá (Bài 26…)
- * — mỗi bài một học phần, các mục của bài là các phần học của nó.
+ * Các học phần, đúng thứ tự Riki liệt kê: bài kiểm tra nhập môn N4, rồi từng bài học
+ * (Bài 26…) — mỗi bài một học phần, các mục của bài là các phần học của nó.
+ *
+ * Bài kiểm tra nhập môn là một học phần riêng chỉ có phần Kiểm tra, đứng ngang hàng với
+ * các bài học ở trang gốc. Trước đây nó là một phần học của học phần "Khoá N4"; học phần
+ * đó đã bỏ vì sáu phần còn lại chỉ có bài mẫu.
  *
  * Học phần chưa làm VẪN hiện trong bộ chọn, mờ đi kèm nhãn "Sắp có": người học phải
  * thấy trang gồm những học phần nào ngay từ đầu, ẩn đi thì trang trông như chỉ có
@@ -80,13 +84,13 @@ const LESSON_MODULE_LABELS: Partial<Record<ModuleId, MessageKey>> = {
  */
 export const COURSES: readonly CourseDef[] = [
   {
-    id: 'n4',
-    icon: '四',
-    nameKey: 'course.n4.name',
-    shortKey: 'course.n4.short',
-    descKey: 'course.n4.desc',
+    id: 'kiem-tra-nhap-mon',
+    icon: '試',
+    nameKey: 'course.kiem-tra-nhap-mon.name',
+    shortKey: 'course.kiem-tra-nhap-mon.short',
+    descKey: 'course.kiem-tra-nhap-mon.desc',
     status: 'active',
-    modules: MODULE_IDS,
+    modules: ['entrance-test'],
   },
   {
     id: 'bai-26',
@@ -109,6 +113,18 @@ export function courseById(id: unknown): CourseDef | null {
 }
 
 /**
+ * Chỗ đến khi chọn một học phần: thẻ ở trang gốc, menu ở trang gốc, bộ chọn học phần.
+ *
+ * Học phần chỉ có MỘT phần học (Bài kiểm tra nhập môn) thì vào thẳng phần đó: trang của
+ * học phần chỉ có đúng một thẻ cùng tên, bấm qua nó là một cú bấm thừa.
+ */
+export function courseEntryLink(course: CourseDef): string[] {
+  return course.modules.length === 1
+    ? ['/', course.id, moduleOf(course.modules[0]).path]
+    : ['/', course.id];
+}
+
+/**
  * Học phần của cây route đang mở, cấp ở route cha của từng học phần (xem app.routes.ts).
  *
  * Đi qua DI chứ không qua input của route: ContentStore, ProgressStore và các guard
@@ -118,7 +134,7 @@ export const COURSE = new InjectionToken<CourseDef>('COURSE');
 
 export interface ModuleDef {
   id: ModuleId;
-  /** Đoạn địa chỉ sau học phần, ví dụ `vocabulary` trong `/n4/vocabulary`. */
+  /** Đoạn địa chỉ sau học phần, ví dụ `vocabulary` trong `/bai-26/vocabulary`. */
   path: string;
   /** Một chữ Hán làm biểu tượng. Chọn chữ nói đúng nội dung phần đó. */
   icon: string;
