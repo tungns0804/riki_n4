@@ -14,7 +14,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router, RouterLink, RouterOutlet } from '@angular/router';
 import { filter, map } from 'rxjs';
 
-import { COURSES, courseById, courseEntryLink, modulesOf } from './core/course/course.config';
+import { courseById, modulesOf } from './core/course/course.config';
 import { LanguageStore } from './core/i18n/language-store';
 import type { MessageKey } from './core/i18n/messages';
 import { T } from './core/i18n/t';
@@ -66,6 +66,8 @@ interface Crumb {
   templateUrl: './app.html',
   styleUrl: './app.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  // Trang gốc không có thanh bên (xem `navItems`): app.css đổi bố cục theo lớp này.
+  host: { '[class.is-root]': '!course()' },
 })
 export class App {
   protected readonly theme = inject(ThemeStore);
@@ -106,9 +108,13 @@ export class App {
   protected readonly section = computed(() => (this.course() ? (this.segments()[1] ?? '') : ''));
 
   /**
-   * Mục menu theo đúng cấp đang đứng: trong một học phần là các phần học của nó, ở trang
-   * gốc là các học phần. Dựng từ cấu hình chứ không viết tay trong template: thêm một
-   * phần học là thêm một dòng ở course.config.ts, menu tự có mục mới.
+   * Mục menu: các phần học của học phần đang mở. Dựng từ cấu hình chứ không viết tay
+   * trong template: thêm một phần học là thêm một dòng ở course.config.ts, menu tự có
+   * mục mới.
+   *
+   * Trang gốc KHÔNG có menu: ở đó menu chỉ chép lại đúng các thẻ học phần đang nằm giữa
+   * trang. Thanh bên và dải menu điện thoại ẩn đi (lớp `is-root`, xem app.css), logo lên
+   * thanh trên cùng.
    *
    * Vì sao tự tính `active` thay cho `routerLinkActive`: menu vẽ HAI lần (thanh bên và dải
    * điện thoại) và breadcrumb cũng cần biết đang ở phần nào. Một tín hiệu dùng chung cho
@@ -116,17 +122,7 @@ export class App {
    */
   protected readonly navItems = computed<NavItem[]>(() => {
     const course = this.course();
-
-    if (!course) {
-      return COURSES.filter((item) => item.status === 'active').map((item) => ({
-        id: item.id,
-        link: courseEntryLink(item),
-        icon: item.icon,
-        labelKey: item.nameKey,
-        shortKey: item.shortKey,
-        active: false,
-      }));
-    }
+    if (!course) return [];
 
     const section = this.section();
     return modulesOf(course).map((module) => ({

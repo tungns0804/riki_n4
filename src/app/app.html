@@ -10,7 +10,7 @@
 </button>
 
 <!-- Thanh bên: menu chính trên màn hình từ 768px trở lên. Điện thoại dùng dải
-     .tab-strip trong header thay cho nó. -->
+     .tab-strip trong header thay cho nó. Trang gốc không có cả hai (lớp is-root). -->
 <aside class="app-sidebar">
   <a routerLink="/" class="brand" [title]="t('app.title')">
     <span class="brand-mark jp" aria-hidden="true">力</span>
@@ -31,7 +31,7 @@
 <div class="app-frame">
   <header class="app-header" #appHeader>
     <div class="topbar">
-      <!-- Chỉ hiện trên điện thoại, nơi không có thanh bên để giữ thương hiệu. -->
+      <!-- Chỉ hiện ở nơi không có thanh bên để giữ thương hiệu: điện thoại, và trang gốc. -->
       <!-- aria-label: dưới 480px chữ tên ứng dụng ẩn đi, liên kết chỉ còn logo aria-hidden. -->
       <a routerLink="/" class="brand topbar-brand" [attr.aria-label]="t('app.name')">
         <span class="brand-mark jp" aria-hidden="true">力</span>

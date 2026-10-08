@@ -560,3 +560,24 @@ main:focus-visible {
     padding-inline: 10px;
   }
 }
+
+/* --- Trang gốc: không có menu ------------------------------------------------
+   Ở trang gốc menu chỉ chép lại đúng các thẻ học phần nằm giữa trang (xem `navItems`
+   trong app.ts), nên thanh bên và dải menu điện thoại ẩn đi, nội dung chiếm cả bề
+   ngang. Logo lên thanh trên cùng ở mọi khổ; breadcrumb ở đây chỉ có đúng một cấp
+   "Riki N4" — trùng với logo ngay cạnh — nên cũng ẩn.
+
+   Đặt ở cuối file để thắng `.tab-strip { display: flex }` của khối điện thoại. */
+:host(.is-root) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+:host(.is-root) .app-sidebar,
+:host(.is-root) .tab-strip,
+:host(.is-root) .crumbs {
+  display: none;
+}
+
+:host(.is-root) .topbar-brand {
+  display: flex;
+}
