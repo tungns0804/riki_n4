@@ -4,7 +4,7 @@
     "name": "Bài 26 : Cách hình thành và sử dụng んです",
     "level": "N4"
   },
-  "generatedAt": "2026-10-08T12:56:08.146Z",
+  "generatedAt": "2026-10-08T13:33:52.664Z",
   "modules": [
     {
       "id": "vocabulary",
@@ -70,7 +70,19 @@
     },
     {
       "id": "reading",
-      "units": []
+      "units": [
+        {
+          "id": "01-doc-hieu-moi",
+          "name": "Đọc hiểu mới · スペースシャトルの生活はどうですか",
+          "description": "Phỏng vấn về cuộc sống trên tàu con thoi — 16 từ mới, 4 câu ○× (問1).",
+          "kind": "reading",
+          "parent": "",
+          "group": "",
+          "itemCount": 1,
+          "order": 1,
+          "file": "reading/01-doc-hieu-moi.json"
+        }
+      ]
     },
     {
       "id": "listening",

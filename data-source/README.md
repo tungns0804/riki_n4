@@ -16,7 +16,9 @@ data-source/
     │   └── 01-phan-1/            kanji-moi-bai-26-1.pdf
     ├── grammar/                  mục "Ngữ Pháp Cải Thiện - Tuyển Sensei"
     │   └── 02-phan-2/            bai-26-phan-2-…-nen-hoc-tieng-nhat-o-au-nhi.pdf
-    └── reading/ listening/       chưa có bài, mới có README định dạng
+    ├── reading/                  mục "Đọc Hiểu - Mon sensei"
+    │   └── 01-doc-hieu-moi/      oc-hieu-moi-bai-26.pdf
+    └── listening/                chưa có bài, mới có README định dạng
 ```
 
 Bài kiểm tra nhập môn là một học phần riêng, ngang hàng với các bài học ở trang gốc.

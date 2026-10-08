@@ -1,0 +1,95 @@
+{
+  "passages": [
+    {
+      "title": "スペースシャトルの生活はどうですか",
+      "paragraphs": [
+        "—どうしてスペースシャトルではいつも「泳いで」いるんですか。",
+        "宇宙は重力がありませんから、歩くことができないんです。",
+        "—じゃ、靴ははかなくてもいいですね。",
+        "ええ、シャトルの中では普通はいていません。",
+        "—シャトルは飛行機よりずっと速いでしょう？",
+        "ええ。90分で1回地球を回ります。1日に16回朝と夜が来るんです。",
+        "—寝る時間はどうやって決めるんですか。",
+        "グループが2つあって、シャトルが打ち上がったら、1つのグループはすぐ寝ます。もうひとつのグループは12時間働いてから、寝ます。",
+        "—おふろはどうするんですか。",
+        "宇宙では水はボールになりますから、おふろに入ることができません。3日に1回体をふきますが、においを全部取ることができません。ですから、シャトルに乗るまえに、食べ物に気をつけます。においが強い食べ物は食べません。",
+        "—あのう、トイレは？",
+        "特別なトイレで、使い方が難しいです。地球でよく練習しました。でも、トイレはドアがありますから、一人になることができます。",
+        "—雑誌で読んだんですが、宇宙で生活すると、背が高くなるんですか。",
+        "ええ、宇宙へ行くと、4.8~7.4センチ高くなります。しかし、地球へ帰ったら、まえと同じになります。",
+        "—10年宇宙にいたら、どうなるんですか。",
+        "まだわかりません。これから研究しなければなりません。"
+      ],
+      "translation": [
+        "— Tại sao trên tàu con thoi lúc nào mọi người cũng \"bơi\" vậy?",
+        "Vì trong vũ trụ không có trọng lực nên không thể đi bộ được.",
+        "— Vậy thì không cần đi giày cũng được nhỉ.",
+        "Vâng, ở trong tàu con thoi bình thường chúng tôi không đi giày.",
+        "— Tàu con thoi nhanh hơn hẳn máy bay phải không?",
+        "Vâng. Cứ 90 phút tàu bay một vòng quanh Trái Đất. Một ngày có 16 lần sáng và tối.",
+        "— Giờ ngủ được quyết định như thế nào vậy?",
+        "Có hai nhóm; khi tàu con thoi được phóng lên thì một nhóm đi ngủ ngay. Nhóm còn lại làm việc 12 tiếng rồi mới ngủ.",
+        "— Còn việc tắm thì thế nào?",
+        "Trong vũ trụ nước biến thành những quả bóng nên không thể tắm bồn được. Cứ 3 ngày chúng tôi lau người một lần, nhưng không thể loại bỏ hết mùi. Vì vậy, trước khi lên tàu con thoi, chúng tôi chú ý đến đồ ăn. Những món có mùi nặng thì không ăn.",
+        "— À… còn nhà vệ sinh thì sao?",
+        "Đó là nhà vệ sinh đặc biệt, cách dùng khó lắm. Chúng tôi đã luyện tập kỹ ở Trái Đất. Nhưng nhà vệ sinh có cửa nên có thể ở một mình.",
+        "— Tôi có đọc trên tạp chí… sống trong vũ trụ thì người cao lên phải không?",
+        "Vâng, lên vũ trụ thì cao thêm 4,8~7,4 cm. Nhưng khi trở về Trái Đất thì lại như trước.",
+        "— Nếu ở trong vũ trụ 10 năm thì sẽ thế nào?",
+        "Vẫn chưa biết. Từ giờ phải nghiên cứu thêm."
+      ],
+      "vocabulary": [
+        "スペースシャトル,Tàu con thoi",
+        "宇宙 (うちゅう),Vũ trụ",
+        "重力 (じゅうりょく),Trọng lực",
+        "靴をはく (くつをはく),Đi giày",
+        "ずっと,Hơn hẳn",
+        "回ります (まわります),Vòng quanh",
+        "どうやって,Như thế nào",
+        "打ち上がる (うちあがる),Phóng lên",
+        "働く (はたらく),Làm việc",
+        "体をふきます (からだをふきます),Lau cơ thể",
+        "においを取る (においをとる),Loại bỏ mùi cơ thể",
+        "気をつけます (きをつけます),Cẩn thận",
+        "お風呂に入る (おふろにはいる),Đi tắm",
+        "一人になる (ひとりになる),Ở một mình",
+        "背が高い (せがたかい),Cao",
+        "研究 (けんきゅう),Nghiên cứu"
+      ],
+      "questions": [
+        {
+          "id": "b26-dh-01",
+          "promptJapanese": "宇宙では暗くなったら寝て、明るくなったら起きる。",
+          "prompt": "Ở vũ trụ, trời tối thì đi ngủ, trời sáng thì thức dậy.",
+          "choices": ["○（正しい）", "×（正しくない）"],
+          "answer": 2,
+          "explanation": "Sai: một ngày có tới 16 lần sáng và tối, nên giờ ngủ chia theo hai nhóm — một nhóm ngủ ngay khi tàu phóng lên, nhóm kia làm việc 12 tiếng rồi mới ngủ."
+        },
+        {
+          "id": "b26-dh-02",
+          "promptJapanese": "シャトルではおふろに入ったり、シャワーを浴びたりすることができない。",
+          "prompt": "Trên tàu con thoi không thể tắm bồn hay tắm vòi sen.",
+          "choices": ["○（正しい）", "×（正しくない）"],
+          "answer": 1,
+          "explanation": "Đúng: trong vũ trụ nước biến thành những quả bóng nên không tắm được; cứ 3 ngày chỉ lau người một lần (3日に1回体をふきます)."
+        },
+        {
+          "id": "b26-dh-03",
+          "promptJapanese": "シャトルのトイレは地球のトイレと使い方が同じだ。",
+          "prompt": "Nhà vệ sinh trên tàu con thoi dùng giống như nhà vệ sinh ở Trái Đất.",
+          "choices": ["○（正しい）", "×（正しくない）"],
+          "answer": 2,
+          "explanation": "Sai: đó là nhà vệ sinh đặc biệt, cách dùng khó (特別なトイレで、使い方が難しいです), phải luyện tập kỹ ở Trái Đất trước."
+        },
+        {
+          "id": "b26-dh-04",
+          "promptJapanese": "宇宙から帰ると、まえより背が高くなる。",
+          "prompt": "Từ vũ trụ trở về thì cao hơn trước.",
+          "choices": ["○（正しい）", "×（正しくない）"],
+          "answer": 2,
+          "explanation": "Sai: lên vũ trụ thì cao thêm 4,8~7,4 cm, nhưng về lại Trái Đất thì trở lại như trước (地球へ帰ったら、まえと同じになります)."
+        }
+      ]
+    }
+  ]
+}

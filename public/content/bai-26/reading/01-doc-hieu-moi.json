@@ -1,0 +1,350 @@
+{
+  "id": "01-doc-hieu-moi",
+  "name": "Đọc hiểu mới · スペースシャトルの生活はどうですか",
+  "description": "Phỏng vấn về cuộc sống trên tàu con thoi — 16 từ mới, 4 câu ○× (問1).",
+  "kind": "reading",
+  "parent": "",
+  "group": "",
+  "passages": [
+    {
+      "id": "61111cfa22b30398",
+      "title": "スペースシャトルの生活はどうですか",
+      "paragraphs": [
+        "—どうしてスペースシャトルではいつも「泳いで」いるんですか。",
+        "宇宙は重力がありませんから、歩くことができないんです。",
+        "—じゃ、靴ははかなくてもいいですね。",
+        "ええ、シャトルの中では普通はいていません。",
+        "—シャトルは飛行機よりずっと速いでしょう？",
+        "ええ。90分で1回地球を回ります。1日に16回朝と夜が来るんです。",
+        "—寝る時間はどうやって決めるんですか。",
+        "グループが2つあって、シャトルが打ち上がったら、1つのグループはすぐ寝ます。もうひとつのグループは12時間働いてから、寝ます。",
+        "—おふろはどうするんですか。",
+        "宇宙では水はボールになりますから、おふろに入ることができません。3日に1回体をふきますが、においを全部取ることができません。ですから、シャトルに乗るまえに、食べ物に気をつけます。においが強い食べ物は食べません。",
+        "—あのう、トイレは？",
+        "特別なトイレで、使い方が難しいです。地球でよく練習しました。でも、トイレはドアがありますから、一人になることができます。",
+        "—雑誌で読んだんですが、宇宙で生活すると、背が高くなるんですか。",
+        "ええ、宇宙へ行くと、4.8~7.4センチ高くなります。しかし、地球へ帰ったら、まえと同じになります。",
+        "—10年宇宙にいたら、どうなるんですか。",
+        "まだわかりません。これから研究しなければなりません。"
+      ],
+      "translation": [
+        "— Tại sao trên tàu con thoi lúc nào mọi người cũng \"bơi\" vậy?",
+        "Vì trong vũ trụ không có trọng lực nên không thể đi bộ được.",
+        "— Vậy thì không cần đi giày cũng được nhỉ.",
+        "Vâng, ở trong tàu con thoi bình thường chúng tôi không đi giày.",
+        "— Tàu con thoi nhanh hơn hẳn máy bay phải không?",
+        "Vâng. Cứ 90 phút tàu bay một vòng quanh Trái Đất. Một ngày có 16 lần sáng và tối.",
+        "— Giờ ngủ được quyết định như thế nào vậy?",
+        "Có hai nhóm; khi tàu con thoi được phóng lên thì một nhóm đi ngủ ngay. Nhóm còn lại làm việc 12 tiếng rồi mới ngủ.",
+        "— Còn việc tắm thì thế nào?",
+        "Trong vũ trụ nước biến thành những quả bóng nên không thể tắm bồn được. Cứ 3 ngày chúng tôi lau người một lần, nhưng không thể loại bỏ hết mùi. Vì vậy, trước khi lên tàu con thoi, chúng tôi chú ý đến đồ ăn. Những món có mùi nặng thì không ăn.",
+        "— À… còn nhà vệ sinh thì sao?",
+        "Đó là nhà vệ sinh đặc biệt, cách dùng khó lắm. Chúng tôi đã luyện tập kỹ ở Trái Đất. Nhưng nhà vệ sinh có cửa nên có thể ở một mình.",
+        "— Tôi có đọc trên tạp chí… sống trong vũ trụ thì người cao lên phải không?",
+        "Vâng, lên vũ trụ thì cao thêm 4,8~7,4 cm. Nhưng khi trở về Trái Đất thì lại như trước.",
+        "— Nếu ở trong vũ trụ 10 năm thì sẽ thế nào?",
+        "Vẫn chưa biết. Từ giờ phải nghiên cứu thêm."
+      ],
+      "vocabulary": [
+        {
+          "id": "bba1ca93139b5e00",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "スペースシャトル",
+          "reading": "",
+          "vietnamese": "Tàu con thoi",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "8b4cdb9eb66fa56d",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "宇宙",
+          "reading": "うちゅう",
+          "vietnamese": "Vũ trụ",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "26c1da80a71c6608",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "重力",
+          "reading": "じゅうりょく",
+          "vietnamese": "Trọng lực",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "55481e1eee752273",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "靴をはく",
+          "reading": "くつをはく",
+          "vietnamese": "Đi giày",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "0dbc279cd9ee16bd",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "ずっと",
+          "reading": "",
+          "vietnamese": "Hơn hẳn",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "ba7110d7ddad387d",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "回ります",
+          "reading": "まわります",
+          "vietnamese": "Vòng quanh",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "37769a84dc174303",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "どうやって",
+          "reading": "",
+          "vietnamese": "Như thế nào",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "631c60a81bb64a44",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "打ち上がる",
+          "reading": "うちあがる",
+          "vietnamese": "Phóng lên",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "b742f1347773425c",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "働く",
+          "reading": "はたらく",
+          "vietnamese": "Làm việc",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "5b716932bcb6892a",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "体をふきます",
+          "reading": "からだをふきます",
+          "vietnamese": "Lau cơ thể",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "e98e3f352a36f6f1",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "においを取る",
+          "reading": "においをとる",
+          "vietnamese": "Loại bỏ mùi cơ thể",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "08ef8d627e84a177",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "気をつけます",
+          "reading": "きをつけます",
+          "vietnamese": "Cẩn thận",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "90d3b846c7095855",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "お風呂に入る",
+          "reading": "おふろにはいる",
+          "vietnamese": "Đi tắm",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "44dde5f8e34577d6",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "一人になる",
+          "reading": "ひとりになる",
+          "vietnamese": "Ở một mình",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "986e74050dab3d71",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "背が高い",
+          "reading": "せがたかい",
+          "vietnamese": "Cao",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        },
+        {
+          "id": "7c0909a6dc8291d6",
+          "number": 0,
+          "group": "",
+          "particle": "",
+          "japanese": "研究",
+          "reading": "けんきゅう",
+          "vietnamese": "Nghiên cứu",
+          "hanViet": "",
+          "examples": [],
+          "notes": []
+        }
+      ],
+      "questions": [
+        {
+          "id": "b26-dh-01",
+          "skill": "reading",
+          "prompt": "Ở vũ trụ, trời tối thì đi ngủ, trời sáng thì thức dậy.",
+          "promptJapanese": "宇宙では暗くなったら寝て、明るくなったら起きる。",
+          "promptReading": "",
+          "promptTranslation": "",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "○（正しい）",
+              "translation": "",
+              "note": ""
+            },
+            {
+              "id": "c2",
+              "text": "×（正しくない）",
+              "translation": "",
+              "note": ""
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "Sai: một ngày có tới 16 lần sáng và tối, nên giờ ngủ chia theo hai nhóm — một nhóm ngủ ngay khi tàu phóng lên, nhóm kia làm việc 12 tiếng rồi mới ngủ.",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b26-dh-02",
+          "skill": "reading",
+          "prompt": "Trên tàu con thoi không thể tắm bồn hay tắm vòi sen.",
+          "promptJapanese": "シャトルではおふろに入ったり、シャワーを浴びたりすることができない。",
+          "promptReading": "",
+          "promptTranslation": "",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "○（正しい）",
+              "translation": "",
+              "note": ""
+            },
+            {
+              "id": "c2",
+              "text": "×（正しくない）",
+              "translation": "",
+              "note": ""
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "Đúng: trong vũ trụ nước biến thành những quả bóng nên không tắm được; cứ 3 ngày chỉ lau người một lần (3日に1回体をふきます).",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b26-dh-03",
+          "skill": "reading",
+          "prompt": "Nhà vệ sinh trên tàu con thoi dùng giống như nhà vệ sinh ở Trái Đất.",
+          "promptJapanese": "シャトルのトイレは地球のトイレと使い方が同じだ。",
+          "promptReading": "",
+          "promptTranslation": "",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "○（正しい）",
+              "translation": "",
+              "note": ""
+            },
+            {
+              "id": "c2",
+              "text": "×（正しくない）",
+              "translation": "",
+              "note": ""
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "Sai: đó là nhà vệ sinh đặc biệt, cách dùng khó (特別なトイレで、使い方が難しいです), phải luyện tập kỹ ở Trái Đất trước.",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b26-dh-04",
+          "skill": "reading",
+          "prompt": "Từ vũ trụ trở về thì cao hơn trước.",
+          "promptJapanese": "宇宙から帰ると、まえより背が高くなる。",
+          "promptReading": "",
+          "promptTranslation": "",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "○（正しい）",
+              "translation": "",
+              "note": ""
+            },
+            {
+              "id": "c2",
+              "text": "×（正しくない）",
+              "translation": "",
+              "note": ""
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "Sai: lên vũ trụ thì cao thêm 4,8~7,4 cm, nhưng về lại Trái Đất thì trở lại như trước (地球へ帰ったら、まえと同じになります).",
+          "passage": [],
+          "passageTranslation": []
+        }
+      ]
+    }
+  ]
+}

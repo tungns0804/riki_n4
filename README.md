@@ -23,7 +23,7 @@ bài là các phần học của nó, mang đúng tên mục trên web Riki:
 | Từ Vựng Cải Thiện                 | `/bai-26/vocabulary`  | Phần 1: 29 từ |
 | Kanji - Hiền sensei               | `/bai-26/kanji`       | Kanji mới · Phần 1: 8 chữ |
 | Ngữ Pháp Cải Thiện - Tuyển Sensei | `/bai-26/grammar`     | Phần 2: 3 mẫu |
-| Đọc Hiểu - Mon sensei             | `/bai-26/reading`     | chờ nội dung |
+| Đọc Hiểu - Mon sensei             | `/bai-26/reading`     | Đọc hiểu mới: 1 bài đọc, 16 từ, 4 câu ○× |
 | Nghe Hiểu - Lệ sensei             | `/bai-26/listening`   | chờ nội dung |
 
 Hai mục "Luyện Tập" và "Kaiwa - Giáo Viên Nhật" chưa có loại phần học tương ứng, sẽ thêm
