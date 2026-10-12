@@ -62,6 +62,12 @@ const COURSES = [
     level: 'N4',
     modules: ['vocabulary', 'kanji', 'grammar', 'reading', 'listening'],
   },
+  {
+    id: 'bai-27',
+    name: 'Bài 27 : Thể khả năng của động từ',
+    level: 'N4',
+    modules: ['vocabulary', 'kanji', 'grammar', 'reading', 'listening'],
+  },
 ];
 
 /**

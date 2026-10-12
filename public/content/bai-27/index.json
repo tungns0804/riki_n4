@@ -1,0 +1,71 @@
+{
+  "course": {
+    "id": "bai-27",
+    "name": "Bài 27 : Thể khả năng của động từ",
+    "level": "N4"
+  },
+  "generatedAt": "2026-10-12T11:02:47.717Z",
+  "modules": [
+    {
+      "id": "vocabulary",
+      "units": [
+        {
+          "id": "03-phan-3",
+          "name": "Phần 3",
+          "description": "23 từ: động từ (01–07), danh từ (08–17), tính từ (18–19), phó từ (20–23).",
+          "kind": "vocabulary",
+          "parent": "",
+          "group": "",
+          "itemCount": 23,
+          "order": 3,
+          "file": "vocabulary/03-phan-3.json",
+          "groups": [
+            {
+              "label": "01–07",
+              "title": "Động từ"
+            },
+            {
+              "label": "08–17",
+              "title": "Danh từ"
+            },
+            {
+              "label": "18–19",
+              "title": "Tính từ"
+            },
+            {
+              "label": "20–23",
+              "title": "Phó từ"
+            }
+          ]
+        },
+        {
+          "id": "04-bai-trac-nghiem",
+          "name": "Bài trắc nghiệm",
+          "description": "15 câu ôn từ vựng Bài 27: chọn nghĩa của từ (1–5), chọn từ điền vào chỗ trống (6–15).",
+          "kind": "test",
+          "parent": "",
+          "group": "",
+          "itemCount": 15,
+          "order": 4,
+          "file": "vocabulary/04-bai-trac-nghiem.json"
+        }
+      ]
+    },
+    {
+      "id": "kanji",
+      "units": []
+    },
+    {
+      "id": "grammar",
+      "units": []
+    },
+    {
+      "id": "reading",
+      "units": []
+    },
+    {
+      "id": "listening",
+      "units": []
+    }
+  ]
+}

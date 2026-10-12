@@ -1,0 +1,611 @@
+{
+  "id": "03-phan-3",
+  "name": "Phần 3",
+  "description": "23 từ: động từ (01–07), danh từ (08–17), tính từ (18–19), phó từ (20–23).",
+  "kind": "vocabulary",
+  "parent": "",
+  "group": "",
+  "groups": [
+    {
+      "label": "01–07",
+      "title": "Động từ"
+    },
+    {
+      "label": "08–17",
+      "title": "Danh từ"
+    },
+    {
+      "label": "18–19",
+      "title": "Tính từ"
+    },
+    {
+      "label": "20–23",
+      "title": "Phó từ"
+    }
+  ],
+  "words": [
+    {
+      "id": "e7f0e1008ecce550",
+      "number": 1,
+      "group": "01–07",
+      "particle": "を",
+      "japanese": "飼います",
+      "reading": "かいます",
+      "hanViet": "TỰ",
+      "vietnamese": "Nuôi",
+      "examples": [
+        {
+          "id": "f36161b0988762e8",
+          "japanese": "Bさんはペットを飼っていますか。",
+          "vietnamese": "B ơi cậu có nuôi thú cưng không?",
+          "reading": "Bさんはペットをかっていますか。",
+          "grammar": "Vています = trạng thái đang kéo dài (đang nuôi)",
+          "targets": [
+            "飼って"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "連",
+          "text": "ペットを飼います = Nuôi thú cưng"
+        }
+      ]
+    },
+    {
+      "id": "e50556ef541495b4",
+      "number": 2,
+      "group": "01–07",
+      "particle": "を",
+      "japanese": "走ります",
+      "reading": "はしります",
+      "hanViet": "TẨU",
+      "vietnamese": "Chạy",
+      "examples": [
+        {
+          "id": "b27ef24d477d1d94",
+          "japanese": "早く走ってください。",
+          "vietnamese": "Chạy nhanh lên.",
+          "reading": "はやくはしってください。",
+          "grammar": "Vてください = hãy ~; 早い → 早く = nhanh (tính từ い bổ nghĩa cho động từ)",
+          "targets": [
+            "走って"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "連",
+          "text": "道を走ります = Chạy trên đường — を chỉ nơi đi qua"
+        }
+      ]
+    },
+    {
+      "id": "5a279ba36cb0ad3c",
+      "number": 3,
+      "group": "01–07",
+      "particle": "が",
+      "japanese": "見えます",
+      "reading": "みえます",
+      "hanViet": "KIẾN",
+      "vietnamese": "Có thể nhìn thấy/ Nhìn thấy",
+      "examples": [
+        {
+          "id": "7cccca46d3e5950f",
+          "japanese": "ここから富士山が見えますよ。",
+          "vietnamese": "Từ đây có thể thấy được núi Phú Sĩ.",
+          "reading": "ここからふじさんがみえますよ。",
+          "grammar": "Nが見えます = N tự hiện ra trong tầm mắt — đối tượng đi với が, không phải を",
+          "targets": [
+            "見えます"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "連",
+          "text": "山が見えます = Có thể nhìn thấy núi"
+        }
+      ]
+    },
+    {
+      "id": "4c5c3b18a9d46545",
+      "number": 4,
+      "group": "01–07",
+      "particle": "が",
+      "japanese": "聞こえます",
+      "reading": "きこえます",
+      "hanViet": "VĂN",
+      "vietnamese": "Có thể nghe thấy/ Nghe thấy",
+      "examples": [
+        {
+          "id": "0ed054e02ab5d1db",
+          "japanese": "ピアノの音が聞こえますね。",
+          "vietnamese": "Có thể nghe được tiếng Piano.",
+          "reading": "ピアノのおとがきこえますね。",
+          "grammar": "Nが聞こえます = N tự lọt vào tai — đối tượng đi với が, không phải を",
+          "targets": [
+            "聞こえます"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "連",
+          "text": "音が聞こえます = Có thể nghe thấy âm thanh"
+        }
+      ]
+    },
+    {
+      "id": "d2ce8b102b688939",
+      "number": 5,
+      "group": "01–07",
+      "particle": "が",
+      "japanese": "できます",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Hoàn thành/ Xong",
+      "examples": [
+        {
+          "id": "46d88b2bdfa5fda6",
+          "japanese": "Linhさん、Rikiビルはいつできますか。",
+          "vietnamese": "Linh, khi nào tòa nhà Riki sẽ hoàn thành?",
+          "reading": "",
+          "grammar": "Nができます = N được làm xong, xây xong — khác できます \"có thể\" đã học",
+          "targets": [
+            "できます"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "連",
+          "text": "道ができます = Con đường được làm xong"
+        }
+      ]
+    },
+    {
+      "id": "6921ebaf02aa288d",
+      "number": 6,
+      "group": "01–07",
+      "particle": "を",
+      "japanese": "開きます",
+      "reading": "ひらきます",
+      "hanViet": "KHAI",
+      "vietnamese": "Mở/ Tổ chức",
+      "examples": [
+        {
+          "id": "166d7695ddcb466c",
+          "japanese": "学校は来週から料理教室を開くよ。",
+          "vietnamese": "Trường sẽ tổ chức một lớp học nấu ăn từ tuần tới.",
+          "reading": "がっこうはらいしゅうからりょうりきょうしつをひらくよ。",
+          "grammar": "開く = thể từ điển của 開きます; (thời điểm)から = từ ~",
+          "targets": [
+            "開く"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "連",
+          "text": "教室を開きます = Mở lớp học"
+        },
+        {
+          "label": "使い分け",
+          "text": "開きます (ひらきます) = mở, tổ chức (lớp học, bữa tiệc, cuộc họp) · 開けます (あけます) = mở (cửa, hộp)"
+        }
+      ]
+    },
+    {
+      "id": "59ca7488741af917",
+      "number": 7,
+      "group": "01–07",
+      "particle": "を",
+      "japanese": "建てます",
+      "reading": "たてます",
+      "hanViet": "KIẾN",
+      "vietnamese": "Xây/ Xây dựng",
+      "examples": [
+        {
+          "id": "d219c1fb6a419694",
+          "japanese": "Mimi先生は新しい家を建てますよ。",
+          "vietnamese": "Mimi sẽ xây một ngôi nhà mới.",
+          "reading": "Mimiせんせいはあたらしいいえをたてますよ。",
+          "grammar": "",
+          "targets": [
+            "建てます"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "連",
+          "text": "家を建てます = Xây nhà"
+        }
+      ]
+    },
+    {
+      "id": "45bbc0a3cfd7d59b",
+      "number": 8,
+      "group": "08–17",
+      "particle": "",
+      "japanese": "ペット",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Thú cưng",
+      "examples": [
+        {
+          "id": "b61b1af92f58d776",
+          "japanese": "家にペットはいますか？",
+          "vietnamese": "Nhà bạn có thú cưng không?",
+          "reading": "いえにペットはいますか？",
+          "grammar": "(nơi)にNがいます = ở ~ có N (người, con vật); hỏi thì が thành は",
+          "targets": [
+            "ペット"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "df06640acc52283c",
+      "number": 9,
+      "group": "08–17",
+      "particle": "",
+      "japanese": "鳥",
+      "reading": "とり",
+      "hanViet": "ĐIỂU",
+      "vietnamese": "Chim",
+      "examples": [
+        {
+          "id": "5a1180ae49b85227",
+          "japanese": "家に鳥がいます。",
+          "vietnamese": "Nhà tôi có một con chim.",
+          "reading": "いえにとりがいます。",
+          "grammar": "",
+          "targets": [
+            "鳥"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "69941286bb3ac96b",
+      "number": 10,
+      "group": "08–17",
+      "particle": "",
+      "japanese": "声",
+      "reading": "こえ",
+      "hanViet": "THANH",
+      "vietnamese": "Tiếng/ Giọng",
+      "examples": [
+        {
+          "id": "4dabcdc6088ca2aa",
+          "japanese": "鳥の声が聞こえるね。",
+          "vietnamese": "Có thể nghe được tiếng chim kêu nhỉ.",
+          "reading": "とりのこえがきこえるね。",
+          "grammar": "聞こえる = thể từ điển của 聞こえます",
+          "targets": [
+            "声"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い分け",
+          "text": "声 = tiếng của người, con vật · 音 (おと) = âm thanh của đồ vật (ピアノの音)"
+        }
+      ]
+    },
+    {
+      "id": "a62b386c85e7a19f",
+      "number": 11,
+      "group": "08–17",
+      "particle": "",
+      "japanese": "波",
+      "reading": "なみ",
+      "hanViet": "BA",
+      "vietnamese": "Sóng",
+      "examples": [
+        {
+          "id": "c8bf7fed15a5657a",
+          "japanese": "波が大きくなってきた。",
+          "vietnamese": "Sóng lên cao rồi kìa",
+          "reading": "なみがおおきくなってきた。",
+          "grammar": "大きい → 大きくなります = trở nên to; Vてきた = ~ dần lên (thay đổi tới bây giờ)",
+          "targets": [
+            "波"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "c290bba6e059c26b",
+      "number": 12,
+      "group": "08–17",
+      "particle": "",
+      "japanese": "花火",
+      "reading": "はなび",
+      "hanViet": "HOA HOẢ",
+      "vietnamese": "Pháo hoa",
+      "examples": [
+        {
+          "id": "4d68b8acd8317489",
+          "japanese": "東京の花火は一番きれいですね。",
+          "vietnamese": "Pháo hoa ở Tokyo là đẹp nhất nhỉ.",
+          "reading": "とうきょうのはなびはいちばんきれいですね。",
+          "grammar": "一番＋tính từ = ~ nhất",
+          "targets": [
+            "花火"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "4d7268816e6440de",
+      "number": 13,
+      "group": "08–17",
+      "particle": "",
+      "japanese": "クリーニング",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Giặt ủi",
+      "examples": [
+        {
+          "id": "7470c3e58a340d29",
+          "japanese": "クリーニングの店に持って行ってください。",
+          "vietnamese": "Cậu hãy mang nó tới tiệm giặt ủi đi.",
+          "reading": "クリーニングのみせにもっていってください。",
+          "grammar": "持って行きます = mang đi; Vてください = hãy ~",
+          "targets": [
+            "クリーニング"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "50293cd884c31025",
+      "number": 14,
+      "group": "08–17",
+      "particle": "",
+      "japanese": "マンション",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Chung cư",
+      "examples": [
+        {
+          "id": "31ce8209dbe3e568",
+          "japanese": "マンションに住みたいです。",
+          "vietnamese": "Tôi muốn sống ở chung cư.",
+          "reading": "マンションにすみたいです。",
+          "grammar": "Vたいです = muốn ~; (nơi)に住みます = sống ở ~",
+          "targets": [
+            "マンション"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "70ea85a9cafe98d9",
+      "number": 15,
+      "group": "08–17",
+      "particle": "",
+      "japanese": "家具",
+      "reading": "かぐ",
+      "hanViet": "GIA CỤ",
+      "vietnamese": "Nội thất/ Đồ đạc trong nhà",
+      "examples": [
+        {
+          "id": "aac7c018b7606a8e",
+          "japanese": "家具を少し動かしただけです。",
+          "vietnamese": "Tôi chỉ chuyển một ít nội thất trong nhà đi thôi.",
+          "reading": "かぐをすこしうごかしただけです。",
+          "grammar": "Vただけです = chỉ (đã) ~ thôi",
+          "targets": [
+            "家具"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "07c967a9973b3443",
+      "number": 16,
+      "group": "08–17",
+      "particle": "",
+      "japanese": "道具",
+      "reading": "どうぐ",
+      "hanViet": "ĐẠO CỤ",
+      "vietnamese": "Dụng cụ",
+      "examples": [
+        {
+          "id": "8229c202757d3f49",
+          "japanese": "料理道具の売り場はあそこですか。",
+          "vietnamese": "Nơi bán dụng cụ nấu ăn là ở kia phải không?",
+          "reading": "りょうりどうぐのうりばはあそこですか。",
+          "grammar": "売り場 = quầy bán, nơi bán (từ vựng Bài 26)",
+          "targets": [
+            "道具"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "fee719e842ac55d4",
+      "number": 17,
+      "group": "08–17",
+      "particle": "",
+      "japanese": "キッチン",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Nhà bếp/ Nhà bếp kiểu Tây",
+      "examples": [
+        {
+          "id": "f051398eb869bb59",
+          "japanese": "広くて、きれいなキッチンだ。",
+          "vietnamese": "Nhà bếp cậu rộng với đẹp thế.",
+          "reading": "ひろくて、きれいなキッチンだ。",
+          "grammar": "広い → 広くて = rộng, và… (nối tính từ い với vế sau)",
+          "targets": [
+            "キッチン"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "79f1c6b264c8678b",
+      "number": 18,
+      "group": "18–19",
+      "particle": "",
+      "japanese": "心配な",
+      "reading": "しんぱいな",
+      "hanViet": "TÂM PHỐI",
+      "vietnamese": "Lo lắng",
+      "examples": [
+        {
+          "id": "6d6e13a87b161da2",
+          "japanese": "何か心配なことがありますか。",
+          "vietnamese": "Cậu có chuyện gì lo lắng à?",
+          "reading": "なにかしんぱいなことがありますか。",
+          "grammar": "何か = cái gì đó; tính từ な＋な＋N = bổ nghĩa cho danh từ",
+          "targets": [
+            "心配な"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "心配 còn là danh từ: 心配になります = trở nên lo lắng · 心配します = lo lắng"
+        }
+      ]
+    },
+    {
+      "id": "9e1cf15f07c81275",
+      "number": 19,
+      "group": "18–19",
+      "particle": "",
+      "japanese": "すばらしい",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Tuyệt vời",
+      "examples": [
+        {
+          "id": "7473d663c24222e1",
+          "japanese": "旅行はすばらしかった！",
+          "vietnamese": "Chuyến du lịch tuyệt vời lắm.",
+          "reading": "りょこうはすばらしかった！",
+          "grammar": "tính từ い: ～い → ～かった = quá khứ",
+          "targets": [
+            "すばらしかった"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "d0d61d4795815aa4",
+      "number": 20,
+      "group": "20–23",
+      "particle": "",
+      "japanese": "～しか～ない",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Chỉ/ Không gì ngoài",
+      "examples": [
+        {
+          "id": "b6e2e2853ca8406b",
+          "japanese": "昼ご飯は野菜しか食べないんですか。",
+          "vietnamese": "Bữa ăn trưa chỉ có rau thôi à.",
+          "reading": "ひるごはんはやさいしかたべないんですか。",
+          "grammar": "Nしか Vない = chỉ N thôi — luôn đi với thể phủ định; ～んですか = hỏi để xác nhận (Bài 26)",
+          "targets": [
+            "しか"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "しか thay cho が・を: 野菜を食べる → 野菜しか食べない"
+        }
+      ]
+    },
+    {
+      "id": "e9f0b9491e01fb52",
+      "number": 21,
+      "group": "20–23",
+      "particle": "",
+      "japanese": "いつか",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Một lúc nào đó/ Một ngày nào đó",
+      "examples": [
+        {
+          "id": "9c2fbb735b19c84b",
+          "japanese": "いつか教師になりたいですから。",
+          "vietnamese": "Vì tớ muốn một ngày nào đó sẽ trở thành giáo viên.",
+          "reading": "いつかきょうしになりたいですから。",
+          "grammar": "Nになりたい = muốn trở thành N; câu kết thúc bằng ～から = nêu lý do",
+          "targets": [
+            "いつか"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "8cbd730bf803df4f",
+      "number": 22,
+      "group": "20–23",
+      "particle": "",
+      "japanese": "他の",
+      "reading": "ほかの",
+      "hanViet": "THA",
+      "vietnamese": "Khác",
+      "examples": [
+        {
+          "id": "2f465ea16e16cc78",
+          "japanese": "他の仕事を探したい。",
+          "vietnamese": "Tớ muốn tìm công việc khác.",
+          "reading": "ほかのしごとをさがしたい。",
+          "grammar": "他のN = N khác — luôn đứng trước danh từ; 探します (Bài 26) → 探したい = muốn tìm",
+          "targets": [
+            "他の"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "4d990fbf1cee8b95",
+      "number": 23,
+      "group": "20–23",
+      "particle": "",
+      "japanese": "はっきり",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Rõ ràng",
+      "examples": [
+        {
+          "id": "3d1dd8268e2ce140",
+          "japanese": "はっきり言ってください。",
+          "vietnamese": "Cậu hãy nói rõ ràng vào.",
+          "reading": "はっきりいってください。",
+          "grammar": "Vてください = hãy ~",
+          "targets": [
+            "はっきり"
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

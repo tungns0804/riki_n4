@@ -158,11 +158,21 @@ Mục "Từ Vựng Cải Thiện" của một bài học:
 
 - mỗi bản PDF là một bài: `bai-26-phan-1.pdf` → thư mục `01-phan-1`, tên "Phần 1";
 - cụm `##` theo các mục A, B, C… của bản PDF (Động từ, Danh từ, Phó từ), chủ đề là tên mục;
-- động từ giữ thể ます như PDF in.
+- động từ giữ thể ます như PDF in;
+- PDF in động từ kèm cụm đi cùng (`「ペットを」飼います`) thì cụm đó thành dòng `連`, và
+  nghĩa bỏ phần trong ngoặc (`Nuôi (thú cưng)` → `Nuôi`): gõ "nuôi" khi luyện phải được
+  tính đúng, mà bộ chấm không bỏ chữ trong ngoặc.
+
+"Bài trắc nghiệm" của mục là một bài dạng đề (`"kind": "test"`, file `test.json`, xem
+[định dạng đề](../../kiem-tra-nhap-mon/entrance-test/README.md)) đứng ngay sau bài từ vựng
+trong danh sách. Câu hỏi nghĩa của từ có lựa chọn là tiếng Việt, nên `choicesVietnamese`
+của chúng ghi ngược lại: từ tiếng Nhật mang nghĩa đó.
 
 | Thư mục                              | Trạng thái |
 | ------------------------------------ | ---------- |
 | `bai-26/vocabulary/01-phan-1`        | 29 từ · 3 cụm: Động từ (01–08), Danh từ (09–19), Phó từ (20–29) |
+| `bai-27/vocabulary/03-phan-3`        | 23 từ · 4 cụm: Động từ (01–07), Danh từ (08–17), Tính từ (18–19), Phó từ (20–23) |
+| `bai-27/vocabulary/04-bai-trac-nghiem` | Bài trắc nghiệm · 15 câu: chọn nghĩa (1–5), điền từ (6–15) |
 
 Thêm bài mới = tạo thư mục bài, đặt `meta.json` và `vocabulary.txt` rồi chạy
 `npm run generate`. Không phải sửa gì trong mã nguồn.

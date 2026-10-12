@@ -102,6 +102,16 @@ export const COURSES: readonly CourseDef[] = [
     modules: LESSON_MODULES,
     moduleLabels: LESSON_MODULE_LABELS,
   },
+  {
+    id: 'bai-27',
+    icon: '27',
+    nameKey: 'course.bai-27.name',
+    shortKey: 'course.bai-27.short',
+    descKey: 'course.bai-27.desc',
+    status: 'active',
+    modules: LESSON_MODULES,
+    moduleLabels: LESSON_MODULE_LABELS,
+  },
 ];
 
 /** Học phần dùng khi địa chỉ không nói gì và trình duyệt cũng chưa nhớ học phần nào. */

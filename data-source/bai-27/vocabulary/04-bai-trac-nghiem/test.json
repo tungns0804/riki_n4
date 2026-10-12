@@ -1,0 +1,271 @@
+{
+  "sections": [
+    {
+      "id": "b27-chon-nghia",
+      "title": "Bài trắc nghiệm Bài 27 · Câu 1–5 — Chọn nghĩa của từ",
+      "instructions": "Chọn nghĩa đúng của từ.",
+      "skill": "vocabulary",
+      "questions": [
+        {
+          "id": "b27-tn-01",
+          "promptJapanese": "見えます",
+          "promptReading": "みえます",
+          "choices": ["Nhìn", "Nhìn thấy", "Nhớ", "Nhận ra"],
+          "choicesVietnamese": [
+            "見ます (みます)",
+            "見えます (みえます)",
+            "覚えます (おぼえます)",
+            "気がつきます (きがつきます)"
+          ],
+          "choiceNotes": [
+            "Nhìn (chủ động đưa mắt nhìn) là 見ます: テレビを見ます — đối tượng đi với を.",
+            "Đúng: 見えます là nhìn thấy — cảnh vật tự hiện ra trong tầm mắt, đối tượng đi với が: 富士山が見えます.",
+            "Nhớ là 覚えます (おぼえます), không liên quan tới chữ 見.",
+            "Nhận ra là 気がつきます (きがつきます)."
+          ],
+          "answer": 2,
+          "explanation": "見ます ⇔ 見えます: 見ます là chủ động nhìn (を), 見えます là tự nhìn thấy (が). Cặp giống vậy: 聞きます ⇔ 聞こえます."
+        },
+        {
+          "id": "b27-tn-02",
+          "promptJapanese": "できます",
+          "choices": ["Hoàn thành", "Mở", "Chạy", "Nghe thấy"],
+          "choicesVietnamese": [
+            "できます",
+            "開きます (ひらきます)",
+            "走ります (はしります)",
+            "聞こえます (きこえます)"
+          ],
+          "choiceNotes": [
+            "Đúng: Nができます = N được làm xong, xây xong: 道ができます, Rikiビルはいつできますか.",
+            "Mở, tổ chức là 開きます (ひらきます): 教室を開きます.",
+            "Chạy là 走ります (はしります).",
+            "Nghe thấy là 聞こえます (きこえます)."
+          ],
+          "answer": 1,
+          "explanation": "Ngoài nghĩa \"có thể\" đã học (日本語ができます), Bài 27 thêm nghĩa \"hoàn thành, được làm xong\" của できます."
+        },
+        {
+          "id": "b27-tn-03",
+          "promptJapanese": "花火",
+          "promptReading": "はなび",
+          "choices": ["Ngắm hoa", "Con chim", "Pháo hoa", "Sóng"],
+          "choicesVietnamese": ["花見 (はなみ)", "鳥 (とり)", "花火 (はなび)", "波 (なみ)"],
+          "choiceNotes": [
+            "Ngắm hoa là 花見 (はなみ) — cùng chữ 花 nhưng chữ sau là 見 (xem), không phải 火.",
+            "Con chim là 鳥 (とり).",
+            "Đúng: 花火 = 花 (hoa) + 火 (lửa) — hoa lửa, tức pháo hoa.",
+            "Sóng là 波 (なみ)."
+          ],
+          "answer": 3
+        },
+        {
+          "id": "b27-tn-04",
+          "promptJapanese": "ペット",
+          "choices": ["Nhà", "Phòng học", "Phòng bếp", "Vật nuôi, thú cưng"],
+          "choicesVietnamese": ["家 (いえ)", "教室 (きょうしつ)", "キッチン・台所 (だいどころ)", "ペット"],
+          "choiceNotes": [
+            "Nhà là 家 (いえ).",
+            "Phòng học là 教室 (きょうしつ).",
+            "Phòng bếp là キッチン (bếp kiểu Tây) hoặc 台所 (だいどころ).",
+            "Đúng: ペット (pet) = thú cưng: ペットを飼います."
+          ],
+          "answer": 4
+        },
+        {
+          "id": "b27-tn-05",
+          "promptJapanese": "ほかの",
+          "choices": ["Rõ ràng", "Chỉ, không gì ngoài", "Cái khác", "Bên cạnh"],
+          "choicesVietnamese": ["はっきり", "～しか～ない", "他の (ほかの)", "横 (よこ)"],
+          "choiceNotes": [
+            "Rõ ràng là はっきり: はっきり言ってください.",
+            "Chỉ, không gì ngoài là ～しか～ない: 野菜しか食べない.",
+            "Đúng: ほかの (他の) = khác, đứng trước danh từ: 他の仕事 = công việc khác.",
+            "Bên cạnh là 横 (よこ) — từ vựng Bài 26."
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "b27-dien-tu",
+      "title": "Bài trắc nghiệm Bài 27 · Câu 6–15 — Chọn từ điền vào chỗ trống",
+      "instructions": "Chọn từ thích hợp điền vào （　　　）.",
+      "skill": "vocabulary",
+      "questions": [
+        {
+          "id": "b27-tn-06",
+          "promptJapanese": "マラソンコースを（　　　）。",
+          "promptVietnamese": "（　　　） trên cung đường marathon.",
+          "choices": ["歩く", "走る", "行く"],
+          "choicesVietnamese": ["あるく · Đi bộ", "はしる · Chạy", "いく · Đi"],
+          "choiceNotes": [
+            "歩く cũng đi với を chỉ nơi đi qua (道を歩く), nhưng cung đường marathon là để chạy.",
+            "Đúng: マラソンコースを走る — を chỉ nơi di chuyển qua, như 道を走ります.",
+            "行く nói đi tới đâu (学校へ行く); marathon là môn chạy nên chỉ 走る hợp nghĩa."
+          ],
+          "answer": 2,
+          "explanation": "Nを走ります: を chỉ nơi di chuyển qua — 道を走ります, 公園を散歩します."
+        },
+        {
+          "id": "b27-tn-07",
+          "promptJapanese": "私は来週の土曜日パーティーを（　　　）。",
+          "promptReading": "わたしは らいしゅうの どようび パーティーを（　　　）。",
+          "promptVietnamese": "Thứ Bảy tuần sau tôi sẽ （　　　） một bữa tiệc.",
+          "choices": ["開(ひら)きます", "開(ひら)けます", "開(あ)けます"],
+          "choicesVietnamese": [
+            "ひらきます · Mở, tổ chức",
+            "ひらけます · Có thể tổ chức (thể khả năng của 開きます)",
+            "あけます · Mở (cửa, hộp)"
+          ],
+          "choiceNotes": [
+            "Đúng: パーティーを開きます (ひらきます) = tổ chức bữa tiệc — 開きます dùng cho lớp học, bữa tiệc, cuộc họp.",
+            "開けます đọc ひらけます là thể khả năng của 開きます (có thể tổ chức). Câu chỉ nói việc sẽ làm chứ không nói có làm được không, và thể khả năng thường đổi を thành が: パーティーが開けます.",
+            "開けます đọc あけます là mở vật đang đóng (ドアを開けます, 箱を開けます) — không dùng cho tiệc."
+          ],
+          "answer": 1,
+          "explanation": "Cùng chữ 開: 開きます (ひらきます) = mở, tổ chức sự kiện; 開けます (あけます) = mở cửa, mở hộp. Hai lựa chọn 開けます chỉ khác cách đọc, nên đề in kèm cách đọc."
+        },
+        {
+          "id": "b27-tn-08",
+          "promptJapanese": "ここでは、犬を（　　　）はいけません。",
+          "promptReading": "ここでは、いぬを（　　　）はいけません。",
+          "promptVietnamese": "Ở đây không được （　　　） chó.",
+          "choices": ["かいて", "聞こえて", "かって"],
+          "choicesVietnamese": [
+            "書いて／描いて · Viết／vẽ (thể て của かきます)",
+            "きこえて · Nghe thấy",
+            "飼って · Nuôi (thể て của かいます)"
+          ],
+          "choiceNotes": [
+            "かいて là thể て của かきます (書きます viết／描きます vẽ). Thể て của 飼います là かって: nhóm I đuôi い → って.",
+            "聞こえます là tự nghe thấy, đối tượng đi với が chứ không đi với を — và cũng không phải việc có thể cấm.",
+            "Đúng: 犬を飼ってはいけません = không được nuôi chó. 飼います → 飼って."
+          ],
+          "answer": 3,
+          "explanation": "Vてはいけません = không được ~. Thể て nhóm I: い・ち・り → って (飼います → 飼って), き → いて (書きます → 書いて)."
+        },
+        {
+          "id": "b27-tn-09",
+          "promptJapanese": "３０さいまでに、じぶんの家を（　　　）です。",
+          "promptReading": "さんじゅっさいまでに、じぶんの いえを（　　　）です。",
+          "promptVietnamese": "Tôi muốn （　　　） nhà của mình trước 30 tuổi.",
+          "choices": ["やりたい", "したい", "たてたい"],
+          "choicesVietnamese": ["やりたい · Muốn làm", "したい · Muốn làm", "建てたい · Muốn xây"],
+          "choiceNotes": [
+            "やります (làm) không đi với 家を; xây nhà có động từ riêng là 建てます.",
+            "します cũng là làm — không nói 家をします.",
+            "Đúng: 家を建てます → 建てたい = muốn xây nhà."
+          ],
+          "answer": 3,
+          "explanation": "～までに = trước (thời hạn) ~. Vます bỏ ます thêm たい = muốn ~: 建てます → 建てたい."
+        },
+        {
+          "id": "b27-tn-10",
+          "promptJapanese": "ね、ねこのこえが（　　　）か。",
+          "promptVietnamese": "Này, cậu có （　　　） tiếng mèo không?",
+          "choices": ["聞こえます", "できます", "開きます"],
+          "choicesVietnamese": ["きこえます · Nghe thấy", "できます · Hoàn thành／có thể", "ひらきます · Mở, tổ chức"],
+          "choiceNotes": [
+            "Đúng: 声が聞こえます = nghe thấy tiếng — đối tượng đi với が.",
+            "できます (hoàn thành) nói về công trình, đồ vật được làm xong; tiếng kêu không \"làm xong\".",
+            "開きます (mở, tổ chức) không đi với 声."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "b27-tn-11",
+          "promptJapanese": "50メートルしか（　　　）。",
+          "promptVietnamese": "Tôi chỉ （　　　） được 50 mét thôi.",
+          "choices": ["泳げる", "泳げない", "泳いで", "泳いだ"],
+          "choicesVietnamese": [
+            "およげる · Bơi được",
+            "およげない · Không bơi được",
+            "およいで · Bơi (thể て)",
+            "およいだ · Đã bơi"
+          ],
+          "choiceNotes": [
+            "しか luôn đi với thể PHỦ ĐỊNH; 泳げる là khẳng định.",
+            "Đúng: Nしか Vない = chỉ ~ thôi: 50メートルしか泳げない = chỉ bơi được 50 mét.",
+            "Thể て không kết thúc câu ở đây, và cũng không phải phủ định.",
+            "泳いだ là quá khứ khẳng định — しか không đi với khẳng định."
+          ],
+          "answer": 2,
+          "explanation": "泳ぎます → thể khả năng 泳げます → phủ định 泳げない. しか＋phủ định nhấn mạnh \"ít, chỉ có thế\"."
+        },
+        {
+          "id": "b27-tn-12",
+          "promptJapanese": "この（　　　）でペットが飼えますか。",
+          "promptReading": "この（　　　）で ペットが かえますか。",
+          "promptVietnamese": "Ở （　　　） này có nuôi được thú cưng không?",
+          "choices": ["マンション", "クリーニング", "キッチン", "道具"],
+          "choicesVietnamese": ["Chung cư", "Giặt ủi", "Nhà bếp", "どうぐ · Dụng cụ"],
+          "choiceNotes": [
+            "Đúng: マンション = chung cư — chỗ ở, nên hỏi được có nuôi thú cưng không.",
+            "クリーニング là giặt ủi, không phải chỗ ở.",
+            "キッチン là nhà bếp, chỉ là một phòng trong nhà.",
+            "道具 là dụng cụ, không phải nơi chốn."
+          ],
+          "answer": 1,
+          "explanation": "飼えます là thể khả năng của 飼います; thể khả năng đổi を thành が: ペットを飼います → ペットが飼えます."
+        },
+        {
+          "id": "b27-tn-13",
+          "promptJapanese": "海に近いから、（　　　）の音が聞こえます。",
+          "promptReading": "うみに ちかいから、（　　　）の おとが きこえます。",
+          "promptVietnamese": "Vì gần biển nên nghe được tiếng （　　　）.",
+          "choices": ["ペット", "花火", "家具", "波"],
+          "choicesVietnamese": ["Thú cưng", "はなび · Pháo hoa", "かぐ · Nội thất", "なみ · Sóng"],
+          "choiceNotes": [
+            "ペット (thú cưng) không liên quan gì tới việc gần biển.",
+            "花火 có tiếng nổ, nhưng lý do \"gần biển\" chỉ dẫn tới tiếng sóng.",
+            "家具 là đồ nội thất, không tự phát ra tiếng.",
+            "Đúng: 海に近い → 波の音が聞こえます = nghe tiếng sóng biển."
+          ],
+          "answer": 4
+        },
+        {
+          "id": "b27-tn-14",
+          "promptJapanese": "先週の旅行は（　　　）です。",
+          "promptReading": "せんしゅうの りょこうは（　　　）です。",
+          "promptVietnamese": "Chuyến du lịch tuần trước （　　　）.",
+          "choices": ["すばらしい", "すばらしかった", "すばらしくない", "すばらしく"],
+          "choicesVietnamese": [
+            "Tuyệt vời",
+            "Đã tuyệt vời (quá khứ)",
+            "Không tuyệt vời",
+            "Một cách tuyệt vời (bổ nghĩa cho động từ, tính từ)"
+          ],
+          "choiceNotes": [
+            "すばらしい là hiện tại; chuyện 先週 (tuần trước) phải dùng quá khứ.",
+            "Đúng: 先週 → quá khứ: すばらしかったです. Tính từ い: ～い → ～かったです.",
+            "すばらしくない là phủ định hiện tại — sai thì, mà nghĩa cũng ngược lại.",
+            "すばらしく bổ nghĩa cho động từ hoặc tính từ đứng sau (すばらしくきれい), không đứng trước です được."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "b27-tn-15",
+          "promptJapanese": "明日は試験があるので、（　　　）になります。",
+          "promptReading": "あしたは しけんが あるので、（　　　）に なります。",
+          "promptVietnamese": "Vì ngày mai có bài thi nên tôi thấy （　　　）.",
+          "choices": ["心配な", "心配ではなく", "心配", "心配して"],
+          "choicesVietnamese": [
+            "しんぱいな · Lo lắng (dạng đứng trước danh từ)",
+            "しんぱいではなく · Không lo lắng, và…",
+            "しんぱい · Lo lắng",
+            "しんぱいして · Lo lắng (thể て của 心配します)"
+          ],
+          "choiceNotes": [
+            "心配な chỉ đứng trước danh từ (心配なこと); trước に thì bỏ な.",
+            "心配ではなく đã là dạng nối; ghép thêm thành 心配ではなくになります là sai ngữ pháp.",
+            "Đúng: tính từ な bỏ な＋になります = trở nên ~: 心配になります = trở nên lo lắng.",
+            "心配して là thể て của động từ 心配します, không đứng trước に được."
+          ],
+          "answer": 3,
+          "explanation": "Tính từ な bỏ な＋になります = trở nên ~ (静かになります, 元気になります); tính từ い đổi い → く: 大きくなります."
+        }
+      ]
+    }
+  ]
+}

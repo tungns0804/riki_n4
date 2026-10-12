@@ -1,0 +1,566 @@
+{
+  "id": "04-bai-trac-nghiem",
+  "name": "Bài trắc nghiệm",
+  "description": "15 câu ôn từ vựng Bài 27: chọn nghĩa của từ (1–5), chọn từ điền vào chỗ trống (6–15).",
+  "kind": "test",
+  "parent": "",
+  "group": "",
+  "sections": [
+    {
+      "id": "b27-chon-nghia",
+      "title": "Bài trắc nghiệm Bài 27 · Câu 1–5 — Chọn nghĩa của từ",
+      "instructions": "Chọn nghĩa đúng của từ.",
+      "skill": "vocabulary",
+      "questions": [
+        {
+          "id": "b27-tn-01",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "見えます",
+          "promptReading": "みえます",
+          "promptTranslation": "",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "Nhìn",
+              "translation": "見ます (みます)",
+              "note": "Nhìn (chủ động đưa mắt nhìn) là 見ます: テレビを見ます — đối tượng đi với を."
+            },
+            {
+              "id": "c2",
+              "text": "Nhìn thấy",
+              "translation": "見えます (みえます)",
+              "note": "Đúng: 見えます là nhìn thấy — cảnh vật tự hiện ra trong tầm mắt, đối tượng đi với が: 富士山が見えます."
+            },
+            {
+              "id": "c3",
+              "text": "Nhớ",
+              "translation": "覚えます (おぼえます)",
+              "note": "Nhớ là 覚えます (おぼえます), không liên quan tới chữ 見."
+            },
+            {
+              "id": "c4",
+              "text": "Nhận ra",
+              "translation": "気がつきます (きがつきます)",
+              "note": "Nhận ra là 気がつきます (きがつきます)."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "見ます ⇔ 見えます: 見ます là chủ động nhìn (を), 見えます là tự nhìn thấy (が). Cặp giống vậy: 聞きます ⇔ 聞こえます.",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b27-tn-02",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "できます",
+          "promptReading": "",
+          "promptTranslation": "",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "Hoàn thành",
+              "translation": "できます",
+              "note": "Đúng: Nができます = N được làm xong, xây xong: 道ができます, Rikiビルはいつできますか."
+            },
+            {
+              "id": "c2",
+              "text": "Mở",
+              "translation": "開きます (ひらきます)",
+              "note": "Mở, tổ chức là 開きます (ひらきます): 教室を開きます."
+            },
+            {
+              "id": "c3",
+              "text": "Chạy",
+              "translation": "走ります (はしります)",
+              "note": "Chạy là 走ります (はしります)."
+            },
+            {
+              "id": "c4",
+              "text": "Nghe thấy",
+              "translation": "聞こえます (きこえます)",
+              "note": "Nghe thấy là 聞こえます (きこえます)."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "Ngoài nghĩa \"có thể\" đã học (日本語ができます), Bài 27 thêm nghĩa \"hoàn thành, được làm xong\" của できます.",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b27-tn-03",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "花火",
+          "promptReading": "はなび",
+          "promptTranslation": "",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "Ngắm hoa",
+              "translation": "花見 (はなみ)",
+              "note": "Ngắm hoa là 花見 (はなみ) — cùng chữ 花 nhưng chữ sau là 見 (xem), không phải 火."
+            },
+            {
+              "id": "c2",
+              "text": "Con chim",
+              "translation": "鳥 (とり)",
+              "note": "Con chim là 鳥 (とり)."
+            },
+            {
+              "id": "c3",
+              "text": "Pháo hoa",
+              "translation": "花火 (はなび)",
+              "note": "Đúng: 花火 = 花 (hoa) + 火 (lửa) — hoa lửa, tức pháo hoa."
+            },
+            {
+              "id": "c4",
+              "text": "Sóng",
+              "translation": "波 (なみ)",
+              "note": "Sóng là 波 (なみ)."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b27-tn-04",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "ペット",
+          "promptReading": "",
+          "promptTranslation": "",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "Nhà",
+              "translation": "家 (いえ)",
+              "note": "Nhà là 家 (いえ)."
+            },
+            {
+              "id": "c2",
+              "text": "Phòng học",
+              "translation": "教室 (きょうしつ)",
+              "note": "Phòng học là 教室 (きょうしつ)."
+            },
+            {
+              "id": "c3",
+              "text": "Phòng bếp",
+              "translation": "キッチン・台所 (だいどころ)",
+              "note": "Phòng bếp là キッチン (bếp kiểu Tây) hoặc 台所 (だいどころ)."
+            },
+            {
+              "id": "c4",
+              "text": "Vật nuôi, thú cưng",
+              "translation": "ペット",
+              "note": "Đúng: ペット (pet) = thú cưng: ペットを飼います."
+            }
+          ],
+          "answerId": "c4",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b27-tn-05",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "ほかの",
+          "promptReading": "",
+          "promptTranslation": "",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "Rõ ràng",
+              "translation": "はっきり",
+              "note": "Rõ ràng là はっきり: はっきり言ってください."
+            },
+            {
+              "id": "c2",
+              "text": "Chỉ, không gì ngoài",
+              "translation": "～しか～ない",
+              "note": "Chỉ, không gì ngoài là ～しか～ない: 野菜しか食べない."
+            },
+            {
+              "id": "c3",
+              "text": "Cái khác",
+              "translation": "他の (ほかの)",
+              "note": "Đúng: ほかの (他の) = khác, đứng trước danh từ: 他の仕事 = công việc khác."
+            },
+            {
+              "id": "c4",
+              "text": "Bên cạnh",
+              "translation": "横 (よこ)",
+              "note": "Bên cạnh là 横 (よこ) — từ vựng Bài 26."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        }
+      ]
+    },
+    {
+      "id": "b27-dien-tu",
+      "title": "Bài trắc nghiệm Bài 27 · Câu 6–15 — Chọn từ điền vào chỗ trống",
+      "instructions": "Chọn từ thích hợp điền vào （　　　）.",
+      "skill": "vocabulary",
+      "questions": [
+        {
+          "id": "b27-tn-06",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "マラソンコースを（　　　）。",
+          "promptReading": "",
+          "promptTranslation": "（　　　） trên cung đường marathon.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "歩く",
+              "translation": "あるく · Đi bộ",
+              "note": "歩く cũng đi với を chỉ nơi đi qua (道を歩く), nhưng cung đường marathon là để chạy."
+            },
+            {
+              "id": "c2",
+              "text": "走る",
+              "translation": "はしる · Chạy",
+              "note": "Đúng: マラソンコースを走る — を chỉ nơi di chuyển qua, như 道を走ります."
+            },
+            {
+              "id": "c3",
+              "text": "行く",
+              "translation": "いく · Đi",
+              "note": "行く nói đi tới đâu (学校へ行く); marathon là môn chạy nên chỉ 走る hợp nghĩa."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "Nを走ります: を chỉ nơi di chuyển qua — 道を走ります, 公園を散歩します.",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b27-tn-07",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "私は来週の土曜日パーティーを（　　　）。",
+          "promptReading": "わたしは らいしゅうの どようび パーティーを（　　　）。",
+          "promptTranslation": "Thứ Bảy tuần sau tôi sẽ （　　　） một bữa tiệc.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "開(ひら)きます",
+              "translation": "ひらきます · Mở, tổ chức",
+              "note": "Đúng: パーティーを開きます (ひらきます) = tổ chức bữa tiệc — 開きます dùng cho lớp học, bữa tiệc, cuộc họp."
+            },
+            {
+              "id": "c2",
+              "text": "開(ひら)けます",
+              "translation": "ひらけます · Có thể tổ chức (thể khả năng của 開きます)",
+              "note": "開けます đọc ひらけます là thể khả năng của 開きます (có thể tổ chức). Câu chỉ nói việc sẽ làm chứ không nói có làm được không, và thể khả năng thường đổi を thành が: パーティーが開けます."
+            },
+            {
+              "id": "c3",
+              "text": "開(あ)けます",
+              "translation": "あけます · Mở (cửa, hộp)",
+              "note": "開けます đọc あけます là mở vật đang đóng (ドアを開けます, 箱を開けます) — không dùng cho tiệc."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "Cùng chữ 開: 開きます (ひらきます) = mở, tổ chức sự kiện; 開けます (あけます) = mở cửa, mở hộp. Hai lựa chọn 開けます chỉ khác cách đọc, nên đề in kèm cách đọc.",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b27-tn-08",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "ここでは、犬を（　　　）はいけません。",
+          "promptReading": "ここでは、いぬを（　　　）はいけません。",
+          "promptTranslation": "Ở đây không được （　　　） chó.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "かいて",
+              "translation": "書いて／描いて · Viết／vẽ (thể て của かきます)",
+              "note": "かいて là thể て của かきます (書きます viết／描きます vẽ). Thể て của 飼います là かって: nhóm I đuôi い → って."
+            },
+            {
+              "id": "c2",
+              "text": "聞こえて",
+              "translation": "きこえて · Nghe thấy",
+              "note": "聞こえます là tự nghe thấy, đối tượng đi với が chứ không đi với を — và cũng không phải việc có thể cấm."
+            },
+            {
+              "id": "c3",
+              "text": "かって",
+              "translation": "飼って · Nuôi (thể て của かいます)",
+              "note": "Đúng: 犬を飼ってはいけません = không được nuôi chó. 飼います → 飼って."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "Vてはいけません = không được ~. Thể て nhóm I: い・ち・り → って (飼います → 飼って), き → いて (書きます → 書いて).",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b27-tn-09",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "３０さいまでに、じぶんの家を（　　　）です。",
+          "promptReading": "さんじゅっさいまでに、じぶんの いえを（　　　）です。",
+          "promptTranslation": "Tôi muốn （　　　） nhà của mình trước 30 tuổi.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "やりたい",
+              "translation": "やりたい · Muốn làm",
+              "note": "やります (làm) không đi với 家を; xây nhà có động từ riêng là 建てます."
+            },
+            {
+              "id": "c2",
+              "text": "したい",
+              "translation": "したい · Muốn làm",
+              "note": "します cũng là làm — không nói 家をします."
+            },
+            {
+              "id": "c3",
+              "text": "たてたい",
+              "translation": "建てたい · Muốn xây",
+              "note": "Đúng: 家を建てます → 建てたい = muốn xây nhà."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "～までに = trước (thời hạn) ~. Vます bỏ ます thêm たい = muốn ~: 建てます → 建てたい.",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b27-tn-10",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "ね、ねこのこえが（　　　）か。",
+          "promptReading": "",
+          "promptTranslation": "Này, cậu có （　　　） tiếng mèo không?",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "聞こえます",
+              "translation": "きこえます · Nghe thấy",
+              "note": "Đúng: 声が聞こえます = nghe thấy tiếng — đối tượng đi với が."
+            },
+            {
+              "id": "c2",
+              "text": "できます",
+              "translation": "できます · Hoàn thành／có thể",
+              "note": "できます (hoàn thành) nói về công trình, đồ vật được làm xong; tiếng kêu không \"làm xong\"."
+            },
+            {
+              "id": "c3",
+              "text": "開きます",
+              "translation": "ひらきます · Mở, tổ chức",
+              "note": "開きます (mở, tổ chức) không đi với 声."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b27-tn-11",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "50メートルしか（　　　）。",
+          "promptReading": "",
+          "promptTranslation": "Tôi chỉ （　　　） được 50 mét thôi.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "泳げる",
+              "translation": "およげる · Bơi được",
+              "note": "しか luôn đi với thể PHỦ ĐỊNH; 泳げる là khẳng định."
+            },
+            {
+              "id": "c2",
+              "text": "泳げない",
+              "translation": "およげない · Không bơi được",
+              "note": "Đúng: Nしか Vない = chỉ ~ thôi: 50メートルしか泳げない = chỉ bơi được 50 mét."
+            },
+            {
+              "id": "c3",
+              "text": "泳いで",
+              "translation": "およいで · Bơi (thể て)",
+              "note": "Thể て không kết thúc câu ở đây, và cũng không phải phủ định."
+            },
+            {
+              "id": "c4",
+              "text": "泳いだ",
+              "translation": "およいだ · Đã bơi",
+              "note": "泳いだ là quá khứ khẳng định — しか không đi với khẳng định."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "泳ぎます → thể khả năng 泳げます → phủ định 泳げない. しか＋phủ định nhấn mạnh \"ít, chỉ có thế\".",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b27-tn-12",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "この（　　　）でペットが飼えますか。",
+          "promptReading": "この（　　　）で ペットが かえますか。",
+          "promptTranslation": "Ở （　　　） này có nuôi được thú cưng không?",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "マンション",
+              "translation": "Chung cư",
+              "note": "Đúng: マンション = chung cư — chỗ ở, nên hỏi được có nuôi thú cưng không."
+            },
+            {
+              "id": "c2",
+              "text": "クリーニング",
+              "translation": "Giặt ủi",
+              "note": "クリーニング là giặt ủi, không phải chỗ ở."
+            },
+            {
+              "id": "c3",
+              "text": "キッチン",
+              "translation": "Nhà bếp",
+              "note": "キッチン là nhà bếp, chỉ là một phòng trong nhà."
+            },
+            {
+              "id": "c4",
+              "text": "道具",
+              "translation": "どうぐ · Dụng cụ",
+              "note": "道具 là dụng cụ, không phải nơi chốn."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "飼えます là thể khả năng của 飼います; thể khả năng đổi を thành が: ペットを飼います → ペットが飼えます.",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b27-tn-13",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "海に近いから、（　　　）の音が聞こえます。",
+          "promptReading": "うみに ちかいから、（　　　）の おとが きこえます。",
+          "promptTranslation": "Vì gần biển nên nghe được tiếng （　　　）.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "ペット",
+              "translation": "Thú cưng",
+              "note": "ペット (thú cưng) không liên quan gì tới việc gần biển."
+            },
+            {
+              "id": "c2",
+              "text": "花火",
+              "translation": "はなび · Pháo hoa",
+              "note": "花火 có tiếng nổ, nhưng lý do \"gần biển\" chỉ dẫn tới tiếng sóng."
+            },
+            {
+              "id": "c3",
+              "text": "家具",
+              "translation": "かぐ · Nội thất",
+              "note": "家具 là đồ nội thất, không tự phát ra tiếng."
+            },
+            {
+              "id": "c4",
+              "text": "波",
+              "translation": "なみ · Sóng",
+              "note": "Đúng: 海に近い → 波の音が聞こえます = nghe tiếng sóng biển."
+            }
+          ],
+          "answerId": "c4",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b27-tn-14",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "先週の旅行は（　　　）です。",
+          "promptReading": "せんしゅうの りょこうは（　　　）です。",
+          "promptTranslation": "Chuyến du lịch tuần trước （　　　）.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "すばらしい",
+              "translation": "Tuyệt vời",
+              "note": "すばらしい là hiện tại; chuyện 先週 (tuần trước) phải dùng quá khứ."
+            },
+            {
+              "id": "c2",
+              "text": "すばらしかった",
+              "translation": "Đã tuyệt vời (quá khứ)",
+              "note": "Đúng: 先週 → quá khứ: すばらしかったです. Tính từ い: ～い → ～かったです."
+            },
+            {
+              "id": "c3",
+              "text": "すばらしくない",
+              "translation": "Không tuyệt vời",
+              "note": "すばらしくない là phủ định hiện tại — sai thì, mà nghĩa cũng ngược lại."
+            },
+            {
+              "id": "c4",
+              "text": "すばらしく",
+              "translation": "Một cách tuyệt vời (bổ nghĩa cho động từ, tính từ)",
+              "note": "すばらしく bổ nghĩa cho động từ hoặc tính từ đứng sau (すばらしくきれい), không đứng trước です được."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b27-tn-15",
+          "skill": "vocabulary",
+          "prompt": "",
+          "promptJapanese": "明日は試験があるので、（　　　）になります。",
+          "promptReading": "あしたは しけんが あるので、（　　　）に なります。",
+          "promptTranslation": "Vì ngày mai có bài thi nên tôi thấy （　　　）.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "心配な",
+              "translation": "しんぱいな · Lo lắng (dạng đứng trước danh từ)",
+              "note": "心配な chỉ đứng trước danh từ (心配なこと); trước に thì bỏ な."
+            },
+            {
+              "id": "c2",
+              "text": "心配ではなく",
+              "translation": "しんぱいではなく · Không lo lắng, và…",
+              "note": "心配ではなく đã là dạng nối; ghép thêm thành 心配ではなくになります là sai ngữ pháp."
+            },
+            {
+              "id": "c3",
+              "text": "心配",
+              "translation": "しんぱい · Lo lắng",
+              "note": "Đúng: tính từ な bỏ な＋になります = trở nên ~: 心配になります = trở nên lo lắng."
+            },
+            {
+              "id": "c4",
+              "text": "心配して",
+              "translation": "しんぱいして · Lo lắng (thể て của 心配します)",
+              "note": "心配して là thể て của động từ 心配します, không đứng trước に được."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "Tính từ な bỏ な＋になります = trở nên ~ (静かになります, 元気になります); tính từ い đổi い → く: 大きくなります.",
+          "passage": [],
+          "passageTranslation": []
+        }
+      ]
+    }
+  ]
+}

@@ -19,6 +19,10 @@ data-source/
     ├── reading/                  mục "Đọc Hiểu - Mon sensei"
     │   └── 01-doc-hieu-moi/      oc-hieu-moi-bai-26.pdf
     └── listening/                chưa có bài, mới có README định dạng
+└── bai-27/                       Bài 27 : Thể khả năng của động từ
+    └── vocabulary/               mục "Từ Vựng Cải Thiện"
+        ├── 03-phan-3/            bai-27-phan-3.pdf
+        └── 04-bai-trac-nghiem/   Bài trắc nghiệm (đề, test.json)
 ```
 
 Bài kiểm tra nhập môn là một học phần riêng, ngang hàng với các bài học ở trang gốc.

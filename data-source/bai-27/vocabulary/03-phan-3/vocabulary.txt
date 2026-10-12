@@ -1,0 +1,146 @@
+# Bài 27 · TỪ VỰNG CẢI THIỆN · Phần 3 (01–23)
+# nguồn: bai-27-phan-3.pdf
+# Định dạng: xem data-source/bai-26/vocabulary/README.md
+#
+# Bốn cụm theo bốn mục của bản PDF: A Động từ, B Danh từ, C Tính từ, D Phó từ. Mặt chữ,
+# nghĩa và câu ví dụ chép theo PDF; động từ giữ thể ます như sách in. Âm Hán Việt, dòng
+# 読 và 文法 là phần bổ sung để luyện.
+#
+# PDF in động từ kèm cụm đi cùng (「ペットを」飼います) và nghĩa kèm ngoặc
+# (Nuôi (thú cưng)). Ở đây cụm đó thành dòng 連 và nghĩa bỏ phần ngoặc: gõ "nuôi" khi
+# luyện phải được tính đúng.
+
+# nguồn: bai-27-phan-3.pdf · A Động từ
+## 01–07 = Động từ
+
+01. (を)飼います (かいます) = TỰ ; Nuôi
+・Bさんはペットを[飼って]いますか。| B ơi cậu có nuôi thú cưng không?
+読: Bさんはペットをかっていますか。
+文法: Vています = trạng thái đang kéo dài (đang nuôi)
+連: ペットを飼います = Nuôi thú cưng
+
+02. (を)走ります (はしります) = TẨU ; Chạy
+・早く[走って]ください。| Chạy nhanh lên.
+読: はやくはしってください。
+文法: Vてください = hãy ~; 早い → 早く = nhanh (tính từ い bổ nghĩa cho động từ)
+連: 道を走ります = Chạy trên đường — を chỉ nơi đi qua
+
+03. (が)見えます (みえます) = KIẾN ; Có thể nhìn thấy/ Nhìn thấy
+・ここから富士山が[見えます]よ。| Từ đây có thể thấy được núi Phú Sĩ.
+読: ここからふじさんがみえますよ。
+文法: Nが見えます = N tự hiện ra trong tầm mắt — đối tượng đi với が, không phải を
+連: 山が見えます = Có thể nhìn thấy núi
+
+04. (が)聞こえます (きこえます) = VĂN ; Có thể nghe thấy/ Nghe thấy
+・ピアノの音が[聞こえます]ね。| Có thể nghe được tiếng Piano.
+読: ピアノのおとがきこえますね。
+文法: Nが聞こえます = N tự lọt vào tai — đối tượng đi với が, không phải を
+連: 音が聞こえます = Có thể nghe thấy âm thanh
+
+05. (が)できます = Hoàn thành/ Xong
+・Linhさん、Rikiビルはいつ[できます]か。| Linh, khi nào tòa nhà Riki sẽ hoàn thành?
+文法: Nができます = N được làm xong, xây xong — khác できます "có thể" đã học
+連: 道ができます = Con đường được làm xong
+
+06. (を)開きます (ひらきます) = KHAI ; Mở/ Tổ chức
+・学校は来週から料理教室を[開く]よ。| Trường sẽ tổ chức một lớp học nấu ăn từ tuần tới.
+読: がっこうはらいしゅうからりょうりきょうしつをひらくよ。
+文法: 開く = thể từ điển của 開きます; (thời điểm)から = từ ~
+連: 教室を開きます = Mở lớp học
+使い分け: 開きます (ひらきます) = mở, tổ chức (lớp học, bữa tiệc, cuộc họp) · 開けます (あけます) = mở (cửa, hộp)
+
+07. (を)建てます (たてます) = KIẾN ; Xây/ Xây dựng
+・Mimi先生は新しい家を[建てます]よ。| Mimi sẽ xây một ngôi nhà mới.
+読: Mimiせんせいはあたらしいいえをたてますよ。
+連: 家を建てます = Xây nhà
+
+# nguồn: bai-27-phan-3.pdf · B Danh từ
+## 08–17 = Danh từ
+
+08. ペット = Thú cưng
+・家にペットはいますか？| Nhà bạn có thú cưng không?
+読: いえにペットはいますか？
+文法: (nơi)にNがいます = ở ~ có N (người, con vật); hỏi thì が thành は
+
+09. 鳥 (とり) = ĐIỂU ; Chim
+・家に鳥がいます。| Nhà tôi có một con chim.
+読: いえにとりがいます。
+
+10. 声 (こえ) = THANH ; Tiếng/ Giọng
+・鳥の声が聞こえるね。| Có thể nghe được tiếng chim kêu nhỉ.
+読: とりのこえがきこえるね。
+文法: 聞こえる = thể từ điển của 聞こえます
+使い分け: 声 = tiếng của người, con vật · 音 (おと) = âm thanh của đồ vật (ピアノの音)
+
+11. 波 (なみ) = BA ; Sóng
+・波が大きくなってきた。| Sóng lên cao rồi kìa
+読: なみがおおきくなってきた。
+文法: 大きい → 大きくなります = trở nên to; Vてきた = ~ dần lên (thay đổi tới bây giờ)
+
+12. 花火 (はなび) = HOA HOẢ ; Pháo hoa
+・東京の花火は一番きれいですね。| Pháo hoa ở Tokyo là đẹp nhất nhỉ.
+読: とうきょうのはなびはいちばんきれいですね。
+文法: 一番＋tính từ = ~ nhất
+
+13. クリーニング = Giặt ủi
+・クリーニングの店に持って行ってください。| Cậu hãy mang nó tới tiệm giặt ủi đi.
+読: クリーニングのみせにもっていってください。
+文法: 持って行きます = mang đi; Vてください = hãy ~
+
+14. マンション = Chung cư
+・マンションに住みたいです。| Tôi muốn sống ở chung cư.
+読: マンションにすみたいです。
+文法: Vたいです = muốn ~; (nơi)に住みます = sống ở ~
+
+15. 家具 (かぐ) = GIA CỤ ; Nội thất/ Đồ đạc trong nhà
+・家具を少し動かしただけです。| Tôi chỉ chuyển một ít nội thất trong nhà đi thôi.
+読: かぐをすこしうごかしただけです。
+文法: Vただけです = chỉ (đã) ~ thôi
+
+16. 道具 (どうぐ) = ĐẠO CỤ ; Dụng cụ
+・料理道具の売り場はあそこですか。| Nơi bán dụng cụ nấu ăn là ở kia phải không?
+読: りょうりどうぐのうりばはあそこですか。
+文法: 売り場 = quầy bán, nơi bán (từ vựng Bài 26)
+
+17. キッチン = Nhà bếp/ Nhà bếp kiểu Tây
+・広くて、きれいなキッチンだ。| Nhà bếp cậu rộng với đẹp thế.
+読: ひろくて、きれいなキッチンだ。
+文法: 広い → 広くて = rộng, và… (nối tính từ い với vế sau)
+
+# nguồn: bai-27-phan-3.pdf · C Tính từ
+## 18–19 = Tính từ
+
+18. 心配な (しんぱいな) = TÂM PHỐI ; Lo lắng
+・何か[心配な]ことがありますか。| Cậu có chuyện gì lo lắng à?
+読: なにかしんぱいなことがありますか。
+文法: 何か = cái gì đó; tính từ な＋な＋N = bổ nghĩa cho danh từ
+使い方: 心配 còn là danh từ: 心配になります = trở nên lo lắng · 心配します = lo lắng
+
+19. すばらしい = Tuyệt vời
+・旅行は[すばらしかった]！| Chuyến du lịch tuyệt vời lắm.
+読: りょこうはすばらしかった！
+文法: tính từ い: ～い → ～かった = quá khứ
+
+# nguồn: bai-27-phan-3.pdf · D Phó từ
+## 20–23 = Phó từ
+
+20. ～しか～ない = Chỉ/ Không gì ngoài
+・昼ご飯は野菜[しか]食べないんですか。| Bữa ăn trưa chỉ có rau thôi à.
+読: ひるごはんはやさいしかたべないんですか。
+文法: Nしか Vない = chỉ N thôi — luôn đi với thể phủ định; ～んですか = hỏi để xác nhận (Bài 26)
+使い方: しか thay cho が・を: 野菜を食べる → 野菜しか食べない
+
+21. いつか = Một lúc nào đó/ Một ngày nào đó
+・いつか教師になりたいですから。| Vì tớ muốn một ngày nào đó sẽ trở thành giáo viên.
+読: いつかきょうしになりたいですから。
+文法: Nになりたい = muốn trở thành N; câu kết thúc bằng ～から = nêu lý do
+
+22. 他の (ほかの) = THA ; Khác
+・他の仕事を探したい。| Tớ muốn tìm công việc khác.
+読: ほかのしごとをさがしたい。
+文法: 他のN = N khác — luôn đứng trước danh từ; 探します (Bài 26) → 探したい = muốn tìm
+
+23. はっきり = Rõ ràng
+・はっきり言ってください。| Cậu hãy nói rõ ràng vào.
+読: はっきりいってください。
+文法: Vてください = hãy ~

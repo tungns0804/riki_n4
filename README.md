@@ -10,6 +10,7 @@ Trang gốc liệt kê các học phần, ngang hàng nhau:
 | ------------------------- | ------------------------- | ------------------------------------------------------ |
 | Bài kiểm tra nhập môn N4  | `/kiem-tra-nhap-mon/test` | Đề đầu vào: làm cả bài rồi nộp, chấm theo từng kỹ năng — hiện là bài giữ chỗ `de-1`, chờ đề |
 | Bài 26 : Cách hình thành và sử dụng んです | `/bai-26` | Các mục của Bài 26, xem bảng dưới |
+| Bài 27 : Thể khả năng của động từ | `/bai-27` | Từ Vựng Cải Thiện: Phần 3 (23 từ) và Bài trắc nghiệm (15 câu); các mục khác chờ nội dung |
 
 Bài kiểm tra nhập môn là học phần chỉ có một phần học, nên thẻ ở trang gốc dẫn thẳng vào
 danh sách đề (`courseEntryLink` trong `course.config.ts`). Học phần "Khoá N4" cũ (bảy phần,
