@@ -1,0 +1,280 @@
+{
+  "id": "01-phan-1",
+  "name": "Kanji mới · Phần 1",
+  "description": "8 chữ: 部・屋 (部屋 căn phòng), các tính từ tả nơi chốn 広い・低い・静か・近い⇔遠い, và 緑 (màu xanh lá).",
+  "kind": "kanji",
+  "parent": "",
+  "group": "",
+  "kanji": [
+    {
+      "id": "6578fd68d6a1fec9",
+      "character": "部",
+      "hanViet": "BỘ",
+      "meaning": "",
+      "onyomi": [
+        "ブ"
+      ],
+      "kunyomi": [
+        "へ"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "79442e1790e7191f",
+          "japanese": "全部",
+          "reading": "ぜんぶ",
+          "vietnamese": "Toàn bộ"
+        },
+        {
+          "id": "06b06c7eaab4c777",
+          "japanese": "部長",
+          "reading": "ぶちょう",
+          "vietnamese": "Trưởng phòng"
+        },
+        {
+          "id": "0333a45021beab78",
+          "japanese": "一部",
+          "reading": "いちぶ",
+          "vietnamese": "1 phần"
+        },
+        {
+          "id": "4be4c58e3b0822fa",
+          "japanese": "部屋",
+          "reading": "へや",
+          "vietnamese": "Căn phòng"
+        }
+      ]
+    },
+    {
+      "id": "cf94d7e2896c03e3",
+      "character": "屋",
+      "hanViet": "ỐC",
+      "meaning": "",
+      "onyomi": [
+        "オク"
+      ],
+      "kunyomi": [
+        "や"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "bccea62397aaa8ef",
+          "japanese": "屋上",
+          "reading": "おくじょう",
+          "vietnamese": "Nóc nhà"
+        },
+        {
+          "id": "4be4c58e3b0822fa",
+          "japanese": "部屋",
+          "reading": "へや",
+          "vietnamese": "Căn phòng"
+        },
+        {
+          "id": "1e87a9dd592131b5",
+          "japanese": "本屋",
+          "reading": "ほんや",
+          "vietnamese": "Hiệu sách"
+        },
+        {
+          "id": "638eef25724ceef6",
+          "japanese": "八百屋",
+          "reading": "やおや",
+          "vietnamese": "Cửa hàng rau"
+        }
+      ]
+    },
+    {
+      "id": "d5a8e8bca8a4a10a",
+      "character": "広",
+      "hanViet": "QUẢNG",
+      "meaning": "",
+      "onyomi": [
+        "コウ"
+      ],
+      "kunyomi": [
+        "ひろ.い",
+        "ひろ.げる",
+        "ひろ.がる"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "4ea07442216fd1e2",
+          "japanese": "広大",
+          "reading": "こうだい",
+          "vietnamese": "Rộng lớn"
+        },
+        {
+          "id": "3597b951d81c09be",
+          "japanese": "広い",
+          "reading": "ひろい",
+          "vietnamese": "Rộng"
+        },
+        {
+          "id": "1448e5ffefcc1424",
+          "japanese": "広島",
+          "reading": "ひろしま",
+          "vietnamese": "Hiroshima"
+        },
+        {
+          "id": "954a7c38fed05616",
+          "japanese": "広げる",
+          "reading": "ひろげる",
+          "vietnamese": "Mở rộng"
+        },
+        {
+          "id": "4697d3e41a52a500",
+          "japanese": "広がる",
+          "reading": "ひろがる",
+          "vietnamese": "Lan rộng"
+        }
+      ]
+    },
+    {
+      "id": "5772abb6319a2a99",
+      "character": "低",
+      "hanViet": "ĐÊ",
+      "meaning": "",
+      "onyomi": [
+        "テイ"
+      ],
+      "kunyomi": [
+        "ひく.い"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "fc85f1eae6965bb5",
+          "japanese": "低学年",
+          "reading": "ていがくねん",
+          "vietnamese": "Lớp thấp"
+        },
+        {
+          "id": "80069ab482bbaeef",
+          "japanese": "低下",
+          "reading": "ていか",
+          "vietnamese": "Suy giảm"
+        },
+        {
+          "id": "cdbf17994363a948",
+          "japanese": "高低",
+          "reading": "こうてい",
+          "vietnamese": "Cao thấp"
+        },
+        {
+          "id": "7dc1f57083f1f927",
+          "japanese": "低い",
+          "reading": "ひくい",
+          "vietnamese": "Thấp"
+        }
+      ]
+    },
+    {
+      "id": "3e7033c3471541be",
+      "character": "緑",
+      "hanViet": "LỤC",
+      "meaning": "",
+      "onyomi": [
+        "リョク"
+      ],
+      "kunyomi": [
+        "みどり"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "457657352fb22dae",
+          "japanese": "緑茶",
+          "reading": "りょくちゃ",
+          "vietnamese": "Trà xanh"
+        },
+        {
+          "id": "64a31d50d4834084",
+          "japanese": "緑",
+          "reading": "みどり",
+          "vietnamese": "Màu xanh lá"
+        }
+      ]
+    },
+    {
+      "id": "e3bfcf1093e148aa",
+      "character": "静",
+      "hanViet": "TĨNH",
+      "meaning": "",
+      "onyomi": [],
+      "kunyomi": [
+        "しず.か"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "039450c4f50a7b0f",
+          "japanese": "静かな",
+          "reading": "しずかな",
+          "vietnamese": "Yên tĩnh, Yên lặng"
+        }
+      ]
+    },
+    {
+      "id": "6e6b191cb887647d",
+      "character": "近",
+      "hanViet": "CẬN",
+      "meaning": "",
+      "onyomi": [
+        "キン"
+      ],
+      "kunyomi": [
+        "ちか.い"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "239d6deb2fbbcecb",
+          "japanese": "近所",
+          "reading": "きんじょ",
+          "vietnamese": "Hàng xóm"
+        },
+        {
+          "id": "dde7c984d93b1925",
+          "japanese": "最近",
+          "reading": "さいきん",
+          "vietnamese": "Gần đây"
+        },
+        {
+          "id": "8bbb5e1f0a6d81fa",
+          "japanese": "近い",
+          "reading": "ちかい",
+          "vietnamese": "Gần"
+        }
+      ]
+    },
+    {
+      "id": "adb92578db62d9e8",
+      "character": "遠",
+      "hanViet": "VIỄN",
+      "meaning": "",
+      "onyomi": [
+        "エン"
+      ],
+      "kunyomi": [
+        "とお.い"
+      ],
+      "strokes": 0,
+      "words": [
+        {
+          "id": "0a8cab45ca1e974e",
+          "japanese": "遠足",
+          "reading": "えんそく",
+          "vietnamese": "Dã ngoại"
+        },
+        {
+          "id": "21355d9d49ef5c49",
+          "japanese": "遠い",
+          "reading": "とおい",
+          "vietnamese": "Xa"
+        }
+      ]
+    }
+  ]
+}

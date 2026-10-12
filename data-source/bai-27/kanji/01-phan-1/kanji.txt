@@ -1,0 +1,16 @@
+# Bài 27 · KANJI - Hiền sensei · Kanji mới · Phần 1
+# nguồn: kanji-bai-271.pdf (Buổi 27 · Kiến thức, chữ 01–08)
+# Định dạng: xem data-source/bai-26/kanji/README.md
+#
+# PDF chỉ có âm Hán Việt, 音, 訓 và từ ví dụ: cột nghĩa và số nét để trống, như Bài 26.
+# 静 không in 音 nên cột 音 để trống. 訓 in thành "しず ー かな" và "ちか" nên chép theo
+# dạng từ điển của từ ví dụ: 静か → しず.か, 近い → ちか.い. 部 in 訓 へ là cách đọc của
+# 部 trong 部屋 (へや), giữ như PDF.
+部,BỘ,,ブ,へ,|全部 (ぜんぶ)=Toàn bộ;部長 (ぶちょう)=Trưởng phòng;一部 (いちぶ)=1 phần;部屋 (へや)=Căn phòng
+屋,ỐC,,オク,や,|屋上 (おくじょう)=Nóc nhà;部屋 (へや)=Căn phòng;本屋 (ほんや)=Hiệu sách;八百屋 (やおや)=Cửa hàng rau
+広,QUẢNG,,コウ,ひろ.い・ひろ.げる・ひろ.がる,|広大 (こうだい)=Rộng lớn;広い (ひろい)=Rộng;広島 (ひろしま)=Hiroshima;広げる (ひろげる)=Mở rộng;広がる (ひろがる)=Lan rộng
+低,ĐÊ,,テイ,ひく.い,|低学年 (ていがくねん)=Lớp thấp;低下 (ていか)=Suy giảm;高低 (こうてい)=Cao thấp;低い (ひくい)=Thấp
+緑,LỤC,,リョク,みどり,|緑茶 (りょくちゃ)=Trà xanh;緑 (みどり)=Màu xanh lá
+静,TĨNH,,,しず.か,|静かな (しずかな)=Yên tĩnh, Yên lặng
+近,CẬN,,キン,ちか.い,|近所 (きんじょ)=Hàng xóm;最近 (さいきん)=Gần đây;近い (ちかい)=Gần
+遠,VIỄN,,エン,とお.い,|遠足 (えんそく)=Dã ngoại;遠い (とおい)=Xa

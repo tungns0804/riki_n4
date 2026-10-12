@@ -37,6 +37,7 @@ Phần 1"). PDF không in nghĩa riêng của chữ và số nét nên hai cột
 | Thư mục                       | Tên                | Nội dung                                          |
 | ----------------------------- | ------------------ | ------------------------------------------------- |
 | `bai-26/kanji/01-phan-1`      | Kanji mới · Phần 1 | 8 chữ: 家 族 兄 弟 姉 妹 私 育                      |
+| `bai-27/kanji/01-phan-1`      | Kanji mới · Phần 1 | 8 chữ: 部 屋 広 低 緑 静 近 遠 (`kanji-bai-271.pdf`) |
 
 `meta.json` của mỗi bài ghi `description` là một dòng **tóm tắt bài học gì** — trang bài
 hiện nó ngay dưới tên bài, nên đọc một dòng đó là biết bài gồm những chữ nào và chúng

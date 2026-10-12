@@ -4,7 +4,7 @@
     "name": "Bài 27 : Thể khả năng của động từ",
     "level": "N4"
   },
-  "generatedAt": "2026-10-12T11:02:47.717Z",
+  "generatedAt": "2026-10-12T14:01:13.264Z",
   "modules": [
     {
       "id": "vocabulary",
@@ -53,7 +53,19 @@
     },
     {
       "id": "kanji",
-      "units": []
+      "units": [
+        {
+          "id": "01-phan-1",
+          "name": "Kanji mới · Phần 1",
+          "description": "8 chữ: 部・屋 (部屋 căn phòng), các tính từ tả nơi chốn 広い・低い・静か・近い⇔遠い, và 緑 (màu xanh lá).",
+          "kind": "kanji",
+          "parent": "",
+          "group": "",
+          "itemCount": 8,
+          "order": 1,
+          "file": "kanji/01-phan-1.json"
+        }
+      ]
     },
     {
       "id": "grammar",
