@@ -68,6 +68,12 @@ const COURSES = [
     level: 'N4',
     modules: ['vocabulary', 'kanji', 'grammar', 'reading', 'listening'],
   },
+  {
+    id: 'bai-50',
+    name: 'Bài 50 : Khiêm nhường ngữ',
+    level: 'N4',
+    modules: ['vocabulary', 'kanji', 'grammar', 'reading', 'listening'],
+  },
 ];
 
 /**

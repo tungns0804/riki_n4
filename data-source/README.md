@@ -8,23 +8,26 @@ data-source/
 │   └── entrance-test/
 │       ├── README.md             định dạng đề (test.json)
 │       └── de-1/                 bài giữ chỗ, chờ test.json
-└── bai-26/                       Bài 26 : Cách hình thành và sử dụng んです
-    ├── vocabulary/               mục "Từ Vựng Cải Thiện"
-    │   ├── README.md             định dạng file từ vựng
-    │   └── 01-phan-1/            bai-26-phan-1.pdf
-    ├── kanji/                    mục "Kanji - Hiền sensei"
-    │   └── 01-phan-1/            kanji-moi-bai-26-1.pdf
-    ├── grammar/                  mục "Ngữ Pháp Cải Thiện - Tuyển Sensei"
-    │   └── 02-phan-2/            bai-26-phan-2-…-nen-hoc-tieng-nhat-o-au-nhi.pdf
-    ├── reading/                  mục "Đọc Hiểu - Mon sensei"
-    │   └── 01-doc-hieu-moi/      oc-hieu-moi-bai-26.pdf
-    └── listening/                chưa có bài, mới có README định dạng
-└── bai-27/                       Bài 27 : Thể khả năng của động từ
-    ├── vocabulary/               mục "Từ Vựng Cải Thiện"
-    │   ├── 03-phan-3/            bai-27-phan-3.pdf
-    │   └── 04-bai-trac-nghiem/   Bài trắc nghiệm (đề, test.json)
-    └── kanji/                    mục "Kanji - Hiền sensei"
-        └── 01-phan-1/            kanji-bai-271.pdf
+├── bai-26/                       Bài 26 : Cách hình thành và sử dụng んです
+│   ├── vocabulary/               mục "Từ Vựng Cải Thiện"
+│   │   ├── README.md             định dạng file từ vựng
+│   │   └── 01-phan-1/            bai-26-phan-1.pdf
+│   ├── kanji/                    mục "Kanji - Hiền sensei"
+│   │   └── 01-phan-1/            kanji-moi-bai-26-1.pdf
+│   ├── grammar/                  mục "Ngữ Pháp Cải Thiện - Tuyển Sensei"
+│   │   └── 02-phan-2/            bai-26-phan-2-…-nen-hoc-tieng-nhat-o-au-nhi.pdf
+│   ├── reading/                  mục "Đọc Hiểu - Mon sensei"
+│   │   └── 01-doc-hieu-moi/      oc-hieu-moi-bai-26.pdf
+│   └── listening/                chưa có bài, mới có README định dạng
+├── bai-27/                       Bài 27 : Thể khả năng của động từ
+│   ├── vocabulary/               mục "Từ Vựng Cải Thiện"
+│   │   ├── 03-phan-3/            bai-27-phan-3.pdf
+│   │   └── 04-bai-trac-nghiem/   Bài trắc nghiệm (đề, test.json)
+│   └── kanji/                    mục "Kanji - Hiền sensei"
+│       └── 01-phan-1/            kanji-bai-271.pdf
+└── bai-50/                       Bài 50 : Khiêm nhường ngữ
+    └── vocabulary/               mục "Từ Vựng Cải Thiện"
+        └── 01-phan-1/            bai-50-phan-1.pdf (phan-2 in y hệt)
 ```
 
 Bài kiểm tra nhập môn là một học phần riêng, ngang hàng với các bài học ở trang gốc.

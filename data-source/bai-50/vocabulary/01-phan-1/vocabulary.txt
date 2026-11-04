@@ -1,0 +1,122 @@
+# Bài 50 · TỪ VỰNG CẢI THIỆN · Phần 1 (01–19)
+# nguồn: bai-50-phan-1.pdf (bai-50-phan-2.pdf in y hệt, không tách thành bài thứ hai)
+# Định dạng: xem data-source/bai-26/vocabulary/README.md
+#
+# Hai cụm theo hai mục của bản PDF: A Động từ, C Phó từ (PDF không có mục B). Mặt chữ,
+# nghĩa và câu ví dụ chép theo PDF; động từ giữ thể ます như sách in. Âm Hán Việt, dòng
+# 読 và 文法 là phần bổ sung để luyện.
+#
+# PDF ghi nghĩa kèm ngoặc "(khiêm nhường ngữ của …)": phần ngoặc chuyển thành dòng
+# 使い方, nghĩa chỉ giữ phần chính để gõ khi luyện được tính đúng.
+
+# nguồn: bai-50-phan-1.pdf · A Động từ
+## 01–11 = Động từ
+
+01. 参ります (まいります) = THAM ; Đi/ Đến
+・すぐ持って[まいります]。| Tôi sẽ mang đi ngay ạ.
+読: すぐもってまいります。
+文法: 持ってまいります = khiêm nhường của 持って行きます／持って来ます
+使い方: khiêm nhường ngữ của 行きます・来ます
+
+02. 伺います (うかがいます) = TỨ ; Hỏi/ Đến thăm
+・先生、[伺い]たいことがあるんですが、…| Sensei ơi, em có điều muốn hỏi ạ.
+読: せんせい、うかがいたいことがあるんですが、…
+文法: Vたい = muốn ~; ～んですが = mở lời trước khi nhờ, hỏi (Bài 26)
+使い方: khiêm nhường ngữ của 聞きます (hỏi) và 行きます (đến thăm)
+
+03. おります = Ở/ Có
+・私の家族は、今ベトナムのハノイに住んで[おります]。| Gia đình của tôi hiện giờ đang sống ở Hà Nội - Việt Nam.
+読: わたしのかぞくは、いまベトナムのハノイにすんでおります。
+文法: Vております = khiêm nhường của Vています
+使い方: khiêm nhường ngữ của います
+
+04. いただきます = Ăn/ Uống/ Nhận
+・私はラーメンを[いただき]たいです。| Em muốn ăn mỳ.
+読: わたしはラーメンをいただきたいです。
+文法: Vたいです = muốn ~
+使い方: khiêm nhường ngữ của 食べます・飲みます・もらいます
+
+05. 申します (もうします) = THÂN ; Nói/ Tên là
+・初めまして。私はAと[申します]。| Hân hạnh được biết anh. Tôi tên là A.
+読: はじめまして。わたしはAともうします。
+文法: Nと申します = tôi tên là N
+使い方: khiêm nhường ngữ của 言います
+
+06. いたします = Làm
+・9時から[いたします]。| Bắt đầu lúc 9 giờ ạ.
+読: くじからいたします。
+使い方: khiêm nhường ngữ của します
+
+07. 拝見します (はいけんします) = BÁI KIẾN ; Xem
+・今日Riki社を[拝見させて]いただいてもよろしいでしょうか？| Hôm nay tôi đến tham quan Riki được không?
+読: きょうRikiしゃをはいけんさせていただいてもよろしいでしょうか？
+文法: Vさせていただいてもよろしいでしょうか = cho phép tôi ~ có được không ạ (rất lịch sự)
+使い方: khiêm nhường ngữ của 見ます
+
+08. 存じます (ぞんじます) = TỒN ; Biết
+・はい、[存じて]おります。| Có, tôi biết chứ ạ.
+読: はい、ぞんじております。
+文法: 存じております = khiêm nhường của 知っています
+使い方: khiêm nhường ngữ của 知ります
+
+09. お目にかかります (おめにかかります) = MỤC ; Gặp
+・社長の[お目にかかれて]、うれしいです。| Chúng em rất vui vì được gặp giám đốc ở đây.
+読: しゃちょうのおめにかかれて、うれしいです。
+文法: お目にかかれる = thể khả năng của お目にかかります; Vて、うれしいです = vui vì ~
+使い方: khiêm nhường ngữ của 会います
+
+10. (を)入れます (いれます) = NHẬP ; Pha
+・コーヒーを[入れよう]か。| Tôi đi pha cà phê cho cậu nhé ?
+読: コーヒーをいれようか。
+文法: Vようか = thể ý chí + か: (tôi) ~ nhé? — đề nghị làm giúp
+連: コーヒーを入れます = Pha cà phê
+
+11. 用意します (よういします) = DỤNG Ý ; Chuẩn bị/ Chuẩn bị sẵn
+・会議の資料を[用意して]ください。| Chuẩn bị tài liệu cho cuộc họp.
+読: かいぎのしりょうをよういしてください。
+文法: Vてください = hãy ~
+
+# nguồn: bai-50-phan-1.pdf · C Phó từ
+## 12–19 = Phó từ
+
+12. わたくし = Tôi
+# PDF in 英語少しできます (thiếu trợ từ); chép lại thành 英語が少しできます.
+・わたくしは日本語とフランス語、英語が少しできます。| Tôi có thể nói được tiếng Nhật, tiếng Pháp và một chút tiếng Anh.
+読: わたくしはにほんごとフランスご、えいごがすこしできます。
+文法: Nができます = biết, làm được N
+使い方: khiêm nhường ngữ của わたし — dùng khi nói trang trọng
+
+13. ガイド = Hướng dẫn viên du lịch/ Hướng dẫn viên
+・将来、ガイドになりたいの。| Tương lai tớ còn muốn trở thành hướng dẫn viên du lịch nữa cơ.
+読: しょうらい、ガイドになりたいの。
+文法: Nになりたい = muốn trở thành N; ～の cuối câu = cách nói thân mật
+
+14. お宅 (おたく) = TRẠCH ; Nhà của người khác/ Nhà
+・今週の週末、社長のお宅へ行きますか？| Cuối tuần này, cậu có đi tới nhà của Giám đốc để dự tiệc cuối năm không?
+読: こんしゅうのしゅうまつ、しゃちょうのおたくへいきますか？
+使い方: cách nói tôn kính về nhà của người khác; nhà mình thì nói 家 (うち)
+
+15. メールアドレス = Địa chỉ email
+・これはBさんのメールアドレスですか？| Đây là địa chỉ Mail của chị B đúng không.
+
+16. 再来週 (さらいしゅう) = TÁI LAI CHU ; Tuần sau nữa
+・いいえ、再来週です。| Không phải, vào tuần sau nữa cơ.
+読: いいえ、さらいしゅうです。
+関: 来週 (らいしゅう) = tuần sau → 再来週 = tuần sau nữa
+
+17. 再来月 (さらいげつ) = TÁI LAI NGUYỆT ; Tháng sau nữa
+・今4月だね。再来月始まるよ。| Bây giờ là tháng 4 đúng không nhỉ. Tháng sau nữa sẽ bắt đầu.
+読: いましがつだね。さらいげつはじまるよ。
+関: 来月 (らいげつ) = tháng sau → 再来月 = tháng sau nữa
+
+18. 再来年 (さらいねん) = TÁI LAI NIÊN ; Năm sau nữa
+・再来年転勤します。| Tôi sẽ chuyển trường vào năm sau nữa.
+読: さらいねんてんきんします。
+文法: 転勤します = chuyển nơi làm việc (PDF dịch "chuyển trường")
+関: 来年 (らいねん) = năm sau → 再来年 = năm sau nữa
+
+19. 初めに (はじめに) = SƠ ; Trước hết/ Đầu tiên
+# PDF dịch câu này thành "khi vào nhà ai đó…", lệch với câu tiếng Nhật; dịch lại theo câu.
+・授業の初めにしなければならないことは何ですか。| Việc phải làm đầu tiên khi bắt đầu giờ học là gì?
+読: じゅぎょうのはじめにしなければならないことはなんですか。
+文法: Vなければならない = phải ~; Nの初めに = lúc bắt đầu N

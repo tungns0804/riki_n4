@@ -1,0 +1,532 @@
+{
+  "id": "01-phan-1",
+  "name": "Phần 1",
+  "description": "19 từ: động từ khiêm nhường (01–11), danh từ và phó từ (12–19).",
+  "kind": "vocabulary",
+  "parent": "",
+  "group": "",
+  "groups": [
+    {
+      "label": "01–11",
+      "title": "Động từ"
+    },
+    {
+      "label": "12–19",
+      "title": "Phó từ"
+    }
+  ],
+  "words": [
+    {
+      "id": "eedd97b670250c90",
+      "number": 1,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "参ります",
+      "reading": "まいります",
+      "hanViet": "THAM",
+      "vietnamese": "Đi/ Đến",
+      "examples": [
+        {
+          "id": "945aa91d8a3f4fcb",
+          "japanese": "すぐ持ってまいります。",
+          "vietnamese": "Tôi sẽ mang đi ngay ạ.",
+          "reading": "すぐもってまいります。",
+          "grammar": "持ってまいります = khiêm nhường của 持って行きます／持って来ます",
+          "targets": [
+            "まいります"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "khiêm nhường ngữ của 行きます・来ます"
+        }
+      ]
+    },
+    {
+      "id": "f3bbbccf1bfeb9fb",
+      "number": 2,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "伺います",
+      "reading": "うかがいます",
+      "hanViet": "TỨ",
+      "vietnamese": "Hỏi/ Đến thăm",
+      "examples": [
+        {
+          "id": "9143742b86812734",
+          "japanese": "先生、伺いたいことがあるんですが、…",
+          "vietnamese": "Sensei ơi, em có điều muốn hỏi ạ.",
+          "reading": "せんせい、うかがいたいことがあるんですが、…",
+          "grammar": "Vたい = muốn ~; ～んですが = mở lời trước khi nhờ, hỏi (Bài 26)",
+          "targets": [
+            "伺い"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "khiêm nhường ngữ của 聞きます (hỏi) và 行きます (đến thăm)"
+        }
+      ]
+    },
+    {
+      "id": "67c25df30495bd5c",
+      "number": 3,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "おります",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Ở/ Có",
+      "examples": [
+        {
+          "id": "6c467a2ae7f10ca3",
+          "japanese": "私の家族は、今ベトナムのハノイに住んでおります。",
+          "vietnamese": "Gia đình của tôi hiện giờ đang sống ở Hà Nội - Việt Nam.",
+          "reading": "わたしのかぞくは、いまベトナムのハノイにすんでおります。",
+          "grammar": "Vております = khiêm nhường của Vています",
+          "targets": [
+            "おります"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "khiêm nhường ngữ của います"
+        }
+      ]
+    },
+    {
+      "id": "d72eeeb62882b78b",
+      "number": 4,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "いただきます",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Ăn/ Uống/ Nhận",
+      "examples": [
+        {
+          "id": "6c9f61a2b2ece20d",
+          "japanese": "私はラーメンをいただきたいです。",
+          "vietnamese": "Em muốn ăn mỳ.",
+          "reading": "わたしはラーメンをいただきたいです。",
+          "grammar": "Vたいです = muốn ~",
+          "targets": [
+            "いただき"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "khiêm nhường ngữ của 食べます・飲みます・もらいます"
+        }
+      ]
+    },
+    {
+      "id": "2c3a03317ff8a190",
+      "number": 5,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "申します",
+      "reading": "もうします",
+      "hanViet": "THÂN",
+      "vietnamese": "Nói/ Tên là",
+      "examples": [
+        {
+          "id": "c298fb1203d6a169",
+          "japanese": "初めまして。私はAと申します。",
+          "vietnamese": "Hân hạnh được biết anh. Tôi tên là A.",
+          "reading": "はじめまして。わたしはAともうします。",
+          "grammar": "Nと申します = tôi tên là N",
+          "targets": [
+            "申します"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "khiêm nhường ngữ của 言います"
+        }
+      ]
+    },
+    {
+      "id": "d37faa40dfa01309",
+      "number": 6,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "いたします",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Làm",
+      "examples": [
+        {
+          "id": "35e98665a2523874",
+          "japanese": "9時からいたします。",
+          "vietnamese": "Bắt đầu lúc 9 giờ ạ.",
+          "reading": "くじからいたします。",
+          "grammar": "",
+          "targets": [
+            "いたします"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "khiêm nhường ngữ của します"
+        }
+      ]
+    },
+    {
+      "id": "cd3bf787870f23e4",
+      "number": 7,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "拝見します",
+      "reading": "はいけんします",
+      "hanViet": "BÁI KIẾN",
+      "vietnamese": "Xem",
+      "examples": [
+        {
+          "id": "4946c23dece13743",
+          "japanese": "今日Riki社を拝見させていただいてもよろしいでしょうか？",
+          "vietnamese": "Hôm nay tôi đến tham quan Riki được không?",
+          "reading": "きょうRikiしゃをはいけんさせていただいてもよろしいでしょうか？",
+          "grammar": "Vさせていただいてもよろしいでしょうか = cho phép tôi ~ có được không ạ (rất lịch sự)",
+          "targets": [
+            "拝見させて"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "khiêm nhường ngữ của 見ます"
+        }
+      ]
+    },
+    {
+      "id": "863fe54133f998d8",
+      "number": 8,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "存じます",
+      "reading": "ぞんじます",
+      "hanViet": "TỒN",
+      "vietnamese": "Biết",
+      "examples": [
+        {
+          "id": "92ac5bad79ec8910",
+          "japanese": "はい、存じております。",
+          "vietnamese": "Có, tôi biết chứ ạ.",
+          "reading": "はい、ぞんじております。",
+          "grammar": "存じております = khiêm nhường của 知っています",
+          "targets": [
+            "存じて"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "khiêm nhường ngữ của 知ります"
+        }
+      ]
+    },
+    {
+      "id": "c2573685bc1a03bb",
+      "number": 9,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "お目にかかります",
+      "reading": "おめにかかります",
+      "hanViet": "MỤC",
+      "vietnamese": "Gặp",
+      "examples": [
+        {
+          "id": "deae9b10f73fdcc2",
+          "japanese": "社長のお目にかかれて、うれしいです。",
+          "vietnamese": "Chúng em rất vui vì được gặp giám đốc ở đây.",
+          "reading": "しゃちょうのおめにかかれて、うれしいです。",
+          "grammar": "お目にかかれる = thể khả năng của お目にかかります; Vて、うれしいです = vui vì ~",
+          "targets": [
+            "お目にかかれて"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "khiêm nhường ngữ của 会います"
+        }
+      ]
+    },
+    {
+      "id": "3d255aef3b07e1c5",
+      "number": 10,
+      "group": "01–11",
+      "particle": "を",
+      "japanese": "入れます",
+      "reading": "いれます",
+      "hanViet": "NHẬP",
+      "vietnamese": "Pha",
+      "examples": [
+        {
+          "id": "0852ebe36113d324",
+          "japanese": "コーヒーを入れようか。",
+          "vietnamese": "Tôi đi pha cà phê cho cậu nhé ?",
+          "reading": "コーヒーをいれようか。",
+          "grammar": "Vようか = thể ý chí + か: (tôi) ~ nhé? — đề nghị làm giúp",
+          "targets": [
+            "入れよう"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "連",
+          "text": "コーヒーを入れます = Pha cà phê"
+        }
+      ]
+    },
+    {
+      "id": "816767a592339904",
+      "number": 11,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "用意します",
+      "reading": "よういします",
+      "hanViet": "DỤNG Ý",
+      "vietnamese": "Chuẩn bị/ Chuẩn bị sẵn",
+      "examples": [
+        {
+          "id": "1d3dc517201b03f2",
+          "japanese": "会議の資料を用意してください。",
+          "vietnamese": "Chuẩn bị tài liệu cho cuộc họp.",
+          "reading": "かいぎのしりょうをよういしてください。",
+          "grammar": "Vてください = hãy ~",
+          "targets": [
+            "用意して"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "3747cc878a52e50b",
+      "number": 12,
+      "group": "12–19",
+      "particle": "",
+      "japanese": "わたくし",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Tôi",
+      "examples": [
+        {
+          "id": "9672890766b2212e",
+          "japanese": "わたくしは日本語とフランス語、英語が少しできます。",
+          "vietnamese": "Tôi có thể nói được tiếng Nhật, tiếng Pháp và một chút tiếng Anh.",
+          "reading": "わたくしはにほんごとフランスご、えいごがすこしできます。",
+          "grammar": "Nができます = biết, làm được N",
+          "targets": [
+            "わたくし"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "khiêm nhường ngữ của わたし — dùng khi nói trang trọng"
+        }
+      ]
+    },
+    {
+      "id": "19ba55d8442974d8",
+      "number": 13,
+      "group": "12–19",
+      "particle": "",
+      "japanese": "ガイド",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Hướng dẫn viên du lịch/ Hướng dẫn viên",
+      "examples": [
+        {
+          "id": "6fb238b4b6f1c3e7",
+          "japanese": "将来、ガイドになりたいの。",
+          "vietnamese": "Tương lai tớ còn muốn trở thành hướng dẫn viên du lịch nữa cơ.",
+          "reading": "しょうらい、ガイドになりたいの。",
+          "grammar": "Nになりたい = muốn trở thành N; ～の cuối câu = cách nói thân mật",
+          "targets": [
+            "ガイド"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "6b3b9c99a0bdfa6f",
+      "number": 14,
+      "group": "12–19",
+      "particle": "",
+      "japanese": "お宅",
+      "reading": "おたく",
+      "hanViet": "TRẠCH",
+      "vietnamese": "Nhà của người khác/ Nhà",
+      "examples": [
+        {
+          "id": "b066c66cb0872028",
+          "japanese": "今週の週末、社長のお宅へ行きますか？",
+          "vietnamese": "Cuối tuần này, cậu có đi tới nhà của Giám đốc để dự tiệc cuối năm không?",
+          "reading": "こんしゅうのしゅうまつ、しゃちょうのおたくへいきますか？",
+          "grammar": "",
+          "targets": [
+            "お宅"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "cách nói tôn kính về nhà của người khác; nhà mình thì nói 家 (うち)"
+        }
+      ]
+    },
+    {
+      "id": "2bd129196441208f",
+      "number": 15,
+      "group": "12–19",
+      "particle": "",
+      "japanese": "メールアドレス",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Địa chỉ email",
+      "examples": [
+        {
+          "id": "22cb52e7baac22a6",
+          "japanese": "これはBさんのメールアドレスですか？",
+          "vietnamese": "Đây là địa chỉ Mail của chị B đúng không.",
+          "reading": "",
+          "grammar": "",
+          "targets": [
+            "メールアドレス"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "3df4d847fa9bed63",
+      "number": 16,
+      "group": "12–19",
+      "particle": "",
+      "japanese": "再来週",
+      "reading": "さらいしゅう",
+      "hanViet": "TÁI LAI CHU",
+      "vietnamese": "Tuần sau nữa",
+      "examples": [
+        {
+          "id": "558acbabe9360e74",
+          "japanese": "いいえ、再来週です。",
+          "vietnamese": "Không phải, vào tuần sau nữa cơ.",
+          "reading": "いいえ、さらいしゅうです。",
+          "grammar": "",
+          "targets": [
+            "再来週"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "関",
+          "text": "来週 (らいしゅう) = tuần sau → 再来週 = tuần sau nữa"
+        }
+      ]
+    },
+    {
+      "id": "85c24b33138e2092",
+      "number": 17,
+      "group": "12–19",
+      "particle": "",
+      "japanese": "再来月",
+      "reading": "さらいげつ",
+      "hanViet": "TÁI LAI NGUYỆT",
+      "vietnamese": "Tháng sau nữa",
+      "examples": [
+        {
+          "id": "c933433182acb6f1",
+          "japanese": "今4月だね。再来月始まるよ。",
+          "vietnamese": "Bây giờ là tháng 4 đúng không nhỉ. Tháng sau nữa sẽ bắt đầu.",
+          "reading": "いましがつだね。さらいげつはじまるよ。",
+          "grammar": "",
+          "targets": [
+            "再来月"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "関",
+          "text": "来月 (らいげつ) = tháng sau → 再来月 = tháng sau nữa"
+        }
+      ]
+    },
+    {
+      "id": "9b64da88a85cf80a",
+      "number": 18,
+      "group": "12–19",
+      "particle": "",
+      "japanese": "再来年",
+      "reading": "さらいねん",
+      "hanViet": "TÁI LAI NIÊN",
+      "vietnamese": "Năm sau nữa",
+      "examples": [
+        {
+          "id": "0e8df3404c3c78e4",
+          "japanese": "再来年転勤します。",
+          "vietnamese": "Tôi sẽ chuyển trường vào năm sau nữa.",
+          "reading": "さらいねんてんきんします。",
+          "grammar": "転勤します = chuyển nơi làm việc (PDF dịch \"chuyển trường\")",
+          "targets": [
+            "再来年"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "関",
+          "text": "来年 (らいねん) = năm sau → 再来年 = năm sau nữa"
+        }
+      ]
+    },
+    {
+      "id": "7e833e0e9e381d3e",
+      "number": 19,
+      "group": "12–19",
+      "particle": "",
+      "japanese": "初めに",
+      "reading": "はじめに",
+      "hanViet": "SƠ",
+      "vietnamese": "Trước hết/ Đầu tiên",
+      "examples": [
+        {
+          "id": "4d093406df0ab4dd",
+          "japanese": "授業の初めにしなければならないことは何ですか。",
+          "vietnamese": "Việc phải làm đầu tiên khi bắt đầu giờ học là gì?",
+          "reading": "じゅぎょうのはじめにしなければならないことはなんですか。",
+          "grammar": "Vなければならない = phải ~; Nの初めに = lúc bắt đầu N",
+          "targets": [
+            "初めに"
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

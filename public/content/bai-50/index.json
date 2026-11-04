@@ -1,0 +1,52 @@
+{
+  "course": {
+    "id": "bai-50",
+    "name": "Bài 50 : Khiêm nhường ngữ",
+    "level": "N4"
+  },
+  "generatedAt": "2026-11-04T14:50:41.202Z",
+  "modules": [
+    {
+      "id": "vocabulary",
+      "units": [
+        {
+          "id": "01-phan-1",
+          "name": "Phần 1",
+          "description": "19 từ: động từ khiêm nhường (01–11), danh từ và phó từ (12–19).",
+          "kind": "vocabulary",
+          "parent": "",
+          "group": "",
+          "itemCount": 19,
+          "order": 1,
+          "file": "vocabulary/01-phan-1.json",
+          "groups": [
+            {
+              "label": "01–11",
+              "title": "Động từ"
+            },
+            {
+              "label": "12–19",
+              "title": "Phó từ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kanji",
+      "units": []
+    },
+    {
+      "id": "grammar",
+      "units": []
+    },
+    {
+      "id": "reading",
+      "units": []
+    },
+    {
+      "id": "listening",
+      "units": []
+    }
+  ]
+}

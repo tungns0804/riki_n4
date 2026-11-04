@@ -97,6 +97,15 @@ export const MESSAGES = {
     vi: 'Từ vựng cải thiện, kanji, ngữ pháp cải thiện, đọc hiểu và nghe hiểu của Bài 27.',
     ja: '第27課の語彙強化・漢字・文法強化・読解・聴解。',
   },
+  'course.bai-50.name': {
+    vi: 'Bài 50 : Khiêm nhường ngữ',
+    ja: '第50課：謙譲語',
+  },
+  'course.bai-50.short': { vi: 'Bài 50', ja: '第50課' },
+  'course.bai-50.desc': {
+    vi: 'Từ vựng cải thiện, kanji, ngữ pháp cải thiện, đọc hiểu và nghe hiểu của Bài 50.',
+    ja: '第50課の語彙強化・漢字・文法強化・読解・聴解。',
+  },
   'course.soon.desc': { vi: 'Nội dung đang được chuẩn bị.', ja: '教材を準備中です。' },
   'course.list.title': { vi: 'Các học phần của Riki N4', ja: 'Riki N4 のコース' },
   'course.list.subtitle': {
