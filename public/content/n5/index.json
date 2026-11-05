@@ -4,7 +4,7 @@
     "name": "Bài học N5",
     "level": "N5"
   },
-  "generatedAt": "2026-11-05T04:54:39.071Z",
+  "generatedAt": "2026-11-05T05:24:22.880Z",
   "modules": [
     {
       "id": "vocabulary",
@@ -68,6 +68,39 @@
           "itemCount": 5,
           "order": 12,
           "file": "kanji/12-buoi-12.json"
+        },
+        {
+          "id": "13-buoi-13",
+          "name": "Buổi 13",
+          "description": "Chờ PDF Kanji Buổi 13 — bài trắc nghiệm đã có (東 西 南 北 方).",
+          "kind": "kanji",
+          "parent": "",
+          "group": "",
+          "itemCount": 0,
+          "order": 13,
+          "file": "kanji/13-buoi-13.json"
+        },
+        {
+          "id": "14-buoi-14",
+          "name": "Buổi 14 · Bộ phận",
+          "description": "5 chữ chỉ bộ phận cơ thể: 口 (miệng), 目 (mắt), 耳 (tai), 手 (tay), 足 (chân).",
+          "kind": "kanji",
+          "parent": "",
+          "group": "",
+          "itemCount": 5,
+          "order": 14,
+          "file": "kanji/14-buoi-14.json"
+        },
+        {
+          "id": "13-buoi-13-trac-nghiem",
+          "name": "Bài trắc nghiệm",
+          "description": "20 câu ôn 東 西 南 北 方: chọn cách đọc (問題1, câu 1–10), chọn chữ Hán (問題2, câu 11–20).",
+          "kind": "test",
+          "parent": "13-buoi-13",
+          "group": "",
+          "itemCount": 20,
+          "order": 113,
+          "file": "kanji/13-buoi-13-trac-nghiem.json"
         }
       ]
     },

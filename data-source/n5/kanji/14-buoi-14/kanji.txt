@@ -1,0 +1,12 @@
+# Bài học N5 · KANJI · Buổi 14 · Bộ phận
+# nguồn: PDF "Khoá học Online N5 – Kanji", Buổi 14 · Kiến thức, chữ 66–70
+# Định dạng: xem data-source/bai-26/kanji/README.md
+#
+# Cách chép như Buổi 11: số nét điền theo từ điển, 耳 và 足 chỉ in 訓 nên cột 音 để
+# trống. 訓 た của 足 chép theo dạng từ điển của từ ví dụ: 足ります → た.りる. Âm đặc
+# biệt 上手 (じょうず), 下手 (へた) ghi cùng các từ của 手.
+口,KHẨU,Miệng,コウ,くち,3|人口 (じんこう)=Dân số;口 (くち)=Miệng;口紅 (くちべに)=Son môi;入口 (いりぐち)=Cửa vào;出口 (でぐち)=Lối ra
+目,MỤC,Mắt,モク,め,5|目的 (もくてき)=Mục đích;目 (め)=Con mắt/ thứ ~
+耳,NHĨ,Tai,,みみ,6|耳 (みみ)=Tai
+手,THỦ,Tay,シュ,て,4|歌手 (かしゅ)=Ca sĩ;手 (て)=Tay;手紙 (てがみ)=Bức thư;お手洗い (おてあらい)=Nhà vệ sinh;上手 (じょうず)=Giỏi;下手 (へた)=Kém
+足,TÚC,Chân,,あし・た.りる,7|足 (あし)=Chân;足ります (たります)=Đủ
