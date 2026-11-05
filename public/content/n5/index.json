@@ -4,7 +4,7 @@
     "name": "Bài học N5",
     "level": "N5"
   },
-  "generatedAt": "2026-11-05T02:33:28.200Z",
+  "generatedAt": "2026-11-05T04:47:18.200Z",
   "modules": [
     {
       "id": "vocabulary",
@@ -41,6 +41,22 @@
               "title": "Đếm số lần (～回)"
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "kanji",
+      "units": [
+        {
+          "id": "11-buoi-11",
+          "name": "Buổi 11 · Vị trí 1",
+          "description": "5 chữ chỉ vị trí: 上⇔下 (trên, dưới), 右⇔左 (phải, trái) và 中 (trong, giữa).",
+          "kind": "kanji",
+          "parent": "",
+          "group": "",
+          "itemCount": 5,
+          "order": 11,
+          "file": "kanji/11-buoi-11.json"
         }
       ]
     },

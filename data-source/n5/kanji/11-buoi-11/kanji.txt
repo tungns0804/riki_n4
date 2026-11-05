@@ -1,0 +1,14 @@
+# Bài học N5 · KANJI · Buổi 11 · Vị trí 1
+# nguồn: PDF "Khoá học Online N5 – Kanji", Buổi 11 · Kiến thức, chữ 51–55
+# Định dạng: xem data-source/bai-26/kanji/README.md
+#
+# Cột nghĩa chép mục "Ý nghĩa" của thẻ; "Trong, giữa" viết "Trong/ giữa" vì dấu phẩy là
+# dấu ngăn cột. PDF không in số nét — điền theo từ điển. 右 và 左 chỉ in 訓 nên cột 音
+# để trống. 訓 あ của 上 chép theo dạng từ điển của từ ví dụ: 上げます → あ.げる.
+# 下手 (へた) là âm đặc biệt, ghi cùng các từ của 下. Câu ví dụ và mẹo nhớ của thẻ
+# không có chỗ trong định dạng nên không chép.
+上,THƯỢNG,Bên trên,ジョウ,うえ・あ.げる,3|上手 (じょうず)=Giỏi;屋上 (おくじょう)=Tầng thượng;上 (うえ)=Phía trên;上げます (あげます)=Giơ lên
+下,HẠ,Bên dưới,カ,した,3|地下鉄 (ちかてつ)=Tàu điện ngầm;地下 (ちか)=Tầng hầm;下 (した)=Phía dưới;下手 (へた)=Kém
+右,HỮU,Bên phải,,みぎ,5|右 (みぎ)=Bên phải;右側 (みぎがわ)=Phía bên phải;右手 (みぎて)=Tay phải
+左,TẢ,Bên trái,,ひだり,5|左 (ひだり)=Bên trái;左側 (ひだりがわ)=Phía bên trái;左手 (ひだりて)=Tay trái
+中,TRUNG,Trong/ giữa,チュウ・ジュウ,なか,4|中学生 (ちゅうがくせい)=Học sinh cấp 2;中国 (ちゅうごく)=Trung Quốc;一日中 (いちにちじゅう)=Suốt 1 ngày;世界中 (せかいじゅう)=Trên khắp thế giới;中 (なか)=Bên trong

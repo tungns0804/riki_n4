@@ -1,0 +1,197 @@
+{
+  "id": "11-buoi-11",
+  "name": "Buổi 11 · Vị trí 1",
+  "description": "5 chữ chỉ vị trí: 上⇔下 (trên, dưới), 右⇔左 (phải, trái) và 中 (trong, giữa).",
+  "kind": "kanji",
+  "parent": "",
+  "group": "",
+  "kanji": [
+    {
+      "id": "dba7e79846d40c90",
+      "character": "上",
+      "hanViet": "THƯỢNG",
+      "meaning": "Bên trên",
+      "onyomi": [
+        "ジョウ"
+      ],
+      "kunyomi": [
+        "うえ",
+        "あ.げる"
+      ],
+      "strokes": 3,
+      "words": [
+        {
+          "id": "159e9614f3f4e150",
+          "japanese": "上手",
+          "reading": "じょうず",
+          "vietnamese": "Giỏi"
+        },
+        {
+          "id": "bccea62397aaa8ef",
+          "japanese": "屋上",
+          "reading": "おくじょう",
+          "vietnamese": "Tầng thượng"
+        },
+        {
+          "id": "bb000ee401e0842d",
+          "japanese": "上",
+          "reading": "うえ",
+          "vietnamese": "Phía trên"
+        },
+        {
+          "id": "d640f64d6fd2bcbf",
+          "japanese": "上げます",
+          "reading": "あげます",
+          "vietnamese": "Giơ lên"
+        }
+      ]
+    },
+    {
+      "id": "34cf435ab7fad86a",
+      "character": "下",
+      "hanViet": "HẠ",
+      "meaning": "Bên dưới",
+      "onyomi": [
+        "カ"
+      ],
+      "kunyomi": [
+        "した"
+      ],
+      "strokes": 3,
+      "words": [
+        {
+          "id": "67d6c75db06af543",
+          "japanese": "地下鉄",
+          "reading": "ちかてつ",
+          "vietnamese": "Tàu điện ngầm"
+        },
+        {
+          "id": "ca8ef56398d61bc9",
+          "japanese": "地下",
+          "reading": "ちか",
+          "vietnamese": "Tầng hầm"
+        },
+        {
+          "id": "ab60dce432b087ea",
+          "japanese": "下",
+          "reading": "した",
+          "vietnamese": "Phía dưới"
+        },
+        {
+          "id": "765287493f6e2b4d",
+          "japanese": "下手",
+          "reading": "へた",
+          "vietnamese": "Kém"
+        }
+      ]
+    },
+    {
+      "id": "31ab210118f38ead",
+      "character": "右",
+      "hanViet": "HỮU",
+      "meaning": "Bên phải",
+      "onyomi": [],
+      "kunyomi": [
+        "みぎ"
+      ],
+      "strokes": 5,
+      "words": [
+        {
+          "id": "98861c414c4ac23c",
+          "japanese": "右",
+          "reading": "みぎ",
+          "vietnamese": "Bên phải"
+        },
+        {
+          "id": "5a3831e6db2b6ffd",
+          "japanese": "右側",
+          "reading": "みぎがわ",
+          "vietnamese": "Phía bên phải"
+        },
+        {
+          "id": "602d1c81f0e8556c",
+          "japanese": "右手",
+          "reading": "みぎて",
+          "vietnamese": "Tay phải"
+        }
+      ]
+    },
+    {
+      "id": "0fa98e82ca0ec8f8",
+      "character": "左",
+      "hanViet": "TẢ",
+      "meaning": "Bên trái",
+      "onyomi": [],
+      "kunyomi": [
+        "ひだり"
+      ],
+      "strokes": 5,
+      "words": [
+        {
+          "id": "4669719b69a09126",
+          "japanese": "左",
+          "reading": "ひだり",
+          "vietnamese": "Bên trái"
+        },
+        {
+          "id": "20fe26672e18dd4a",
+          "japanese": "左側",
+          "reading": "ひだりがわ",
+          "vietnamese": "Phía bên trái"
+        },
+        {
+          "id": "23d4f348e54b7f98",
+          "japanese": "左手",
+          "reading": "ひだりて",
+          "vietnamese": "Tay trái"
+        }
+      ]
+    },
+    {
+      "id": "e9a766c68211eba4",
+      "character": "中",
+      "hanViet": "TRUNG",
+      "meaning": "Trong/ giữa",
+      "onyomi": [
+        "チュウ",
+        "ジュウ"
+      ],
+      "kunyomi": [
+        "なか"
+      ],
+      "strokes": 4,
+      "words": [
+        {
+          "id": "3f02b3b68f05b37f",
+          "japanese": "中学生",
+          "reading": "ちゅうがくせい",
+          "vietnamese": "Học sinh cấp 2"
+        },
+        {
+          "id": "e8364bf3f18d7388",
+          "japanese": "中国",
+          "reading": "ちゅうごく",
+          "vietnamese": "Trung Quốc"
+        },
+        {
+          "id": "b2ca004cc0f0ca6a",
+          "japanese": "一日中",
+          "reading": "いちにちじゅう",
+          "vietnamese": "Suốt 1 ngày"
+        },
+        {
+          "id": "bdc95d1e8ff4eed1",
+          "japanese": "世界中",
+          "reading": "せかいじゅう",
+          "vietnamese": "Trên khắp thế giới"
+        },
+        {
+          "id": "9e20f57ad76b0f46",
+          "japanese": "中",
+          "reading": "なか",
+          "vietnamese": "Bên trong"
+        }
+      ]
+    }
+  ]
+}

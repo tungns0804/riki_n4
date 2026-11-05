@@ -11,6 +11,8 @@ data-source/
 ├── n5/                           Bài học N5 — các bài theo chủ đề, mỗi chủ đề một bài
 │   ├── vocabulary/
 │   │   └── 01-so-dem/            bảng cách đọc số đếm (55 mục)
+│   ├── kanji/                    PDF "Khoá học Online N5 – Kanji", mỗi buổi một bài
+│   │   └── 11-buoi-11/           Buổi 11 · Vị trí 1 (chữ 51–55)
 │   └── grammar/
 │       ├── 01-so-dem/            Học số đếm tiếng Nhật (lý thuyết, 6 mẫu)
 │       └── 01-so-dem-luyen-tap/  đề luyện tập 15 câu, bài con của 01-so-dem

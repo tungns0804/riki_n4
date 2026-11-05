@@ -101,7 +101,7 @@ export const COURSES: readonly CourseDef[] = [
     shortKey: 'course.n5.short',
     descKey: 'course.n5.desc',
     status: 'active',
-    modules: ['vocabulary', 'grammar'],
+    modules: ['vocabulary', 'kanji', 'grammar'],
   },
   {
     id: 'bai-26',

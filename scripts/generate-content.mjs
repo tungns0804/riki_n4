@@ -60,7 +60,7 @@ const COURSES = [
     id: 'n5',
     name: 'Bài học N5',
     level: 'N5',
-    modules: ['vocabulary', 'grammar'],
+    modules: ['vocabulary', 'kanji', 'grammar'],
   },
   {
     id: 'bai-26',
