@@ -4,7 +4,7 @@
     "name": "Bài học N5",
     "level": "N5"
   },
-  "generatedAt": "2026-11-05T04:47:18.200Z",
+  "generatedAt": "2026-11-05T04:54:39.071Z",
   "modules": [
     {
       "id": "vocabulary",
@@ -57,6 +57,17 @@
           "itemCount": 5,
           "order": 11,
           "file": "kanji/11-buoi-11.json"
+        },
+        {
+          "id": "12-buoi-12",
+          "name": "Buổi 12 · Vị trí 2",
+          "description": "5 chữ chỉ vị trí: 後⇔前 (sau, trước), 外 (ngoài) và cặp động từ 入る⇔出る (vào, ra).",
+          "kind": "kanji",
+          "parent": "",
+          "group": "",
+          "itemCount": 5,
+          "order": 12,
+          "file": "kanji/12-buoi-12.json"
         }
       ]
     },

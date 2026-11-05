@@ -9,7 +9,7 @@ Trang gốc liệt kê các học phần, ngang hàng nhau:
 | Học phần                  | Đường dẫn                 | Nội dung                                               |
 | ------------------------- | ------------------------- | ------------------------------------------------------ |
 | Bài kiểm tra nhập môn N4  | `/kiem-tra-nhap-mon/test` | Đề đầu vào: làm cả bài rồi nộp, chấm theo từng kỹ năng — hiện là bài giữ chỗ `de-1`, chờ đề |
-| Bài học N5                | `/n5`                     | Bài theo chủ đề — Học số đếm tiếng Nhật: lý thuyết ～つ・～枚・～台・～人・～回 (Ngữ pháp, kèm 15 câu luyện tập), bảng cách đọc 55 mục (Từ vựng); KANJI theo buổi — Buổi 11 · Vị trí 1: 上 下 右 左 中 |
+| Bài học N5                | `/n5`                     | Bài theo chủ đề — Học số đếm tiếng Nhật: lý thuyết ～つ・～枚・～台・～人・～回 (Ngữ pháp, kèm 15 câu luyện tập), bảng cách đọc 55 mục (Từ vựng); KANJI theo buổi — Buổi 11 · Vị trí 1: 上 下 右 左 中; Buổi 12 · Vị trí 2: 後 前 外 入 出 |
 | Bài 26 : Cách hình thành và sử dụng んです | `/bai-26` | Các mục của Bài 26, xem bảng dưới |
 | Bài 27 : Thể khả năng của động từ | `/bai-27` | Từ Vựng Cải Thiện: Phần 3 (23 từ) và Bài trắc nghiệm (15 câu); Kanji mới · Phần 1 (8 chữ); các mục khác chờ nội dung |
 | Bài 50 : Khiêm nhường ngữ | `/bai-50` | Từ Vựng Cải Thiện: Phần 1 (19 từ); các mục khác chờ nội dung |

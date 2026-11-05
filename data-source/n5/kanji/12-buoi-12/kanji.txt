@@ -1,0 +1,13 @@
+# Bài học N5 · KANJI · Buổi 12 · Vị trí 2
+# nguồn: PDF "Khoá học Online N5 – Kanji", Buổi 12 · Kiến thức, chữ 56–60
+# Định dạng: xem data-source/bai-26/kanji/README.md
+#
+# Cách chép như Buổi 11: "Sau, phía sau" viết "Sau/ phía sau" vì dấu phẩy là dấu ngăn
+# cột, số nét điền theo từ điển. 訓 in thành "うし", "はい、い", "で、だ" nên chép theo
+# dạng từ điển của từ ví dụ: 後ろ → うし.ろ, 入ります → はい.る, 入れます → い.れる,
+# 出ます → で.る, 出します → だ.す. 音 しゅっ của 出 (出張) giữ như PDF.
+後,HẬU,Sau/ phía sau,ゴ,うし.ろ・あと,9|午後 (ごご)=Buổi chiều;後ろ (うしろ)=Sau/ phía sau;後 (あと)=Sau
+前,TIỀN,Trước/ phía trước,ゼン,まえ,9|午前 (ごぜん)=Buổi sáng;前 (まえ)=Trước/ đằng trước;名前 (なまえ)=Tên
+外,NGOẠI,Bên ngoài,ガイ,そと,5|外国 (がいこく)=Nước ngoài;外 (そと)=Bên ngoài
+入,NHẬP,Vào,ニュウ,はい.る・い.れる,2|入学 (にゅうがく)=Nhập học;入院 (にゅういん)=Nhập viện;入ります (はいります)=Đi vào;入れます (いれます)=Cho vào
+出,XUẤT,Ra,シュツ・シュッ,で.る・だ.す,5|出張 (しゅっちょう)=Đi công tác;輸出 (ゆしゅつ)=Xuất khẩu;出ます (でます)=Đi ra;出かけます (でかけます)=Ra ngoài;出します (だします)=Nộp

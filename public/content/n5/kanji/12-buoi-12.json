@@ -1,0 +1,191 @@
+{
+  "id": "12-buoi-12",
+  "name": "Buổi 12 · Vị trí 2",
+  "description": "5 chữ chỉ vị trí: 後⇔前 (sau, trước), 外 (ngoài) và cặp động từ 入る⇔出る (vào, ra).",
+  "kind": "kanji",
+  "parent": "",
+  "group": "",
+  "kanji": [
+    {
+      "id": "8c5c9d36deec9707",
+      "character": "後",
+      "hanViet": "HẬU",
+      "meaning": "Sau/ phía sau",
+      "onyomi": [
+        "ゴ"
+      ],
+      "kunyomi": [
+        "うし.ろ",
+        "あと"
+      ],
+      "strokes": 9,
+      "words": [
+        {
+          "id": "47029302f00ec564",
+          "japanese": "午後",
+          "reading": "ごご",
+          "vietnamese": "Buổi chiều"
+        },
+        {
+          "id": "4198b00e592e47e6",
+          "japanese": "後ろ",
+          "reading": "うしろ",
+          "vietnamese": "Sau/ phía sau"
+        },
+        {
+          "id": "3ea994b907ed8729",
+          "japanese": "後",
+          "reading": "あと",
+          "vietnamese": "Sau"
+        }
+      ]
+    },
+    {
+      "id": "c77588e5453f4167",
+      "character": "前",
+      "hanViet": "TIỀN",
+      "meaning": "Trước/ phía trước",
+      "onyomi": [
+        "ゼン"
+      ],
+      "kunyomi": [
+        "まえ"
+      ],
+      "strokes": 9,
+      "words": [
+        {
+          "id": "d5da0a13eb08c5fb",
+          "japanese": "午前",
+          "reading": "ごぜん",
+          "vietnamese": "Buổi sáng"
+        },
+        {
+          "id": "cb67d138239e7a33",
+          "japanese": "前",
+          "reading": "まえ",
+          "vietnamese": "Trước/ đằng trước"
+        },
+        {
+          "id": "ee0d74defcfa775a",
+          "japanese": "名前",
+          "reading": "なまえ",
+          "vietnamese": "Tên"
+        }
+      ]
+    },
+    {
+      "id": "9658b74a7b42162a",
+      "character": "外",
+      "hanViet": "NGOẠI",
+      "meaning": "Bên ngoài",
+      "onyomi": [
+        "ガイ"
+      ],
+      "kunyomi": [
+        "そと"
+      ],
+      "strokes": 5,
+      "words": [
+        {
+          "id": "77a730a2e2c25fa9",
+          "japanese": "外国",
+          "reading": "がいこく",
+          "vietnamese": "Nước ngoài"
+        },
+        {
+          "id": "03c0058477927aa2",
+          "japanese": "外",
+          "reading": "そと",
+          "vietnamese": "Bên ngoài"
+        }
+      ]
+    },
+    {
+      "id": "be23fa4c2d1e5dd8",
+      "character": "入",
+      "hanViet": "NHẬP",
+      "meaning": "Vào",
+      "onyomi": [
+        "ニュウ"
+      ],
+      "kunyomi": [
+        "はい.る",
+        "い.れる"
+      ],
+      "strokes": 2,
+      "words": [
+        {
+          "id": "f4b0504e7873ab8b",
+          "japanese": "入学",
+          "reading": "にゅうがく",
+          "vietnamese": "Nhập học"
+        },
+        {
+          "id": "2309f8070fe15739",
+          "japanese": "入院",
+          "reading": "にゅういん",
+          "vietnamese": "Nhập viện"
+        },
+        {
+          "id": "d73be6cdb9ffaf3e",
+          "japanese": "入ります",
+          "reading": "はいります",
+          "vietnamese": "Đi vào"
+        },
+        {
+          "id": "89e7127817b9467f",
+          "japanese": "入れます",
+          "reading": "いれます",
+          "vietnamese": "Cho vào"
+        }
+      ]
+    },
+    {
+      "id": "a312ed18556f3837",
+      "character": "出",
+      "hanViet": "XUẤT",
+      "meaning": "Ra",
+      "onyomi": [
+        "シュツ",
+        "シュッ"
+      ],
+      "kunyomi": [
+        "で.る",
+        "だ.す"
+      ],
+      "strokes": 5,
+      "words": [
+        {
+          "id": "86bf3edcb613c7ff",
+          "japanese": "出張",
+          "reading": "しゅっちょう",
+          "vietnamese": "Đi công tác"
+        },
+        {
+          "id": "2b95659097b60406",
+          "japanese": "輸出",
+          "reading": "ゆしゅつ",
+          "vietnamese": "Xuất khẩu"
+        },
+        {
+          "id": "205e3cb22874a299",
+          "japanese": "出ます",
+          "reading": "でます",
+          "vietnamese": "Đi ra"
+        },
+        {
+          "id": "9d7a164cf3dd842a",
+          "japanese": "出かけます",
+          "reading": "でかけます",
+          "vietnamese": "Ra ngoài"
+        },
+        {
+          "id": "00e0b3ea8e0ed589",
+          "japanese": "出します",
+          "reading": "だします",
+          "vietnamese": "Nộp"
+        }
+      ]
+    }
+  ]
+}
