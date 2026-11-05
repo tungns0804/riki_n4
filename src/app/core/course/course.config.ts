@@ -93,6 +93,17 @@ export const COURSES: readonly CourseDef[] = [
     modules: ['entrance-test'],
   },
   {
+    // Các bài học N5 theo chủ đề (số đếm…): một học phần chung, mỗi chủ đề là một bài
+    // trong từng phần học, chứ không mỗi bài một học phần như bài học N4 của Riki.
+    id: 'n5',
+    icon: 'N5',
+    nameKey: 'course.n5.name',
+    shortKey: 'course.n5.short',
+    descKey: 'course.n5.desc',
+    status: 'active',
+    modules: ['vocabulary', 'grammar'],
+  },
+  {
     id: 'bai-26',
     icon: '26',
     nameKey: 'course.bai-26.name',

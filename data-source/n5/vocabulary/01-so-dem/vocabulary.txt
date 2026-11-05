@@ -1,0 +1,179 @@
+# Bài học N5 · TỪ VỰNG · Học số đếm tiếng Nhật
+# Định dạng: xem data-source/bai-26/vocabulary/README.md
+#
+# Bảng cách đọc để luyện, đi cùng bài lý thuyết n5/grammar/01-so-dem. Mỗi cụm một
+# đơn vị đếm: số 1–10 rồi từ để hỏi.
+#
+# Mặt chữ và câu ví dụ viết số Hán (三つ, 五枚) chứ không viết số Ả Rập như bài lý
+# thuyết: số Ả Rập không có âm Hán Việt, nên 1枚…10枚 sẽ cùng một âm MAI và chiều
+# luyện Hán Việt → Nhật có mười đáp án đúng. Câu ví dụ phải viết đúng mặt chữ thì
+# chỗ khoét mới nhận gõ cách đọc.
+#
+# Cách đọc thứ hai (しちにん, はちかい, じっかい) ghi ở dòng 使い方 vì mỗi mặt chữ chỉ
+# nhận một cách đọc.
+
+## 01–11 = Đếm đồ vật nói chung (～つ)
+
+01. 一つ (ひとつ) = NHẤT ; 1 cái
+
+02. 二つ (ふたつ) = NHỊ ; 2 cái
+
+03. 三つ (みっつ) = TAM ; 3 cái
+・りんごを三つください。| Cho tôi 3 quả táo.
+読: りんごをみっつください。
+
+04. 四つ (よっつ) = TỨ ; 4 cái
+・みかんを四つ買いました。| Tôi đã mua 4 quả quýt.
+読: みかんをよっつかいました。
+使い方: không đọc よんつ hay しつ
+
+05. 五つ (いつつ) = NGŨ ; 5 cái
+
+06. 六つ (むっつ) = LỤC ; 6 cái
+
+07. 七つ (ななつ) = THẤT ; 7 cái
+
+08. 八つ (やっつ) = BÁT ; 8 cái
+
+09. 九つ (ここのつ) = CỬU ; 9 cái
+・この部屋に椅子が九つあります。| Trong phòng này có 9 cái ghế.
+読: このへやにいすがここのつあります。
+
+10. 十 (とお) = THẬP ; 10 cái
+使い方: 10 là とお — không có つ; từ 11 trở lên dùng số thường (じゅういち…)
+
+11. いくつ = Mấy cái/ Bao nhiêu cái
+・箱の中に卵がいくつありますか。| Trong hộp có mấy quả trứng?
+読: はこのなかにたまごがいくつありますか。
+使い方: còn dùng hỏi tuổi — おいくつですか
+
+## 12–22 = Đếm vật mỏng (～枚)
+
+12. 一枚 (いちまい) = NHẤT MAI ; 1 tờ
+・すみません、紙を一枚ください。| Xin lỗi, cho tôi 1 tờ giấy.
+読: すみません、かみをいちまいください。
+
+13. 二枚 (にまい) = NHỊ MAI ; 2 tờ
+
+14. 三枚 (さんまい) = TAM MAI ; 3 tờ
+
+15. 四枚 (よんまい) = TỨ MAI ; 4 tờ
+使い方: không đọc しまい
+
+16. 五枚 (ごまい) = NGŨ MAI ; 5 tờ
+・80円の切手を五枚ください。| Cho tôi 5 con tem loại 80 yên.
+読: はちじゅうえんのきってをごまいください。
+
+17. 六枚 (ろくまい) = LỤC MAI ; 6 tờ
+
+18. 七枚 (ななまい) = THẤT MAI ; 7 tờ
+
+19. 八枚 (はちまい) = BÁT MAI ; 8 tờ
+
+20. 九枚 (きゅうまい) = CỬU MAI ; 9 tờ
+
+21. 十枚 (じゅうまい) = THẬP MAI ; 10 tờ
+
+22. 何枚 (なんまい) = HÀ MAI ; Mấy tờ/ Bao nhiêu tờ/ Mấy tấm
+・写真を何枚撮りましたか。| Bạn đã chụp mấy tấm ảnh?
+読: しゃしんをなんまいとりましたか。
+
+## 23–33 = Đếm máy móc (～台)
+
+23. 一台 (いちだい) = NHẤT ĐÀI ; 1 chiếc
+
+24. 二台 (にだい) = NHỊ ĐÀI ; 2 chiếc
+・うちに車が二台あります。| Nhà tôi có 2 chiếc ô tô.
+読: うちにくるまがにだいあります。
+
+25. 三台 (さんだい) = TAM ĐÀI ; 3 chiếc
+
+26. 四台 (よんだい) = TỨ ĐÀI ; 4 chiếc
+・この店にテレビが四台あります。| Cửa hàng này có 4 cái tivi.
+読: このみせにテレビがよんだいあります。
+
+27. 五台 (ごだい) = NGŨ ĐÀI ; 5 chiếc
+
+28. 六台 (ろくだい) = LỤC ĐÀI ; 6 chiếc
+
+29. 七台 (ななだい) = THẤT ĐÀI ; 7 chiếc
+
+30. 八台 (はちだい) = BÁT ĐÀI ; 8 chiếc
+
+31. 九台 (きゅうだい) = CỬU ĐÀI ; 9 chiếc
+
+32. 十台 (じゅうだい) = THẬP ĐÀI ; 10 chiếc
+
+33. 何台 (なんだい) = HÀ ĐÀI ; Mấy chiếc/ Bao nhiêu chiếc/ Mấy cái (máy)
+・教室にパソコンが何台ありますか。| Trong lớp học có mấy cái máy tính?
+読: きょうしつにパソコンがなんだいありますか。
+
+## 34–44 = Đếm người (～人)
+
+34. 一人 (ひとり) = NHẤT NHÂN ; 1 người
+・一人で日本へ来ました。| Tôi đã sang Nhật một mình.
+読: ひとりでにほんへきました。
+使い方: 一人で = một mình
+
+35. 二人 (ふたり) = NHỊ NHÂN ; 2 người
+・友達と二人で映画を見ました。| Tôi và bạn, hai người đã đi xem phim.
+読: ともだちとふたりでえいがをみました。
+
+36. 三人 (さんにん) = TAM NHÂN ; 3 người
+
+37. 四人 (よにん) = TỨ NHÂN ; 4 người
+・家族は四人です。| Gia đình tôi có 4 người.
+読: かぞくはよにんです。
+使い方: không đọc よんにん hay しにん
+
+38. 五人 (ごにん) = NGŨ NHÂN ; 5 người
+・会社に日本人が五人います。| Ở công ty có 5 người Nhật.
+読: かいしゃににほんじんがごにんいます。
+
+39. 六人 (ろくにん) = LỤC NHÂN ; 6 người
+
+40. 七人 (ななにん) = THẤT NHÂN ; 7 người
+使い方: đọc しちにん cũng đúng
+
+41. 八人 (はちにん) = BÁT NHÂN ; 8 người
+
+42. 九人 (きゅうにん) = CỬU NHÂN ; 9 người
+
+43. 十人 (じゅうにん) = THẬP NHÂN ; 10 người
+
+44. 何人 (なんにん) = HÀ NHÂN ; Mấy người/ Bao nhiêu người
+・ご家族は何人ですか。| Gia đình bạn có mấy người?
+読: ごかぞくはなんにんですか。
+
+## 45–55 = Đếm số lần (～回)
+
+45. 一回 (いっかい) = NHẤT HỒI ; 1 lần
+・すみません、もう一回言ってください。| Xin lỗi, hãy nói lại 1 lần nữa giúp tôi.
+読: すみません、もういっかいいってください。
+
+46. 二回 (にかい) = NHỊ HỒI ; 2 lần
+
+47. 三回 (さんかい) = TAM HỒI ; 3 lần
+・一週間に三回テニスをします。| Tôi chơi tennis 3 lần một tuần.
+読: いっしゅうかんにさんかいテニスをします。
+文法: khoảng thời gian＋に＋～回 = ~ lần trong (khoảng thời gian)
+
+48. 四回 (よんかい) = TỨ HỒI ; 4 lần
+
+49. 五回 (ごかい) = NGŨ HỒI ; 5 lần
+
+50. 六回 (ろっかい) = LỤC HỒI ; 6 lần
+
+51. 七回 (ななかい) = THẤT HỒI ; 7 lần
+
+52. 八回 (はっかい) = BÁT HỒI ; 8 lần
+使い方: đọc はちかい cũng đúng
+
+53. 九回 (きゅうかい) = CỬU HỒI ; 9 lần
+
+54. 十回 (じゅっかい) = THẬP HỒI ; 10 lần
+使い方: đọc じっかい cũng đúng
+
+55. 何回 (なんかい) = HÀ HỒI ; Mấy lần/ Bao nhiêu lần
+・日本へ何回行きましたか。| Bạn đã đi Nhật mấy lần?
+読: にほんへなんかいいきましたか。

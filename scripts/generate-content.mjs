@@ -57,6 +57,12 @@ const COURSES = [
     modules: ['entrance-test'],
   },
   {
+    id: 'n5',
+    name: 'Bài học N5',
+    level: 'N5',
+    modules: ['vocabulary', 'grammar'],
+  },
+  {
     id: 'bai-26',
     name: 'Bài 26 : Cách hình thành và sử dụng んです',
     level: 'N4',

@@ -78,6 +78,13 @@ export const MESSAGES = {
     vi: 'Đo trình độ trước khi vào học: từ vựng, kanji, ngữ pháp, đọc và nghe. Kết quả chấm theo từng kỹ năng.',
     ja: '受講前の実力診断：語彙・漢字・文法・読解・聴解。技能別に採点されます。',
   },
+  // Các bài N5 theo chủ đề gom thành một học phần.
+  'course.n5.name': { vi: 'Bài học N5', ja: 'N5のレッスン' },
+  'course.n5.short': { vi: 'N5', ja: 'N5' },
+  'course.n5.desc': {
+    vi: 'Các bài học N5 theo chủ đề: lý thuyết, bảng từ để luyện và bài luyện tập — bắt đầu với số đếm.',
+    ja: 'テーマ別のN5レッスン：解説・練習用の語彙表・練習問題。まずは助数詞から。',
+  },
   // Một bài học của Riki là một học phần: tên chép đúng tiêu đề bài trên web Riki.
   'course.bai-26.name': {
     vi: 'Bài 26 : Cách hình thành và sử dụng んです',
@@ -109,8 +116,8 @@ export const MESSAGES = {
   'course.soon.desc': { vi: 'Nội dung đang được chuẩn bị.', ja: '教材を準備中です。' },
   'course.list.title': { vi: 'Các học phần của Riki N4', ja: 'Riki N4 のコース' },
   'course.list.subtitle': {
-    vi: 'Chọn học phần để bắt đầu: bài kiểm tra nhập môn N4 và từng bài học. Các bài khác sẽ được bổ sung sau.',
-    ja: 'コースを選んで始めましょう：N4入門テストと各課。ほかの課は順次追加します。',
+    vi: 'Chọn học phần để bắt đầu: bài kiểm tra nhập môn N4, các bài học N5 và từng bài học N4. Các bài khác sẽ được bổ sung sau.',
+    ja: 'コースを選んで始めましょう：N4入門テスト、N5のレッスン、N4の各課。ほかの課は順次追加します。',
   },
   'course.list.all': { vi: 'Tất cả học phần', ja: 'すべてのコース' },
   'course.list.back': { vi: '← Tất cả học phần', ja: '← すべてのコース' },

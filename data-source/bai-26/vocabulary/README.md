@@ -174,6 +174,7 @@ của chúng ghi ngược lại: từ tiếng Nhật mang nghĩa đó.
 | `bai-27/vocabulary/03-phan-3`        | 23 từ · 4 cụm: Động từ (01–07), Danh từ (08–17), Tính từ (18–19), Phó từ (20–23) |
 | `bai-27/vocabulary/04-bai-trac-nghiem` | Bài trắc nghiệm · 15 câu: chọn nghĩa (1–5), điền từ (6–15) |
 | `bai-50/vocabulary/01-phan-1`        | 19 từ · 2 cụm: Động từ (01–11), Phó từ (12–19) |
+| `n5/vocabulary/01-so-dem`            | Bảng cách đọc số đếm · 55 mục · 5 cụm: ～つ, ～枚, ～台, ～人, ～回 (mặt chữ viết số Hán, xem đầu file) |
 
 Thêm bài mới = tạo thư mục bài, đặt `meta.json` và `vocabulary.txt` rồi chạy
 `npm run generate`. Không phải sửa gì trong mã nguồn.

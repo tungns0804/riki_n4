@@ -1,0 +1,223 @@
+{
+  "points": [
+    {
+      "title": "～つ (ひとつ、ふたつ…)",
+      "summary": "Đếm đồ vật nói chung (1–10 cái)",
+      "structures": [
+        "1 ひとつ · 2 ふたつ · 3 みっつ · 4 よっつ · 5 いつつ",
+        "6 むっつ · 7 ななつ · 8 やっつ · 9 ここのつ · 10 とお",
+        "Hỏi: いくつ (mấy cái?)"
+      ],
+      "explanation": [
+        "Cách đếm thuần Nhật, dùng cho đồ vật không có đơn vị đếm riêng hoặc khi không biết nên dùng đơn vị nào: quả táo, quả trứng, cái bánh, cái hộp, cái ghế…",
+        "Chỉ đếm được từ 1 đến 10. Từ 11 trở lên dùng số thường, không có つ: 11 じゅういち, 12 じゅうに…",
+        "Hỏi số lượng: いくつ ありますか。 (Có mấy cái?)"
+      ],
+      "notes": [
+        "10 là とお — không có つ ở cuối.",
+        "4 là よっつ, không đọc よんつ hay しつ; 9 là ここのつ, không đọc きゅうつ.",
+        "いくつ còn dùng để hỏi tuổi: おいくつですか (lịch sự) = Bạn bao nhiêu tuổi?"
+      ],
+      "examples": [
+        {
+          "japanese": "りんごを3つください。",
+          "reading": "りんごをみっつください。",
+          "vietnamese": "Cho tôi 3 quả táo."
+        },
+        {
+          "japanese": "A：箱の中に卵がいくつありますか。\nB：6つあります。",
+          "reading": "A：はこのなかにたまごがいくつありますか。\nB：むっつあります。",
+          "vietnamese": "A: Trong hộp có mấy quả trứng?\nB: Có 6 quả."
+        },
+        {
+          "japanese": "ケーキを1つ食べました。",
+          "reading": "ケーキをひとつたべました。",
+          "vietnamese": "Tôi đã ăn 1 cái bánh ngọt."
+        },
+        {
+          "japanese": "この部屋に椅子が9つあります。",
+          "reading": "このへやにいすがここのつあります。",
+          "vietnamese": "Trong phòng này có 9 cái ghế."
+        }
+      ]
+    },
+    {
+      "title": "～枚 (まい)",
+      "summary": "Đếm vật mỏng, dẹt: giấy, tem, vé, áo, ảnh, đĩa",
+      "structures": ["Số ＋ 枚 (まい)", "Hỏi: 何枚 (なんまい)"],
+      "explanation": [
+        "枚 (MAI) dùng cho vật mỏng và phẳng: 紙 (かみ – giấy), 切手 (きって – tem), 切符 (きっぷ – vé), シャツ (áo sơ mi), 写真 (しゃしん – ảnh), お皿 (おさら – đĩa), CD.",
+        "Ghép số thường với まい, không biến âm: いちまい, にまい, さんまい, よんまい, ごまい, ろくまい, ななまい, はちまい, きゅうまい, じゅうまい."
+      ],
+      "notes": ["4 là よんまい (không đọc しまい), 7 là ななまい, 9 là きゅうまい."],
+      "examples": [
+        {
+          "japanese": "80円の切手を5枚ください。",
+          "reading": "はちじゅうえんのきってをごまいください。",
+          "vietnamese": "Cho tôi 5 con tem loại 80 yên."
+        },
+        {
+          "japanese": "A：写真を何枚撮りましたか。\nB：20枚撮りました。",
+          "reading": "A：しゃしんをなんまいとりましたか。\nB：にじゅうまいとりました。",
+          "vietnamese": "A: Bạn đã chụp mấy tấm ảnh?\nB: Tôi đã chụp 20 tấm."
+        },
+        {
+          "japanese": "シャツを2枚買いました。",
+          "reading": "シャツをにまいかいました。",
+          "vietnamese": "Tôi đã mua 2 cái áo sơ mi."
+        },
+        {
+          "japanese": "すみません、紙を1枚ください。",
+          "reading": "すみません、かみをいちまいください。",
+          "vietnamese": "Xin lỗi, cho tôi 1 tờ giấy."
+        }
+      ]
+    },
+    {
+      "title": "～台 (だい)",
+      "summary": "Đếm máy móc, xe cộ: ô tô, xe đạp, máy tính, tivi",
+      "structures": ["Số ＋ 台 (だい)", "Hỏi: 何台 (なんだい)"],
+      "explanation": [
+        "台 (ĐÀI) dùng cho máy móc và xe cộ: 車 (くるま – ô tô), 自転車 (じてんしゃ – xe đạp), パソコン (máy tính), テレビ (tivi), 冷蔵庫 (れいぞうこ – tủ lạnh), カメラ (máy ảnh).",
+        "Ghép số thường với だい, không biến âm: いちだい, にだい, さんだい, よんだい, ごだい, ろくだい, ななだい, はちだい, きゅうだい, じゅうだい."
+      ],
+      "notes": ["4 là よんだい, 7 là ななだい, 9 là きゅうだい — giống hệt cách đọc của 枚."],
+      "examples": [
+        {
+          "japanese": "うちに車が2台あります。",
+          "reading": "うちにくるまがにだいあります。",
+          "vietnamese": "Nhà tôi có 2 chiếc ô tô."
+        },
+        {
+          "japanese": "A：教室にパソコンが何台ありますか。\nB：8台あります。",
+          "reading": "A：きょうしつにパソコンがなんだいありますか。\nB：はちだいあります。",
+          "vietnamese": "A: Trong lớp học có mấy cái máy tính?\nB: Có 8 cái."
+        },
+        {
+          "japanese": "新しい自転車を1台買いたいです。",
+          "reading": "あたらしいじてんしゃをいちだいかいたいです。",
+          "vietnamese": "Tôi muốn mua 1 chiếc xe đạp mới."
+        },
+        {
+          "japanese": "この店にテレビが4台あります。",
+          "reading": "このみせにテレビがよんだいあります。",
+          "vietnamese": "Cửa hàng này có 4 cái tivi."
+        }
+      ]
+    },
+    {
+      "title": "～人 (にん)",
+      "summary": "Đếm người — 1 người, 2 người đọc đặc biệt",
+      "structures": [
+        "1 ひとり · 2 ふたり · 3 さんにん · 4 よにん · 5 ごにん",
+        "6 ろくにん · 7 ななにん／しちにん · 8 はちにん · 9 きゅうにん · 10 じゅうにん",
+        "Hỏi: 何人 (なんにん)"
+      ],
+      "explanation": [
+        "人 (NHÂN) dùng để đếm người.",
+        "1 người và 2 người đọc kiểu thuần Nhật: 1人 = ひとり, 2人 = ふたり. Từ 3 người trở đi ghép số thường với にん.",
+        "1人で (ひとりで) = một mình; 2人で (ふたりで) = hai người cùng nhau."
+      ],
+      "notes": [
+        "4 người là よにん — không đọc よんにん hay しにん.",
+        "7 người đọc ななにん hoặc しちにん đều được."
+      ],
+      "examples": [
+        {
+          "japanese": "A：ご家族は何人ですか。\nB：4人です。",
+          "reading": "A：ごかぞくはなんにんですか。\nB：よにんです。",
+          "vietnamese": "A: Gia đình bạn có mấy người?\nB: 4 người."
+        },
+        {
+          "japanese": "教室に学生が1人います。",
+          "reading": "きょうしつにがくせいがひとりいます。",
+          "vietnamese": "Trong lớp học có 1 học sinh."
+        },
+        {
+          "japanese": "友達と2人で映画を見ました。",
+          "reading": "ともだちとふたりでえいがをみました。",
+          "vietnamese": "Tôi và bạn, hai người đã đi xem phim."
+        },
+        {
+          "japanese": "1人で日本へ来ました。",
+          "reading": "ひとりでにほんへきました。",
+          "vietnamese": "Tôi đã sang Nhật một mình."
+        }
+      ]
+    },
+    {
+      "title": "～回 (かい)",
+      "summary": "Đếm số lần — có biến âm ở 1, 6, 8, 10",
+      "structures": [
+        "1 いっかい · 2 にかい · 3 さんかい · 4 よんかい · 5 ごかい",
+        "6 ろっかい · 7 ななかい · 8 はっかい · 9 きゅうかい · 10 じゅっかい",
+        "Hỏi: 何回 (なんかい)",
+        "Khoảng thời gian ＋ に ＋ ～回 (tần suất)"
+      ],
+      "explanation": [
+        "回 (HỒI) dùng để đếm số lần làm một việc.",
+        "1, 6, 8, 10 biến âm thành っ: いっかい, ろっかい, はっかい, じゅっかい.",
+        "Nói tần suất: khoảng thời gian ＋ に ＋ số lần — 1週間に2回 (2 lần một tuần), 1日に3回 (3 lần một ngày)."
+      ],
+      "notes": [
+        "8 lần còn đọc はちかい, 10 lần còn đọc じっかい — cả hai đều đúng.",
+        "Hỏi số lần: 何回 (なんかい); không dùng いくつ."
+      ],
+      "examples": [
+        {
+          "japanese": "1週間に3回テニスをします。",
+          "reading": "いっしゅうかんにさんかいテニスをします。",
+          "vietnamese": "Tôi chơi tennis 3 lần một tuần."
+        },
+        {
+          "japanese": "A：日本へ何回行きましたか。\nB：2回行きました。",
+          "reading": "A：にほんへなんかいいきましたか。\nB：にかいいきました。",
+          "vietnamese": "A: Bạn đã đi Nhật mấy lần?\nB: Tôi đã đi 2 lần."
+        },
+        {
+          "japanese": "すみません、もう1回言ってください。",
+          "reading": "すみません、もういっかいいってください。",
+          "vietnamese": "Xin lỗi, hãy nói lại 1 lần nữa giúp tôi."
+        },
+        {
+          "japanese": "1日に2回薬を飲みます。",
+          "reading": "いちにちににかいくすりをのみます。",
+          "vietnamese": "Mỗi ngày tôi uống thuốc 2 lần."
+        }
+      ]
+    },
+    {
+      "title": "Vị trí của số đếm trong câu",
+      "summary": "N ＋ が／を ＋ số lượng ＋ V — số lượng đứng ngay trước động từ",
+      "structures": ["N ＋ を ＋ số lượng ＋ V", "N ＋ が ＋ số lượng ＋ あります／います"],
+      "explanation": [
+        "Tiếng Việt nói số lượng trước danh từ (3 quả táo), còn tiếng Nhật đặt số lượng SAU danh từ và trợ từ, ngay trước động từ: りんごを3つ買います。",
+        "Sau số lượng không cần thêm trợ từ: không nói 3つを.",
+        "Câu hỏi cũng theo đúng vị trí đó: りんごをいくつ買いますか。 / 学生が何人いますか。",
+        "Đồ vật dùng あります, người và con vật dùng います."
+      ],
+      "examples": [
+        {
+          "japanese": "みかんを4つ買いました。",
+          "reading": "みかんをよっつかいました。",
+          "vietnamese": "Tôi đã mua 4 quả quýt."
+        },
+        {
+          "japanese": "会社に日本人が5人います。",
+          "reading": "かいしゃににほんじんがごにんいます。",
+          "vietnamese": "Ở công ty có 5 người Nhật."
+        },
+        {
+          "japanese": "駅で切符を3枚買いました。",
+          "reading": "えきできっぷをさんまいかいました。",
+          "vietnamese": "Tôi đã mua 3 tấm vé ở nhà ga."
+        },
+        {
+          "japanese": "A：りんごをいくつ買いますか。\nB：7つ買います。",
+          "reading": "A：りんごをいくつかいますか。\nB：ななつかいます。",
+          "vietnamese": "A: Bạn mua mấy quả táo?\nB: Tôi mua 7 quả."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,604 @@
+{
+  "id": "01-so-dem-luyen-tap",
+  "name": "Luyện tập · Số đếm",
+  "description": "15 câu: chọn cách đọc (1–6), chọn đơn vị đếm (7–12), chọn từ để hỏi (13–15).",
+  "kind": "test",
+  "parent": "01-so-dem",
+  "group": "",
+  "sections": [
+    {
+      "id": "sd-cach-doc",
+      "title": "Số đếm · Câu 1–6 — Chọn cách đọc",
+      "instructions": "Chọn cách đọc đúng của phần trong 「 」.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "sd-01",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "りんごを「4つ」ください。",
+          "promptReading": "",
+          "promptTranslation": "Cho tôi 4 quả táo.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "よんつ",
+              "translation": "không có cách đọc này",
+              "note": "～つ là cách đếm thuần Nhật, không ghép với số Hán (よん)."
+            },
+            {
+              "id": "c2",
+              "text": "よっつ",
+              "translation": "4 cái",
+              "note": "Đúng: 4つ = よっつ."
+            },
+            {
+              "id": "c3",
+              "text": "しつ",
+              "translation": "không có cách đọc này",
+              "note": "し là âm Hán của 4, không dùng với ～つ."
+            },
+            {
+              "id": "c4",
+              "text": "よつ",
+              "translation": "không có cách đọc này",
+              "note": "Thiếu っ: phải là よっつ."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "sd-02",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "家族は「4人」です。",
+          "promptReading": "かぞくは「　」です。",
+          "promptTranslation": "Gia đình tôi có 4 người.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "よんにん",
+              "translation": "không có cách đọc này",
+              "note": "Lỗi hay gặp nhất: 4人 không đọc よんにん."
+            },
+            {
+              "id": "c2",
+              "text": "しにん",
+              "translation": "không có cách đọc này",
+              "note": "し nghe như 死 (chết) nên không dùng để đếm người."
+            },
+            {
+              "id": "c3",
+              "text": "よにん",
+              "translation": "4 người",
+              "note": "Đúng: 4人 = よにん."
+            },
+            {
+              "id": "c4",
+              "text": "よったり",
+              "translation": "không có cách đọc này",
+              "note": "Chỉ 1 người (ひとり) và 2 người (ふたり) đọc kiểu thuần Nhật."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "sd-03",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "「6回」",
+          "promptReading": "",
+          "promptTranslation": "",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "ろくかい",
+              "translation": "không có cách đọc này",
+              "note": "Thiếu biến âm: ろく＋かい thành ろっかい."
+            },
+            {
+              "id": "c2",
+              "text": "ろっかい",
+              "translation": "6 lần",
+              "note": "Đúng: 6回 = ろっかい — 1, 6, 8, 10 biến âm っ trước かい."
+            },
+            {
+              "id": "c3",
+              "text": "むっかい",
+              "translation": "không có cách đọc này",
+              "note": "む là âm thuần Nhật (むっつ), không ghép với 回."
+            },
+            {
+              "id": "c4",
+              "text": "ろくっかい",
+              "translation": "không có cách đọc này",
+              "note": "Biến âm thì bỏ く: ろ＋っ＋かい."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "sd-04",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "友達と「2人」で行きます。",
+          "promptReading": "ともだちと「　」で いきます。",
+          "promptTranslation": "Tôi đi cùng bạn, hai người.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "ににん",
+              "translation": "không có cách đọc này",
+              "note": "2 người đọc đặc biệt, không ghép に＋にん."
+            },
+            {
+              "id": "c2",
+              "text": "ふたつ",
+              "translation": "2 cái (đồ vật)",
+              "note": "ふたつ là 2 cái — dùng cho đồ vật, không dùng cho người."
+            },
+            {
+              "id": "c3",
+              "text": "ふたり",
+              "translation": "2 người",
+              "note": "Đúng: 2人 = ふたり."
+            },
+            {
+              "id": "c4",
+              "text": "にじん",
+              "translation": "không có cách đọc này",
+              "note": "じん dùng sau tên nước (日本人 にほんじん), không dùng để đếm."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "sd-05",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "「8回」",
+          "promptReading": "",
+          "promptTranslation": "",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "やっかい",
+              "translation": "không có cách đọc này (やっかい là 'phiền phức')",
+              "note": "や là âm thuần Nhật (やっつ), không ghép với 回."
+            },
+            {
+              "id": "c2",
+              "text": "はちっかい",
+              "translation": "không có cách đọc này",
+              "note": "Biến âm thì bỏ ち: は＋っ＋かい."
+            },
+            {
+              "id": "c3",
+              "text": "はっかい",
+              "translation": "8 lần",
+              "note": "Đúng: 8回 = はっかい (đọc はちかい cũng được)."
+            },
+            {
+              "id": "c4",
+              "text": "はかい",
+              "translation": "không có cách đọc này",
+              "note": "Thiếu っ: phải là はっかい."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "sd-06",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "椅子が「9つ」あります。",
+          "promptReading": "いすが「　」あります。",
+          "promptTranslation": "Có 9 cái ghế.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "きゅうつ",
+              "translation": "không có cách đọc này",
+              "note": "～つ không ghép với số Hán (きゅう)."
+            },
+            {
+              "id": "c2",
+              "text": "くつ",
+              "translation": "không có cách đọc này (くつ là 'đôi giày')",
+              "note": "く là âm Hán của 9; くつ (靴) là đôi giày."
+            },
+            {
+              "id": "c3",
+              "text": "ここのつ",
+              "translation": "9 cái",
+              "note": "Đúng: 9つ = ここのつ."
+            },
+            {
+              "id": "c4",
+              "text": "ここつ",
+              "translation": "không có cách đọc này",
+              "note": "Thiếu の: phải là ここのつ."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        }
+      ]
+    },
+    {
+      "id": "sd-don-vi",
+      "title": "Số đếm · Câu 7–12 — Chọn đơn vị đếm",
+      "instructions": "Chọn đơn vị đếm thích hợp điền vào （　　　）.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "sd-07",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "切手を5（　　　）ください。",
+          "promptReading": "きってを ご（　　　）ください。",
+          "promptTranslation": "Cho tôi 5 con tem.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "つ",
+              "translation": "つ · đồ vật nói chung",
+              "note": "～つ chỉ đếm tới 10 và dùng khi đồ vật không có đơn vị riêng; tem mỏng nên dùng 枚."
+            },
+            {
+              "id": "c2",
+              "text": "枚",
+              "translation": "まい · vật mỏng",
+              "note": "Đúng: tem (切手) mỏng và phẳng → 5枚 (ごまい)."
+            },
+            {
+              "id": "c3",
+              "text": "台",
+              "translation": "だい · máy móc",
+              "note": "台 dùng cho máy móc, xe cộ."
+            },
+            {
+              "id": "c4",
+              "text": "人",
+              "translation": "にん · người",
+              "note": "人 dùng cho người."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "sd-08",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "うちに車が2（　　　）あります。",
+          "promptReading": "うちに くるまが に（　　　）あります。",
+          "promptTranslation": "Nhà tôi có 2 chiếc ô tô.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "枚",
+              "translation": "まい · vật mỏng",
+              "note": "枚 dùng cho vật mỏng như giấy, áo."
+            },
+            {
+              "id": "c2",
+              "text": "回",
+              "translation": "かい · số lần",
+              "note": "回 đếm số lần làm một việc, không đếm đồ vật."
+            },
+            {
+              "id": "c3",
+              "text": "台",
+              "translation": "だい · máy móc",
+              "note": "Đúng: ô tô là xe cộ → 2台 (にだい)."
+            },
+            {
+              "id": "c4",
+              "text": "つ",
+              "translation": "つ · đồ vật nói chung",
+              "note": "Xe cộ có đơn vị riêng là 台, nên không dùng つ."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "sd-09",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "教室に学生が10（　　　）います。",
+          "promptReading": "きょうしつに がくせいが じゅう（　　　）います。",
+          "promptTranslation": "Trong lớp học có 10 học sinh.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "人",
+              "translation": "にん · người",
+              "note": "Đúng: học sinh là người → 10人 (じゅうにん); người dùng います."
+            },
+            {
+              "id": "c2",
+              "text": "台",
+              "translation": "だい · máy móc",
+              "note": "台 dùng cho máy móc, xe cộ."
+            },
+            {
+              "id": "c3",
+              "text": "つ",
+              "translation": "つ · đồ vật nói chung",
+              "note": "つ dùng cho đồ vật, không dùng để đếm người."
+            },
+            {
+              "id": "c4",
+              "text": "枚",
+              "translation": "まい · vật mỏng",
+              "note": "枚 dùng cho vật mỏng."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "sd-10",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "1週間に3（　　　）プールで泳ぎます。",
+          "promptReading": "いっしゅうかんに さん（　　　）プールで およぎます。",
+          "promptTranslation": "Một tuần tôi bơi ở bể bơi 3 lần.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "人",
+              "translation": "にん · người",
+              "note": "人 đếm người, câu này đếm số lần bơi."
+            },
+            {
+              "id": "c2",
+              "text": "回",
+              "translation": "かい · số lần",
+              "note": "Đúng: khoảng thời gian＋に＋～回 = tần suất → 1週間に3回 (さんかい)."
+            },
+            {
+              "id": "c3",
+              "text": "枚",
+              "translation": "まい · vật mỏng",
+              "note": "枚 đếm vật mỏng."
+            },
+            {
+              "id": "c4",
+              "text": "台",
+              "translation": "だい · máy móc",
+              "note": "台 đếm máy móc."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "sd-11",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "この部屋にパソコンが何（　　　）ありますか。",
+          "promptReading": "この へやに パソコンが なん（　　　）ありますか。",
+          "promptTranslation": "Trong phòng này có mấy cái máy tính?",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "枚",
+              "translation": "まい · vật mỏng",
+              "note": "枚 dùng cho vật mỏng; máy tính không phải vật mỏng."
+            },
+            {
+              "id": "c2",
+              "text": "人",
+              "translation": "にん · người",
+              "note": "人 dùng cho người."
+            },
+            {
+              "id": "c3",
+              "text": "回",
+              "translation": "かい · số lần",
+              "note": "回 đếm số lần."
+            },
+            {
+              "id": "c4",
+              "text": "台",
+              "translation": "だい · máy móc",
+              "note": "Đúng: máy tính là máy móc → 何台 (なんだい)."
+            }
+          ],
+          "answerId": "c4",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "sd-12",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "シャツを3（　　　）買いました。",
+          "promptReading": "シャツを さん（　　　）かいました。",
+          "promptTranslation": "Tôi đã mua 3 cái áo sơ mi.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "台",
+              "translation": "だい · máy móc",
+              "note": "台 dùng cho máy móc, xe cộ."
+            },
+            {
+              "id": "c2",
+              "text": "枚",
+              "translation": "まい · vật mỏng",
+              "note": "Đúng: áo sơ mi mỏng → 3枚 (さんまい)."
+            },
+            {
+              "id": "c3",
+              "text": "回",
+              "translation": "かい · số lần",
+              "note": "回 đếm số lần mua, không đếm số áo."
+            },
+            {
+              "id": "c4",
+              "text": "人",
+              "translation": "にん · người",
+              "note": "人 dùng cho người."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        }
+      ]
+    },
+    {
+      "id": "sd-tu-hoi",
+      "title": "Số đếm · Câu 13–15 — Chọn từ để hỏi",
+      "instructions": "Chọn từ để hỏi thích hợp điền vào （　　　）.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "sd-13",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "A：箱の中に卵が（　　　）ありますか。\nB：3つあります。",
+          "promptReading": "A：はこの なかに たまごが（　　　）ありますか。\nB：みっつ あります。",
+          "promptTranslation": "A: Trong hộp có （　　　） quả trứng?\nB: Có 3 quả.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "いくつ",
+              "translation": "mấy cái",
+              "note": "Đúng: câu trả lời dùng ～つ (3つ) → câu hỏi dùng いくつ."
+            },
+            {
+              "id": "c2",
+              "text": "何枚",
+              "translation": "なんまい · mấy tờ",
+              "note": "何枚 hỏi vật mỏng; trứng không mỏng."
+            },
+            {
+              "id": "c3",
+              "text": "何台",
+              "translation": "なんだい · mấy chiếc",
+              "note": "何台 hỏi máy móc."
+            },
+            {
+              "id": "c4",
+              "text": "何人",
+              "translation": "なんにん · mấy người",
+              "note": "何人 hỏi người."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "sd-14",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "A：ご家族は（　　　）ですか。\nB：5人です。",
+          "promptReading": "A：ごかぞくは（　　　）ですか。\nB：ごにんです。",
+          "promptTranslation": "A: Gia đình bạn có （　　　）?\nB: 5 người.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "いくつ",
+              "translation": "mấy cái / bao nhiêu tuổi",
+              "note": "いくつ hỏi đồ vật hoặc tuổi, không hỏi số người."
+            },
+            {
+              "id": "c2",
+              "text": "何人",
+              "translation": "なんにん · mấy người",
+              "note": "Đúng: câu trả lời 5人 → hỏi 何人 (なんにん)."
+            },
+            {
+              "id": "c3",
+              "text": "何回",
+              "translation": "なんかい · mấy lần",
+              "note": "何回 hỏi số lần."
+            },
+            {
+              "id": "c4",
+              "text": "何台",
+              "translation": "なんだい · mấy chiếc",
+              "note": "何台 hỏi máy móc."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "sd-15",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "A：日本へ（　　　）行きましたか。\nB：2回です。",
+          "promptReading": "A：にほんへ（　　　）いきましたか。\nB：にかいです。",
+          "promptTranslation": "A: Bạn đã đi Nhật （　　　）?\nB: 2 lần.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "何人",
+              "translation": "なんにん · mấy người",
+              "note": "何人 hỏi số người."
+            },
+            {
+              "id": "c2",
+              "text": "いくつ",
+              "translation": "mấy cái",
+              "note": "いくつ không dùng để hỏi số lần."
+            },
+            {
+              "id": "c3",
+              "text": "何枚",
+              "translation": "なんまい · mấy tờ",
+              "note": "何枚 hỏi vật mỏng."
+            },
+            {
+              "id": "c4",
+              "text": "何回",
+              "translation": "なんかい · mấy lần",
+              "note": "Đúng: câu trả lời 2回 → hỏi 何回 (なんかい)."
+            }
+          ],
+          "answerId": "c4",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        }
+      ]
+    }
+  ]
+}

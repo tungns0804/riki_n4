@@ -1,0 +1,248 @@
+{
+  "sections": [
+    {
+      "id": "sd-cach-doc",
+      "title": "Số đếm · Câu 1–6 — Chọn cách đọc",
+      "instructions": "Chọn cách đọc đúng của phần trong 「 」.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "sd-01",
+          "promptJapanese": "りんごを「4つ」ください。",
+          "promptVietnamese": "Cho tôi 4 quả táo.",
+          "choices": ["よんつ", "よっつ", "しつ", "よつ"],
+          "choicesVietnamese": ["không có cách đọc này", "4 cái", "không có cách đọc này", "không có cách đọc này"],
+          "choiceNotes": [
+            "～つ là cách đếm thuần Nhật, không ghép với số Hán (よん).",
+            "Đúng: 4つ = よっつ.",
+            "し là âm Hán của 4, không dùng với ～つ.",
+            "Thiếu っ: phải là よっつ."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "sd-02",
+          "promptJapanese": "家族は「4人」です。",
+          "promptReading": "かぞくは「　」です。",
+          "promptVietnamese": "Gia đình tôi có 4 người.",
+          "choices": ["よんにん", "しにん", "よにん", "よったり"],
+          "choicesVietnamese": ["không có cách đọc này", "không có cách đọc này", "4 người", "không có cách đọc này"],
+          "choiceNotes": [
+            "Lỗi hay gặp nhất: 4人 không đọc よんにん.",
+            "し nghe như 死 (chết) nên không dùng để đếm người.",
+            "Đúng: 4人 = よにん.",
+            "Chỉ 1 người (ひとり) và 2 người (ふたり) đọc kiểu thuần Nhật."
+          ],
+          "answer": 3
+        },
+        {
+          "id": "sd-03",
+          "promptJapanese": "「6回」",
+          "choices": ["ろくかい", "ろっかい", "むっかい", "ろくっかい"],
+          "choicesVietnamese": ["không có cách đọc này", "6 lần", "không có cách đọc này", "không có cách đọc này"],
+          "choiceNotes": [
+            "Thiếu biến âm: ろく＋かい thành ろっかい.",
+            "Đúng: 6回 = ろっかい — 1, 6, 8, 10 biến âm っ trước かい.",
+            "む là âm thuần Nhật (むっつ), không ghép với 回.",
+            "Biến âm thì bỏ く: ろ＋っ＋かい."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "sd-04",
+          "promptJapanese": "友達と「2人」で行きます。",
+          "promptReading": "ともだちと「　」で いきます。",
+          "promptVietnamese": "Tôi đi cùng bạn, hai người.",
+          "choices": ["ににん", "ふたつ", "ふたり", "にじん"],
+          "choicesVietnamese": ["không có cách đọc này", "2 cái (đồ vật)", "2 người", "không có cách đọc này"],
+          "choiceNotes": [
+            "2 người đọc đặc biệt, không ghép に＋にん.",
+            "ふたつ là 2 cái — dùng cho đồ vật, không dùng cho người.",
+            "Đúng: 2人 = ふたり.",
+            "じん dùng sau tên nước (日本人 にほんじん), không dùng để đếm."
+          ],
+          "answer": 3
+        },
+        {
+          "id": "sd-05",
+          "promptJapanese": "「8回」",
+          "choices": ["やっかい", "はちっかい", "はっかい", "はかい"],
+          "choicesVietnamese": ["không có cách đọc này (やっかい là 'phiền phức')", "không có cách đọc này", "8 lần", "không có cách đọc này"],
+          "choiceNotes": [
+            "や là âm thuần Nhật (やっつ), không ghép với 回.",
+            "Biến âm thì bỏ ち: は＋っ＋かい.",
+            "Đúng: 8回 = はっかい (đọc はちかい cũng được).",
+            "Thiếu っ: phải là はっかい."
+          ],
+          "answer": 3
+        },
+        {
+          "id": "sd-06",
+          "promptJapanese": "椅子が「9つ」あります。",
+          "promptReading": "いすが「　」あります。",
+          "promptVietnamese": "Có 9 cái ghế.",
+          "choices": ["きゅうつ", "くつ", "ここのつ", "ここつ"],
+          "choicesVietnamese": ["không có cách đọc này", "không có cách đọc này (くつ là 'đôi giày')", "9 cái", "không có cách đọc này"],
+          "choiceNotes": [
+            "～つ không ghép với số Hán (きゅう).",
+            "く là âm Hán của 9; くつ (靴) là đôi giày.",
+            "Đúng: 9つ = ここのつ.",
+            "Thiếu の: phải là ここのつ."
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "sd-don-vi",
+      "title": "Số đếm · Câu 7–12 — Chọn đơn vị đếm",
+      "instructions": "Chọn đơn vị đếm thích hợp điền vào （　　　）.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "sd-07",
+          "promptJapanese": "切手を5（　　　）ください。",
+          "promptReading": "きってを ご（　　　）ください。",
+          "promptVietnamese": "Cho tôi 5 con tem.",
+          "choices": ["つ", "枚", "台", "人"],
+          "choicesVietnamese": ["つ · đồ vật nói chung", "まい · vật mỏng", "だい · máy móc", "にん · người"],
+          "choiceNotes": [
+            "～つ chỉ đếm tới 10 và dùng khi đồ vật không có đơn vị riêng; tem mỏng nên dùng 枚.",
+            "Đúng: tem (切手) mỏng và phẳng → 5枚 (ごまい).",
+            "台 dùng cho máy móc, xe cộ.",
+            "人 dùng cho người."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "sd-08",
+          "promptJapanese": "うちに車が2（　　　）あります。",
+          "promptReading": "うちに くるまが に（　　　）あります。",
+          "promptVietnamese": "Nhà tôi có 2 chiếc ô tô.",
+          "choices": ["枚", "回", "台", "つ"],
+          "choicesVietnamese": ["まい · vật mỏng", "かい · số lần", "だい · máy móc", "つ · đồ vật nói chung"],
+          "choiceNotes": [
+            "枚 dùng cho vật mỏng như giấy, áo.",
+            "回 đếm số lần làm một việc, không đếm đồ vật.",
+            "Đúng: ô tô là xe cộ → 2台 (にだい).",
+            "Xe cộ có đơn vị riêng là 台, nên không dùng つ."
+          ],
+          "answer": 3
+        },
+        {
+          "id": "sd-09",
+          "promptJapanese": "教室に学生が10（　　　）います。",
+          "promptReading": "きょうしつに がくせいが じゅう（　　　）います。",
+          "promptVietnamese": "Trong lớp học có 10 học sinh.",
+          "choices": ["人", "台", "つ", "枚"],
+          "choicesVietnamese": ["にん · người", "だい · máy móc", "つ · đồ vật nói chung", "まい · vật mỏng"],
+          "choiceNotes": [
+            "Đúng: học sinh là người → 10人 (じゅうにん); người dùng います.",
+            "台 dùng cho máy móc, xe cộ.",
+            "つ dùng cho đồ vật, không dùng để đếm người.",
+            "枚 dùng cho vật mỏng."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "sd-10",
+          "promptJapanese": "1週間に3（　　　）プールで泳ぎます。",
+          "promptReading": "いっしゅうかんに さん（　　　）プールで およぎます。",
+          "promptVietnamese": "Một tuần tôi bơi ở bể bơi 3 lần.",
+          "choices": ["人", "回", "枚", "台"],
+          "choicesVietnamese": ["にん · người", "かい · số lần", "まい · vật mỏng", "だい · máy móc"],
+          "choiceNotes": [
+            "人 đếm người, câu này đếm số lần bơi.",
+            "Đúng: khoảng thời gian＋に＋～回 = tần suất → 1週間に3回 (さんかい).",
+            "枚 đếm vật mỏng.",
+            "台 đếm máy móc."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "sd-11",
+          "promptJapanese": "この部屋にパソコンが何（　　　）ありますか。",
+          "promptReading": "この へやに パソコンが なん（　　　）ありますか。",
+          "promptVietnamese": "Trong phòng này có mấy cái máy tính?",
+          "choices": ["枚", "人", "回", "台"],
+          "choicesVietnamese": ["まい · vật mỏng", "にん · người", "かい · số lần", "だい · máy móc"],
+          "choiceNotes": [
+            "枚 dùng cho vật mỏng; máy tính không phải vật mỏng.",
+            "人 dùng cho người.",
+            "回 đếm số lần.",
+            "Đúng: máy tính là máy móc → 何台 (なんだい)."
+          ],
+          "answer": 4
+        },
+        {
+          "id": "sd-12",
+          "promptJapanese": "シャツを3（　　　）買いました。",
+          "promptReading": "シャツを さん（　　　）かいました。",
+          "promptVietnamese": "Tôi đã mua 3 cái áo sơ mi.",
+          "choices": ["台", "枚", "回", "人"],
+          "choicesVietnamese": ["だい · máy móc", "まい · vật mỏng", "かい · số lần", "にん · người"],
+          "choiceNotes": [
+            "台 dùng cho máy móc, xe cộ.",
+            "Đúng: áo sơ mi mỏng → 3枚 (さんまい).",
+            "回 đếm số lần mua, không đếm số áo.",
+            "人 dùng cho người."
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "sd-tu-hoi",
+      "title": "Số đếm · Câu 13–15 — Chọn từ để hỏi",
+      "instructions": "Chọn từ để hỏi thích hợp điền vào （　　　）.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "sd-13",
+          "promptJapanese": "A：箱の中に卵が（　　　）ありますか。\nB：3つあります。",
+          "promptReading": "A：はこの なかに たまごが（　　　）ありますか。\nB：みっつ あります。",
+          "promptVietnamese": "A: Trong hộp có （　　　） quả trứng?\nB: Có 3 quả.",
+          "choices": ["いくつ", "何枚", "何台", "何人"],
+          "choicesVietnamese": ["mấy cái", "なんまい · mấy tờ", "なんだい · mấy chiếc", "なんにん · mấy người"],
+          "choiceNotes": [
+            "Đúng: câu trả lời dùng ～つ (3つ) → câu hỏi dùng いくつ.",
+            "何枚 hỏi vật mỏng; trứng không mỏng.",
+            "何台 hỏi máy móc.",
+            "何人 hỏi người."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "sd-14",
+          "promptJapanese": "A：ご家族は（　　　）ですか。\nB：5人です。",
+          "promptReading": "A：ごかぞくは（　　　）ですか。\nB：ごにんです。",
+          "promptVietnamese": "A: Gia đình bạn có （　　　）?\nB: 5 người.",
+          "choices": ["いくつ", "何人", "何回", "何台"],
+          "choicesVietnamese": ["mấy cái / bao nhiêu tuổi", "なんにん · mấy người", "なんかい · mấy lần", "なんだい · mấy chiếc"],
+          "choiceNotes": [
+            "いくつ hỏi đồ vật hoặc tuổi, không hỏi số người.",
+            "Đúng: câu trả lời 5人 → hỏi 何人 (なんにん).",
+            "何回 hỏi số lần.",
+            "何台 hỏi máy móc."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "sd-15",
+          "promptJapanese": "A：日本へ（　　　）行きましたか。\nB：2回です。",
+          "promptReading": "A：にほんへ（　　　）いきましたか。\nB：にかいです。",
+          "promptVietnamese": "A: Bạn đã đi Nhật （　　　）?\nB: 2 lần.",
+          "choices": ["何人", "いくつ", "何枚", "何回"],
+          "choicesVietnamese": ["なんにん · mấy người", "mấy cái", "なんまい · mấy tờ", "なんかい · mấy lần"],
+          "choiceNotes": [
+            "何人 hỏi số người.",
+            "いくつ không dùng để hỏi số lần.",
+            "何枚 hỏi vật mỏng.",
+            "Đúng: câu trả lời 2回 → hỏi 何回 (なんかい)."
+          ],
+          "answer": 4
+        }
+      ]
+    }
+  ]
+}

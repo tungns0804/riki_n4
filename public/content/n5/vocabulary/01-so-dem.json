@@ -1,0 +1,935 @@
+{
+  "id": "01-so-dem",
+  "name": "Học số đếm tiếng Nhật",
+  "description": "Bảng cách đọc để luyện: 5 cụm ～つ・～枚・～台・～人・～回, mỗi cụm số 1–10 và từ để hỏi.",
+  "kind": "vocabulary",
+  "parent": "",
+  "group": "",
+  "groups": [
+    {
+      "label": "01–11",
+      "title": "Đếm đồ vật nói chung (～つ)"
+    },
+    {
+      "label": "12–22",
+      "title": "Đếm vật mỏng (～枚)"
+    },
+    {
+      "label": "23–33",
+      "title": "Đếm máy móc (～台)"
+    },
+    {
+      "label": "34–44",
+      "title": "Đếm người (～人)"
+    },
+    {
+      "label": "45–55",
+      "title": "Đếm số lần (～回)"
+    }
+  ],
+  "words": [
+    {
+      "id": "43371cd16aa757b4",
+      "number": 1,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "一つ",
+      "reading": "ひとつ",
+      "hanViet": "NHẤT",
+      "vietnamese": "1 cái",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "decb05e23c879c36",
+      "number": 2,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "二つ",
+      "reading": "ふたつ",
+      "hanViet": "NHỊ",
+      "vietnamese": "2 cái",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "48cd6893d2487d17",
+      "number": 3,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "三つ",
+      "reading": "みっつ",
+      "hanViet": "TAM",
+      "vietnamese": "3 cái",
+      "examples": [
+        {
+          "id": "a04443337388d10e",
+          "japanese": "りんごを三つください。",
+          "vietnamese": "Cho tôi 3 quả táo.",
+          "reading": "りんごをみっつください。",
+          "grammar": "",
+          "targets": [
+            "三つ"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "1ebed7f6a9934a3e",
+      "number": 4,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "四つ",
+      "reading": "よっつ",
+      "hanViet": "TỨ",
+      "vietnamese": "4 cái",
+      "examples": [
+        {
+          "id": "9e856f2ab3f78d19",
+          "japanese": "みかんを四つ買いました。",
+          "vietnamese": "Tôi đã mua 4 quả quýt.",
+          "reading": "みかんをよっつかいました。",
+          "grammar": "",
+          "targets": [
+            "四つ"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "không đọc よんつ hay しつ"
+        }
+      ]
+    },
+    {
+      "id": "20b6ae88e9f8d3f3",
+      "number": 5,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "五つ",
+      "reading": "いつつ",
+      "hanViet": "NGŨ",
+      "vietnamese": "5 cái",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "c8cd6e92cc9b207f",
+      "number": 6,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "六つ",
+      "reading": "むっつ",
+      "hanViet": "LỤC",
+      "vietnamese": "6 cái",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "00eeb709fcc25b30",
+      "number": 7,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "七つ",
+      "reading": "ななつ",
+      "hanViet": "THẤT",
+      "vietnamese": "7 cái",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "42e661b88b035135",
+      "number": 8,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "八つ",
+      "reading": "やっつ",
+      "hanViet": "BÁT",
+      "vietnamese": "8 cái",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "8114f873751cd502",
+      "number": 9,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "九つ",
+      "reading": "ここのつ",
+      "hanViet": "CỬU",
+      "vietnamese": "9 cái",
+      "examples": [
+        {
+          "id": "2f9f35d062e2fe90",
+          "japanese": "この部屋に椅子が九つあります。",
+          "vietnamese": "Trong phòng này có 9 cái ghế.",
+          "reading": "このへやにいすがここのつあります。",
+          "grammar": "",
+          "targets": [
+            "九つ"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "7371d96d353ed012",
+      "number": 10,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "十",
+      "reading": "とお",
+      "hanViet": "THẬP",
+      "vietnamese": "10 cái",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "10 là とお — không có つ; từ 11 trở lên dùng số thường (じゅういち…)"
+        }
+      ]
+    },
+    {
+      "id": "4467bcf833b11c8e",
+      "number": 11,
+      "group": "01–11",
+      "particle": "",
+      "japanese": "いくつ",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Mấy cái/ Bao nhiêu cái",
+      "examples": [
+        {
+          "id": "98d6a175424b1ec6",
+          "japanese": "箱の中に卵がいくつありますか。",
+          "vietnamese": "Trong hộp có mấy quả trứng?",
+          "reading": "はこのなかにたまごがいくつありますか。",
+          "grammar": "",
+          "targets": [
+            "いくつ"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "còn dùng hỏi tuổi — おいくつですか"
+        }
+      ]
+    },
+    {
+      "id": "c3cfa4d4322558c6",
+      "number": 12,
+      "group": "12–22",
+      "particle": "",
+      "japanese": "一枚",
+      "reading": "いちまい",
+      "hanViet": "NHẤT MAI",
+      "vietnamese": "1 tờ",
+      "examples": [
+        {
+          "id": "b40abdc5f233aec0",
+          "japanese": "すみません、紙を一枚ください。",
+          "vietnamese": "Xin lỗi, cho tôi 1 tờ giấy.",
+          "reading": "すみません、かみをいちまいください。",
+          "grammar": "",
+          "targets": [
+            "一枚"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "15a6a5718181bce6",
+      "number": 13,
+      "group": "12–22",
+      "particle": "",
+      "japanese": "二枚",
+      "reading": "にまい",
+      "hanViet": "NHỊ MAI",
+      "vietnamese": "2 tờ",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "139a94c5bcc3d8c5",
+      "number": 14,
+      "group": "12–22",
+      "particle": "",
+      "japanese": "三枚",
+      "reading": "さんまい",
+      "hanViet": "TAM MAI",
+      "vietnamese": "3 tờ",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "fe58e3a903308ddc",
+      "number": 15,
+      "group": "12–22",
+      "particle": "",
+      "japanese": "四枚",
+      "reading": "よんまい",
+      "hanViet": "TỨ MAI",
+      "vietnamese": "4 tờ",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "không đọc しまい"
+        }
+      ]
+    },
+    {
+      "id": "f0ce58f2d73b16d3",
+      "number": 16,
+      "group": "12–22",
+      "particle": "",
+      "japanese": "五枚",
+      "reading": "ごまい",
+      "hanViet": "NGŨ MAI",
+      "vietnamese": "5 tờ",
+      "examples": [
+        {
+          "id": "75caa5485463157f",
+          "japanese": "80円の切手を五枚ください。",
+          "vietnamese": "Cho tôi 5 con tem loại 80 yên.",
+          "reading": "はちじゅうえんのきってをごまいください。",
+          "grammar": "",
+          "targets": [
+            "五枚"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "126ddae5c8a66365",
+      "number": 17,
+      "group": "12–22",
+      "particle": "",
+      "japanese": "六枚",
+      "reading": "ろくまい",
+      "hanViet": "LỤC MAI",
+      "vietnamese": "6 tờ",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "dde7229e1eedfd9c",
+      "number": 18,
+      "group": "12–22",
+      "particle": "",
+      "japanese": "七枚",
+      "reading": "ななまい",
+      "hanViet": "THẤT MAI",
+      "vietnamese": "7 tờ",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "1ae788e993ddd8bb",
+      "number": 19,
+      "group": "12–22",
+      "particle": "",
+      "japanese": "八枚",
+      "reading": "はちまい",
+      "hanViet": "BÁT MAI",
+      "vietnamese": "8 tờ",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "f00656092e0dc69d",
+      "number": 20,
+      "group": "12–22",
+      "particle": "",
+      "japanese": "九枚",
+      "reading": "きゅうまい",
+      "hanViet": "CỬU MAI",
+      "vietnamese": "9 tờ",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "cad6e9558fecabd3",
+      "number": 21,
+      "group": "12–22",
+      "particle": "",
+      "japanese": "十枚",
+      "reading": "じゅうまい",
+      "hanViet": "THẬP MAI",
+      "vietnamese": "10 tờ",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "81ba526346d3db83",
+      "number": 22,
+      "group": "12–22",
+      "particle": "",
+      "japanese": "何枚",
+      "reading": "なんまい",
+      "hanViet": "HÀ MAI",
+      "vietnamese": "Mấy tờ/ Bao nhiêu tờ/ Mấy tấm",
+      "examples": [
+        {
+          "id": "b9d491ac2cd637d8",
+          "japanese": "写真を何枚撮りましたか。",
+          "vietnamese": "Bạn đã chụp mấy tấm ảnh?",
+          "reading": "しゃしんをなんまいとりましたか。",
+          "grammar": "",
+          "targets": [
+            "何枚"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "0a42d45554479b5e",
+      "number": 23,
+      "group": "23–33",
+      "particle": "",
+      "japanese": "一台",
+      "reading": "いちだい",
+      "hanViet": "NHẤT ĐÀI",
+      "vietnamese": "1 chiếc",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "832e4d2d50829f72",
+      "number": 24,
+      "group": "23–33",
+      "particle": "",
+      "japanese": "二台",
+      "reading": "にだい",
+      "hanViet": "NHỊ ĐÀI",
+      "vietnamese": "2 chiếc",
+      "examples": [
+        {
+          "id": "cc7f21138f2e024a",
+          "japanese": "うちに車が二台あります。",
+          "vietnamese": "Nhà tôi có 2 chiếc ô tô.",
+          "reading": "うちにくるまがにだいあります。",
+          "grammar": "",
+          "targets": [
+            "二台"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "a25ddb56f2ceeda7",
+      "number": 25,
+      "group": "23–33",
+      "particle": "",
+      "japanese": "三台",
+      "reading": "さんだい",
+      "hanViet": "TAM ĐÀI",
+      "vietnamese": "3 chiếc",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "e1cfafc167ca8b2e",
+      "number": 26,
+      "group": "23–33",
+      "particle": "",
+      "japanese": "四台",
+      "reading": "よんだい",
+      "hanViet": "TỨ ĐÀI",
+      "vietnamese": "4 chiếc",
+      "examples": [
+        {
+          "id": "f9fba510ab4b80e3",
+          "japanese": "この店にテレビが四台あります。",
+          "vietnamese": "Cửa hàng này có 4 cái tivi.",
+          "reading": "このみせにテレビがよんだいあります。",
+          "grammar": "",
+          "targets": [
+            "四台"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "33455fcd473cf50d",
+      "number": 27,
+      "group": "23–33",
+      "particle": "",
+      "japanese": "五台",
+      "reading": "ごだい",
+      "hanViet": "NGŨ ĐÀI",
+      "vietnamese": "5 chiếc",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "3f21826475957cfc",
+      "number": 28,
+      "group": "23–33",
+      "particle": "",
+      "japanese": "六台",
+      "reading": "ろくだい",
+      "hanViet": "LỤC ĐÀI",
+      "vietnamese": "6 chiếc",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "b935ab70155abb8b",
+      "number": 29,
+      "group": "23–33",
+      "particle": "",
+      "japanese": "七台",
+      "reading": "ななだい",
+      "hanViet": "THẤT ĐÀI",
+      "vietnamese": "7 chiếc",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "8a20c962e8cb4b47",
+      "number": 30,
+      "group": "23–33",
+      "particle": "",
+      "japanese": "八台",
+      "reading": "はちだい",
+      "hanViet": "BÁT ĐÀI",
+      "vietnamese": "8 chiếc",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "4578289a173e0252",
+      "number": 31,
+      "group": "23–33",
+      "particle": "",
+      "japanese": "九台",
+      "reading": "きゅうだい",
+      "hanViet": "CỬU ĐÀI",
+      "vietnamese": "9 chiếc",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "d7fe6c31c82924a7",
+      "number": 32,
+      "group": "23–33",
+      "particle": "",
+      "japanese": "十台",
+      "reading": "じゅうだい",
+      "hanViet": "THẬP ĐÀI",
+      "vietnamese": "10 chiếc",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "12bf299f4caf3a79",
+      "number": 33,
+      "group": "23–33",
+      "particle": "",
+      "japanese": "何台",
+      "reading": "なんだい",
+      "hanViet": "HÀ ĐÀI",
+      "vietnamese": "Mấy chiếc/ Bao nhiêu chiếc/ Mấy cái (máy)",
+      "examples": [
+        {
+          "id": "dc3e3190107bb2e3",
+          "japanese": "教室にパソコンが何台ありますか。",
+          "vietnamese": "Trong lớp học có mấy cái máy tính?",
+          "reading": "きょうしつにパソコンがなんだいありますか。",
+          "grammar": "",
+          "targets": [
+            "何台"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "41c1477314483fdf",
+      "number": 34,
+      "group": "34–44",
+      "particle": "",
+      "japanese": "一人",
+      "reading": "ひとり",
+      "hanViet": "NHẤT NHÂN",
+      "vietnamese": "1 người",
+      "examples": [
+        {
+          "id": "4d4f3cd6b5137b81",
+          "japanese": "一人で日本へ来ました。",
+          "vietnamese": "Tôi đã sang Nhật một mình.",
+          "reading": "ひとりでにほんへきました。",
+          "grammar": "",
+          "targets": [
+            "一人"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "一人で = một mình"
+        }
+      ]
+    },
+    {
+      "id": "908b50d0a7eb5cb1",
+      "number": 35,
+      "group": "34–44",
+      "particle": "",
+      "japanese": "二人",
+      "reading": "ふたり",
+      "hanViet": "NHỊ NHÂN",
+      "vietnamese": "2 người",
+      "examples": [
+        {
+          "id": "3e155269bcefff28",
+          "japanese": "友達と二人で映画を見ました。",
+          "vietnamese": "Tôi và bạn, hai người đã đi xem phim.",
+          "reading": "ともだちとふたりでえいがをみました。",
+          "grammar": "",
+          "targets": [
+            "二人"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "80f2415a3cd1ef6e",
+      "number": 36,
+      "group": "34–44",
+      "particle": "",
+      "japanese": "三人",
+      "reading": "さんにん",
+      "hanViet": "TAM NHÂN",
+      "vietnamese": "3 người",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "8f5ac6f6ed6af92e",
+      "number": 37,
+      "group": "34–44",
+      "particle": "",
+      "japanese": "四人",
+      "reading": "よにん",
+      "hanViet": "TỨ NHÂN",
+      "vietnamese": "4 người",
+      "examples": [
+        {
+          "id": "58e7243ac9ec1fc0",
+          "japanese": "家族は四人です。",
+          "vietnamese": "Gia đình tôi có 4 người.",
+          "reading": "かぞくはよにんです。",
+          "grammar": "",
+          "targets": [
+            "四人"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "không đọc よんにん hay しにん"
+        }
+      ]
+    },
+    {
+      "id": "15c286deade5a324",
+      "number": 38,
+      "group": "34–44",
+      "particle": "",
+      "japanese": "五人",
+      "reading": "ごにん",
+      "hanViet": "NGŨ NHÂN",
+      "vietnamese": "5 người",
+      "examples": [
+        {
+          "id": "5751aa20f2ed81df",
+          "japanese": "会社に日本人が五人います。",
+          "vietnamese": "Ở công ty có 5 người Nhật.",
+          "reading": "かいしゃににほんじんがごにんいます。",
+          "grammar": "",
+          "targets": [
+            "五人"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "c17f78a0fdf19a5c",
+      "number": 39,
+      "group": "34–44",
+      "particle": "",
+      "japanese": "六人",
+      "reading": "ろくにん",
+      "hanViet": "LỤC NHÂN",
+      "vietnamese": "6 người",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "5f80b3dc3b7f6650",
+      "number": 40,
+      "group": "34–44",
+      "particle": "",
+      "japanese": "七人",
+      "reading": "ななにん",
+      "hanViet": "THẤT NHÂN",
+      "vietnamese": "7 người",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "đọc しちにん cũng đúng"
+        }
+      ]
+    },
+    {
+      "id": "50ccf8c35e1e1069",
+      "number": 41,
+      "group": "34–44",
+      "particle": "",
+      "japanese": "八人",
+      "reading": "はちにん",
+      "hanViet": "BÁT NHÂN",
+      "vietnamese": "8 người",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "4eb98e8639ae9edc",
+      "number": 42,
+      "group": "34–44",
+      "particle": "",
+      "japanese": "九人",
+      "reading": "きゅうにん",
+      "hanViet": "CỬU NHÂN",
+      "vietnamese": "9 người",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "cc8cc6356b9a7082",
+      "number": 43,
+      "group": "34–44",
+      "particle": "",
+      "japanese": "十人",
+      "reading": "じゅうにん",
+      "hanViet": "THẬP NHÂN",
+      "vietnamese": "10 người",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "890844d5478fcdd8",
+      "number": 44,
+      "group": "34–44",
+      "particle": "",
+      "japanese": "何人",
+      "reading": "なんにん",
+      "hanViet": "HÀ NHÂN",
+      "vietnamese": "Mấy người/ Bao nhiêu người",
+      "examples": [
+        {
+          "id": "d46d56ffcf452119",
+          "japanese": "ご家族は何人ですか。",
+          "vietnamese": "Gia đình bạn có mấy người?",
+          "reading": "ごかぞくはなんにんですか。",
+          "grammar": "",
+          "targets": [
+            "何人"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "aedfe6c742d656fe",
+      "number": 45,
+      "group": "45–55",
+      "particle": "",
+      "japanese": "一回",
+      "reading": "いっかい",
+      "hanViet": "NHẤT HỒI",
+      "vietnamese": "1 lần",
+      "examples": [
+        {
+          "id": "9961321e6d0834e6",
+          "japanese": "すみません、もう一回言ってください。",
+          "vietnamese": "Xin lỗi, hãy nói lại 1 lần nữa giúp tôi.",
+          "reading": "すみません、もういっかいいってください。",
+          "grammar": "",
+          "targets": [
+            "一回"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "7b6fb4ae8427c244",
+      "number": 46,
+      "group": "45–55",
+      "particle": "",
+      "japanese": "二回",
+      "reading": "にかい",
+      "hanViet": "NHỊ HỒI",
+      "vietnamese": "2 lần",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "f8b67b39dbc45525",
+      "number": 47,
+      "group": "45–55",
+      "particle": "",
+      "japanese": "三回",
+      "reading": "さんかい",
+      "hanViet": "TAM HỒI",
+      "vietnamese": "3 lần",
+      "examples": [
+        {
+          "id": "2e1eb388dd9ca3df",
+          "japanese": "一週間に三回テニスをします。",
+          "vietnamese": "Tôi chơi tennis 3 lần một tuần.",
+          "reading": "いっしゅうかんにさんかいテニスをします。",
+          "grammar": "khoảng thời gian＋に＋～回 = ~ lần trong (khoảng thời gian)",
+          "targets": [
+            "三回"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "97ea323f667b1a74",
+      "number": 48,
+      "group": "45–55",
+      "particle": "",
+      "japanese": "四回",
+      "reading": "よんかい",
+      "hanViet": "TỨ HỒI",
+      "vietnamese": "4 lần",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "459aa1fe19f252e1",
+      "number": 49,
+      "group": "45–55",
+      "particle": "",
+      "japanese": "五回",
+      "reading": "ごかい",
+      "hanViet": "NGŨ HỒI",
+      "vietnamese": "5 lần",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "988d6c201501b69e",
+      "number": 50,
+      "group": "45–55",
+      "particle": "",
+      "japanese": "六回",
+      "reading": "ろっかい",
+      "hanViet": "LỤC HỒI",
+      "vietnamese": "6 lần",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "f6dbdd6393c41262",
+      "number": 51,
+      "group": "45–55",
+      "particle": "",
+      "japanese": "七回",
+      "reading": "ななかい",
+      "hanViet": "THẤT HỒI",
+      "vietnamese": "7 lần",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "82b388bdb264377e",
+      "number": 52,
+      "group": "45–55",
+      "particle": "",
+      "japanese": "八回",
+      "reading": "はっかい",
+      "hanViet": "BÁT HỒI",
+      "vietnamese": "8 lần",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "đọc はちかい cũng đúng"
+        }
+      ]
+    },
+    {
+      "id": "5ebb60e08cbd48ad",
+      "number": 53,
+      "group": "45–55",
+      "particle": "",
+      "japanese": "九回",
+      "reading": "きゅうかい",
+      "hanViet": "CỬU HỒI",
+      "vietnamese": "9 lần",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "b00eefbe5229f274",
+      "number": 54,
+      "group": "45–55",
+      "particle": "",
+      "japanese": "十回",
+      "reading": "じゅっかい",
+      "hanViet": "THẬP HỒI",
+      "vietnamese": "10 lần",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "đọc じっかい cũng đúng"
+        }
+      ]
+    },
+    {
+      "id": "937728c53a375bd6",
+      "number": 55,
+      "group": "45–55",
+      "particle": "",
+      "japanese": "何回",
+      "reading": "なんかい",
+      "hanViet": "HÀ HỒI",
+      "vietnamese": "Mấy lần/ Bao nhiêu lần",
+      "examples": [
+        {
+          "id": "b15f5434638c0d92",
+          "japanese": "日本へ何回行きましたか。",
+          "vietnamese": "Bạn đã đi Nhật mấy lần?",
+          "reading": "にほんへなんかいいきましたか。",
+          "grammar": "",
+          "targets": [
+            "何回"
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

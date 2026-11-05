@@ -1,0 +1,75 @@
+{
+  "course": {
+    "id": "n5",
+    "name": "Bài học N5",
+    "level": "N5"
+  },
+  "generatedAt": "2026-11-05T02:33:28.200Z",
+  "modules": [
+    {
+      "id": "vocabulary",
+      "units": [
+        {
+          "id": "01-so-dem",
+          "name": "Học số đếm tiếng Nhật",
+          "description": "Bảng cách đọc để luyện: 5 cụm ～つ・～枚・～台・～人・～回, mỗi cụm số 1–10 và từ để hỏi.",
+          "kind": "vocabulary",
+          "parent": "",
+          "group": "",
+          "itemCount": 55,
+          "order": 1,
+          "file": "vocabulary/01-so-dem.json",
+          "groups": [
+            {
+              "label": "01–11",
+              "title": "Đếm đồ vật nói chung (～つ)"
+            },
+            {
+              "label": "12–22",
+              "title": "Đếm vật mỏng (～枚)"
+            },
+            {
+              "label": "23–33",
+              "title": "Đếm máy móc (～台)"
+            },
+            {
+              "label": "34–44",
+              "title": "Đếm người (～人)"
+            },
+            {
+              "label": "45–55",
+              "title": "Đếm số lần (～回)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "units": [
+        {
+          "id": "01-so-dem",
+          "name": "Học số đếm tiếng Nhật",
+          "description": "Đếm đồ vật nói chung (～つ), vật mỏng (～枚), máy móc (～台), người (～人), số lần (～回) và vị trí số đếm trong câu.",
+          "kind": "grammar",
+          "parent": "",
+          "group": "",
+          "itemCount": 6,
+          "order": 1,
+          "file": "grammar/01-so-dem.json"
+        },
+        {
+          "id": "01-so-dem-luyen-tap",
+          "name": "Luyện tập · Số đếm",
+          "description": "15 câu: chọn cách đọc (1–6), chọn đơn vị đếm (7–12), chọn từ để hỏi (13–15).",
+          "kind": "test",
+          "parent": "01-so-dem",
+          "group": "",
+          "itemCount": 15,
+          "order": 101,
+          "file": "grammar/01-so-dem-luyen-tap.json"
+        }
+      ]
+    }
+  ]
+}

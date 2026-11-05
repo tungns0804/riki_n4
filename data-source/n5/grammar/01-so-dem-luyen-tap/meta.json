@@ -1,0 +1,7 @@
+{
+  "name": "Luyện tập · Số đếm",
+  "description": "15 câu: chọn cách đọc (1–6), chọn đơn vị đếm (7–12), chọn từ để hỏi (13–15).",
+  "kind": "test",
+  "parent": "01-so-dem",
+  "order": 101
+}

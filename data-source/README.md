@@ -8,6 +8,12 @@ data-source/
 │   └── entrance-test/
 │       ├── README.md             định dạng đề (test.json)
 │       └── de-1/                 bài giữ chỗ, chờ test.json
+├── n5/                           Bài học N5 — các bài theo chủ đề, mỗi chủ đề một bài
+│   ├── vocabulary/
+│   │   └── 01-so-dem/            bảng cách đọc số đếm (55 mục)
+│   └── grammar/
+│       ├── 01-so-dem/            Học số đếm tiếng Nhật (lý thuyết, 6 mẫu)
+│       └── 01-so-dem-luyen-tap/  đề luyện tập 15 câu, bài con của 01-so-dem
 ├── bai-26/                       Bài 26 : Cách hình thành và sử dụng んです
 │   ├── vocabulary/               mục "Từ Vựng Cải Thiện"
 │   │   ├── README.md             định dạng file từ vựng
