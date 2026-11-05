@@ -1,0 +1,324 @@
+{
+  "sections": [
+    {
+      "id": "n5k13-cach-doc",
+      "title": "問題１ · Câu 1–10 — Chọn cách đọc",
+      "instructions": "Chọn cách đọc đúng của phần trong 「 」.",
+      "skill": "kanji",
+      "questions": [
+        {
+          "id": "n5k13-01",
+          "promptJapanese": "友達と「南」アフリカを旅行しました。",
+          "promptReading": "ともだちと「　」アフリカをりょこうしました。",
+          "promptVietnamese": "Tôi đã đi du lịch Nam Phi với bạn.",
+          "choices": ["みなみ", "なん", "きた", "ひがし"],
+          "choicesVietnamese": ["南 · phía nam", "âm On của 南 (南部 なんぶ)", "北 · phía bắc", "東 · phía đông"],
+          "choiceNotes": [
+            "Đúng: 南アフリカ = みなみアフリカ (Nam Phi) — 南 đứng một mình trước tên nước đọc âm Kun みなみ.",
+            "なん là âm On, dùng trong từ ghép Hán như 南部 (なんぶ), 南東 (なんとう).",
+            "きた là 北 (phía bắc).",
+            "ひがし là 東 (phía đông)."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "n5k13-02",
+          "promptJapanese": "日本の「西部」には県がいくつありますか。",
+          "promptReading": "にほんの「　」にはけんがいくつありますか。",
+          "promptVietnamese": "Miền tây Nhật Bản có bao nhiêu tỉnh?",
+          "choices": ["きたぶ", "とうぶ", "にしぶ", "せいぶ"],
+          "choicesVietnamese": ["không có cách đọc này (北部 là ほくぶ)", "東部 · miền đông", "không có cách đọc này", "西部 · miền tây"],
+          "choiceNotes": [
+            "Miền bắc là 北部, đọc ほくぶ chứ không đọc きたぶ.",
+            "とうぶ là 東部 (miền đông).",
+            "Từ ghép Hán 西部 đọc âm On của cả hai chữ — không lấy âm Kun にし.",
+            "Đúng: 西部 = せいぶ — 西 đọc âm On セイ."
+          ],
+          "answer": 4,
+          "explanation": "Các miền: 東部 (とうぶ) · 西部 (せいぶ) · 南部 (なんぶ) · 北部 (ほくぶ) — đều đọc âm On."
+        },
+        {
+          "id": "n5k13-03",
+          "promptJapanese": "東京の「北」にあります。",
+          "promptReading": "とうきょうの「　」にあります。",
+          "promptVietnamese": "Nó nằm ở phía bắc Tokyo.",
+          "choices": ["きた", "がた", "かた", "ほう"],
+          "choicesVietnamese": ["北 · phía bắc", "âm của 方 trong 夕方 (ゆうがた)", "方 · cách (読み方)", "方 · phía, hướng (方法 ほうほう)"],
+          "choiceNotes": [
+            "Đúng: 北 đứng một mình đọc âm Kun きた.",
+            "がた là 方 biến âm trong 夕方 (ゆうがた), không phải cách đọc của 北.",
+            "かた là âm Kun của 方 (やり方, 読み方).",
+            "ほう là âm On của 方 (方法)."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "n5k13-04",
+          "promptJapanese": "店はえきの「東」にあります。",
+          "promptReading": "みせはえきの「　」にあります。",
+          "promptVietnamese": "Cửa hàng ở phía đông nhà ga.",
+          "choices": ["とう", "にし", "ひがし", "きた"],
+          "choicesVietnamese": ["âm On của 東 (東京 とうきょう)", "西 · phía tây", "東 · phía đông", "北 · phía bắc"],
+          "choiceNotes": [
+            "とう là âm On, chỉ dùng trong từ ghép như 東京, 東部.",
+            "にし là 西 (phía tây).",
+            "Đúng: 東 đứng một mình đọc âm Kun ひがし.",
+            "きた là 北 (phía bắc)."
+          ],
+          "answer": 3
+        },
+        {
+          "id": "n5k13-05",
+          "promptJapanese": "福岡県は日本の「南部」です。",
+          "promptReading": "ふくおかけんはにほんの「　」です。",
+          "promptVietnamese": "Tỉnh Fukuoka ở miền nam Nhật Bản.",
+          "choices": ["みなみぶ", "なんぶ", "とうぶ", "せいぶ"],
+          "choicesVietnamese": ["không có cách đọc này", "南部 · miền nam", "東部 · miền đông", "西部 · miền tây"],
+          "choiceNotes": [
+            "Từ ghép Hán 南部 không ghép âm Kun みなみ với 部.",
+            "Đúng: 南部 = なんぶ — 南 đọc âm On ナン.",
+            "とうぶ là 東部 (miền đông).",
+            "せいぶ là 西部 (miền tây)."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "n5k13-06",
+          "promptJapanese": "「南東」からあたたかいかぜがふきます。",
+          "promptReading": "「　」からあたたかいかぜがふきます。",
+          "promptVietnamese": "Gió ấm thổi từ hướng đông nam.",
+          "choices": ["なんとう", "みなみひがし", "なんせい", "なんぼく"],
+          "choicesVietnamese": ["南東 · đông nam", "không có cách đọc này", "南西 · tây nam", "南北 · nam bắc"],
+          "choiceNotes": [
+            "Đúng: 南東 = なんとう — cả hai chữ đọc âm On.",
+            "Từ ghép hai chữ Hán này không đọc bằng hai âm Kun ghép lại.",
+            "なんせい là 南西 (tây nam).",
+            "なんぼく là 南北 (nam bắc)."
+          ],
+          "answer": 1,
+          "explanation": "Tiếng Nhật nói 南 trước: 南東 (なんとう) = đông nam, 南西 (なんせい) = tây nam; 北東 (ほくとう), 北西 (ほくせい)."
+        },
+        {
+          "id": "n5k13-07",
+          "promptJapanese": "うちで英語をべんきょうしたいですから、どんな「方法」がいいですか。",
+          "promptReading": "うちでえいごをべんきょうしたいですから、どんな「　」がいいですか。",
+          "promptVietnamese": "Tôi muốn học tiếng Anh ở nhà, vậy phương pháp nào thì tốt?",
+          "choices": ["かたほう", "ほうほう", "ほほ", "ほほう"],
+          "choicesVietnamese": ["片方 · một bên", "方法 · phương pháp", "không có cách đọc này (頬 ほほ = má)", "không có cách đọc này"],
+          "choiceNotes": [
+            "かたほう là 片方 (một bên, một chiếc), không phải 方法.",
+            "Đúng: 方法 = ほうほう — 方 đọc ホウ, 法 cũng đọc ホウ.",
+            "Thiếu hai chữ う: phải là ほうほう.",
+            "Thiếu chữ う ở giữa: phải là ほうほう."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "n5k13-08",
+          "promptJapanese": "「北大」（北海道大学）で日本語をべんきょうしています。",
+          "promptReading": "「　」（ほっかいどうだいがく）でにほんごをべんきょうしています。",
+          "promptVietnamese": "Tôi đang học tiếng Nhật ở Đại học Hokkaido.",
+          "choices": ["ほくだい", "ほうだい", "なんだい", "とうだい"],
+          "choicesVietnamese": ["北大 · Đại học Hokkaido", "không phải cách đọc của 北大", "không phải cách đọc của 北大", "東大 · Đại học Tokyo"],
+          "choiceNotes": [
+            "Đúng: 北大 = ほくだい — 北 đọc âm On ホク, là tên gọi tắt của 北海道大学.",
+            "ほう không phải âm của 北.",
+            "なん là âm của 南, không phải 北.",
+            "とうだい là 東大 (Đại học Tokyo, tắt của 東京大学)."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "n5k13-09",
+          "promptJapanese": "えきの「西口」に大きなデパートがあります。",
+          "promptReading": "えきの「　」におおきなデパートがあります。",
+          "promptVietnamese": "Ở cửa tây nhà ga có một trung tâm thương mại lớn.",
+          "choices": ["にしぐち", "きたぐち", "みなみぐち", "ひがしぐち"],
+          "choicesVietnamese": ["西口 · cửa tây", "北口 · cửa bắc", "南口 · cửa nam", "東口 · cửa đông"],
+          "choiceNotes": [
+            "Đúng: 西口 = にしぐち — 西 đọc âm Kun にし, 口 くち biến thành ぐち.",
+            "きたぐち là 北口 (cửa bắc).",
+            "みなみぐち là 南口 (cửa nam).",
+            "ひがしぐち là 東口 (cửa đông)."
+          ],
+          "answer": 1,
+          "explanation": "Các cửa nhà ga đều đọc âm Kun + ぐち: 東口・西口・南口・北口."
+        },
+        {
+          "id": "n5k13-10",
+          "promptJapanese": "ケーキのやり「方」を教えてください。",
+          "promptReading": "ケーキのやり「　」をおしえてください。",
+          "promptVietnamese": "Hãy chỉ cho tôi cách làm bánh kem.",
+          "choices": ["ほう", "がた", "こう", "かた"],
+          "choicesVietnamese": ["âm On của 方 (方法 ほうほう)", "方 biến âm (夕方 ゆうがた)", "không phải âm của 方", "方 · cách (làm)"],
+          "choiceNotes": [
+            "ほう là âm On, dùng trong từ ghép Hán như 方法.",
+            "がた chỉ có trong vài từ như 夕方 (ゆうがた).",
+            "こう không phải âm của 方.",
+            "Đúng: động từ thể ます bỏ ます + 方 (かた) = cách làm: やり方, 読み方, 書き方."
+          ],
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "id": "n5k13-chu-han",
+      "title": "問題２ · Câu 11–20 — Chọn chữ Hán",
+      "instructions": "Chọn chữ Hán đúng của phần trong 「 」.",
+      "skill": "kanji",
+      "questions": [
+        {
+          "id": "n5k13-11",
+          "promptJapanese": "彼らは「なんべい」から来ました。",
+          "promptReading": "かれらは「なんべい」からきました。",
+          "promptVietnamese": "Họ đến từ Nam Mỹ.",
+          "choices": ["東米", "南米", "北米", "西米"],
+          "choicesVietnamese": ["không có từ này", "南米 · Nam Mỹ", "北米 (ほくべい) · Bắc Mỹ", "không có từ này"],
+          "choiceNotes": [
+            "東 đọc とう, không phải なん.",
+            "Đúng: なん là âm On của 南 — 南米 = Nam Mỹ.",
+            "北米 đọc ほくべい (Bắc Mỹ).",
+            "西 đọc せい/にし, không phải なん."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "n5k13-12",
+          "promptJapanese": "大阪の「ほうげん」が分かりません。",
+          "promptReading": "おおさかの「ほうげん」がわかりません。",
+          "promptVietnamese": "Tôi không hiểu tiếng địa phương Osaka.",
+          "choices": ["力言", "万言", "刀言", "方言"],
+          "choicesVietnamese": ["không có từ này (力 = lực)", "không có từ này (万 = vạn)", "không có từ này (刀 = đao)", "方言 · tiếng địa phương"],
+          "choiceNotes": [
+            "力 (sức) nhìn giống 方 nhưng đọc りょく/ちから.",
+            "万 (vạn) đọc まん, nhìn giống 方 nhưng thiếu dấu chấm trên đầu.",
+            "刀 (đao, dao) đọc とう/かたな.",
+            "Đúng: 方言 = ほうげん — 方 đọc ホウ, 言 đọc ゲン."
+          ],
+          "answer": 4,
+          "explanation": "力・万・刀 là ba chữ nhìn giống 方: 方 có dấu chấm trên đầu và nét ngang dài."
+        },
+        {
+          "id": "n5k13-13",
+          "promptJapanese": "彼らは「にし」の方へ向かいました。",
+          "promptReading": "かれらは「にし」のほうへむかいました。",
+          "promptVietnamese": "Họ đã đi về phía tây.",
+          "choices": ["西", "北", "南", "東"],
+          "choicesVietnamese": ["西 · phía tây", "北 (きた) · phía bắc", "南 (みなみ) · phía nam", "東 (ひがし) · phía đông"],
+          "choiceNotes": [
+            "Đúng: にし là âm Kun của 西.",
+            "北 đọc きた.",
+            "南 đọc みなみ.",
+            "東 đọc ひがし."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "n5k13-14",
+          "promptJapanese": "「とう」きょうにはゆうめいなけしきがたくさんあります。",
+          "promptReading": "「とう」きょうにはゆうめいなけしきがたくさんあります。",
+          "promptVietnamese": "Tokyo có nhiều cảnh đẹp nổi tiếng.",
+          "choices": ["西", "東", "南", "北"],
+          "choicesVietnamese": ["西 (せい) · tây", "東 · đông", "南 (なん) · nam", "北 (ほく) · bắc"],
+          "choiceNotes": [
+            "西 đọc せい/にし.",
+            "Đúng: とう là âm On của 東 — 東京 (とうきょう) nghĩa là \"kinh đô phía đông\".",
+            "南 đọc なん/みなみ.",
+            "北 đọc ほく/きた."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "n5k13-15",
+          "promptJapanese": "「かんとう」には有名な食べ物と景色がたくさんあります。",
+          "promptReading": "「かんとう」にはゆうめいなたべものとけしきがたくさんあります。",
+          "promptVietnamese": "Vùng Kanto có nhiều món ăn và cảnh đẹp nổi tiếng.",
+          "choices": ["関東", "関西", "関北", "関南"],
+          "choicesVietnamese": ["関東 · vùng Kanto", "関西 (かんさい) · vùng Kansai", "không có từ này", "không có từ này"],
+          "choiceNotes": [
+            "Đúng: とう là âm của 東 — 関東 = vùng Kanto (quanh Tokyo).",
+            "関西 đọc かんさい — vùng Kansai (Osaka, Kyoto); 西 ở đây đọc さい.",
+            "Không có vùng 関北.",
+            "Không có vùng 関南."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "n5k13-16",
+          "promptJapanese": "この漢字の「よみかた」が分かりません。",
+          "promptReading": "このかんじの「よみかた」がわかりません。",
+          "promptVietnamese": "Tôi không biết cách đọc chữ Hán này.",
+          "choices": ["読み方", "読み分", "読み万", "飲み方"],
+          "choicesVietnamese": ["読み方 · cách đọc", "không có từ này (分 = phân)", "không có từ này (万 = vạn)", "飲み方 (のみかた) · cách uống"],
+          "choiceNotes": [
+            "Đúng: 読みます bỏ ます + 方 (かた) = cách đọc.",
+            "分 đọc ぶん/ふん/わ.かる, không phải かた.",
+            "万 nhìn giống 方 nhưng đọc まん.",
+            "飲み方 đọc のみかた (cách uống) — 飲 là uống, không phải đọc."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "n5k13-17",
+          "promptJapanese": "ハノイ市はベトナムの「ほくぶ」にあります。",
+          "promptReading": "ハノイしはベトナムの「ほくぶ」にあります。",
+          "promptVietnamese": "Thành phố Hà Nội nằm ở miền bắc Việt Nam.",
+          "choices": ["南部", "北部", "東部", "西部"],
+          "choicesVietnamese": ["南部 (なんぶ) · miền nam", "北部 · miền bắc", "東部 (とうぶ) · miền đông", "西部 (せいぶ) · miền tây"],
+          "choiceNotes": [
+            "南部 đọc なんぶ.",
+            "Đúng: ほく là âm On của 北 — 北部 = miền bắc.",
+            "東部 đọc とうぶ.",
+            "西部 đọc せいぶ."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "n5k13-18",
+          "promptJapanese": "私はベトナムで「きた」から南まで旅行をしました。",
+          "promptReading": "わたしはベトナムで「きた」からみなみまでりょこうをしました。",
+          "promptVietnamese": "Tôi đã đi du lịch Việt Nam từ bắc vào nam.",
+          "choices": ["北", "西", "南", "東"],
+          "choicesVietnamese": ["北 · phía bắc", "西 (にし) · phía tây", "南 (みなみ) · phía nam", "東 (ひがし) · phía đông"],
+          "choiceNotes": [
+            "Đúng: きた là âm Kun của 北.",
+            "西 đọc にし.",
+            "南 đọc みなみ — chữ đứng sau から…まで trong câu.",
+            "東 đọc ひがし."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "n5k13-19",
+          "promptJapanese": "かのじょは「ゆうがた」はいつもいえにいます。",
+          "promptReading": "かのじょは「ゆうがた」はいつもいえにいます。",
+          "promptVietnamese": "Cô ấy buổi chiều tối lúc nào cũng ở nhà.",
+          "choices": ["石方", "夕方", "友方", "北方"],
+          "choicesVietnamese": ["không có từ này (石 = thạch, đá)", "夕方 · chiều tối", "không có từ này (友 = hữu, bạn)", "北方 (ほっぽう) · phương bắc"],
+          "choiceNotes": [
+            "石 đọc いし/せき, không phải ゆう.",
+            "Đúng: 夕方 = ゆうがた — 夕 (tịch, buổi tối) + 方 biến âm がた.",
+            "友 đọc ゆう trong 友人 (ゆうじん), nhưng không có từ 友方.",
+            "北方 đọc ほっぽう (phương bắc)."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "n5k13-20",
+          "promptJapanese": "駅の「みなみ」口から出ました。",
+          "promptReading": "えきの「みなみ」ぐちからでました。",
+          "promptVietnamese": "Tôi đã đi ra từ cửa nam nhà ga.",
+          "choices": ["東", "南", "西", "北"],
+          "choicesVietnamese": ["東 (ひがし) · phía đông", "南 · phía nam", "西 (にし) · phía tây", "北 (きた) · phía bắc"],
+          "choiceNotes": [
+            "東 đọc ひがし — 東口 là ひがしぐち.",
+            "Đúng: みなみ là âm Kun của 南 — 南口 = cửa nam.",
+            "西 đọc にし — 西口 là にしぐち.",
+            "北 đọc きた — 北口 là きたぐち."
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}
