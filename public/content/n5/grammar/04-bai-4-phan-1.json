@@ -1,0 +1,389 @@
+{
+  "id": "04-bai-4-phan-1",
+  "name": "Bài 4 · Phần 1",
+  "description": "Thời gian: nói giờ phút (～時～分です), thứ trong tuần (～曜日), thì của động từ (ます・ました・ません・ませんでした), N thời gian に V, N1 から N2 まで.",
+  "kind": "grammar",
+  "parent": "",
+  "group": "",
+  "points": [
+    {
+      "id": "0d3525bd4462f751",
+      "title": "～時です。／～時～分です。",
+      "summary": "(Bây giờ là) ~ giờ (~ phút)",
+      "structures": [
+        "いま、～時（じ）です。",
+        "いま、～時（じ）～分（ふん／ぷん）です。",
+        "Hỏi: いま、何時（なんじ）ですか。"
+      ],
+      "explanation": [
+        "Giờ: 1 いちじ · 2 にじ · 3 さんじ · 4 よじ · 5 ごじ · 6 ろくじ · 7 しちじ · 8 はちじ · 9 くじ · 10 じゅうじ · 11 じゅういちじ · 12 じゅうにじ.",
+        "Phút: số ＋ ふん／ぷん — 1 いっぷん · 2 にふん · 3 さんぷん · 4 よんぷん · 5 ごふん · 6 ろっぷん · 7 ななふん · 8 はっぷん · 9 きゅうふん · 10 じゅっぷん · 11 じゅういっぷん · 30 さんじゅっぷん.",
+        "30 phút còn nói là 半 (はん – rưỡi): 8時半 = 8 giờ rưỡi.",
+        "午前 (ごぜん) = sáng, trước 12 giờ trưa; 午後 (ごご) = chiều, sau 12 giờ trưa: 10:00 = 午前10時, 22:00 = 午後10時."
+      ],
+      "notes": [
+        "4 giờ là よじ, 7 giờ là しちじ, 9 giờ là くじ — không đọc よんじ, ななじ, きゅうじ.",
+        "Phút đọc ぷん với 1, 3, 4, 6, 8, 10 (いっぷん, さんぷん, よんぷん, ろっぷん, はっぷん, じゅっぷん); đọc ふん với 2, 5, 7, 9.",
+        "PDF in khung hỏi giờ là \"～時間ですか\" — câu đúng là 何時ですか; 時間 (じかん) là \"khoảng thời gian\", không dùng để hỏi giờ."
+      ],
+      "usages": [
+        {
+          "id": "u1",
+          "title": "～時です",
+          "detail": "Nói giờ chẵn.",
+          "examples": [
+            {
+              "id": "69a7f760a0945551",
+              "japanese": "いま、1時です。",
+              "reading": "いま、いちじです。",
+              "vietnamese": "Bây giờ là 1 giờ.",
+              "note": ""
+            },
+            {
+              "id": "9e86f32b552a76e1",
+              "japanese": "いま、2時です。",
+              "reading": "いま、にじです。",
+              "vietnamese": "Bây giờ là 2 giờ.",
+              "note": ""
+            },
+            {
+              "id": "e66c0ea368e97100",
+              "japanese": "いま、10時です。",
+              "reading": "いま、じゅうじです。",
+              "vietnamese": "Bây giờ là 10 giờ.",
+              "note": ""
+            },
+            {
+              "id": "bd25f6da307d6677",
+              "japanese": "今、ベトナムは6時です。日本は8時です。",
+              "reading": "いま、ベトナムはろくじです。にほんははちじです。",
+              "vietnamese": "Bây giờ ở Việt Nam là 6 giờ, ở Nhật là 8 giờ.",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "～時～分です",
+          "detail": "Nói giờ kèm phút.",
+          "examples": [
+            {
+              "id": "dfe43dd1f2ecfbb9",
+              "japanese": "いま、1時15分です。",
+              "reading": "いま、いちじじゅうごふんです。",
+              "vietnamese": "Bây giờ là 1 giờ 15 phút.",
+              "note": ""
+            },
+            {
+              "id": "75884a74f896167e",
+              "japanese": "いま、8時1分です。",
+              "reading": "いま、はちじいっぷんです。",
+              "vietnamese": "Bây giờ là 8 giờ 1 phút.",
+              "note": ""
+            },
+            {
+              "id": "c50bd1bf7dc5d0d2",
+              "japanese": "いま、8時16分です。",
+              "reading": "いま、はちじじゅうろっぷんです。",
+              "vietnamese": "Bây giờ là 8 giờ 16 phút.",
+              "note": ""
+            },
+            {
+              "id": "419da2785ba26c7b",
+              "japanese": "いま、8時33分です。",
+              "reading": "いま、はちじさんじゅうさんぷんです。",
+              "vietnamese": "Bây giờ là 8 giờ 33 phút.",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "title": "何時ですか",
+          "detail": "Hỏi giờ: 何時 (なんじ) = mấy giờ, 何分 (なんぷん) = mấy phút.",
+          "examples": [
+            {
+              "id": "f9b143c60c07d72b",
+              "japanese": "A：いま、何時ですか。\nB：8時半です。",
+              "reading": "A：いま、なんじですか。\nB：はちじはんです。",
+              "vietnamese": "A: Bây giờ là mấy giờ?\nB: 8 giờ rưỡi.",
+              "note": ""
+            },
+            {
+              "id": "959cff9927f2ddde",
+              "japanese": "A：あのう、すみません、今、何時ですか。\nB：えっと、今、7時30分です。",
+              "reading": "A：あのう、すみません、いま、なんじですか。\nB：えっと、いま、しちじさんじゅっぷんです。",
+              "vietnamese": "A: À, xin lỗi, bây giờ là mấy giờ ạ?\nB: Ờ, bây giờ là 7 giờ 30 phút.",
+              "note": ""
+            },
+            {
+              "id": "56c6bcee63bcd3a0",
+              "japanese": "A：あのう、明日の漢字テストは何時ですか。\nB：10時ですね。",
+              "reading": "A：あのう、あしたのかんじテストはなんじですか。\nB：じゅうじですね。",
+              "vietnamese": "A: À, bài kiểm tra chữ Hán ngày mai lúc mấy giờ vậy?\nB: 10 giờ nhé.",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "title": "午前・午後",
+          "detail": "Phân biệt sáng và chiều tối.",
+          "examples": [
+            {
+              "id": "0b0cbe1e53db8078",
+              "japanese": "いま、午前10時です。",
+              "reading": "いま、ごぜんじゅうじです。",
+              "vietnamese": "Bây giờ là 10 giờ sáng.",
+              "note": ""
+            },
+            {
+              "id": "f27495f609da43af",
+              "japanese": "いま、午後10時です。",
+              "reading": "いま、ごごじゅうじです。",
+              "vietnamese": "Bây giờ là 10 giờ tối (22 giờ).",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "63e89ed07db3121c",
+      "title": "N chỉ thời gian は ～曜日です。",
+      "summary": "~ là thứ ~",
+      "structures": [
+        "N chỉ thời gian ＋ は ＋ ～曜日（ようび）です。",
+        "Hỏi: N chỉ thời gian ＋ は ＋ 何曜日（なんようび）ですか。"
+      ],
+      "explanation": [
+        "Thứ trong tuần: 月曜日 げつようび (thứ 2) · 火曜日 かようび (thứ 3) · 水曜日 すいようび (thứ 4) · 木曜日 もくようび (thứ 5) · 金曜日 きんようび (thứ 6) · 土曜日 どようび (thứ 7) · 日曜日 にちようび (chủ nhật).",
+        "N chỉ thời gian: きょう, あした, あさって, きのう, 休み (ngày nghỉ), 週末 (cuối tuần), 試験 (kì thi)…",
+        "Hỏi thứ: 何曜日ですか (thứ mấy?)."
+      ],
+      "notes": [
+        "Ví dụ của PDF (あさってはすいようびです) dịch là \"Ngày kia là thứ 6\" — すいようび là thứ 4, bản dịch ở đây đã sửa."
+      ],
+      "usages": [
+        {
+          "id": "u1",
+          "title": "N chỉ thời gian は ～曜日です。",
+          "detail": "",
+          "examples": [
+            {
+              "id": "7b1b225e4f383db8",
+              "japanese": "きょうは金曜日です。",
+              "reading": "きょうはきんようびです。",
+              "vietnamese": "Hôm nay là thứ 6.",
+              "note": ""
+            },
+            {
+              "id": "279092309265f9d5",
+              "japanese": "A：あさっては何曜日ですか。\nB：あさっては水曜日です。",
+              "reading": "A：あさってはなんようびですか。\nB：あさってはすいようびです。",
+              "vietnamese": "A: Ngày kia là thứ mấy?\nB: Ngày kia là thứ 4.",
+              "note": ""
+            },
+            {
+              "id": "218519fc3f5b9a9d",
+              "japanese": "A：お母さん、週末は何曜日ですか。\nB：そうですね。週末は土曜日と日曜日ですよ。",
+              "reading": "A：おかあさん、しゅうまつはなんようびですか。\nB：そうですね。しゅうまつはどようびとにちようびですよ。",
+              "vietnamese": "A: Mẹ ơi, cuối tuần là thứ mấy ạ?\nB: Để xem nào. Cuối tuần là thứ 7 và chủ nhật đấy.",
+              "note": ""
+            },
+            {
+              "id": "c8b3e27f2a3cf0fd",
+              "japanese": "A：休みは何曜日ですか。\nB：休みは土曜日と日曜日です。",
+              "reading": "A：やすみはなんようびですか。\nB：やすみはどようびとにちようびです。",
+              "vietnamese": "A: Ngày nghỉ là thứ mấy?\nB: Ngày nghỉ là thứ 7 và chủ nhật.",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "34f821d252e71cd4",
+      "title": "時間 は V (ます・ました・ません・ませんでした)",
+      "summary": "(Thời gian) làm / đã làm / không làm / đã không làm V",
+      "structures": [
+        "Thời gian ＋ は、V ます／V ません　(hiện tại – tương lai)",
+        "Thời gian ＋ は、V ました／V ませんでした　(quá khứ)",
+        "Câu hỏi: S は V ますか。"
+      ],
+      "explanation": [
+        "Động từ thể ます chia bốn dạng: khẳng định V ます (hiện tại – tương lai) / V ました (quá khứ); phủ định V ません / V ませんでした.",
+        "Từ chỉ quá khứ: きのう (hôm qua), おととい (hôm kia), けさ (sáng nay). Hiện tại: きょう. Tương lai: あした, あさって, こんばん (tối nay).",
+        "Câu hỏi thêm か vào cuối: 働きますか. Trả lời bằng chính động từ: はい、働きます／いいえ、働きません."
+      ],
+      "notes": [
+        "Câu hỏi có động từ không trả lời bằng そうです／そうじゃありません (PDF gạch bỏ câu này) — nhắc lại động từ."
+      ],
+      "usages": [
+        {
+          "id": "u1",
+          "title": "時間 は V (ます・ました・ません・ませんでした)",
+          "detail": "",
+          "examples": [
+            {
+              "id": "12b490a749c4ad41",
+              "japanese": "きのう、私は働きました。",
+              "reading": "きのう、わたしははたらきました。",
+              "vietnamese": "Hôm qua tôi đã làm việc.",
+              "note": ""
+            },
+            {
+              "id": "d9b8d638718d7023",
+              "japanese": "きょう、私は働きます。",
+              "reading": "きょう、わたしははたらきます。",
+              "vietnamese": "Hôm nay tôi làm việc.",
+              "note": ""
+            },
+            {
+              "id": "02e4fed7c9e8eb2b",
+              "japanese": "あした、私は働きます。",
+              "reading": "あした、わたしははたらきます。",
+              "vietnamese": "Ngày mai tôi làm việc.",
+              "note": ""
+            },
+            {
+              "id": "3cd7efe8484e6d40",
+              "japanese": "A：きのう、寝ましたか。\nB：きのう、寝ませんでした。今はねむいです。",
+              "reading": "A：きのう、ねましたか。\nB：きのう、ねませんでした。いまはねむいです。",
+              "vietnamese": "A: Hôm qua cậu có ngủ không?\nB: Hôm qua tớ đã không ngủ. Bây giờ buồn ngủ quá.",
+              "note": ""
+            },
+            {
+              "id": "82c52ac6aeba300e",
+              "japanese": "A：社長、明日は土曜日ですね。土曜日は働きますか。\nB：そうですね、土曜日も日曜日も働きますよ。",
+              "reading": "A：しゃちょう、あしたはどようびですね。どようびははたらきますか。\nB：そうですね、どようびもにちようびもはたらきますよ。",
+              "vietnamese": "A: Giám đốc ơi, ngày mai là thứ 7 nhỉ. Thứ 7 anh có làm việc không?\nB: Ừ, cả thứ 7 lẫn chủ nhật tôi đều làm việc đấy.",
+              "note": ""
+            },
+            {
+              "id": "0c482d94ecd9d027",
+              "japanese": "毎日働きます。でも、楽しいですよ。",
+              "reading": "まいにちはたらきます。でも、たのしいですよ。",
+              "vietnamese": "Ngày nào tôi cũng làm việc. Nhưng vui lắm đấy.",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daa6968c5b2db835",
+      "title": "N thời gian に V。",
+      "summary": "Làm V lúc ~",
+      "structures": [
+        "N thời gian (xác định) ＋ に ＋ V。",
+        "Hỏi: 何時 に V か。"
+      ],
+      "explanation": [
+        "に đánh dấu thời điểm xảy ra hành động: làm V lúc ~.",
+        "N là thời gian xác định, có con số: giờ, phút (6時に, 5時2分に), ngày, tháng.",
+        "Hỏi giờ làm việc gì: 何時に起きますか (mấy giờ dậy?)."
+      ],
+      "notes": [
+        "Không thêm に sau từ chỉ thời gian tương đối: きょう, あした, きのう, けさ, こんばん, 毎朝, 毎日… — 毎朝6時に起きます: に đi với 6時, không đi với 毎朝.",
+        "Thứ trong tuần thêm に hay không đều được: 日曜日(に)働きます."
+      ],
+      "usages": [
+        {
+          "id": "u1",
+          "title": "N thời gian に V。",
+          "detail": "",
+          "examples": [
+            {
+              "id": "ed8ab38c2c8048ea",
+              "japanese": "けさ、6時に起きました。",
+              "reading": "けさ、ろくじにおきました。",
+              "vietnamese": "Sáng nay tớ dậy lúc 6 giờ.",
+              "note": ""
+            },
+            {
+              "id": "e2c86d4ff0ae70c8",
+              "japanese": "A：毎朝、何時におきますか。\nB：毎朝5時2分におきます。",
+              "reading": "A：まいあさ、なんじにおきますか。\nB：まいあさごじにふんにおきます。",
+              "vietnamese": "A: Mỗi sáng cậu dậy lúc mấy giờ?\nB: Mỗi sáng tớ dậy lúc 5 giờ 2 phút.",
+              "note": ""
+            },
+            {
+              "id": "fbf03e9a6812460f",
+              "japanese": "A：毎晩、何時に寝ますか。\nB：えっと、11時に寝ます。",
+              "reading": "A：まいばん、なんじにねますか。\nB：えっと、じゅういちじにねます。",
+              "vietnamese": "A: Mỗi tối cậu ngủ lúc mấy giờ?\nB: Ờ, tớ ngủ lúc 11 giờ.",
+              "note": ""
+            },
+            {
+              "id": "44a6b111228ff114",
+              "japanese": "A：今朝、何時に起きましたか。\nB：7時ですよ。",
+              "reading": "A：けさ、なんじにおきましたか。\nB：しちじですよ。",
+              "vietnamese": "A: Sáng nay cậu dậy lúc mấy giờ?\nB: 7 giờ đấy.",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e61b75e118210d2b",
+      "title": "N1 から N2 まで。",
+      "summary": "Từ N1 đến N2",
+      "structures": [
+        "N1 から N2 まで",
+        "Hỏi: S は 何時から 何時まで ですか。"
+      ],
+      "explanation": [
+        "から = từ (điểm bắt đầu), まで = đến (điểm kết thúc) — dùng cho thời gian, cũng dùng cho nơi chốn.",
+        "Đứng trước です: 試験は9時から11時半までです.",
+        "Đứng trước động từ: 6時から12時までデートします. Dùng riêng から hoặc riêng まで cũng được: 水曜日から働きます."
+      ],
+      "notes": [],
+      "usages": [
+        {
+          "id": "u1",
+          "title": "N1 から N2 まで。",
+          "detail": "",
+          "examples": [
+            {
+              "id": "e1f1805560ecec37",
+              "japanese": "私たちは6時から12時までデートします。",
+              "reading": "わたしたちはろくじからじゅうにじまでデートします。",
+              "vietnamese": "Chúng tớ hẹn hò từ 6 giờ đến 12 giờ.",
+              "note": ""
+            },
+            {
+              "id": "65efda71d0cdb1a8",
+              "japanese": "明日の試験は朝9時から11時半までですよ。",
+              "reading": "あしたのしけんはあさくじからじゅういちじはんまでですよ。",
+              "vietnamese": "Bài thi ngày mai từ 9 giờ sáng đến 11 giờ rưỡi đấy.",
+              "note": ""
+            },
+            {
+              "id": "e86f836b1a94710f",
+              "japanese": "A：先生、試験は何時から何時までですか。\nB：明日の試験は朝9時から11時半までですよ。",
+              "reading": "A：せんせい、しけんはなんじからなんじまでですか。\nB：あしたのしけんはあさくじからじゅういちじはんまでですよ。",
+              "vietnamese": "A: Thầy ơi, bài thi từ mấy giờ đến mấy giờ ạ?\nB: Bài thi ngày mai từ 9 giờ sáng đến 11 giờ rưỡi đấy.",
+              "note": ""
+            },
+            {
+              "id": "ca483021781e7ddf",
+              "japanese": "会社の休みは土曜日から火曜日までです。水曜日から働きます。",
+              "reading": "かいしゃのやすみはどようびからかようびまでです。すいようびからはたらきます。",
+              "vietnamese": "Ngày nghỉ của công ty là từ thứ 7 đến thứ 3. Từ thứ 4 sẽ làm việc.",
+              "note": ""
+            },
+            {
+              "id": "f4f597fe4bfbeea0",
+              "japanese": "A：いつも何時から何時までデートしますか。\nB：7時から10時までですよ。",
+              "reading": "A：いつもなんじからなんじまでデートしますか。\nB：しちじからじゅうじまでですよ。",
+              "vietnamese": "A: Hai người thường hẹn hò từ mấy giờ đến mấy giờ?\nB: Từ 7 giờ đến 10 giờ đấy.",
+              "note": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

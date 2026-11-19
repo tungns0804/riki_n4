@@ -1,0 +1,204 @@
+{
+  "id": "04-buoi-4",
+  "name": "Buổi 4 · Thời gian",
+  "description": "5 chữ của các thứ trong tuần: 日 (ngày, mặt trời), 月 (trăng), 火 (lửa), 水 (nước), 木 (cây).",
+  "kind": "kanji",
+  "parent": "",
+  "group": "",
+  "kanji": [
+    {
+      "id": "10d69593cb7623fa",
+      "character": "日",
+      "hanViet": "NHẬT",
+      "meaning": "Ngày/ mặt trời",
+      "onyomi": [
+        "ニチ",
+        "ニッ"
+      ],
+      "kunyomi": [
+        "ひ",
+        "び",
+        "か"
+      ],
+      "strokes": 4,
+      "words": [
+        {
+          "id": "72918edf2552561f",
+          "japanese": "日曜日",
+          "reading": "にちようび",
+          "vietnamese": "Chủ nhật"
+        },
+        {
+          "id": "051ea74314d5fd68",
+          "japanese": "毎日",
+          "reading": "まいにち",
+          "vietnamese": "Hàng ngày"
+        },
+        {
+          "id": "785899166adff8a0",
+          "japanese": "日記",
+          "reading": "にっき",
+          "vietnamese": "Nhật kí"
+        },
+        {
+          "id": "0bd08163608dfba2",
+          "japanese": "誕生日",
+          "reading": "たんじょうび",
+          "vietnamese": "Sinh nhật"
+        },
+        {
+          "id": "ab762f6097ef5f1b",
+          "japanese": "母の日",
+          "reading": "ははのひ",
+          "vietnamese": "Ngày của mẹ"
+        },
+        {
+          "id": "ca5ea569b7745ba1",
+          "japanese": "五日",
+          "reading": "いつか",
+          "vietnamese": "Ngày mùng 5/ 5 ngày"
+        }
+      ]
+    },
+    {
+      "id": "742cd4f4e56ee486",
+      "character": "月",
+      "hanViet": "NGUYỆT",
+      "meaning": "Mặt trăng",
+      "onyomi": [
+        "ガツ",
+        "ゲツ"
+      ],
+      "kunyomi": [
+        "つき"
+      ],
+      "strokes": 4,
+      "words": [
+        {
+          "id": "e3429fa80c134a56",
+          "japanese": "お正月",
+          "reading": "おしょうがつ",
+          "vietnamese": "Tết dương"
+        },
+        {
+          "id": "7d549fbcae177e0f",
+          "japanese": "月曜日",
+          "reading": "げつようび",
+          "vietnamese": "Thứ 2"
+        },
+        {
+          "id": "1c9f4a9b0b90c575",
+          "japanese": "月",
+          "reading": "つき",
+          "vietnamese": "Trăng"
+        },
+        {
+          "id": "518a1cb732c6444a",
+          "japanese": "毎月",
+          "reading": "まいつき",
+          "vietnamese": "Hàng tháng"
+        }
+      ]
+    },
+    {
+      "id": "d4a116ae823f2aa5",
+      "character": "火",
+      "hanViet": "HOẢ",
+      "meaning": "Lửa",
+      "onyomi": [
+        "カ"
+      ],
+      "kunyomi": [
+        "ひ",
+        "び"
+      ],
+      "strokes": 4,
+      "words": [
+        {
+          "id": "1c5bdc62a1da1b7d",
+          "japanese": "火曜日",
+          "reading": "かようび",
+          "vietnamese": "Thứ 3"
+        },
+        {
+          "id": "87a1e27c76208e3d",
+          "japanese": "火",
+          "reading": "ひ",
+          "vietnamese": "Lửa"
+        },
+        {
+          "id": "dcf6539fe4c0456f",
+          "japanese": "花火",
+          "reading": "はなび",
+          "vietnamese": "Pháo hoa"
+        }
+      ]
+    },
+    {
+      "id": "f8d9f2b7451f391c",
+      "character": "水",
+      "hanViet": "THUỶ",
+      "meaning": "Nước",
+      "onyomi": [
+        "スイ"
+      ],
+      "kunyomi": [
+        "みず"
+      ],
+      "strokes": 4,
+      "words": [
+        {
+          "id": "eb055837a9c87422",
+          "japanese": "水曜日",
+          "reading": "すいようび",
+          "vietnamese": "Thứ 4"
+        },
+        {
+          "id": "9fccab79f9710254",
+          "japanese": "水道",
+          "reading": "すいどう",
+          "vietnamese": "Nước máy"
+        },
+        {
+          "id": "455fc7df970099c1",
+          "japanese": "水",
+          "reading": "みず",
+          "vietnamese": "Nước"
+        }
+      ]
+    },
+    {
+      "id": "e11684c2932e6cf7",
+      "character": "木",
+      "hanViet": "MỘC",
+      "meaning": "Cây",
+      "onyomi": [
+        "モク"
+      ],
+      "kunyomi": [
+        "き"
+      ],
+      "strokes": 4,
+      "words": [
+        {
+          "id": "cf57052afa6e8d30",
+          "japanese": "木曜日",
+          "reading": "もくようび",
+          "vietnamese": "Thứ 5"
+        },
+        {
+          "id": "dc353742f7325083",
+          "japanese": "木",
+          "reading": "き",
+          "vietnamese": "Cây cối"
+        },
+        {
+          "id": "6ccdf756c9e491d7",
+          "japanese": "木村さん",
+          "reading": "きむらさん",
+          "vietnamese": "Anh Kimura"
+        }
+      ]
+    }
+  ]
+}

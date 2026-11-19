@@ -1,0 +1,11 @@
+# Bài học N5 · KANJI · Buổi 4 · Thời gian
+# nguồn: PDF "Khoá học Online N5 – Kanji", Buổi 04 · Kiến thức, chữ 16–20
+# Định dạng: xem data-source/bai-26/kanji/README.md
+#
+# Cách chép như Buổi 11: dấu phẩy trong nghĩa viết thành "/", số nét điền theo từ
+# điển. PDF ghi biến âm ngay trong cột âm (にっ, び): giữ cả, bỏ chữ "(Biến âm)".
+日,NHẬT,Ngày/ mặt trời,ニチ・ニッ,ひ・び・か,4|日曜日 (にちようび)=Chủ nhật;毎日 (まいにち)=Hàng ngày;日記 (にっき)=Nhật kí;誕生日 (たんじょうび)=Sinh nhật;母の日 (ははのひ)=Ngày của mẹ;五日 (いつか)=Ngày mùng 5/ 5 ngày
+月,NGUYỆT,Mặt trăng,ガツ・ゲツ,つき,4|お正月 (おしょうがつ)=Tết dương;月曜日 (げつようび)=Thứ 2;月 (つき)=Trăng;毎月 (まいつき)=Hàng tháng
+火,HOẢ,Lửa,カ,ひ・び,4|火曜日 (かようび)=Thứ 3;火 (ひ)=Lửa;花火 (はなび)=Pháo hoa
+水,THUỶ,Nước,スイ,みず,4|水曜日 (すいようび)=Thứ 4;水道 (すいどう)=Nước máy;水 (みず)=Nước
+木,MỘC,Cây,モク,き,4|木曜日 (もくようび)=Thứ 5;木 (き)=Cây cối;木村さん (きむらさん)=Anh Kimura

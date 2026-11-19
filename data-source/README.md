@@ -10,8 +10,10 @@ data-source/
 │       └── de-1/                 bài giữ chỗ, chờ test.json
 ├── n5/                           Bài học N5 — các bài theo chủ đề, mỗi chủ đề một bài
 │   ├── vocabulary/
-│   │   └── 01-so-dem/            bảng cách đọc số đếm (55 mục)
+│   │   ├── 01-so-dem/            bảng cách đọc số đếm (55 mục)
+│   │   └── 04-bai-4-phan-1/      Bài 4 · Thời gian, 47 từ (bai-4-phan-1.pdf)
 │   ├── kanji/                    PDF "Khoá học Online N5 – Kanji", mỗi buổi một bài
+│   │   ├── 04-buoi-4/            Buổi 4 · Thời gian (chữ 16–20)
 │   │   ├── 11-buoi-11/           Buổi 11 · Vị trí 1 (chữ 51–55)
 │   │   ├── 12-buoi-12/           Buổi 12 · Vị trí 2 (chữ 56–60)
 │   │   ├── 13-buoi-13/           bài giữ chỗ, chờ PDF Buổi 13 (東 西 南 北 方)
@@ -19,7 +21,9 @@ data-source/
 │   │   └── 14-buoi-14/           Buổi 14 · Bộ phận (chữ 66–70)
 │   └── grammar/
 │       ├── 01-so-dem/            Học số đếm tiếng Nhật (lý thuyết, 6 mẫu)
-│       └── 01-so-dem-luyen-tap/  đề luyện tập 15 câu, bài con của 01-so-dem
+│       ├── 01-so-dem-luyen-tap/  đề luyện tập 15 câu, bài con của 01-so-dem
+│       ├── 04-bai-4-phan-1/      Bài 4 · Phần 1 (bai-4-phan-1-bay-gio-la-19-gio.pdf, 5 mẫu)
+│       └── 04-bai-4-phan-1-luyen-tap/  đề luyện tập 19 câu, bài con của 04-bai-4-phan-1
 ├── bai-26/                       Bài 26 : Cách hình thành và sử dụng んです
 │   ├── vocabulary/               mục "Từ Vựng Cải Thiện"
 │   │   ├── README.md             định dạng file từ vựng

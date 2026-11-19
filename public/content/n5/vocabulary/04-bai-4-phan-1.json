@@ -1,0 +1,631 @@
+{
+  "id": "04-bai-4-phan-1",
+  "name": "Bài 4 · Phần 1",
+  "description": "Thời gian: 47 từ — nơi chốn, động từ 起きます・寝ます・働きます…, cách nói giờ phút, các buổi và các ngày, thứ trong tuần.",
+  "kind": "vocabulary",
+  "parent": "",
+  "group": "",
+  "groups": [
+    {
+      "label": "01–06",
+      "title": "Danh từ chỉ nơi chốn"
+    },
+    {
+      "label": "07–11",
+      "title": "Động từ"
+    },
+    {
+      "label": "12–17",
+      "title": "Cách nói giờ, phút"
+    },
+    {
+      "label": "18–43",
+      "title": "Danh từ chỉ thời gian"
+    },
+    {
+      "label": "44–47",
+      "title": "Danh từ khác"
+    }
+  ],
+  "words": [
+    {
+      "id": "6eafa38e38c02d2e",
+      "number": 1,
+      "group": "01–06",
+      "particle": "",
+      "japanese": "デパート",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Trung tâm thương mại",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "3f835e6fcd3d8076",
+      "number": 2,
+      "group": "01–06",
+      "particle": "",
+      "japanese": "銀行",
+      "reading": "ぎんこう",
+      "hanViet": "NGÂN HÀNH",
+      "vietnamese": "Ngân hàng",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "e1c9c7e257326072",
+      "number": 3,
+      "group": "01–06",
+      "particle": "",
+      "japanese": "郵便局",
+      "reading": "ゆうびんきょく",
+      "hanViet": "BƯU TIỆN CỤC",
+      "vietnamese": "Bưu điện",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "0a6bcc6c36abd5b5",
+      "number": 4,
+      "group": "01–06",
+      "particle": "",
+      "japanese": "美術館",
+      "reading": "びじゅつかん",
+      "hanViet": "MỸ THUẬT QUÁN",
+      "vietnamese": "Bảo tàng mỹ thuật",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "a0f76ce8dcceaffd",
+      "number": 5,
+      "group": "01–06",
+      "particle": "",
+      "japanese": "図書館",
+      "reading": "としょかん",
+      "hanViet": "ĐỒ THƯ QUÁN",
+      "vietnamese": "Thư viện",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "3a53431db1f238a5",
+      "number": 6,
+      "group": "01–06",
+      "particle": "",
+      "japanese": "学校",
+      "reading": "がっこう",
+      "hanViet": "HỌC HIỆU",
+      "vietnamese": "Trường học",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "38307907656378dd",
+      "number": 7,
+      "group": "07–11",
+      "particle": "",
+      "japanese": "起きます",
+      "reading": "おきます",
+      "hanViet": "KHỞI",
+      "vietnamese": "Dậy/ Thức dậy",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "e378677a549ce09d",
+      "number": 8,
+      "group": "07–11",
+      "particle": "",
+      "japanese": "寝ます",
+      "reading": "ねます",
+      "hanViet": "TẨM",
+      "vietnamese": "Ngủ/ Đi ngủ",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "c7f2b4ef00192fee",
+      "number": 9,
+      "group": "07–11",
+      "particle": "",
+      "japanese": "働きます",
+      "reading": "はたらきます",
+      "hanViet": "ĐỘNG",
+      "vietnamese": "Làm việc",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "5774acb4b72e6aef",
+      "number": 10,
+      "group": "07–11",
+      "particle": "",
+      "japanese": "勉強します",
+      "reading": "べんきょうします",
+      "hanViet": "MIỄN CƯỠNG",
+      "vietnamese": "Học",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "941d19eddf835ba1",
+      "number": 11,
+      "group": "07–11",
+      "particle": "",
+      "japanese": "終わります",
+      "reading": "おわります",
+      "hanViet": "CHUNG",
+      "vietnamese": "Hết/ Kết thúc/ Xong",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "b13c43fb82c277cf",
+      "number": 12,
+      "group": "12–17",
+      "particle": "",
+      "japanese": "今",
+      "reading": "いま",
+      "hanViet": "KIM",
+      "vietnamese": "Bây giờ",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "b3a7ebc1be2a4d0c",
+      "number": 13,
+      "group": "12–17",
+      "particle": "",
+      "japanese": "～時",
+      "reading": "～じ",
+      "hanViet": "THỜI",
+      "vietnamese": "~ Giờ",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "4時 よじ · 7時 しちじ · 9時 くじ — không đọc よんじ, ななじ, きゅうじ"
+        }
+      ]
+    },
+    {
+      "id": "f2dcbfb900da5025",
+      "number": 14,
+      "group": "12–17",
+      "particle": "",
+      "japanese": "～分",
+      "reading": "～ふん",
+      "hanViet": "PHÂN",
+      "vietnamese": "~ Phút",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "đọc ふん hoặc ぷん tuỳ số: いっぷん, にふん, さんぷん, よんぷん, ごふん, ろっぷん, ななふん, はっぷん, きゅうふん, じゅっぷん"
+        }
+      ]
+    },
+    {
+      "id": "46928156ee177f65",
+      "number": 15,
+      "group": "12–17",
+      "particle": "",
+      "japanese": "半",
+      "reading": "はん",
+      "hanViet": "BÁN",
+      "vietnamese": "Rưỡi/ Nửa",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "8時半 (はちじはん) = 8 giờ rưỡi"
+        }
+      ]
+    },
+    {
+      "id": "77b6cca5b65ad73b",
+      "number": 16,
+      "group": "12–17",
+      "particle": "",
+      "japanese": "なんじ",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Mấy giờ",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "viết chữ Hán là 何時"
+        }
+      ]
+    },
+    {
+      "id": "694bf6df9fdf8a4c",
+      "number": 17,
+      "group": "12–17",
+      "particle": "",
+      "japanese": "なんぷん",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Mấy phút",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "viết chữ Hán là 何分"
+        }
+      ]
+    },
+    {
+      "id": "97d71b186dc2f7a0",
+      "number": 18,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "午前",
+      "reading": "ごぜん",
+      "hanViet": "NGỌ TIỀN",
+      "vietnamese": "Sáng",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "trước 12 giờ trưa — 午前10時 = 10 giờ sáng"
+        }
+      ]
+    },
+    {
+      "id": "cbf77f873930af3b",
+      "number": 19,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "午後",
+      "reading": "ごご",
+      "hanViet": "NGỌ HẬU",
+      "vietnamese": "Chiều",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "sau 12 giờ trưa — 午後10時 = 10 giờ tối (22 giờ)"
+        }
+      ]
+    },
+    {
+      "id": "ed80134acb906220",
+      "number": 20,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "朝",
+      "reading": "あさ",
+      "hanViet": "TRIỀU",
+      "vietnamese": "Buổi sáng",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "1bd30d1916166938",
+      "number": 21,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "昼",
+      "reading": "ひる",
+      "hanViet": "TRÚ",
+      "vietnamese": "Buổi trưa",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "ee88bb1535abde8a",
+      "number": 22,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "晩",
+      "reading": "ばん",
+      "hanViet": "VÃN",
+      "vietnamese": "Buổi tối",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "80fffae2806100b4",
+      "number": 23,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "おととい",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Hôm kia",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "b191cf00a69ae18b",
+      "number": 24,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "きのう",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Hôm qua",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "50ff972bfabe1344",
+      "number": 25,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "きょう",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Hôm nay",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "6818b05a46f7de27",
+      "number": 26,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "あした",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Ngày mai",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "ee00e2ab711c571a",
+      "number": 27,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "あさって",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Ngày kia/ Ngày mốt",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "11ba63bfd1933dba",
+      "number": 28,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "けさ",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Sáng nay",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "098f1c4bae5726d0",
+      "number": 29,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "今晩",
+      "reading": "こんばん",
+      "hanViet": "KIM VÃN",
+      "vietnamese": "Tối nay",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "869ff3f5d4bdc329",
+      "number": 30,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "夕べ",
+      "reading": "ゆうべ",
+      "hanViet": "TỊCH",
+      "vietnamese": "Tối qua",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "a49177824c2ea81d",
+      "number": 31,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "休み",
+      "reading": "やすみ",
+      "hanViet": "HƯU",
+      "vietnamese": "Nghỉ",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "e29eec19bd301a6c",
+      "number": 32,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "休みの日",
+      "reading": "やすみのひ",
+      "hanViet": "HƯU NHẬT",
+      "vietnamese": "Ngày nghỉ",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "bb2c276e0badcadf",
+      "number": 33,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "昼休み",
+      "reading": "ひるやすみ",
+      "hanViet": "TRÚ HƯU",
+      "vietnamese": "Nghỉ trưa",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "2835ed2de1f3a1da",
+      "number": 34,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "毎朝",
+      "reading": "まいあさ",
+      "hanViet": "MỖI TRIỀU",
+      "vietnamese": "Mỗi sáng",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "3ec22bc32ef01927",
+      "number": 35,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "毎晩",
+      "reading": "まいばん",
+      "hanViet": "MỖI VÃN",
+      "vietnamese": "Mỗi tối",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "63ae9c80db6ca902",
+      "number": 36,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "毎日",
+      "reading": "まいにち",
+      "hanViet": "MỖI NHẬT",
+      "vietnamese": "Mỗi ngày",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "d43eee32c3090e56",
+      "number": 37,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "月曜日",
+      "reading": "げつようび",
+      "hanViet": "NGUYỆT DIỆU NHẬT",
+      "vietnamese": "Thứ hai",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "7ce624a0c83194d9",
+      "number": 38,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "火曜日",
+      "reading": "かようび",
+      "hanViet": "HOẢ DIỆU NHẬT",
+      "vietnamese": "Thứ ba",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "1be3ffb478a8e817",
+      "number": 39,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "水曜日",
+      "reading": "すいようび",
+      "hanViet": "THUỶ DIỆU NHẬT",
+      "vietnamese": "Thứ tư",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "d95bbd04365e4c3b",
+      "number": 40,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "木曜日",
+      "reading": "もくようび",
+      "hanViet": "MỘC DIỆU NHẬT",
+      "vietnamese": "Thứ năm",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "07be2a633f216e10",
+      "number": 41,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "金曜日",
+      "reading": "きんようび",
+      "hanViet": "KIM DIỆU NHẬT",
+      "vietnamese": "Thứ sáu",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "242d667c4f1d600e",
+      "number": 42,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "土曜日",
+      "reading": "どようび",
+      "hanViet": "THỔ DIỆU NHẬT",
+      "vietnamese": "Thứ bảy",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "0826c499defa0857",
+      "number": 43,
+      "group": "18–43",
+      "particle": "",
+      "japanese": "日曜日",
+      "reading": "にちようび",
+      "hanViet": "NHẬT DIỆU NHẬT",
+      "vietnamese": "Chủ nhật",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "92d9a9514f685222",
+      "number": 44,
+      "group": "44–47",
+      "particle": "",
+      "japanese": "試験",
+      "reading": "しけん",
+      "hanViet": "THÍ NGHIỆM",
+      "vietnamese": "Kì thi",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "1f13b3c53d1438c2",
+      "number": 45,
+      "group": "44–47",
+      "particle": "",
+      "japanese": "テスト",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Kiểm tra",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "9834b55a8d9dd176",
+      "number": 46,
+      "group": "44–47",
+      "particle": "",
+      "japanese": "会議",
+      "reading": "かいぎ",
+      "hanViet": "HỘI NGHỊ",
+      "vietnamese": "Cuộc họp/ Hội nghị",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "991e54ae9e25ab5a",
+      "number": 47,
+      "group": "44–47",
+      "particle": "",
+      "japanese": "映画",
+      "reading": "えいが",
+      "hanViet": "ÁNH HOẠ",
+      "vietnamese": "Phim/ Phim điện ảnh",
+      "examples": [],
+      "notes": []
+    }
+  ]
+}

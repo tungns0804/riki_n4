@@ -38,6 +38,7 @@ Phần 1"). PDF không in nghĩa riêng của chữ và số nét nên hai cột
 | ----------------------------- | ------------------ | ------------------------------------------------- |
 | `bai-26/kanji/01-phan-1`      | Kanji mới · Phần 1 | 8 chữ: 家 族 兄 弟 姉 妹 私 育                      |
 | `bai-27/kanji/01-phan-1`      | Kanji mới · Phần 1 | 8 chữ: 部 屋 広 低 緑 静 近 遠 (`kanji-bai-271.pdf`) |
+| `n5/kanji/04-buoi-4`          | Buổi 4 · Thời gian | 5 chữ: 日 月 火 水 木 (khoá Online N5 – Kanji, chữ 16–20) |
 | `n5/kanji/11-buoi-11`         | Buổi 11 · Vị trí 1 | 5 chữ: 上 下 右 左 中 (khoá Online N5 – Kanji, chữ 51–55) |
 | `n5/kanji/12-buoi-12`         | Buổi 12 · Vị trí 2 | 5 chữ: 後 前 外 入 出 (khoá Online N5 – Kanji, chữ 56–60) |
 | `n5/kanji/13-buoi-13`         | Buổi 13            | bài giữ chỗ — chờ PDF; đã có bài con `13-buoi-13-trac-nghiem` (20 câu 東 西 南 北 方) |

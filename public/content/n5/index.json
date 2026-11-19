@@ -4,7 +4,7 @@
     "name": "Bài học N5",
     "level": "N5"
   },
-  "generatedAt": "2026-11-05T05:24:22.880Z",
+  "generatedAt": "2026-11-19T16:01:09.779Z",
   "modules": [
     {
       "id": "vocabulary",
@@ -41,12 +41,56 @@
               "title": "Đếm số lần (～回)"
             }
           ]
+        },
+        {
+          "id": "04-bai-4-phan-1",
+          "name": "Bài 4 · Phần 1",
+          "description": "Thời gian: 47 từ — nơi chốn, động từ 起きます・寝ます・働きます…, cách nói giờ phút, các buổi và các ngày, thứ trong tuần.",
+          "kind": "vocabulary",
+          "parent": "",
+          "group": "",
+          "itemCount": 47,
+          "order": 41,
+          "file": "vocabulary/04-bai-4-phan-1.json",
+          "groups": [
+            {
+              "label": "01–06",
+              "title": "Danh từ chỉ nơi chốn"
+            },
+            {
+              "label": "07–11",
+              "title": "Động từ"
+            },
+            {
+              "label": "12–17",
+              "title": "Cách nói giờ, phút"
+            },
+            {
+              "label": "18–43",
+              "title": "Danh từ chỉ thời gian"
+            },
+            {
+              "label": "44–47",
+              "title": "Danh từ khác"
+            }
+          ]
         }
       ]
     },
     {
       "id": "kanji",
       "units": [
+        {
+          "id": "04-buoi-4",
+          "name": "Buổi 4 · Thời gian",
+          "description": "5 chữ của các thứ trong tuần: 日 (ngày, mặt trời), 月 (trăng), 火 (lửa), 水 (nước), 木 (cây).",
+          "kind": "kanji",
+          "parent": "",
+          "group": "",
+          "itemCount": 5,
+          "order": 4,
+          "file": "kanji/04-buoi-4.json"
+        },
         {
           "id": "11-buoi-11",
           "name": "Buổi 11 · Vị trí 1",
@@ -119,6 +163,17 @@
           "file": "grammar/01-so-dem.json"
         },
         {
+          "id": "04-bai-4-phan-1",
+          "name": "Bài 4 · Phần 1",
+          "description": "Thời gian: nói giờ phút (～時～分です), thứ trong tuần (～曜日), thì của động từ (ます・ました・ません・ませんでした), N thời gian に V, N1 から N2 まで.",
+          "kind": "grammar",
+          "parent": "",
+          "group": "",
+          "itemCount": 5,
+          "order": 41,
+          "file": "grammar/04-bai-4-phan-1.json"
+        },
+        {
           "id": "01-so-dem-luyen-tap",
           "name": "Luyện tập · Số đếm",
           "description": "15 câu: chọn cách đọc (1–6), chọn đơn vị đếm (7–12), chọn từ để hỏi (13–15).",
@@ -128,6 +183,17 @@
           "itemCount": 15,
           "order": 101,
           "file": "grammar/01-so-dem-luyen-tap.json"
+        },
+        {
+          "id": "04-bai-4-phan-1-luyen-tap",
+          "name": "Luyện tập · Bài 4",
+          "description": "19 câu: chọn cách đọc giờ phút (1–8), thứ trong tuần (9–12), trợ từ に・から・まで và thì của động từ (13–19).",
+          "kind": "test",
+          "parent": "04-bai-4-phan-1",
+          "group": "",
+          "itemCount": 19,
+          "order": 4101,
+          "file": "grammar/04-bai-4-phan-1-luyen-tap.json"
         }
       ]
     }

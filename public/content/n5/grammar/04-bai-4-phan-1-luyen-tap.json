@@ -1,0 +1,756 @@
+{
+  "id": "04-bai-4-phan-1-luyen-tap",
+  "name": "Luyện tập · Bài 4",
+  "description": "19 câu: chọn cách đọc giờ phút (1–8), thứ trong tuần (9–12), trợ từ に・から・まで và thì của động từ (13–19).",
+  "kind": "test",
+  "parent": "04-bai-4-phan-1",
+  "group": "",
+  "sections": [
+    {
+      "id": "b4-doc-gio",
+      "title": "Bài 4 · Câu 1–8 — Chọn cách đọc giờ",
+      "instructions": "Chọn cách đọc đúng của giờ trong 「 」.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "b4-01",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "いま、「8時15分」です。",
+          "promptReading": "",
+          "promptTranslation": "Bây giờ là 8 giờ 15 phút.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "はちじ じゅうごぷん",
+              "translation": "không có cách đọc này",
+              "note": "5 phút đọc ごふん, nên 15 phút là じゅうごふん — không đổi thành ぷん."
+            },
+            {
+              "id": "c2",
+              "text": "はちじ じゅうごふん",
+              "translation": "8 giờ 15 phút",
+              "note": "Đúng: 8時 = はちじ, 15分 = じゅうごふん."
+            },
+            {
+              "id": "c3",
+              "text": "はっじ じゅうごふん",
+              "translation": "không có cách đọc này",
+              "note": "8時 đọc はちじ, không có っ."
+            },
+            {
+              "id": "c4",
+              "text": "はちじ じゅうごっぷん",
+              "translation": "không có cách đọc này",
+              "note": "Chỉ 1, 6, 8, 10 phút mới thêm っ (いっぷん, ろっぷん, はっぷん, じゅっぷん)."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-02",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "いま、「7時半」です。",
+          "promptReading": "",
+          "promptTranslation": "Bây giờ là 7 giờ rưỡi.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "ななじはん",
+              "translation": "không có cách đọc này",
+              "note": "7 giờ đọc しちじ, không đọc ななじ."
+            },
+            {
+              "id": "c2",
+              "text": "しちじはん",
+              "translation": "7 giờ rưỡi",
+              "note": "Đúng: 7時半 = しちじはん (= 7時30分 しちじさんじゅっぷん)."
+            },
+            {
+              "id": "c3",
+              "text": "しちじはんぷん",
+              "translation": "không có cách đọc này",
+              "note": "半 đã là \"rưỡi\", không thêm ぷん."
+            },
+            {
+              "id": "c4",
+              "text": "なのじはん",
+              "translation": "không có cách đọc này",
+              "note": "Không có cách đọc なの."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-03",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "いま、「9時16分」です。",
+          "promptReading": "",
+          "promptTranslation": "Bây giờ là 9 giờ 16 phút.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "きゅうじ じゅうろくふん",
+              "translation": "không có cách đọc này",
+              "note": "9 giờ đọc くじ, và 6 phút đọc ろっぷん — sai cả hai chỗ."
+            },
+            {
+              "id": "c2",
+              "text": "くじ じゅうろくふん",
+              "translation": "không có cách đọc này",
+              "note": "Giờ đúng, nhưng 6 phút đọc ろっぷん chứ không phải ろくふん."
+            },
+            {
+              "id": "c3",
+              "text": "くじ じゅうろっぷん",
+              "translation": "9 giờ 16 phút",
+              "note": "Đúng: 9時 = くじ, 16分 = じゅうろっぷん."
+            },
+            {
+              "id": "c4",
+              "text": "きゅうじ じゅうろっぷん",
+              "translation": "không có cách đọc này",
+              "note": "Phút đúng, nhưng 9 giờ đọc くじ, không đọc きゅうじ."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-04",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "いま、「7時12分」です。",
+          "promptReading": "",
+          "promptTranslation": "Bây giờ là 7 giờ 12 phút.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "しちじ じゅうにふん",
+              "translation": "7 giờ 12 phút",
+              "note": "Đúng: 7時 = しちじ, 12分 = じゅうにふん."
+            },
+            {
+              "id": "c2",
+              "text": "しちじ じゅうにぷん",
+              "translation": "không có cách đọc này",
+              "note": "2 phút đọc にふん, không đổi thành ぷん."
+            },
+            {
+              "id": "c3",
+              "text": "ななじ じゅうにふん",
+              "translation": "không có cách đọc này",
+              "note": "7 giờ đọc しちじ, không đọc ななじ."
+            },
+            {
+              "id": "c4",
+              "text": "しちじ じゅうにっぷん",
+              "translation": "không có cách đọc này",
+              "note": "2 phút không thêm っ."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-05",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "いま、「午後3時10分」です。",
+          "promptReading": "",
+          "promptTranslation": "Bây giờ là 3 giờ 10 phút chiều (15:10).",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "ごぜん さんじ じゅっぷん",
+              "translation": "3 giờ 10 phút sáng",
+              "note": "午前 (ごぜん) là buổi sáng; 15:10 là buổi chiều — 午後."
+            },
+            {
+              "id": "c2",
+              "text": "ごご さんじ じゅうふん",
+              "translation": "không có cách đọc này",
+              "note": "10 phút đọc じゅっぷん, không đọc じゅうふん."
+            },
+            {
+              "id": "c3",
+              "text": "ごご さんじ じゅっぷん",
+              "translation": "3 giờ 10 phút chiều",
+              "note": "Đúng: 午後 = ごご, 3時 = さんじ, 10分 = じゅっぷん."
+            },
+            {
+              "id": "c4",
+              "text": "ごご さんじ とおふん",
+              "translation": "không có cách đọc này",
+              "note": "とお là cách đếm đồ vật (10 cái), không dùng cho phút."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-06",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "いま、「12時14分」です。",
+          "promptReading": "",
+          "promptTranslation": "Bây giờ là 12 giờ 14 phút.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "じゅうにじ じゅうよんふん",
+              "translation": "không có cách đọc này",
+              "note": "4 phút đọc よんぷん, không phải よんふん."
+            },
+            {
+              "id": "c2",
+              "text": "じゅうにじ じゅうよんぷん",
+              "translation": "12 giờ 14 phút",
+              "note": "Đúng: 12時 = じゅうにじ, 14分 = じゅうよんぷん."
+            },
+            {
+              "id": "c3",
+              "text": "じゅうにじ じゅうしふん",
+              "translation": "không có cách đọc này",
+              "note": "4 phút không dùng し."
+            },
+            {
+              "id": "c4",
+              "text": "じゅうにじ じゅうよっぷん",
+              "translation": "không có cách đọc này",
+              "note": "4 phút là よんぷん, không có っ."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-07",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "いま、「4時1分」です。",
+          "promptReading": "",
+          "promptTranslation": "Bây giờ là 4 giờ 1 phút.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "よんじ いっぷん",
+              "translation": "không có cách đọc này",
+              "note": "4 giờ đọc よじ, không đọc よんじ."
+            },
+            {
+              "id": "c2",
+              "text": "よじ いちふん",
+              "translation": "không có cách đọc này",
+              "note": "1 phút đọc いっぷん, không đọc いちふん."
+            },
+            {
+              "id": "c3",
+              "text": "よじ いっぷん",
+              "translation": "4 giờ 1 phút",
+              "note": "Đúng: 4時 = よじ, 1分 = いっぷん."
+            },
+            {
+              "id": "c4",
+              "text": "しじ いっぷん",
+              "translation": "không có cách đọc này",
+              "note": "4 giờ không dùng し."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-08",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "いま、「0時8分」です。",
+          "promptReading": "",
+          "promptTranslation": "Bây giờ là 0 giờ 8 phút.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "れいじ はっぷん",
+              "translation": "0 giờ 8 phút",
+              "note": "Đúng: 0時 = れいじ, 8分 = はっぷん (nói はちふん cũng được)."
+            },
+            {
+              "id": "c2",
+              "text": "れいじ はちぷん",
+              "translation": "không có cách đọc này",
+              "note": "Thiếu っ: はち＋ぷん không ghép thành はちぷん."
+            },
+            {
+              "id": "c3",
+              "text": "れいじ やっぷん",
+              "translation": "không có cách đọc này",
+              "note": "やっ là cách đếm đồ vật (やっつ), không dùng cho phút."
+            },
+            {
+              "id": "c4",
+              "text": "れいじ はっふん",
+              "translation": "không có cách đọc này",
+              "note": "Có っ thì phải là ぷん: はっぷん."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        }
+      ]
+    },
+    {
+      "id": "b4-thu",
+      "title": "Bài 4 · Câu 9–12 — Thứ trong tuần",
+      "instructions": "Chọn từ đúng điền vào （　　　）.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "b4-09",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "きょうは（　　　）です。",
+          "promptReading": "きょうは（　　　）です。",
+          "promptTranslation": "Hôm nay là thứ 4.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "月曜日",
+              "translation": "げつようび · thứ 2",
+              "note": "月曜日 là thứ 2."
+            },
+            {
+              "id": "c2",
+              "text": "火曜日",
+              "translation": "かようび · thứ 3",
+              "note": "火曜日 là thứ 3."
+            },
+            {
+              "id": "c3",
+              "text": "水曜日",
+              "translation": "すいようび · thứ 4",
+              "note": "Đúng: 水曜日 (すいようび) là thứ 4."
+            },
+            {
+              "id": "c4",
+              "text": "木曜日",
+              "translation": "もくようび · thứ 5",
+              "note": "木曜日 là thứ 5."
+            }
+          ],
+          "answerId": "c3",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-10",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "週末は（　　　）です。",
+          "promptReading": "しゅうまつは（　　　）です。",
+          "promptTranslation": "Cuối tuần là thứ 7 và chủ nhật.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "土曜日と日曜日",
+              "translation": "thứ 7 và chủ nhật",
+              "note": "Đúng: 土曜日 (thứ 7) と 日曜日 (chủ nhật)."
+            },
+            {
+              "id": "c2",
+              "text": "金曜日と土曜日",
+              "translation": "thứ 6 và thứ 7",
+              "note": "金曜日 là thứ 6."
+            },
+            {
+              "id": "c3",
+              "text": "日曜日と月曜日",
+              "translation": "chủ nhật và thứ 2",
+              "note": "月曜日 là thứ 2."
+            },
+            {
+              "id": "c4",
+              "text": "月曜日と金曜日",
+              "translation": "thứ 2 và thứ 6",
+              "note": "月曜日 là thứ 2, 金曜日 là thứ 6."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-11",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "A：あさっては（　　　）ですか。\nB：あさっては木曜日です。",
+          "promptReading": "A：あさっては（　　　）ですか。\nB：あさってはもくようびです。",
+          "promptTranslation": "A: Ngày kia là （　　　）?\nB: Ngày kia là thứ 5.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "何時",
+              "translation": "なんじ · mấy giờ",
+              "note": "何時 hỏi giờ; B trả lời bằng thứ."
+            },
+            {
+              "id": "c2",
+              "text": "何曜日",
+              "translation": "なんようび · thứ mấy",
+              "note": "Đúng: B trả lời 木曜日 nên A hỏi 何曜日 (thứ mấy)."
+            },
+            {
+              "id": "c3",
+              "text": "何分",
+              "translation": "なんぷん · mấy phút",
+              "note": "何分 hỏi phút."
+            },
+            {
+              "id": "c4",
+              "text": "何人",
+              "translation": "なんにん · mấy người",
+              "note": "何人 hỏi số người."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-12",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "「金曜日」",
+          "promptReading": "",
+          "promptTranslation": "Thứ 6",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "きんようび",
+              "translation": "thứ 6",
+              "note": "Đúng: 金曜日 = きんようび — 金 đọc âm On キン."
+            },
+            {
+              "id": "c2",
+              "text": "かねようび",
+              "translation": "không có cách đọc này",
+              "note": "かね là âm Kun của 金 (tiền), không dùng trong 曜日."
+            },
+            {
+              "id": "c3",
+              "text": "きんよび",
+              "translation": "không có cách đọc này",
+              "note": "曜日 đọc ようび, có う."
+            },
+            {
+              "id": "c4",
+              "text": "こんようび",
+              "translation": "không có cách đọc này",
+              "note": "金 không đọc こん trong từ này."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        }
+      ]
+    },
+    {
+      "id": "b4-tro-tu",
+      "title": "Bài 4 · Câu 13–19 — Trợ từ và thì của động từ",
+      "instructions": "Chọn đáp án đúng.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "b4-13",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "毎朝6時（　）起きます。",
+          "promptReading": "まいあさろくじ（　）おきます。",
+          "promptTranslation": "Mỗi sáng tôi dậy lúc 6 giờ.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "に",
+              "translation": "lúc (thời điểm)",
+              "note": "Đúng: thời gian có con số (6時) ＋ に ＋ V = làm V lúc ~."
+            },
+            {
+              "id": "c2",
+              "text": "を",
+              "translation": "trợ từ tân ngữ",
+              "note": "を đánh dấu tân ngữ, không dùng cho thời điểm."
+            },
+            {
+              "id": "c3",
+              "text": "が",
+              "translation": "trợ từ chủ ngữ",
+              "note": "が không dùng để chỉ thời điểm."
+            },
+            {
+              "id": "c4",
+              "text": "の",
+              "translation": "của",
+              "note": "の nối hai danh từ; sau 6時 là động từ."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-14",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "正しい文はどれですか。",
+          "promptReading": "ただしいぶんはどれですか。",
+          "promptTranslation": "Câu nào đúng? (Mỗi sáng tôi dậy lúc 6 giờ.)",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "毎朝に6時に起きます。",
+              "translation": "sai: 毎朝 không đi với に",
+              "note": "毎朝 là thời gian tương đối, không thêm に."
+            },
+            {
+              "id": "c2",
+              "text": "毎朝6時に起きます。",
+              "translation": "Mỗi sáng tôi dậy lúc 6 giờ.",
+              "note": "Đúng: に chỉ đi với 6時 (thời gian có con số), 毎朝 không có に."
+            },
+            {
+              "id": "c3",
+              "text": "毎朝6時を起きます。",
+              "translation": "sai: を không chỉ thời điểm",
+              "note": "Thời điểm dùng に, không dùng を."
+            },
+            {
+              "id": "c4",
+              "text": "毎朝に6時起きます。",
+              "translation": "sai: に đặt nhầm chỗ",
+              "note": "に phải đi sau 6時, không đi sau 毎朝."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-15",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "試験は9時（　）11時半までです。",
+          "promptReading": "しけんはくじ（　）じゅういちじはんまでです。",
+          "promptTranslation": "Kì thi từ 9 giờ đến 11 giờ rưỡi.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "から",
+              "translation": "từ",
+              "note": "Đúng: N1 から N2 まで = từ N1 đến N2."
+            },
+            {
+              "id": "c2",
+              "text": "まで",
+              "translation": "đến",
+              "note": "まで đã đứng sau 11時半; 9時 là điểm bắt đầu nên dùng から."
+            },
+            {
+              "id": "c3",
+              "text": "に",
+              "translation": "lúc",
+              "note": "に chỉ một thời điểm, không đi cặp với まで."
+            },
+            {
+              "id": "c4",
+              "text": "と",
+              "translation": "và",
+              "note": "と nối danh từ (9時と11時), không ghép với まで."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-16",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "銀行は9時から3時（　）です。",
+          "promptReading": "ぎんこうはくじからさんじ（　）です。",
+          "promptTranslation": "Ngân hàng mở từ 9 giờ đến 3 giờ.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "から",
+              "translation": "từ",
+              "note": "から đã đứng sau 9時; 3時 là điểm kết thúc."
+            },
+            {
+              "id": "c2",
+              "text": "まで",
+              "translation": "đến",
+              "note": "Đúng: 9時から3時まで = từ 9 giờ đến 3 giờ."
+            },
+            {
+              "id": "c3",
+              "text": "に",
+              "translation": "lúc",
+              "note": "に không đứng trước です để chỉ điểm kết thúc."
+            },
+            {
+              "id": "c4",
+              "text": "は",
+              "translation": "trợ từ chủ đề",
+              "note": "は là trợ từ chủ đề, không chỉ điểm kết thúc."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-17",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "きのう、私は（　　　）。",
+          "promptReading": "きのう、わたしは（　　　）。",
+          "promptTranslation": "Hôm qua tôi đã làm việc.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "働きます",
+              "translation": "làm việc",
+              "note": "V ます là hiện tại – tương lai; きのう là quá khứ."
+            },
+            {
+              "id": "c2",
+              "text": "働きました",
+              "translation": "đã làm việc",
+              "note": "Đúng: きのう (quá khứ), khẳng định → V ました."
+            },
+            {
+              "id": "c3",
+              "text": "働きません",
+              "translation": "không làm việc",
+              "note": "V ません là phủ định hiện tại – tương lai."
+            },
+            {
+              "id": "c4",
+              "text": "働きませんでした",
+              "translation": "đã không làm việc",
+              "note": "V ませんでした là phủ định quá khứ — câu tiếng Việt là khẳng định."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-18",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "A：きのう、寝ましたか。\nB：いいえ、（　　　）。今はねむいです。",
+          "promptReading": "A：きのう、ねましたか。\nB：いいえ、（　　　）。いまはねむいです。",
+          "promptTranslation": "A: Hôm qua cậu có ngủ không?\nB: Không, （　　　）. Bây giờ buồn ngủ quá.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "寝ます",
+              "translation": "ngủ",
+              "note": "Khẳng định hiện tại – không hợp với いいえ và きのう."
+            },
+            {
+              "id": "c2",
+              "text": "寝ました",
+              "translation": "đã ngủ",
+              "note": "Khẳng định quá khứ – mâu thuẫn với いいえ."
+            },
+            {
+              "id": "c3",
+              "text": "寝ません",
+              "translation": "không ngủ",
+              "note": "Phủ định hiện tại – tương lai, nhưng câu hỏi về きのう."
+            },
+            {
+              "id": "c4",
+              "text": "寝ませんでした",
+              "translation": "đã không ngủ",
+              "note": "Đúng: いいえ (phủ định) ＋ きのう (quá khứ) → V ませんでした."
+            }
+          ],
+          "answerId": "c4",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b4-19",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "A：土曜日は働きますか。\nB：（　　　）。",
+          "promptReading": "A：どようびははたらきますか。\nB：（　　　）。",
+          "promptTranslation": "A: Thứ 7 anh có làm việc không?\nB: （　　　）.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "はい、働きます",
+              "translation": "Có, tôi làm việc",
+              "note": "Đúng: câu hỏi có động từ thì trả lời bằng chính động từ đó."
+            },
+            {
+              "id": "c2",
+              "text": "はい、そうです",
+              "translation": "Vâng, đúng vậy",
+              "note": "そうです dùng cho câu hỏi danh từ (N ですか), không dùng cho câu hỏi động từ."
+            },
+            {
+              "id": "c3",
+              "text": "いいえ、そうじゃありません",
+              "translation": "Không, không phải vậy",
+              "note": "そうじゃありません cũng chỉ dùng cho câu hỏi danh từ."
+            },
+            {
+              "id": "c4",
+              "text": "いいえ、働きました",
+              "translation": "Không, tôi đã làm việc",
+              "note": "いいえ phải đi với phủ định (働きません), và câu hỏi không ở quá khứ."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        }
+      ]
+    }
+  ]
+}

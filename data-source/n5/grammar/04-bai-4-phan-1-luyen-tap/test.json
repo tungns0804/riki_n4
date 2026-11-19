@@ -1,0 +1,304 @@
+{
+  "sections": [
+    {
+      "id": "b4-doc-gio",
+      "title": "Bài 4 · Câu 1–8 — Chọn cách đọc giờ",
+      "instructions": "Chọn cách đọc đúng của giờ trong 「 」.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "b4-01",
+          "promptJapanese": "いま、「8時15分」です。",
+          "promptVietnamese": "Bây giờ là 8 giờ 15 phút.",
+          "choices": ["はちじ じゅうごぷん", "はちじ じゅうごふん", "はっじ じゅうごふん", "はちじ じゅうごっぷん"],
+          "choicesVietnamese": ["không có cách đọc này", "8 giờ 15 phút", "không có cách đọc này", "không có cách đọc này"],
+          "choiceNotes": [
+            "5 phút đọc ごふん, nên 15 phút là じゅうごふん — không đổi thành ぷん.",
+            "Đúng: 8時 = はちじ, 15分 = じゅうごふん.",
+            "8時 đọc はちじ, không có っ.",
+            "Chỉ 1, 6, 8, 10 phút mới thêm っ (いっぷん, ろっぷん, はっぷん, じゅっぷん)."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "b4-02",
+          "promptJapanese": "いま、「7時半」です。",
+          "promptVietnamese": "Bây giờ là 7 giờ rưỡi.",
+          "choices": ["ななじはん", "しちじはん", "しちじはんぷん", "なのじはん"],
+          "choicesVietnamese": ["không có cách đọc này", "7 giờ rưỡi", "không có cách đọc này", "không có cách đọc này"],
+          "choiceNotes": [
+            "7 giờ đọc しちじ, không đọc ななじ.",
+            "Đúng: 7時半 = しちじはん (= 7時30分 しちじさんじゅっぷん).",
+            "半 đã là \"rưỡi\", không thêm ぷん.",
+            "Không có cách đọc なの."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "b4-03",
+          "promptJapanese": "いま、「9時16分」です。",
+          "promptVietnamese": "Bây giờ là 9 giờ 16 phút.",
+          "choices": ["きゅうじ じゅうろくふん", "くじ じゅうろくふん", "くじ じゅうろっぷん", "きゅうじ じゅうろっぷん"],
+          "choicesVietnamese": ["không có cách đọc này", "không có cách đọc này", "9 giờ 16 phút", "không có cách đọc này"],
+          "choiceNotes": [
+            "9 giờ đọc くじ, và 6 phút đọc ろっぷん — sai cả hai chỗ.",
+            "Giờ đúng, nhưng 6 phút đọc ろっぷん chứ không phải ろくふん.",
+            "Đúng: 9時 = くじ, 16分 = じゅうろっぷん.",
+            "Phút đúng, nhưng 9 giờ đọc くじ, không đọc きゅうじ."
+          ],
+          "answer": 3
+        },
+        {
+          "id": "b4-04",
+          "promptJapanese": "いま、「7時12分」です。",
+          "promptVietnamese": "Bây giờ là 7 giờ 12 phút.",
+          "choices": ["しちじ じゅうにふん", "しちじ じゅうにぷん", "ななじ じゅうにふん", "しちじ じゅうにっぷん"],
+          "choicesVietnamese": ["7 giờ 12 phút", "không có cách đọc này", "không có cách đọc này", "không có cách đọc này"],
+          "choiceNotes": [
+            "Đúng: 7時 = しちじ, 12分 = じゅうにふん.",
+            "2 phút đọc にふん, không đổi thành ぷん.",
+            "7 giờ đọc しちじ, không đọc ななじ.",
+            "2 phút không thêm っ."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "b4-05",
+          "promptJapanese": "いま、「午後3時10分」です。",
+          "promptVietnamese": "Bây giờ là 3 giờ 10 phút chiều (15:10).",
+          "choices": ["ごぜん さんじ じゅっぷん", "ごご さんじ じゅうふん", "ごご さんじ じゅっぷん", "ごご さんじ とおふん"],
+          "choicesVietnamese": ["3 giờ 10 phút sáng", "không có cách đọc này", "3 giờ 10 phút chiều", "không có cách đọc này"],
+          "choiceNotes": [
+            "午前 (ごぜん) là buổi sáng; 15:10 là buổi chiều — 午後.",
+            "10 phút đọc じゅっぷん, không đọc じゅうふん.",
+            "Đúng: 午後 = ごご, 3時 = さんじ, 10分 = じゅっぷん.",
+            "とお là cách đếm đồ vật (10 cái), không dùng cho phút."
+          ],
+          "answer": 3
+        },
+        {
+          "id": "b4-06",
+          "promptJapanese": "いま、「12時14分」です。",
+          "promptVietnamese": "Bây giờ là 12 giờ 14 phút.",
+          "choices": ["じゅうにじ じゅうよんふん", "じゅうにじ じゅうよんぷん", "じゅうにじ じゅうしふん", "じゅうにじ じゅうよっぷん"],
+          "choicesVietnamese": ["không có cách đọc này", "12 giờ 14 phút", "không có cách đọc này", "không có cách đọc này"],
+          "choiceNotes": [
+            "4 phút đọc よんぷん, không phải よんふん.",
+            "Đúng: 12時 = じゅうにじ, 14分 = じゅうよんぷん.",
+            "4 phút không dùng し.",
+            "4 phút là よんぷん, không có っ."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "b4-07",
+          "promptJapanese": "いま、「4時1分」です。",
+          "promptVietnamese": "Bây giờ là 4 giờ 1 phút.",
+          "choices": ["よんじ いっぷん", "よじ いちふん", "よじ いっぷん", "しじ いっぷん"],
+          "choicesVietnamese": ["không có cách đọc này", "không có cách đọc này", "4 giờ 1 phút", "không có cách đọc này"],
+          "choiceNotes": [
+            "4 giờ đọc よじ, không đọc よんじ.",
+            "1 phút đọc いっぷん, không đọc いちふん.",
+            "Đúng: 4時 = よじ, 1分 = いっぷん.",
+            "4 giờ không dùng し."
+          ],
+          "answer": 3
+        },
+        {
+          "id": "b4-08",
+          "promptJapanese": "いま、「0時8分」です。",
+          "promptVietnamese": "Bây giờ là 0 giờ 8 phút.",
+          "choices": ["れいじ はっぷん", "れいじ はちぷん", "れいじ やっぷん", "れいじ はっふん"],
+          "choicesVietnamese": ["0 giờ 8 phút", "không có cách đọc này", "không có cách đọc này", "không có cách đọc này"],
+          "choiceNotes": [
+            "Đúng: 0時 = れいじ, 8分 = はっぷん (nói はちふん cũng được).",
+            "Thiếu っ: はち＋ぷん không ghép thành はちぷん.",
+            "やっ là cách đếm đồ vật (やっつ), không dùng cho phút.",
+            "Có っ thì phải là ぷん: はっぷん."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b4-thu",
+      "title": "Bài 4 · Câu 9–12 — Thứ trong tuần",
+      "instructions": "Chọn từ đúng điền vào （　　　）.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "b4-09",
+          "promptJapanese": "きょうは（　　　）です。",
+          "promptReading": "きょうは（　　　）です。",
+          "promptVietnamese": "Hôm nay là thứ 4.",
+          "choices": ["月曜日", "火曜日", "水曜日", "木曜日"],
+          "choicesVietnamese": ["げつようび · thứ 2", "かようび · thứ 3", "すいようび · thứ 4", "もくようび · thứ 5"],
+          "choiceNotes": [
+            "月曜日 là thứ 2.",
+            "火曜日 là thứ 3.",
+            "Đúng: 水曜日 (すいようび) là thứ 4.",
+            "木曜日 là thứ 5."
+          ],
+          "answer": 3
+        },
+        {
+          "id": "b4-10",
+          "promptJapanese": "週末は（　　　）です。",
+          "promptReading": "しゅうまつは（　　　）です。",
+          "promptVietnamese": "Cuối tuần là thứ 7 và chủ nhật.",
+          "choices": ["土曜日と日曜日", "金曜日と土曜日", "日曜日と月曜日", "月曜日と金曜日"],
+          "choicesVietnamese": ["thứ 7 và chủ nhật", "thứ 6 và thứ 7", "chủ nhật và thứ 2", "thứ 2 và thứ 6"],
+          "choiceNotes": [
+            "Đúng: 土曜日 (thứ 7) と 日曜日 (chủ nhật).",
+            "金曜日 là thứ 6.",
+            "月曜日 là thứ 2.",
+            "月曜日 là thứ 2, 金曜日 là thứ 6."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "b4-11",
+          "promptJapanese": "A：あさっては（　　　）ですか。\nB：あさっては木曜日です。",
+          "promptReading": "A：あさっては（　　　）ですか。\nB：あさってはもくようびです。",
+          "promptVietnamese": "A: Ngày kia là （　　　）?\nB: Ngày kia là thứ 5.",
+          "choices": ["何時", "何曜日", "何分", "何人"],
+          "choicesVietnamese": ["なんじ · mấy giờ", "なんようび · thứ mấy", "なんぷん · mấy phút", "なんにん · mấy người"],
+          "choiceNotes": [
+            "何時 hỏi giờ; B trả lời bằng thứ.",
+            "Đúng: B trả lời 木曜日 nên A hỏi 何曜日 (thứ mấy).",
+            "何分 hỏi phút.",
+            "何人 hỏi số người."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "b4-12",
+          "promptJapanese": "「金曜日」",
+          "promptVietnamese": "Thứ 6",
+          "choices": ["きんようび", "かねようび", "きんよび", "こんようび"],
+          "choicesVietnamese": ["thứ 6", "không có cách đọc này", "không có cách đọc này", "không có cách đọc này"],
+          "choiceNotes": [
+            "Đúng: 金曜日 = きんようび — 金 đọc âm On キン.",
+            "かね là âm Kun của 金 (tiền), không dùng trong 曜日.",
+            "曜日 đọc ようび, có う.",
+            "金 không đọc こん trong từ này."
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "b4-tro-tu",
+      "title": "Bài 4 · Câu 13–19 — Trợ từ và thì của động từ",
+      "instructions": "Chọn đáp án đúng.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "b4-13",
+          "promptJapanese": "毎朝6時（　）起きます。",
+          "promptReading": "まいあさろくじ（　）おきます。",
+          "promptVietnamese": "Mỗi sáng tôi dậy lúc 6 giờ.",
+          "choices": ["に", "を", "が", "の"],
+          "choicesVietnamese": ["lúc (thời điểm)", "trợ từ tân ngữ", "trợ từ chủ ngữ", "của"],
+          "choiceNotes": [
+            "Đúng: thời gian có con số (6時) ＋ に ＋ V = làm V lúc ~.",
+            "を đánh dấu tân ngữ, không dùng cho thời điểm.",
+            "が không dùng để chỉ thời điểm.",
+            "の nối hai danh từ; sau 6時 là động từ."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "b4-14",
+          "promptJapanese": "正しい文はどれですか。",
+          "promptReading": "ただしいぶんはどれですか。",
+          "promptVietnamese": "Câu nào đúng? (Mỗi sáng tôi dậy lúc 6 giờ.)",
+          "choices": ["毎朝に6時に起きます。", "毎朝6時に起きます。", "毎朝6時を起きます。", "毎朝に6時起きます。"],
+          "choicesVietnamese": ["sai: 毎朝 không đi với に", "Mỗi sáng tôi dậy lúc 6 giờ.", "sai: を không chỉ thời điểm", "sai: に đặt nhầm chỗ"],
+          "choiceNotes": [
+            "毎朝 là thời gian tương đối, không thêm に.",
+            "Đúng: に chỉ đi với 6時 (thời gian có con số), 毎朝 không có に.",
+            "Thời điểm dùng に, không dùng を.",
+            "に phải đi sau 6時, không đi sau 毎朝."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "b4-15",
+          "promptJapanese": "試験は9時（　）11時半までです。",
+          "promptReading": "しけんはくじ（　）じゅういちじはんまでです。",
+          "promptVietnamese": "Kì thi từ 9 giờ đến 11 giờ rưỡi.",
+          "choices": ["から", "まで", "に", "と"],
+          "choicesVietnamese": ["từ", "đến", "lúc", "và"],
+          "choiceNotes": [
+            "Đúng: N1 から N2 まで = từ N1 đến N2.",
+            "まで đã đứng sau 11時半; 9時 là điểm bắt đầu nên dùng から.",
+            "に chỉ một thời điểm, không đi cặp với まで.",
+            "と nối danh từ (9時と11時), không ghép với まで."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "b4-16",
+          "promptJapanese": "銀行は9時から3時（　）です。",
+          "promptReading": "ぎんこうはくじからさんじ（　）です。",
+          "promptVietnamese": "Ngân hàng mở từ 9 giờ đến 3 giờ.",
+          "choices": ["から", "まで", "に", "は"],
+          "choicesVietnamese": ["từ", "đến", "lúc", "trợ từ chủ đề"],
+          "choiceNotes": [
+            "から đã đứng sau 9時; 3時 là điểm kết thúc.",
+            "Đúng: 9時から3時まで = từ 9 giờ đến 3 giờ.",
+            "に không đứng trước です để chỉ điểm kết thúc.",
+            "は là trợ từ chủ đề, không chỉ điểm kết thúc."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "b4-17",
+          "promptJapanese": "きのう、私は（　　　）。",
+          "promptReading": "きのう、わたしは（　　　）。",
+          "promptVietnamese": "Hôm qua tôi đã làm việc.",
+          "choices": ["働きます", "働きました", "働きません", "働きませんでした"],
+          "choicesVietnamese": ["làm việc", "đã làm việc", "không làm việc", "đã không làm việc"],
+          "choiceNotes": [
+            "V ます là hiện tại – tương lai; きのう là quá khứ.",
+            "Đúng: きのう (quá khứ), khẳng định → V ました.",
+            "V ません là phủ định hiện tại – tương lai.",
+            "V ませんでした là phủ định quá khứ — câu tiếng Việt là khẳng định."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "b4-18",
+          "promptJapanese": "A：きのう、寝ましたか。\nB：いいえ、（　　　）。今はねむいです。",
+          "promptReading": "A：きのう、ねましたか。\nB：いいえ、（　　　）。いまはねむいです。",
+          "promptVietnamese": "A: Hôm qua cậu có ngủ không?\nB: Không, （　　　）. Bây giờ buồn ngủ quá.",
+          "choices": ["寝ます", "寝ました", "寝ません", "寝ませんでした"],
+          "choicesVietnamese": ["ngủ", "đã ngủ", "không ngủ", "đã không ngủ"],
+          "choiceNotes": [
+            "Khẳng định hiện tại – không hợp với いいえ và きのう.",
+            "Khẳng định quá khứ – mâu thuẫn với いいえ.",
+            "Phủ định hiện tại – tương lai, nhưng câu hỏi về きのう.",
+            "Đúng: いいえ (phủ định) ＋ きのう (quá khứ) → V ませんでした."
+          ],
+          "answer": 4
+        },
+        {
+          "id": "b4-19",
+          "promptJapanese": "A：土曜日は働きますか。\nB：（　　　）。",
+          "promptReading": "A：どようびははたらきますか。\nB：（　　　）。",
+          "promptVietnamese": "A: Thứ 7 anh có làm việc không?\nB: （　　　）.",
+          "choices": ["はい、働きます", "はい、そうです", "いいえ、そうじゃありません", "いいえ、働きました"],
+          "choicesVietnamese": ["Có, tôi làm việc", "Vâng, đúng vậy", "Không, không phải vậy", "Không, tôi đã làm việc"],
+          "choiceNotes": [
+            "Đúng: câu hỏi có động từ thì trả lời bằng chính động từ đó.",
+            "そうです dùng cho câu hỏi danh từ (N ですか), không dùng cho câu hỏi động từ.",
+            "そうじゃありません cũng chỉ dùng cho câu hỏi danh từ.",
+            "いいえ phải đi với phủ định (働きません), và câu hỏi không ở quá khứ."
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+# Bài học N5 · TỪ VỰNG · Bài 4 · Thời gian
+# nguồn: bai-4-phan-1.pdf (Bài 4 · THỜI GIAN, từ 01–47)
+# Định dạng: xem data-source/bai-26/vocabulary/README.md
+#
+# PDF in kana trước, chữ Hán trong ngoặc: ở đây mặt chữ là chữ Hán, cách đọc trong
+# ngoặc. Từ PDF chỉ in kana (デパート, おととい, きのう…) giữ nguyên kana. Năm nhóm
+# A–E của PDF là năm cụm. PDF không có câu ví dụ.
+#
+# Sửa so với PDF: 32. やすみひ（休み日） → 休みの日 (やすみのひ). Nghĩa bỏ phần trong
+# ngoặc (đáp án gõ không tách ngoặc): "Sáng (Trước 12h trưa)" → Sáng, phần ngoặc
+# chuyển sang dòng 使い方.
+
+## 01–06 = Danh từ chỉ nơi chốn
+
+01. デパート = Trung tâm thương mại
+
+02. 銀行 (ぎんこう) = NGÂN HÀNH ; Ngân hàng
+
+03. 郵便局 (ゆうびんきょく) = BƯU TIỆN CỤC ; Bưu điện
+
+04. 美術館 (びじゅつかん) = MỸ THUẬT QUÁN ; Bảo tàng mỹ thuật
+
+05. 図書館 (としょかん) = ĐỒ THƯ QUÁN ; Thư viện
+
+06. 学校 (がっこう) = HỌC HIỆU ; Trường học
+
+## 07–11 = Động từ
+
+07. 起きます (おきます) = KHỞI ; Dậy/ Thức dậy
+
+08. 寝ます (ねます) = TẨM ; Ngủ/ Đi ngủ
+
+09. 働きます (はたらきます) = ĐỘNG ; Làm việc
+
+10. 勉強します (べんきょうします) = MIỄN CƯỠNG ; Học
+
+11. 終わります (おわります) = CHUNG ; Hết/ Kết thúc/ Xong
+
+## 12–17 = Cách nói giờ, phút
+
+12. 今 (いま) = KIM ; Bây giờ
+
+13. ～時 (～じ) = THỜI ; ~ Giờ
+使い方: 4時 よじ · 7時 しちじ · 9時 くじ — không đọc よんじ, ななじ, きゅうじ
+
+14. ～分 (～ふん) = PHÂN ; ~ Phút
+使い方: đọc ふん hoặc ぷん tuỳ số: いっぷん, にふん, さんぷん, よんぷん, ごふん, ろっぷん, ななふん, はっぷん, きゅうふん, じゅっぷん
+
+15. 半 (はん) = BÁN ; Rưỡi/ Nửa
+使い方: 8時半 (はちじはん) = 8 giờ rưỡi
+
+16. なんじ = Mấy giờ
+使い方: viết chữ Hán là 何時
+
+17. なんぷん = Mấy phút
+使い方: viết chữ Hán là 何分
+
+## 18–43 = Danh từ chỉ thời gian
+
+18. 午前 (ごぜん) = NGỌ TIỀN ; Sáng
+使い方: trước 12 giờ trưa — 午前10時 = 10 giờ sáng
+
+19. 午後 (ごご) = NGỌ HẬU ; Chiều
+使い方: sau 12 giờ trưa — 午後10時 = 10 giờ tối (22 giờ)
+
+20. 朝 (あさ) = TRIỀU ; Buổi sáng
+
+21. 昼 (ひる) = TRÚ ; Buổi trưa
+
+22. 晩 (ばん) = VÃN ; Buổi tối
+
+23. おととい = Hôm kia
+
+24. きのう = Hôm qua
+
+25. きょう = Hôm nay
+
+26. あした = Ngày mai
+
+27. あさって = Ngày kia/ Ngày mốt
+
+28. けさ = Sáng nay
+
+29. 今晩 (こんばん) = KIM VÃN ; Tối nay
+
+30. 夕べ (ゆうべ) = TỊCH ; Tối qua
+
+31. 休み (やすみ) = HƯU ; Nghỉ
+
+32. 休みの日 (やすみのひ) = HƯU NHẬT ; Ngày nghỉ
+
+33. 昼休み (ひるやすみ) = TRÚ HƯU ; Nghỉ trưa
+
+34. 毎朝 (まいあさ) = MỖI TRIỀU ; Mỗi sáng
+
+35. 毎晩 (まいばん) = MỖI VÃN ; Mỗi tối
+
+36. 毎日 (まいにち) = MỖI NHẬT ; Mỗi ngày
+
+37. 月曜日 (げつようび) = NGUYỆT DIỆU NHẬT ; Thứ hai
+
+38. 火曜日 (かようび) = HOẢ DIỆU NHẬT ; Thứ ba
+
+39. 水曜日 (すいようび) = THUỶ DIỆU NHẬT ; Thứ tư
+
+40. 木曜日 (もくようび) = MỘC DIỆU NHẬT ; Thứ năm
+
+41. 金曜日 (きんようび) = KIM DIỆU NHẬT ; Thứ sáu
+
+42. 土曜日 (どようび) = THỔ DIỆU NHẬT ; Thứ bảy
+
+43. 日曜日 (にちようび) = NHẬT DIỆU NHẬT ; Chủ nhật
+
+## 44–47 = Danh từ khác
+
+44. 試験 (しけん) = THÍ NGHIỆM ; Kì thi
+
+45. テスト = Kiểm tra
+
+46. 会議 (かいぎ) = HỘI NGHỊ ; Cuộc họp/ Hội nghị
+
+47. 映画 (えいが) = ÁNH HOẠ ; Phim/ Phim điện ảnh
