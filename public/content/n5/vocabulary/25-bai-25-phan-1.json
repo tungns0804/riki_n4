@@ -1,0 +1,204 @@
+{
+  "id": "25-bai-25-phan-1",
+  "name": "Bài 25 · Phần 1",
+  "description": "Cuộc sống 3: 13 từ — 考えます・着きます・年をとります・足ります, 田舎・意味・転勤…, もし (～たら) và lời chào khi chia tay.",
+  "kind": "vocabulary",
+  "parent": "",
+  "group": "",
+  "groups": [
+    {
+      "label": "01–04",
+      "title": "Động từ"
+    },
+    {
+      "label": "05–09",
+      "title": "Danh từ"
+    },
+    {
+      "label": "10",
+      "title": "Phó từ"
+    },
+    {
+      "label": "11–13",
+      "title": "Từ vựng hội thoại"
+    }
+  ],
+  "words": [
+    {
+      "id": "af395e949848c63c",
+      "number": 1,
+      "group": "01–04",
+      "particle": "",
+      "japanese": "考えます",
+      "reading": "かんがえます",
+      "hanViet": "KHẢO",
+      "vietnamese": "Nghĩ/ Suy nghĩ",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "d647d5af817194e3",
+      "number": 2,
+      "group": "01–04",
+      "particle": "に",
+      "japanese": "着きます",
+      "reading": "つきます",
+      "hanViet": "TRƯỚC",
+      "vietnamese": "Đến/ Tới nơi",
+      "examples": [],
+      "notes": [
+        {
+          "label": "連",
+          "text": "駅に着きます (えきにつきます) = Đến nhà ga"
+        }
+      ]
+    },
+    {
+      "id": "1eb8b4ceb94cc17c",
+      "number": 3,
+      "group": "01–04",
+      "particle": "",
+      "japanese": "年をとります",
+      "reading": "としをとります",
+      "hanViet": "NIÊN",
+      "vietnamese": "Thêm tuổi/ Có tuổi/ Già đi",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "401c433abf5d53a6",
+      "number": 4,
+      "group": "01–04",
+      "particle": "",
+      "japanese": "足ります",
+      "reading": "たります",
+      "hanViet": "TÚC",
+      "vietnamese": "Đủ",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "09d34103ce653caa",
+      "number": 5,
+      "group": "05–09",
+      "particle": "",
+      "japanese": "田舎",
+      "reading": "いなか",
+      "hanViet": "ĐIỀN XÁ",
+      "vietnamese": "Quê/ Nông thôn",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "7d21c96971a2575b",
+      "number": 6,
+      "group": "05–09",
+      "particle": "",
+      "japanese": "チャンス",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Cơ hội",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "a74c800af04e576e",
+      "number": 7,
+      "group": "05–09",
+      "particle": "",
+      "japanese": "一億円",
+      "reading": "いちおくえん",
+      "hanViet": "NHẤT ỨC VIÊN",
+      "vietnamese": "Một trăm triệu Yên",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "fadab648784a0a7e",
+      "number": 8,
+      "group": "05–09",
+      "particle": "",
+      "japanese": "意味",
+      "reading": "いみ",
+      "hanViet": "Ý VỊ",
+      "vietnamese": "Ý nghĩa",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "68ee3d18ad97eb2d",
+      "number": 9,
+      "group": "05–09",
+      "particle": "",
+      "japanese": "転勤",
+      "reading": "てんきん",
+      "hanViet": "CHUYỂN CẦN",
+      "vietnamese": "Chuyển công tác/ Chuyển địa điểm làm việc",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "122aa064f9dcfe8f",
+      "number": 10,
+      "group": "10",
+      "particle": "",
+      "japanese": "もし",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Nếu",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "đi cùng ～たら — もし雨が降ったら = nếu trời mưa"
+        }
+      ]
+    },
+    {
+      "id": "fcdcd38edc449ff3",
+      "number": 11,
+      "group": "11–13",
+      "particle": "",
+      "japanese": "色々お世話になりました",
+      "reading": "いろいろおせわになりました",
+      "hanViet": "SẮC SẮC THẾ THOẠI",
+      "vietnamese": "Cảm ơn đã giúp đỡ tôi rất nhiều",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "nói khi chia tay người đã giúp mình (chuyển công tác, về nước…)"
+        }
+      ]
+    },
+    {
+      "id": "61610755d834b188",
+      "number": 12,
+      "group": "11–13",
+      "particle": "",
+      "japanese": "がんばります",
+      "reading": "",
+      "hanViet": "",
+      "vietnamese": "Cố gắng/ Cố",
+      "examples": [],
+      "notes": []
+    },
+    {
+      "id": "d096315fdf9472ed",
+      "number": 13,
+      "group": "11–13",
+      "particle": "",
+      "japanese": "どうぞお元気で",
+      "reading": "どうぞおげんきで",
+      "hanViet": "NGUYÊN KHÍ",
+      "vietnamese": "Chúc mạnh khỏe/ Bảo trọng nhé",
+      "examples": [],
+      "notes": [
+        {
+          "label": "使い方",
+          "text": "lời chào khi chia tay lâu ngày — chúc anh chị mạnh khỏe"
+        }
+      ]
+    }
+  ]
+}

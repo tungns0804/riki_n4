@@ -11,7 +11,8 @@ data-source/
 ├── n5/                           Bài học N5 — các bài theo chủ đề, mỗi chủ đề một bài
 │   ├── vocabulary/
 │   │   ├── 01-so-dem/            bảng cách đọc số đếm (55 mục)
-│   │   └── 04-bai-4-phan-1/      Bài 4 · Thời gian, 47 từ (bai-4-phan-1.pdf)
+│   │   ├── 04-bai-4-phan-1/      Bài 4 · Thời gian, 47 từ (bai-4-phan-1.pdf)
+│   │   └── 25-bai-25-phan-1/     Bài 25 · Cuộc sống 3, 13 từ (bai-25-phan-1.pdf)
 │   ├── kanji/                    PDF "Khoá học Online N5 – Kanji", mỗi buổi một bài
 │   │   ├── 04-buoi-4/            Buổi 4 · Thời gian (chữ 16–20)
 │   │   ├── 11-buoi-11/           Buổi 11 · Vị trí 1 (chữ 51–55)

@@ -1,0 +1,48 @@
+# Bài học N5 · TỪ VỰNG · Bài 25 · Cuộc sống 3
+# nguồn: bai-25-phan-1.pdf (Bài 25 · CUỘC SỐNG 3, từ 01–13)
+# Định dạng: xem data-source/bai-26/vocabulary/README.md
+#
+# PDF in kana trước, chữ Hán trong ngoặc: ở đây mặt chữ là chữ Hán, cách đọc trong
+# ngoặc. Bốn nhóm A–D của PDF là bốn cụm. PDF không có câu ví dụ.
+#
+# Phần trong 「」 của PDF: 「駅に」着きます → (に)着きます kèm dòng 連; 「年を」とります
+# giữ cả cụm vì nghĩa "thêm tuổi" nằm ở cả cụm; 「色々」 bỏ ngoặc. Nghĩa bỏ phần trong
+# ngoặc và dấu "/" của "anh/chị" (dấu "/" là dấu ngăn nghĩa).
+
+## 01–04 = Động từ
+
+01. 考えます (かんがえます) = KHẢO ; Nghĩ/ Suy nghĩ
+
+02. (に)着きます (つきます) = TRƯỚC ; Đến/ Tới nơi
+連: 駅に着きます (えきにつきます) = Đến nhà ga
+
+03. 年をとります (としをとります) = NIÊN ; Thêm tuổi/ Có tuổi/ Già đi
+
+04. 足ります (たります) = TÚC ; Đủ
+
+## 05–09 = Danh từ
+
+05. 田舎 (いなか) = ĐIỀN XÁ ; Quê/ Nông thôn
+
+06. チャンス = Cơ hội
+
+07. 一億円 (いちおくえん) = NHẤT ỨC VIÊN ; Một trăm triệu Yên
+
+08. 意味 (いみ) = Ý VỊ ; Ý nghĩa
+
+09. 転勤 (てんきん) = CHUYỂN CẦN ; Chuyển công tác/ Chuyển địa điểm làm việc
+
+## 10 = Phó từ
+
+10. もし = Nếu
+使い方: đi cùng ～たら — もし雨が降ったら = nếu trời mưa
+
+## 11–13 = Từ vựng hội thoại
+
+11. 色々お世話になりました (いろいろおせわになりました) = SẮC SẮC THẾ THOẠI ; Cảm ơn đã giúp đỡ tôi rất nhiều
+使い方: nói khi chia tay người đã giúp mình (chuyển công tác, về nước…)
+
+12. がんばります = Cố gắng/ Cố
+
+13. どうぞお元気で (どうぞおげんきで) = NGUYÊN KHÍ ; Chúc mạnh khỏe/ Bảo trọng nhé
+使い方: lời chào khi chia tay lâu ngày — chúc anh chị mạnh khỏe
