@@ -4,7 +4,7 @@
     "name": "Bài học N5",
     "level": "N5"
   },
-  "generatedAt": "2026-11-22T12:41:32.928Z",
+  "generatedAt": "2026-11-22T12:52:12.299Z",
   "modules": [
     {
       "id": "vocabulary",
@@ -225,6 +225,17 @@
           "file": "grammar/01-so-dem-luyen-tap.json"
         },
         {
+          "id": "25-bai-25-phan-1",
+          "name": "Bài 25 · Phần 1",
+          "description": "Nếu ~ thì: (もし)～たら; khi / sau khi: V1たら、V2; dù ~ vẫn: (いくら)～ても.",
+          "kind": "grammar",
+          "parent": "",
+          "group": "",
+          "itemCount": 3,
+          "order": 251,
+          "file": "grammar/25-bai-25-phan-1.json"
+        },
+        {
           "id": "04-bai-4-phan-1-luyen-tap",
           "name": "Luyện tập · Bài 4",
           "description": "19 câu: chọn cách đọc giờ phút (1–8), thứ trong tuần (9–12), trợ từ に・から・まで và thì của động từ (13–19).",
@@ -234,6 +245,17 @@
           "itemCount": 19,
           "order": 4101,
           "file": "grammar/04-bai-4-phan-1-luyen-tap.json"
+        },
+        {
+          "id": "25-bai-25-phan-1-luyen-tap",
+          "name": "Luyện tập · Bài 25",
+          "description": "16 câu: chọn dạng ～たら (1–6), V1たら V2 (7–9), ～ても và いくら・もし (10–16).",
+          "kind": "test",
+          "parent": "25-bai-25-phan-1",
+          "group": "",
+          "itemCount": 16,
+          "order": 25101,
+          "file": "grammar/25-bai-25-phan-1-luyen-tap.json"
         }
       ]
     }

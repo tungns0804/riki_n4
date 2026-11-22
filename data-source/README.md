@@ -25,7 +25,9 @@ data-source/
 │       ├── 01-so-dem/            Học số đếm tiếng Nhật (lý thuyết, 6 mẫu)
 │       ├── 01-so-dem-luyen-tap/  đề luyện tập 15 câu, bài con của 01-so-dem
 │       ├── 04-bai-4-phan-1/      Bài 4 · Phần 1 (bai-4-phan-1-bay-gio-la-19-gio.pdf, 5 mẫu)
-│       └── 04-bai-4-phan-1-luyen-tap/  đề luyện tập 19 câu, bài con của 04-bai-4-phan-1
+│       ├── 04-bai-4-phan-1-luyen-tap/  đề luyện tập 19 câu, bài con của 04-bai-4-phan-1
+│       ├── 25-bai-25-phan-1/     Bài 25 · Phần 1 (bai-25-phan-1-neu-ong-at-….pdf, 3 mẫu)
+│       └── 25-bai-25-phan-1-luyen-tap/  đề luyện tập 16 câu, bài con của 25-bai-25-phan-1
 ├── bai-26/                       Bài 26 : Cách hình thành và sử dụng んです
 │   ├── vocabulary/               mục "Từ Vựng Cải Thiện"
 │   │   ├── README.md             định dạng file từ vựng

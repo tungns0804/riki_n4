@@ -1,0 +1,200 @@
+{
+  "points": [
+    {
+      "title": "（もし）～たら、～",
+      "summary": "Nếu ~ thì ~",
+      "structures": [
+        "（もし）V たら、～",
+        "（もし）V ない → なかったら、～",
+        "（もし）A い → かったら、～",
+        "（もし）A な・N → だったら、～"
+      ],
+      "explanation": [
+        "～たら biểu thị điều kiện giả định: nếu ~ (xảy ra) thì ~. Thường đi cùng もし ở đầu câu để nhấn mạnh là giả định.",
+        "Cách tạo: lấy thể た rồi thêm ら — 起きた → 起きたら, なかった → なかったら, 眠かった → 眠かったら, 好きだった → 好きだったら, 地震だった → 地震だったら.",
+        "Hỏi xin lời khuyên: V たらいいですか = nên V thì được? (いつまでに出したらいいですか — nộp trước khi nào thì được?)"
+      ],
+      "notes": [
+        "Tính từ い đổi い thành かった rồi thêm ら (眠い → 眠かったら); tính từ な và danh từ thêm だったら (好き → 好きだったら, 雨 → 雨だったら)."
+      ],
+      "examples": [
+        {
+          "japanese": "地震が起きたら、机の下に入ってください。",
+          "reading": "じしんがおきたら、つくえのしたにはいってください。",
+          "vietnamese": "Nếu xảy ra động đất, hãy chui xuống gầm bàn nhé."
+        },
+        {
+          "japanese": "地震だったら、机の下に入ってください。",
+          "reading": "じしんだったら、つくえのしたにはいってください。",
+          "vietnamese": "Nếu là động đất thì hãy chui xuống gầm bàn nhé."
+        },
+        {
+          "japanese": "意見がなかったら、これで終わりましょう。",
+          "reading": "いけんがなかったら、これでおわりましょう。",
+          "vietnamese": "Nếu không có ý kiến gì thì chúng ta kết thúc ở đây nhé."
+        },
+        {
+          "japanese": "A：好きだったら、たくさん食べてください。\nB：はい。",
+          "reading": "A：すきだったら、たくさんたべてください。\nB：はい。",
+          "vietnamese": "A: Nếu thích thì cứ ăn nhiều vào nhé.\nB: Vâng."
+        },
+        {
+          "japanese": "もし、キャッシュカードをなくしたら、すぐ銀行に連絡してください。",
+          "reading": "もし、キャッシュカードをなくしたら、すぐぎんこうにれんらくしてください。",
+          "vietnamese": "Nếu lỡ làm mất thẻ ATM, hãy liên lạc ngay với ngân hàng."
+        },
+        {
+          "japanese": "A：10億円あったら、まず何をしますか。\nB：まず、両親に半分をあげて、新しい携帯を買いたいです。それから、世界旅行をしたいですね。",
+          "reading": "A：じゅうおくえんあったら、まずなにをしますか。\nB：まず、りょうしんにはんぶんをあげて、あたらしいけいたいをかいたいです。それから、せかいりょこうをしたいですね。",
+          "vietnamese": "A: Nếu có 1 tỷ yên, việc đầu tiên cậu sẽ làm gì?\nB: Trước hết, tôi muốn biếu bố mẹ một nửa rồi mua điện thoại mới. Sau đó thì muốn đi du lịch vòng quanh thế giới."
+        },
+        {
+          "japanese": "A：先生、宿題はいつまでに出したらいいですか。\nB：あさっての朝までに出してくださいね。",
+          "reading": "A：せんせい、しゅくだいはいつまでにだしたらいいですか。\nB：あさってのあさまでにだしてくださいね。",
+          "vietnamese": "A: Thưa thầy, bài tập về nhà nộp trước khi nào thì được ạ?\nB: Hãy nộp trước sáng ngày kia nhé."
+        },
+        {
+          "japanese": "A：わからないことがあったら、誰に聞いたらいいですか。\nB：山田さんに聞いてくださいね。",
+          "reading": "A：わからないことがあったら、だれにきいたらいいですか。\nB：やまださんにきいてくださいね。",
+          "vietnamese": "A: Nếu có chỗ không hiểu thì nên hỏi ai ạ?\nB: Hãy hỏi anh Yamada nhé."
+        },
+        {
+          "japanese": "A：仕事をする時、眠かったら、何をしますか。\nB：かっこいい人の写真を見ますね！",
+          "reading": "A：しごとをするとき、ねむかったら、なにをしますか。\nB：かっこいいひとのしゃしんをみますね！",
+          "vietnamese": "A: Khi làm việc, nếu buồn ngủ thì cậu làm gì?\nB: Tớ xem ảnh người đẹp trai!"
+        },
+        {
+          "japanese": "A：風邪をひいたら、どうしたらいいですか。\nB：風邪をひいたら、この薬を飲んでくださいね。",
+          "reading": "A：かぜをひいたら、どうしたらいいですか。\nB：かぜをひいたら、このくすりをのんでくださいね。",
+          "vietnamese": "A: Nếu bị cảm lạnh, tôi phải làm thế nào ạ?\nB: Nếu bị cảm lạnh, hãy uống thuốc này nhé."
+        }
+      ]
+    },
+    {
+      "title": "V1 たら、V2～。",
+      "summary": "Khi / sau khi V1 thì V2",
+      "structures": ["V1 たら、V2～。"],
+      "explanation": [
+        "V1 là việc chắc chắn sẽ xảy ra (đến Nhật, kết hôn, giờ học kết thúc…): khi V1 xong rồi thì làm V2.",
+        "Khác mẫu 1: mẫu 1 là giả định (chưa biết có xảy ra không), còn ở đây V1 chắc chắn xảy ra — nhấn mạnh khi V1 hình thành thì V2 sẽ diễn ra."
+      ],
+      "notes": [
+        "Không dùng もし với mẫu này, vì V1 không phải giả định."
+      ],
+      "examples": [
+        {
+          "japanese": "A：日本に行ったら、何をしたいですか。\nB：日本に行ったら、富士山へ登ってみたいです。",
+          "reading": "A：にほんにいったら、なにをしたいですか。\nB：にほんにいったら、ふじさんへのぼってみたいです。",
+          "vietnamese": "A: Sau khi đến Nhật cậu muốn làm gì?\nB: Sau khi đến Nhật, tớ muốn thử leo núi Phú Sĩ."
+        },
+        {
+          "japanese": "結婚したら、広いうちに住みたいです。",
+          "reading": "けっこんしたら、ひろいうちにすみたいです。",
+          "vietnamese": "Sau khi kết hôn, tôi muốn sống trong một ngôi nhà rộng."
+        },
+        {
+          "japanese": "毎日、授業が終わったら、犬を公園に連れていきます。",
+          "reading": "まいにち、じゅぎょうがおわったら、いぬをこうえんにつれていきます。",
+          "vietnamese": "Hằng ngày, sau khi giờ học kết thúc, tôi dẫn chó ra công viên."
+        },
+        {
+          "japanese": "A：ミラーですが、今、会議室にいます。Shinさんが来たら、教えてください。\nB：はい、わかりました。",
+          "reading": "A：ミラーですが、いま、かいぎしつにいます。Shinさんがきたら、おしえてください。\nB：はい、わかりました。",
+          "vietnamese": "A: Tôi là Miller, bây giờ tôi đang ở phòng họp. Khi anh Shin đến thì báo cho tôi nhé.\nB: Vâng, tôi hiểu rồi."
+        },
+        {
+          "japanese": "A：みなさんの国では何歳になったら、お酒を飲むことができますか。\nB：ベトナムでは18歳になったら、お酒を飲むことができます。",
+          "reading": "A：みなさんのくにではなんさいになったら、おさけをのむことができますか。\nB：ベトナムではじゅうはっさいになったら、おさけをのむことができます。",
+          "vietnamese": "A: Ở nước các bạn, bao nhiêu tuổi thì được uống rượu?\nB: Ở Việt Nam, đủ 18 tuổi thì được uống rượu."
+        },
+        {
+          "japanese": "A：ランさんはお酒を飲んだら、どうなりますか。\nB：お酒を飲んだら、すぐ顔が赤くなります。",
+          "reading": "A：ランさんはおさけをのんだら、どうなりますか。\nB：おさけをのんだら、すぐかおがあかくなります。",
+          "vietnamese": "A: Lan uống rượu vào thì bị làm sao?\nB: Uống rượu vào là mặt đỏ ngay."
+        },
+        {
+          "japanese": "A：この仕事が終わったら、何をしたらいいですか。\nB：終わったら、私に言ってくださいね。",
+          "reading": "A：このしごとがおわったら、なにをしたらいいですか。\nB：おわったら、わたしにいってくださいね。",
+          "vietnamese": "A: Làm xong việc này rồi thì tôi nên làm gì ạ?\nB: Xong rồi thì nói với tôi nhé."
+        },
+        {
+          "japanese": "A：いつも仕事が終わったら、何をしますか。\nB：すぐうちへ帰ります。",
+          "reading": "A：いつもしごとがおわったら、なにをしますか。\nB：すぐうちへかえります。",
+          "vietnamese": "A: Mọi khi sau khi kết thúc công việc, cậu làm gì?\nB: Tôi thường về nhà ngay luôn."
+        }
+      ]
+    },
+    {
+      "title": "（いくら）～ても、～",
+      "summary": "Dù cho / dẫu có ~ thì vẫn ~",
+      "structures": [
+        "（いくら）V ても、～",
+        "（いくら）V ない → なくても、～",
+        "（いくら）A い → くても、～",
+        "（いくら）A な・N → でも、～"
+      ],
+      "explanation": [
+        "～ても・～でも biểu thị điều kiện giả định NGƯỢC: dù ~ thì vẫn ~.",
+        "Mệnh đề sau ても là kết quả trái với điều người ta thường nghĩ: già rồi thì thường nghỉ — 年をとっても、働きます.",
+        "Cách tạo: thể て ＋ も — 取って → 取っても, なくて → なくても, 眠くて → 眠くても, 日曜日で → 日曜日でも.",
+        "Hay đi với いくら (dù … bao nhiêu đi nữa): いくら食べても太りません."
+      ],
+      "notes": [
+        "PDF in nhầm tiêu đề mẫu này là \"Thể thông thường + でしょう? — Bộ kimono này thật đắt phải không?\"; nội dung bên dưới là ～ても nên bài dùng tiêu đề ～ても.",
+        "いくら đi với ても, không đi với たら: いくら調べても (dù tra bao nhiêu)."
+      ],
+      "examples": [
+        {
+          "japanese": "年をとっても、働きます。",
+          "reading": "としをとっても、はたらきます。",
+          "vietnamese": "Dù có già đi, tôi vẫn làm việc."
+        },
+        {
+          "japanese": "時間がなくても、勉強します。",
+          "reading": "じかんがなくても、べんきょうします。",
+          "vietnamese": "Dù không có thời gian, tôi vẫn học."
+        },
+        {
+          "japanese": "日曜日でも、働かなければなりません。",
+          "reading": "にちようびでも、はたらかなければなりません。",
+          "vietnamese": "Dù là chủ nhật cũng phải làm việc."
+        },
+        {
+          "japanese": "下手でも、歌がめっちゃ好きです。",
+          "reading": "へたでも、うたがめっちゃすきです。",
+          "vietnamese": "Dù hát dở nhưng tôi cực kỳ thích hát."
+        },
+        {
+          "japanese": "眠くても、勉強しなければならない。",
+          "reading": "ねむくても、べんきょうしなければならない。",
+          "vietnamese": "Dù buồn ngủ cũng phải học."
+        },
+        {
+          "japanese": "この言葉はいくら調べても、わかりません。",
+          "reading": "このことばはいくらしらべても、わかりません。",
+          "vietnamese": "Từ này tra bao nhiêu tôi cũng không hiểu."
+        },
+        {
+          "japanese": "恋人がいなくても幸せです！",
+          "reading": "こいびとがいなくてもしあわせです！",
+          "vietnamese": "Dù không có người yêu tôi vẫn hạnh phúc!"
+        },
+        {
+          "japanese": "A：いつも6時に仕事が終わりますが、7時になっても、まだ仕事があります。\nB：残業代！2倍もらいましょう！",
+          "reading": "A：いつもろくじにしごとがおわりますが、しちじになっても、まだしごとがあります。\nB：ざんぎょうだい！にばいもらいましょう！",
+          "vietnamese": "A: Mọi khi 6 giờ là xong việc, vậy mà đến 7 giờ rồi vẫn còn việc.\nB: Tiền làm thêm giờ! Lấy gấp đôi đi!"
+        },
+        {
+          "japanese": "A：来週の旅行、雨が降っても、行きますか。\nB：うーん、雨だったら、行かないと思います。",
+          "reading": "A：らいしゅうのりょこう、あめがふっても、いきますか。\nB：うーん、あめだったら、いかないとおもいます。",
+          "vietnamese": "A: Chuyến du lịch tuần sau, dù trời mưa cậu vẫn đi chứ?\nB: Ừm, nếu mưa thì chắc tớ không đi."
+        },
+        {
+          "japanese": "A：これはいくら食べても太らないケーキですよ！\nB：え？本当ですか。",
+          "reading": "A：これはいくらたべてもふとらないケーキですよ！\nB：え？ほんとうですか。",
+          "vietnamese": "A: Đây là bánh dù ăn bao nhiêu cũng không béo đâu!\nB: Hả? Thật không vậy?"
+        }
+      ]
+    }
+  ]
+}

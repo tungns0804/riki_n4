@@ -1,0 +1,642 @@
+{
+  "id": "25-bai-25-phan-1-luyen-tap",
+  "name": "Luyện tập · Bài 25",
+  "description": "16 câu: chọn dạng ～たら (1–6), V1たら V2 (7–9), ～ても và いくら・もし (10–16).",
+  "kind": "test",
+  "parent": "25-bai-25-phan-1",
+  "group": "",
+  "sections": [
+    {
+      "id": "b25-tara",
+      "title": "Bài 25 · Câu 1–6 — Chọn dạng ～たら",
+      "instructions": "Chọn đáp án đúng điền vào （　　　）.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "b25-01",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "地震が（　　　）、机の下に入ってください。",
+          "promptReading": "じしんが（　　　）、つくえのしたにはいってください。",
+          "promptTranslation": "Nếu xảy ra động đất, hãy chui xuống gầm bàn nhé.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "起きたら",
+              "translation": "nếu xảy ra",
+              "note": "Đúng: thể た 起きた ＋ ら = nếu xảy ra."
+            },
+            {
+              "id": "c2",
+              "text": "起きても",
+              "translation": "dù có xảy ra",
+              "note": "起きても = dù có xảy ra — không hợp với lời dặn \"hãy chui xuống gầm bàn\"."
+            },
+            {
+              "id": "c3",
+              "text": "起きるたら",
+              "translation": "sai dạng",
+              "note": "たら ghép với thể た, không ghép với thể từ điển 起きる."
+            },
+            {
+              "id": "c4",
+              "text": "起きったら",
+              "translation": "sai dạng",
+              "note": "起きる là động từ nhóm 2: thể た là 起きた, không có っ."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b25-02",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "好き（　　　）、たくさん食べてください。",
+          "promptReading": "すき（　　　）、たくさんたべてください。",
+          "promptTranslation": "Nếu thích thì cứ ăn nhiều vào nhé.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "だったら",
+              "translation": "nếu (tính từ な)",
+              "note": "Đúng: 好き là tính từ な → 好きだったら."
+            },
+            {
+              "id": "c2",
+              "text": "かったら",
+              "translation": "đuôi của tính từ い",
+              "note": "かったら chỉ dùng cho tính từ い (眠かったら); 好き là tính từ な."
+            },
+            {
+              "id": "c3",
+              "text": "たら",
+              "translation": "thiếu だっ",
+              "note": "Tính từ な phải có だった trước ら."
+            },
+            {
+              "id": "c4",
+              "text": "くても",
+              "translation": "đuôi của tính từ い",
+              "note": "くても là đuôi của tính từ い, và nghĩa là \"dù\"."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b25-03",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "仕事をする時、（　　　）、何をしますか。",
+          "promptReading": "しごとをするとき、（　　　）、なにをしますか。",
+          "promptTranslation": "Khi làm việc, nếu buồn ngủ thì cậu làm gì?",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "眠いたら",
+              "translation": "sai dạng",
+              "note": "Tính từ い không giữ い rồi thêm たら."
+            },
+            {
+              "id": "c2",
+              "text": "眠かったら",
+              "translation": "nếu buồn ngủ",
+              "note": "Đúng: 眠い → 眠かった → 眠かったら."
+            },
+            {
+              "id": "c3",
+              "text": "眠くたら",
+              "translation": "sai dạng",
+              "note": "くたら không có; くて là thể て, かった mới là thể た."
+            },
+            {
+              "id": "c4",
+              "text": "眠いだったら",
+              "translation": "sai dạng",
+              "note": "だったら dành cho tính từ な và danh từ, không dùng với tính từ い."
+            }
+          ],
+          "answerId": "c2",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b25-04",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "意見が（　　　）、これで終わりましょう。",
+          "promptReading": "いけんが（　　　）、これでおわりましょう。",
+          "promptTranslation": "Nếu không có ý kiến gì thì chúng ta kết thúc ở đây nhé.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "なかったら",
+              "translation": "nếu không có",
+              "note": "Đúng: ない → なかった → なかったら."
+            },
+            {
+              "id": "c2",
+              "text": "ないたら",
+              "translation": "sai dạng",
+              "note": "ない chia như tính từ い: đổi い thành かった, không thêm たら vào ない."
+            },
+            {
+              "id": "c3",
+              "text": "なくたら",
+              "translation": "sai dạng",
+              "note": "Thể た của ない là なかった, không phải なくた."
+            },
+            {
+              "id": "c4",
+              "text": "ないだったら",
+              "translation": "sai dạng",
+              "note": "ない không đi với だった."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b25-05",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "もし、10億円（　　　）、まず何をしますか。",
+          "promptReading": "もし、じゅうおくえん（　　　）、まずなにをしますか。",
+          "promptTranslation": "Nếu có 1 tỷ yên, việc đầu tiên cậu sẽ làm gì?",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "あったら",
+              "translation": "nếu có",
+              "note": "Đúng: あります → thể た あった → あったら."
+            },
+            {
+              "id": "c2",
+              "text": "あたら",
+              "translation": "sai dạng",
+              "note": "Thiếu っ: thể た của ある là あった."
+            },
+            {
+              "id": "c3",
+              "text": "あるたら",
+              "translation": "sai dạng",
+              "note": "たら không ghép với thể từ điển ある."
+            },
+            {
+              "id": "c4",
+              "text": "ありたら",
+              "translation": "sai dạng",
+              "note": "たら không ghép với thể ます bỏ ます."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b25-06",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "うーん、雨（　　　）、行かないと思います。",
+          "promptReading": "うーん、あめ（　　　）、いかないとおもいます。",
+          "promptTranslation": "Ừm, nếu mưa thì chắc tớ không đi.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "だったら",
+              "translation": "nếu là (danh từ)",
+              "note": "Đúng: 雨 là danh từ → 雨だったら."
+            },
+            {
+              "id": "c2",
+              "text": "かったら",
+              "translation": "đuôi của tính từ い",
+              "note": "かったら chỉ dùng cho tính từ い."
+            },
+            {
+              "id": "c3",
+              "text": "たら",
+              "translation": "thiếu だっ",
+              "note": "Danh từ phải có だった trước ら."
+            },
+            {
+              "id": "c4",
+              "text": "くても",
+              "translation": "đuôi của tính từ い",
+              "note": "くても là đuôi của tính từ い, và nghĩa là \"dù\"."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        }
+      ]
+    },
+    {
+      "id": "b25-khi",
+      "title": "Bài 25 · Câu 7–9 — V1 たら、V2",
+      "instructions": "Chọn đáp án đúng.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "b25-07",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "日本に（　　　）、富士山へ登ってみたいです。",
+          "promptReading": "にほんに（　　　）、ふじさんへのぼってみたいです。",
+          "promptTranslation": "Sau khi đến Nhật, tôi muốn thử leo núi Phú Sĩ.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "行ったら",
+              "translation": "sau khi đến",
+              "note": "Đúng: 行く có thể た đặc biệt là 行った → 行ったら."
+            },
+            {
+              "id": "c2",
+              "text": "行きたら",
+              "translation": "sai dạng",
+              "note": "たら không ghép với thể ます bỏ ます."
+            },
+            {
+              "id": "c3",
+              "text": "行くたら",
+              "translation": "sai dạng",
+              "note": "たら không ghép với thể từ điển."
+            },
+            {
+              "id": "c4",
+              "text": "行いたら",
+              "translation": "sai dạng",
+              "note": "行く là ngoại lệ: thể た là 行った, không phải 行いた."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b25-08",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "みなさんの国では何歳に（　　　）、お酒を飲むことができますか。",
+          "promptReading": "みなさんのくにではなんさいに（　　　）、おさけをのむことができますか。",
+          "promptTranslation": "Ở nước các bạn, bao nhiêu tuổi thì được uống rượu?",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "なったら",
+              "translation": "khi trở thành",
+              "note": "Đúng: なる → なった → なったら = khi đến (tuổi đó)."
+            },
+            {
+              "id": "c2",
+              "text": "なっても",
+              "translation": "dù có trở thành",
+              "note": "なっても = dù có đến tuổi đó — ngược nghĩa câu hỏi."
+            },
+            {
+              "id": "c3",
+              "text": "なるたら",
+              "translation": "sai dạng",
+              "note": "たら không ghép với thể từ điển."
+            },
+            {
+              "id": "c4",
+              "text": "なりたら",
+              "translation": "sai dạng",
+              "note": "たら không ghép với thể ます bỏ ます."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b25-09",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "毎日、授業が終わったら、犬を公園に連れていきます。",
+          "promptReading": "まいにち、じゅぎょうがおわったら、いぬをこうえんにつれていきます。",
+          "promptTranslation": "Câu trên nghĩa là gì?",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "Hằng ngày, sau khi giờ học kết thúc, tôi dẫn chó ra công viên.",
+              "translation": "sau khi … kết thúc",
+              "note": "Đúng: giờ học ngày nào cũng kết thúc — V1たら ở đây là \"sau khi\", không phải giả định."
+            },
+            {
+              "id": "c2",
+              "text": "Hằng ngày, dù giờ học kết thúc, tôi vẫn dẫn chó ra công viên.",
+              "translation": "dù … kết thúc",
+              "note": "\"Dù\" là ～ても (終わっても)."
+            },
+            {
+              "id": "c3",
+              "text": "Hằng ngày, nếu giờ học không kết thúc, tôi dẫn chó ra công viên.",
+              "translation": "nếu … không kết thúc",
+              "note": "\"Nếu không kết thúc\" là 終わらなかったら."
+            },
+            {
+              "id": "c4",
+              "text": "Hằng ngày, trước khi giờ học kết thúc, tôi dẫn chó ra công viên.",
+              "translation": "trước khi … kết thúc",
+              "note": "\"Trước khi\" là 終わる前に."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        }
+      ]
+    },
+    {
+      "id": "b25-temo",
+      "title": "Bài 25 · Câu 10–16 — ～ても, いくら và もし",
+      "instructions": "Chọn đáp án đúng điền vào （　　　）.",
+      "skill": "grammar",
+      "questions": [
+        {
+          "id": "b25-10",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "時間が（　　　）、勉強します。",
+          "promptReading": "じかんが（　　　）、べんきょうします。",
+          "promptTranslation": "Dù không có thời gian, tôi vẫn học.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "なくても",
+              "translation": "dù không có",
+              "note": "Đúng: ない → なくて → なくても."
+            },
+            {
+              "id": "c2",
+              "text": "なかったら",
+              "translation": "nếu không có",
+              "note": "なかったら = nếu không có — \"nếu không có thời gian thì học\" ngược nghĩa."
+            },
+            {
+              "id": "c3",
+              "text": "ないても",
+              "translation": "sai dạng",
+              "note": "ない chia như tính từ い: thể て là なくて, không phải ないて."
+            },
+            {
+              "id": "c4",
+              "text": "なくでも",
+              "translation": "sai dạng",
+              "note": "Sau なく là ても, không phải でも."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b25-11",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "日曜日（　　　）、働かなければなりません。",
+          "promptReading": "にちようび（　　　）、はたらかなければなりません。",
+          "promptTranslation": "Dù là chủ nhật cũng phải làm việc.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "でも",
+              "translation": "dù là (danh từ)",
+              "note": "Đúng: danh từ ＋ でも = dù là ~."
+            },
+            {
+              "id": "c2",
+              "text": "ても",
+              "translation": "đuôi của động từ",
+              "note": "Danh từ đi với でも; ても đi sau thể て của động từ."
+            },
+            {
+              "id": "c3",
+              "text": "だったら",
+              "translation": "nếu là",
+              "note": "日曜日だったら = nếu là chủ nhật — câu cần nghĩa \"dù\"."
+            },
+            {
+              "id": "c4",
+              "text": "くても",
+              "translation": "đuôi của tính từ い",
+              "note": "くても là đuôi của tính từ い."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b25-12",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "（　　　）、勉強しなければならない。",
+          "promptReading": "（　　　）、べんきょうしなければならない。",
+          "promptTranslation": "Dù buồn ngủ cũng phải học.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "眠くても",
+              "translation": "dù buồn ngủ",
+              "note": "Đúng: 眠い → 眠くて → 眠くても."
+            },
+            {
+              "id": "c2",
+              "text": "眠いても",
+              "translation": "sai dạng",
+              "note": "Tính từ い bỏ い rồi thêm くても."
+            },
+            {
+              "id": "c3",
+              "text": "眠かったら",
+              "translation": "nếu buồn ngủ",
+              "note": "眠かったら = nếu buồn ngủ — câu cần nghĩa \"dù\"."
+            },
+            {
+              "id": "c4",
+              "text": "眠いでも",
+              "translation": "sai dạng",
+              "note": "でも dành cho tính từ な và danh từ."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b25-13",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "恋人が（　　　）幸せです！",
+          "promptReading": "こいびとが（　　　）しあわせです！",
+          "promptTranslation": "Dù không có người yêu tôi vẫn hạnh phúc!",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "いなくても",
+              "translation": "dù không có",
+              "note": "Đúng: いない → いなくて → いなくても."
+            },
+            {
+              "id": "c2",
+              "text": "いないても",
+              "translation": "sai dạng",
+              "note": "Thể て của いない là いなくて."
+            },
+            {
+              "id": "c3",
+              "text": "いなくでも",
+              "translation": "sai dạng",
+              "note": "Sau なく là ても, không phải でも."
+            },
+            {
+              "id": "c4",
+              "text": "いなかっても",
+              "translation": "sai dạng",
+              "note": "ても ghép với thể て (いなくて), không ghép với thể た."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b25-14",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "この言葉はいくら（　　　）、わかりません。",
+          "promptReading": "このことばはいくら（　　　）、わかりません。",
+          "promptTranslation": "Từ này tra bao nhiêu tôi cũng không hiểu.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "調べても",
+              "translation": "dù tra",
+              "note": "Đúng: いくら đi với ～ても = dù … bao nhiêu."
+            },
+            {
+              "id": "c2",
+              "text": "調べたら",
+              "translation": "nếu tra",
+              "note": "いくら không đi với たら."
+            },
+            {
+              "id": "c3",
+              "text": "調べて",
+              "translation": "tra (thể て)",
+              "note": "Thiếu も: いくら cần ても."
+            },
+            {
+              "id": "c4",
+              "text": "調べるでも",
+              "translation": "sai dạng",
+              "note": "ても ghép với thể て 調べて, không ghép với thể từ điển."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b25-15",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "これは（　　　）食べても太らないケーキですよ！",
+          "promptReading": "これは（　　　）たべてもふとらないケーキですよ！",
+          "promptTranslation": "Đây là bánh dù ăn bao nhiêu cũng không béo đâu!",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "いくら",
+              "translation": "bao nhiêu đi nữa",
+              "note": "Đúng: いくら ～ても = dù … bao nhiêu đi nữa."
+            },
+            {
+              "id": "c2",
+              "text": "まず",
+              "translation": "trước hết",
+              "note": "まず = trước hết, không đi với ても."
+            },
+            {
+              "id": "c3",
+              "text": "すぐ",
+              "translation": "ngay lập tức",
+              "note": "すぐ = ngay, không hợp nghĩa."
+            },
+            {
+              "id": "c4",
+              "text": "それから",
+              "translation": "sau đó",
+              "note": "それから = sau đó, dùng để nối câu."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        },
+        {
+          "id": "b25-16",
+          "skill": "grammar",
+          "prompt": "",
+          "promptJapanese": "（　　　）、キャッシュカードをなくしたら、すぐ銀行に連絡してください。",
+          "promptReading": "（　　　）、キャッシュカードをなくしたら、すぐぎんこうにれんらくしてください。",
+          "promptTranslation": "Nếu lỡ làm mất thẻ ATM, hãy liên lạc ngay với ngân hàng.",
+          "choices": [
+            {
+              "id": "c1",
+              "text": "もし",
+              "translation": "nếu",
+              "note": "Đúng: もし đi với ～たら để nhấn mạnh giả định."
+            },
+            {
+              "id": "c2",
+              "text": "いくら",
+              "translation": "bao nhiêu đi nữa",
+              "note": "いくら đi với ～ても, không đi với たら."
+            },
+            {
+              "id": "c3",
+              "text": "まず",
+              "translation": "trước hết",
+              "note": "まず = trước hết, không hợp nghĩa."
+            },
+            {
+              "id": "c4",
+              "text": "すぐ",
+              "translation": "ngay lập tức",
+              "note": "すぐ đã có ở vế sau (すぐ銀行に連絡して)."
+            }
+          ],
+          "answerId": "c1",
+          "explanation": "",
+          "passage": [],
+          "passageTranslation": []
+        }
+      ]
+    }
+  ]
+}
