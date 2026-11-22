@@ -1,0 +1,13 @@
+# Bài học N5 · KANJI · Buổi 25 · Các chữ khác
+# nguồn: PDF "Khoá học Online N5 – Kanji", Buổi 25 · Kiến thức, chữ 121–125
+# Định dạng: xem data-source/bai-26/kanji/README.md
+#
+# Cách chép như Buổi 11: dấu phẩy trong nghĩa viết thành "/", số nét điền theo từ
+# điển. 毎 và 午 chỉ in 音, 同 và 立 chỉ in 訓 — cột còn lại để trống. 訓 chép theo
+# dạng từ điển của từ ví dụ: 回します → まわ.す, 同じ → おな.じ, 立ちます → た.つ,
+# 立てます → た.てる.
+毎,MỖI,Mỗi/ hàng,マイ,,6|毎朝 (まいあさ)=Mỗi sáng;毎日 (まいにち)=Mỗi ngày;毎週 (まいしゅう)=Mỗi tuần;毎月 (まいつき)=Mỗi tháng
+回,HỒI,Lần,カイ,まわ.す,6|一回 (いっかい)=1 lần;回します (まわします)=Vặn
+午,NGỌ,Giữa trưa,ゴ,,4|午前 (ごぜん)=Buổi sáng;午後 (ごご)=Buổi chiều
+同,ĐỒNG,Giống,,おな.じ,6|同じ (おなじ)=Giống
+立,LẬP,Đứng,,た.つ・た.てる,5|立ちます (たちます)=Đứng/ đứng lên;立てます (たてます)=Dựng lên

@@ -19,7 +19,8 @@ data-source/
 │   │   ├── 12-buoi-12/           Buổi 12 · Vị trí 2 (chữ 56–60)
 │   │   ├── 13-buoi-13/           bài giữ chỗ, chờ PDF Buổi 13 (東 西 南 北 方)
 │   │   ├── 13-buoi-13-trac-nghiem/  Bài trắc nghiệm 20 câu, bài con của 13-buoi-13
-│   │   └── 14-buoi-14/           Buổi 14 · Bộ phận (chữ 66–70)
+│   │   ├── 14-buoi-14/           Buổi 14 · Bộ phận (chữ 66–70)
+│   │   └── 25-buoi-25/           Buổi 25 · Các chữ khác (chữ 121–125)
 │   └── grammar/
 │       ├── 01-so-dem/            Học số đếm tiếng Nhật (lý thuyết, 6 mẫu)
 │       ├── 01-so-dem-luyen-tap/  đề luyện tập 15 câu, bài con của 01-so-dem

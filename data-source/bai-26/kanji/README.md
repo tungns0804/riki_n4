@@ -43,6 +43,7 @@ Phần 1"). PDF không in nghĩa riêng của chữ và số nét nên hai cột
 | `n5/kanji/12-buoi-12`         | Buổi 12 · Vị trí 2 | 5 chữ: 後 前 外 入 出 (khoá Online N5 – Kanji, chữ 56–60) |
 | `n5/kanji/13-buoi-13`         | Buổi 13            | bài giữ chỗ — chờ PDF; đã có bài con `13-buoi-13-trac-nghiem` (20 câu 東 西 南 北 方) |
 | `n5/kanji/14-buoi-14`         | Buổi 14 · Bộ phận  | 5 chữ: 口 目 耳 手 足 (khoá Online N5 – Kanji, chữ 66–70) |
+| `n5/kanji/25-buoi-25`         | Buổi 25 · Các chữ khác | 5 chữ: 毎 回 午 同 立 (khoá Online N5 – Kanji, chữ 121–125) |
 
 Kanji N5 nằm trong học phần chung `n5`, nguồn là PDF "Khoá học Online N5 – Kanji" chia theo
 buổi: mỗi buổi một bài, thư mục và `order` theo số buổi (`11-buoi-11`, order 11) để các buổi

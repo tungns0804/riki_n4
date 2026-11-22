@@ -1,0 +1,144 @@
+{
+  "id": "25-buoi-25",
+  "name": "Buổi 25 · Các chữ khác",
+  "description": "5 chữ: 毎 (mỗi), 回 (lần), 午 (giữa trưa — 午前・午後), 同 (giống), 立 (đứng).",
+  "kind": "kanji",
+  "parent": "",
+  "group": "",
+  "kanji": [
+    {
+      "id": "b4823b4ec5b7acd1",
+      "character": "毎",
+      "hanViet": "MỖI",
+      "meaning": "Mỗi/ hàng",
+      "onyomi": [
+        "マイ"
+      ],
+      "kunyomi": [],
+      "strokes": 6,
+      "words": [
+        {
+          "id": "6aca810ec1b2bd3f",
+          "japanese": "毎朝",
+          "reading": "まいあさ",
+          "vietnamese": "Mỗi sáng"
+        },
+        {
+          "id": "051ea74314d5fd68",
+          "japanese": "毎日",
+          "reading": "まいにち",
+          "vietnamese": "Mỗi ngày"
+        },
+        {
+          "id": "203c0d9fc8dc6033",
+          "japanese": "毎週",
+          "reading": "まいしゅう",
+          "vietnamese": "Mỗi tuần"
+        },
+        {
+          "id": "518a1cb732c6444a",
+          "japanese": "毎月",
+          "reading": "まいつき",
+          "vietnamese": "Mỗi tháng"
+        }
+      ]
+    },
+    {
+      "id": "47d4a7a05d02c60c",
+      "character": "回",
+      "hanViet": "HỒI",
+      "meaning": "Lần",
+      "onyomi": [
+        "カイ"
+      ],
+      "kunyomi": [
+        "まわ.す"
+      ],
+      "strokes": 6,
+      "words": [
+        {
+          "id": "c09b35984150f553",
+          "japanese": "一回",
+          "reading": "いっかい",
+          "vietnamese": "1 lần"
+        },
+        {
+          "id": "2eb967a4e8b7c5b1",
+          "japanese": "回します",
+          "reading": "まわします",
+          "vietnamese": "Vặn"
+        }
+      ]
+    },
+    {
+      "id": "a8f9dd4997d49554",
+      "character": "午",
+      "hanViet": "NGỌ",
+      "meaning": "Giữa trưa",
+      "onyomi": [
+        "ゴ"
+      ],
+      "kunyomi": [],
+      "strokes": 4,
+      "words": [
+        {
+          "id": "d5da0a13eb08c5fb",
+          "japanese": "午前",
+          "reading": "ごぜん",
+          "vietnamese": "Buổi sáng"
+        },
+        {
+          "id": "47029302f00ec564",
+          "japanese": "午後",
+          "reading": "ごご",
+          "vietnamese": "Buổi chiều"
+        }
+      ]
+    },
+    {
+      "id": "8b847d19eb9d2dab",
+      "character": "同",
+      "hanViet": "ĐỒNG",
+      "meaning": "Giống",
+      "onyomi": [],
+      "kunyomi": [
+        "おな.じ"
+      ],
+      "strokes": 6,
+      "words": [
+        {
+          "id": "dcbf284b594d1835",
+          "japanese": "同じ",
+          "reading": "おなじ",
+          "vietnamese": "Giống"
+        }
+      ]
+    },
+    {
+      "id": "74413a2cdbf7e782",
+      "character": "立",
+      "hanViet": "LẬP",
+      "meaning": "Đứng",
+      "onyomi": [],
+      "kunyomi": [
+        "た.つ",
+        "た.てる"
+      ],
+      "strokes": 5,
+      "words": [
+        {
+          "id": "dafa479f9984b715",
+          "japanese": "立ちます",
+          "reading": "たちます",
+          "vietnamese": "Đứng/ đứng lên"
+        },
+        {
+          "id": "7967a63f2458fb7d",
+          "japanese": "立てます",
+          "reading": "たてます",
+          "vietnamese": "Dựng lên"
+        }
+      ]
+    }
+  ]
+}

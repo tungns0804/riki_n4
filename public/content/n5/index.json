@@ -4,7 +4,7 @@
     "name": "Bài học N5",
     "level": "N5"
   },
-  "generatedAt": "2026-11-22T12:22:17.250Z",
+  "generatedAt": "2026-11-22T12:41:32.928Z",
   "modules": [
     {
       "id": "vocabulary",
@@ -163,6 +163,17 @@
           "itemCount": 5,
           "order": 14,
           "file": "kanji/14-buoi-14.json"
+        },
+        {
+          "id": "25-buoi-25",
+          "name": "Buổi 25 · Các chữ khác",
+          "description": "5 chữ: 毎 (mỗi), 回 (lần), 午 (giữa trưa — 午前・午後), 同 (giống), 立 (đứng).",
+          "kind": "kanji",
+          "parent": "",
+          "group": "",
+          "itemCount": 5,
+          "order": 25,
+          "file": "kanji/25-buoi-25.json"
         },
         {
           "id": "13-buoi-13-trac-nghiem",
